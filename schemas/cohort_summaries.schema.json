@@ -1,0 +1,15 @@
+{
+  "name": "cohort_summaries",
+  "description": "Materialized cohort, medoid, and event-aligned summary products.",
+  "primary_key": ["summary_id"],
+  "required": ["summary_id", "summary_type", "cohort_filter", "created_at"],
+  "columns": {
+    "summary_id": {"type": "string"},
+    "summary_type": {"type": "string"},
+    "cohort_filter": {"type": "object"},
+    "created_at": {"type": "string"},
+    "source_table_uri": {"type": "string"},
+    "asset_uri": {"type": "string"},
+    "record_count": {"type": "integer"}
+  }
+}

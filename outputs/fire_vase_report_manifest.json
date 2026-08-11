@@ -1,0 +1,22 @@
+{
+  "pdf": "outputs/fire_vase_death_exploratory_report.pdf",
+  "html": "outputs/fire_vase_death_exploratory_report.html",
+  "analysis_table": "outputs/fire_vase_analysis_table.csv",
+  "summary_table": "outputs/fire_vase_summary_table.csv",
+  "terminal_features": "outputs/fire_vase_terminal_features.csv",
+  "quality_control": "outputs/fire_vase_quality_control.csv",
+  "figures": {
+    "qc": "outputs/fire_vase_figures/qc_summary.png",
+    "features": "outputs/fire_vase_figures/feature_distributions.png",
+    "growth_traj": "outputs/fire_vase_figures/new_area_trajectories.png",
+    "temp_traj": "outputs/fire_vase_figures/tmmx_trajectories.png",
+    "growth_term": "outputs/fire_vase_figures/terminal_growth_alignment.png",
+    "temp_term_z": "outputs/fire_vase_figures/terminal_tmmx_standardized_alignment.png",
+    "growth_heatmap": "outputs/fire_vase_figures/new_area_heatmap.png",
+    "temp_heatmap_z": "outputs/fire_vase_figures/tmmx_heatmap_standardized.png",
+    "pca": "outputs/fire_vase_figures/terminal_feature_pca.png",
+    "gallery": "outputs/fire_vase_figures/vase_gallery_largest_fires.png"
+  },
+  "n_fires": 25,
+  "n_fire_time_rows": 229
+}

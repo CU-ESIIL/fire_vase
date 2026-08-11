@@ -1,0 +1,15 @@
+{
+  "name": "fire_observations_raw",
+  "description": "Immutable source fire observations as received from upstream products.",
+  "primary_key": ["source_name", "source_record_id"],
+  "required": ["source_name", "source_record_id", "observed_at", "ingested_at", "source_version"],
+  "columns": {
+    "source_name": {"type": "string"},
+    "source_record_id": {"type": "string"},
+    "observed_at": {"type": "string"},
+    "ingested_at": {"type": "string"},
+    "source_version": {"type": "string"},
+    "payload_hash": {"type": "string"},
+    "raw_payload_uri": {"type": "string"}
+  }
+}

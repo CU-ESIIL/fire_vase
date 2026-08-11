@@ -1,0 +1,171 @@
+feature_set,pc1_target,pearson_r
+full current feature set,log_final_area_km2,-0.8213824481111593
+full current feature set,log_duration_days,-0.9468241222289251
+full current feature set,observation_count,-0.7319337330442439
+full current feature set,log_peak_growth_km2_per_day,-0.21152407665366144
+full current feature set,front_loaded_fraction,0.9436383325454814
+full current feature set,late_growth_fraction,-0.7696016382600186
+full current feature set,terminal_taper_fraction,0.6223969199153048
+full current feature set,growth_entropy,-0.9138527803300445
+full current feature set,width_p05,0.9206784975933494
+full current feature set,growth_p05,0.9626730485394568
+scale variables removed,log_final_area_km2,-0.813459122892305
+scale variables removed,log_duration_days,-0.9427061828486275
+scale variables removed,observation_count,-0.7248511287037226
+scale variables removed,log_peak_growth_km2_per_day,-0.20285013445771172
+scale variables removed,front_loaded_fraction,0.9468749077945207
+scale variables removed,late_growth_fraction,-0.7770061686662206
+scale variables removed,terminal_taper_fraction,0.6130265309473335
+scale variables removed,growth_entropy,-0.9156443243399212
+scale variables removed,width_p05,0.9243945210122351
+scale variables removed,growth_p05,0.9613612752165326
+final area removed,log_final_area_km2,-0.8129357199221334
+final area removed,log_duration_days,-0.9452718832364256
+final area removed,observation_count,-0.7264129863931799
+final area removed,log_peak_growth_km2_per_day,-0.19852391833980249
+final area removed,front_loaded_fraction,0.9458921149722682
+final area removed,late_growth_fraction,-0.7750997047194721
+final area removed,terminal_taper_fraction,0.6149974375531454
+final area removed,growth_entropy,-0.9162891282345238
+final area removed,width_p05,0.9230161276826077
+final area removed,growth_p05,0.9620677316811487
+duration and observation count removed,log_final_area_km2,-0.8122515048667269
+duration and observation count removed,log_duration_days,-0.9390568654897443
+duration and observation count removed,observation_count,-0.7133726487307243
+duration and observation count removed,log_peak_growth_km2_per_day,-0.20552465595756542
+duration and observation count removed,front_loaded_fraction,0.9476595714263497
+duration and observation count removed,late_growth_fraction,-0.7825654675432022
+duration and observation count removed,terminal_taper_fraction,0.6094135600295129
+duration and observation count removed,growth_entropy,-0.9172189089198091
+duration and observation count removed,width_p05,0.9256314222583278
+duration and observation count removed,growth_p05,0.9606114630233156
+all scale and duration variables removed,log_final_area_km2,-0.803266568746839
+all scale and duration variables removed,log_duration_days,-0.9339816263982573
+all scale and duration variables removed,observation_count,-0.7049151881022466
+all scale and duration variables removed,log_peak_growth_km2_per_day,-0.1962249262513773
+all scale and duration variables removed,front_loaded_fraction,0.9508077138980919
+all scale and duration variables removed,late_growth_fraction,-0.790513381285563
+all scale and duration variables removed,terminal_taper_fraction,0.598777938454553
+all scale and duration variables removed,growth_entropy,-0.9187956389397408
+all scale and duration variables removed,width_p05,0.9293376480709286
+all scale and duration variables removed,growth_p05,0.9587151870398378
+normalized profile variables only,log_final_area_km2,-0.8090256648395849
+normalized profile variables only,log_duration_days,-0.939726462555772
+normalized profile variables only,observation_count,-0.7149504134196523
+normalized profile variables only,log_peak_growth_km2_per_day,-0.1988901638995473
+normalized profile variables only,front_loaded_fraction,0.9486000304607313
+normalized profile variables only,late_growth_fraction,-0.773365412053442
+normalized profile variables only,terminal_taper_fraction,0.6044697580139176
+normalized profile variables only,growth_entropy,-0.9156247787059905
+normalized profile variables only,width_p05,0.925657476796115
+normalized profile variables only,growth_p05,0.9645075431846127
+growth-share profile only,log_final_area_km2,-0.8386328285155191
+growth-share profile only,log_duration_days,-0.9617363536822404
+growth-share profile only,observation_count,-0.7371950867040218
+growth-share profile only,log_peak_growth_km2_per_day,-0.22254332324128895
+growth-share profile only,front_loaded_fraction,0.8750439216245879
+growth-share profile only,late_growth_fraction,-0.6950083551954916
+growth-share profile only,terminal_taper_fraction,0.7122021349794323
+growth-share profile only,growth_entropy,-0.9304871983052397
+growth-share profile only,width_p05,0.8386809872759413
+growth-share profile only,growth_p05,0.9838330358512883
+cumulative-width profile only,log_final_area_km2,-0.7222939760758674
+cumulative-width profile only,log_duration_days,-0.8554551627176682
+cumulative-width profile only,observation_count,-0.6424292886611568
+cumulative-width profile only,log_peak_growth_km2_per_day,-0.15578170411840256
+cumulative-width profile only,front_loaded_fraction,0.9819975420457223
+cumulative-width profile only,late_growth_fraction,-0.8246636547352846
+cumulative-width profile only,terminal_taper_fraction,0.4338857648360861
+cumulative-width profile only,growth_entropy,-0.8432516651745015
+cumulative-width profile only,width_p05,0.9768780027955655
+cumulative-width profile only,growth_p05,0.8833456175015759
+pulse timing taper entropy shape variables only,log_final_area_km2,-0.7542643485523582
+pulse timing taper entropy shape variables only,log_duration_days,-0.8823257653840709
+pulse timing taper entropy shape variables only,observation_count,-0.6399182835831853
+pulse timing taper entropy shape variables only,log_peak_growth_km2_per_day,-0.17721754384794544
+pulse timing taper entropy shape variables only,front_loaded_fraction,0.9344973052645723
+pulse timing taper entropy shape variables only,late_growth_fraction,-0.844010296438268
+pulse timing taper entropy shape variables only,terminal_taper_fraction,0.552447337968291
+pulse timing taper entropy shape variables only,growth_entropy,-0.9069684866076845
+pulse timing taper entropy shape variables only,width_p05,0.9200608874289423
+pulse timing taper entropy shape variables only,growth_p05,0.9070792417517393
+one representative per correlated cluster,log_final_area_km2,-0.9110650011903865
+one representative per correlated cluster,log_duration_days,-0.9329187747528158
+one representative per correlated cluster,observation_count,-0.83057460387745
+one representative per correlated cluster,log_peak_growth_km2_per_day,-0.38974163350108
+one representative per correlated cluster,front_loaded_fraction,0.8525589973767239
+one representative per correlated cluster,late_growth_fraction,-0.6121512373751277
+one representative per correlated cluster,terminal_taper_fraction,0.7538832769193671
+one representative per correlated cluster,growth_entropy,-0.7975383185735626
+one representative per correlated cluster,width_p05,0.8310664306195631
+one representative per correlated cluster,growth_p05,0.8996661744686612
+interpolated profile features removed,log_final_area_km2,-0.8495281528939854
+interpolated profile features removed,log_duration_days,-0.9530126823147825
+interpolated profile features removed,observation_count,-0.7769394700090746
+interpolated profile features removed,log_peak_growth_km2_per_day,-0.2534983126275325
+interpolated profile features removed,front_loaded_fraction,0.913607781203936
+interpolated profile features removed,late_growth_fraction,-0.7387275399807234
+interpolated profile features removed,terminal_taper_fraction,0.668650973421413
+interpolated profile features removed,growth_entropy,-0.8899337100137676
+interpolated profile features removed,width_p05,0.8907724255141043
+interpolated profile features removed,growth_p05,0.9428474444314454
+summary features removed retaining profiles,log_final_area_km2,-0.8090256648395849
+summary features removed retaining profiles,log_duration_days,-0.939726462555772
+summary features removed retaining profiles,observation_count,-0.7149504134196523
+summary features removed retaining profiles,log_peak_growth_km2_per_day,-0.1988901638995473
+summary features removed retaining profiles,front_loaded_fraction,0.9486000304607313
+summary features removed retaining profiles,late_growth_fraction,-0.773365412053442
+summary features removed retaining profiles,terminal_taper_fraction,0.6044697580139176
+summary features removed retaining profiles,growth_entropy,-0.9156247787059905
+summary features removed retaining profiles,width_p05,0.925657476796115
+summary features removed retaining profiles,growth_p05,0.9645075431846127
+profiles normalized independently of final size,log_final_area_km2,-0.8090256648395849
+profiles normalized independently of final size,log_duration_days,-0.939726462555772
+profiles normalized independently of final size,observation_count,-0.7149504134196523
+profiles normalized independently of final size,log_peak_growth_km2_per_day,-0.1988901638995473
+profiles normalized independently of final size,front_loaded_fraction,0.9486000304607313
+profiles normalized independently of final size,late_growth_fraction,-0.773365412053442
+profiles normalized independently of final size,terminal_taper_fraction,0.6044697580139176
+profiles normalized independently of final size,growth_entropy,-0.9156247787059905
+profiles normalized independently of final size,width_p05,0.925657476796115
+profiles normalized independently of final size,growth_p05,0.9645075431846127
+duration >= 2 days,log_final_area_km2,-0.7187226871173035
+duration >= 2 days,log_duration_days,-0.7641906748240912
+duration >= 2 days,observation_count,-0.7567583253331168
+duration >= 2 days,log_peak_growth_km2_per_day,-0.3926241401759
+duration >= 2 days,front_loaded_fraction,0.7249126325076504
+duration >= 2 days,late_growth_fraction,0.15138959808344718
+duration >= 2 days,terminal_taper_fraction,0.32706864053723744
+duration >= 2 days,growth_entropy,0.22411337053707872
+duration >= 2 days,width_p05,0.686553104980671
+duration >= 2 days,growth_p05,0.7358871996911587
+duration >= 4 days,log_final_area_km2,-0.7567772824134408
+duration >= 4 days,log_duration_days,-0.7378341737201739
+duration >= 4 days,observation_count,-0.7719277448426186
+duration >= 4 days,log_peak_growth_km2_per_day,-0.5710243405832651
+duration >= 4 days,front_loaded_fraction,0.6380462620478863
+duration >= 4 days,late_growth_fraction,0.15661828297268504
+duration >= 4 days,terminal_taper_fraction,0.38630561395544577
+duration >= 4 days,growth_entropy,0.2507681688648706
+duration >= 4 days,width_p05,0.6106509536710124
+duration >= 4 days,growth_p05,0.6852184658624876
+duration >= 8 days,log_final_area_km2,-0.6187824053342653
+duration >= 8 days,log_duration_days,-0.6163212448761334
+duration >= 8 days,observation_count,-0.7004193060689662
+duration >= 8 days,log_peak_growth_km2_per_day,-0.50430845004775
+duration >= 8 days,front_loaded_fraction,0.6631536217698893
+duration >= 8 days,late_growth_fraction,-0.254616896913047
+duration >= 8 days,terminal_taper_fraction,0.1883895153424967
+duration >= 8 days,growth_entropy,0.14381979868284012
+duration >= 8 days,width_p05,0.6628635484287403
+duration >= 8 days,growth_p05,0.4502264926895988
+duration >= 10 days,log_final_area_km2,-0.8736155680637917
+duration >= 10 days,log_duration_days,-0.650075829337113
+duration >= 10 days,observation_count,-0.8314807433140536
+duration >= 10 days,log_peak_growth_km2_per_day,-0.7916433592163974
+duration >= 10 days,front_loaded_fraction,0.057874279059330756
+duration >= 10 days,late_growth_fraction,0.3758079344749104
+duration >= 10 days,terminal_taper_fraction,0.628604890857126
+duration >= 10 days,growth_entropy,0.3522164308190397
+duration >= 10 days,width_p05,0.06596212141435932
+duration >= 10 days,growth_p05,0.36149418824249174

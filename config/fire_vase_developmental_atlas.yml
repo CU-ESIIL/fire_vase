@@ -1,0 +1,46 @@
+activity_metric: newly_added_area_km2
+secondary_activity_metric: equivalent_radius_change_km
+pulse_threshold:
+  fixed_abs_km2: 0.10
+  within_fire_percentile: 0.75
+  fraction_of_peak: 0.25
+  prominence_fraction_of_peak: 0.20
+minimum_active_observations: 2
+quiescence_length: 2
+relative_age_bins: 21
+lag_window: 3
+profile_lag_window: 3
+clustering_methods:
+  - hierarchical
+candidate_clusters:
+  - 2
+  - 3
+  - 4
+climate_variables:
+  tmmx:
+    label: maximum temperature
+    output_name: tmmx_c
+    units: C
+  tmmn:
+    label: minimum temperature
+    output_name: tmmn_c
+    units: C
+  vpd:
+    label: vapor pressure deficit
+    output_name: vpd_kpa
+    units: kPa
+  vs:
+    label: wind speed
+    output_name: wind_speed_m_s
+    units: m/s
+outlier_sensitivity:
+  - all fires
+  - without largest fire
+  - without largest three fires
+state_thresholds:
+  major_fraction_of_peak: 0.50
+  active_fraction_of_peak: 0.25
+figure:
+  dpi: 180
+  cmap_geometry: plasma
+  cmap_climate: viridis

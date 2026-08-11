@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>__TITLE__</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      overflow: hidden;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    :root {
+      --scale-x: __SCALE_X__;
+      --scale-y: __SCALE_Y__;
+      --scale-z: __SCALE_Z__;
+    }
+    #viewer-container {
+      position: fixed;
+      inset: 0;
+      background: #000;
+      touch-action: none;
+    }
+    canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    #overlay-labels {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      pointer-events: none;
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    }
+    #overlay-labels .label {
+      margin-bottom: 6px;
+    }
+    #colorbar {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
+      height: 14px;
+      border: 1px solid #444;
+      background: linear-gradient(
+        to right,
+        #67001f,
+        #b2182b,
+        #d6604d,
+        #f4a582,
+        #fddbc7,
+        #d1e5f0,
+        #92c5de,
+        #4393c3,
+        #2166ac,
+        #053061
+      );
+    }
+    #colorbar-labels {
+      position: absolute;
+      bottom: 26px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div id="viewer-container">
+    <canvas id="viewer-canvas"></canvas>
+    <div id="overlay-labels">
+      <div class="label">X</div>
+      <div class="label">Y</div>
+      <div class="label">Time</div>
+    </div>
+    <div id="colorbar"></div>
+    <div id="colorbar-labels">
+      <div id="colorbar-min">__COLORBAR_MIN__</div>
+      <div id="colorbar-max">__COLORBAR_MAX__</div>
+    </div>
+  </div>
+
+  __CD_DRIFT_CENTER_JS__
+  <!-- Minimal embedded three-like renderer (self contained, no CDN) -->
+  <script>
+    // Utility math helpers
+    function createPerspectiveMatrix(fov, aspect, near, far) {
+      const f = 1.0 / Math.tan((fov * Math.PI) / 360.0);
+      const nf = 1 / (near - far);
+      return [
+        f / aspect, 0, 0, 0,
+        0, f, 0, 0,
+        0, 0, (far + near) * nf, -1,
+        0, 0, (2 * far * near) * nf, 0,
+      ];
+    }
+
+    function lookAt(eye, target, up) {
+      const z0 = eye[0] - target[0];
+      const z1 = eye[1] - target[1];
+      const z2 = eye[2] - target[2];
+      let len = Math.hypot(z0, z1, z2);
+      const zx = z0 / len;
+      const zy = z1 / len;
+      const zz = z2 / len;
+
+      let x0 = up[1] * zz - up[2] * zy;
+      let x1 = up[2] * zx - up[0] * zz;
+      let x2 = up[0] * zy - up[1] * zx;
+      len = Math.hypot(x0, x1, x2);
+      x0 /= len; x1 /= len; x2 /= len;
+
+      const y0 = zy * x2 - zz * x1;
+      const y1 = zz * x0 - zx * x2;
+      const y2 = zx * x1 - zy * x0;
+
+      return [
+        x0, y0, zx, 0,
+        x1, y1, zy, 0,
+        x2, y2, zz, 0,
+        -(x0 * eye[0] + x1 * eye[1] + x2 * eye[2]),
+        -(y0 * eye[0] + y1 * eye[1] + y2 * eye[2]),
+        -(zx * eye[0] + zy * eye[1] + zz * eye[2]),
+        1,
+      ];
+    }
+
+    function multiplyMatrices(a, b) {
+      const out = new Array(16).fill(0);
+      for (let i = 0; i < 4; i++) {
+        for (let j = 0; j < 4; j++) {
+          out[i * 4 + j] =
+            a[i * 4 + 0] * b[0 * 4 + j] +
+            a[i * 4 + 1] * b[1 * 4 + j] +
+            a[i * 4 + 2] * b[2 * 4 + j] +
+            a[i * 4 + 3] * b[3 * 4 + j];
+        }
+      }
+      return out;
+    }
+
+    function rotationMatrix(yaw, pitch) {
+      const cy = Math.cos(yaw);
+      const sy = Math.sin(yaw);
+      const cp = Math.cos(pitch);
+      const sp = Math.sin(pitch);
+
+      return [
+        cy, sy * sp, sy * cp, 0,
+        0, cp, -sp, 0,
+        -sy, cy * sp, cy * cp, 0,
+        0, 0, 0, 1,
+      ];
+    }
+
+    function createShader(gl, type, source) {
+      const shader = gl.createShader(type);
+      gl.shaderSource(shader, source);
+      gl.compileShader(shader);
+      if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+        console.error(gl.getShaderInfoLog(shader));
+        gl.deleteShader(shader);
+        return null;
+      }
+      return shader;
+    }
+
+    function createProgram(gl, vsSource, fsSource) {
+      const program = gl.createProgram();
+      const vs = createShader(gl, gl.VERTEX_SHADER, vsSource);
+      const fs = createShader(gl, gl.FRAGMENT_SHADER, fsSource);
+      gl.attachShader(program, vs);
+      gl.attachShader(program, fs);
+      gl.linkProgram(program);
+      if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+        console.error(gl.getProgramInfoLog(program));
+        return null;
+      }
+      return program;
+    }
+
+    function createTexture(gl, image) {
+      const texture = gl.createTexture();
+      gl.bindTexture(gl.TEXTURE_2D, texture);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+      gl.texImage2D(
+        gl.TEXTURE_2D,
+        0,
+        gl.RGBA,
+        gl.RGBA,
+        gl.UNSIGNED_BYTE,
+        image
+      );
+      return texture;
+    }
+
+    function init() {
+      const canvas = document.getElementById('viewer-canvas');
+      const container = document.getElementById('viewer-container');
+      const gl = canvas.getContext('webgl');
+      if (!gl) {
+        alert('WebGL not supported');
+        return;
+      }
+
+      const vertexSource = `
+        attribute vec3 position;
+        attribute vec2 uv;
+        attribute float faceIndex;
+        uniform mat4 mvp;
+        varying vec2 vUv;
+        varying float vFace;
+        void main() {
+          vUv = uv;
+          vFace = faceIndex;
+          gl_Position = mvp * vec4(position, 1.0);
+        }
+      `;
+
+      const fragmentSource = `
+        precision mediump float;
+        varying vec2 vUv;
+        varying float vFace;
+        uniform sampler2D tex0;
+        uniform sampler2D tex1;
+        uniform sampler2D tex2;
+        uniform sampler2D tex3;
+        void main() {
+          if (vFace < 0.5) {
+            gl_FragColor = texture2D(tex0, vUv);
+          } else if (vFace < 1.5) {
+            gl_FragColor = texture2D(tex1, vUv);
+          } else if (vFace < 2.5) {
+            gl_FragColor = texture2D(tex2, vUv);
+          } else {
+            gl_FragColor = texture2D(tex3, vUv);
+          }
+        }
+      `;
+
+      const program = createProgram(gl, vertexSource, fragmentSource);
+      gl.useProgram(program);
+
+      const positionLoc = gl.getAttribLocation(program, 'position');
+      const uvLoc = gl.getAttribLocation(program, 'uv');
+      const faceLoc = gl.getAttribLocation(program, 'faceIndex');
+      const mvpLoc = gl.getUniformLocation(program, 'mvp');
+      const tex0Loc = gl.getUniformLocation(program, 'tex0');
+      const tex1Loc = gl.getUniformLocation(program, 'tex1');
+      const tex2Loc = gl.getUniformLocation(program, 'tex2');
+      const tex3Loc = gl.getUniformLocation(program, 'tex3');
+
+      const cubeData = createCubeBuffers(gl);
+
+      const edgeProgram = createProgram(gl, `
+        attribute vec3 position;
+        uniform mat4 mvp;
+        void main() {
+          gl_Position = mvp * vec4(position, 1.0);
+        }
+      `, `
+        precision mediump float;
+        uniform vec4 color;
+        void main() { gl_FragColor = color; }
+      `);
+
+      const edgePosLoc = gl.getAttribLocation(edgeProgram, 'position');
+      const edgeMvpLoc = gl.getUniformLocation(edgeProgram, 'mvp');
+      const edgeColorLoc = gl.getUniformLocation(edgeProgram, 'color');
+      const edgeBuffer = createEdgeBuffer(gl);
+
+      const textures = {};
+      const images = [
+        '__TOP_TEXTURE__',
+        '__FRONT_TEXTURE__',
+        '__SIDE_TEXTURE__'
+      ];
+
+      const fillerCanvas = document.createElement('canvas');
+      fillerCanvas.width = 2;
+      fillerCanvas.height = 2;
+      const fillerCtx = fillerCanvas.getContext('2d');
+      fillerCtx.fillStyle = '#333';
+      fillerCtx.fillRect(0, 0, 2, 2);
+
+      const promises = images.map((data) => loadImage(`data:image/png;base64,${data}`));
+      promises.push(Promise.resolve(fillerCanvas));
+
+      Promise.all(promises).then((imgs) => {
+        textures.tex0 = createTexture(gl, imgs[0]);
+        textures.tex1 = createTexture(gl, imgs[1]);
+        textures.tex2 = createTexture(gl, imgs[2]);
+        textures.tex3 = createTexture(gl, imgs[3]);
+        render();
+      });
+
+      let yaw = 0.7;
+      let pitch = 0.6;
+      let radius = 3.0;
+      let dragging = false;
+      let lastX = 0;
+      let lastY = 0;
+
+      container.addEventListener('pointerdown', (e) => {
+        dragging = true;
+        lastX = e.clientX;
+        lastY = e.clientY;
+        container.setPointerCapture(e.pointerId);
+      });
+      container.addEventListener('pointerup', (e) => {
+        dragging = false;
+        container.releasePointerCapture(e.pointerId);
+      });
+      container.addEventListener('pointermove', (e) => {
+        if (!dragging) return;
+        const dx = e.clientX - lastX;
+        const dy = e.clientY - lastY;
+        lastX = e.clientX;
+        lastY = e.clientY;
+        yaw += dx * 0.005;
+        pitch += dy * 0.005;
+        pitch = Math.max(-Math.PI / 2 + 0.1, Math.min(Math.PI / 2 - 0.1, pitch));
+      });
+      container.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        radius += e.deltaY * 0.01;
+        radius = Math.max(1.5, Math.min(6.0, radius));
+      }, { passive: false });
+
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+
+      function resizeCanvas() {
+        const rect = container.getBoundingClientRect();
+        canvas.width = rect.width * window.devicePixelRatio;
+        canvas.height = rect.height * window.devicePixelRatio;
+        gl.viewport(0, 0, canvas.width, canvas.height);
+      }
+
+      function render() {
+        requestAnimationFrame(render);
+        const rect = canvas.getBoundingClientRect();
+        const aspect = rect.width / rect.height;
+        const projection = createPerspectiveMatrix(45, aspect, 0.1, 100);
+
+        const rot = rotationMatrix(yaw, pitch);
+        const eye = [
+          rot[8] * radius,
+          rot[9] * radius,
+          rot[10] * radius,
+        ];
+        const view = lookAt(eye, [0, 0, 0], [0, 1, 0]);
+        const mvp = multiplyMatrices(projection, view);
+
+        gl.clearColor(0, 0, 0, 1);
+        gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+        gl.enable(gl.DEPTH_TEST);
+
+        gl.useProgram(program);
+        gl.uniformMatrix4fv(mvpLoc, false, new Float32Array(mvp));
+
+        gl.bindBuffer(gl.ARRAY_BUFFER, cubeData.position);
+        gl.enableVertexAttribArray(positionLoc);
+        gl.vertexAttribPointer(positionLoc, 3, gl.FLOAT, false, 0, 0);
+
+        gl.bindBuffer(gl.ARRAY_BUFFER, cubeData.uv);
+        gl.enableVertexAttribArray(uvLoc);
+        gl.vertexAttribPointer(uvLoc, 2, gl.FLOAT, false, 0, 0);
+
+        gl.bindBuffer(gl.ARRAY_BUFFER, cubeData.faceIndex);
+        gl.enableVertexAttribArray(faceLoc);
+        gl.vertexAttribPointer(faceLoc, 1, gl.FLOAT, false, 0, 0);
+
+        gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, cubeData.indices);
+
+        gl.activeTexture(gl.TEXTURE0);
+        gl.bindTexture(gl.TEXTURE_2D, textures.tex0);
+        gl.uniform1i(tex0Loc, 0);
+        gl.activeTexture(gl.TEXTURE1);
+        gl.bindTexture(gl.TEXTURE_2D, textures.tex1);
+        gl.uniform1i(tex1Loc, 1);
+        gl.activeTexture(gl.TEXTURE2);
+        gl.bindTexture(gl.TEXTURE_2D, textures.tex2);
+        gl.uniform1i(tex2Loc, 2);
+        gl.activeTexture(gl.TEXTURE3);
+        gl.bindTexture(gl.TEXTURE_2D, textures.tex3);
+        gl.uniform1i(tex3Loc, 3);
+
+        gl.drawElements(gl.TRIANGLES, 36, gl.UNSIGNED_SHORT, 0);
+
+        gl.useProgram(edgeProgram);
+        gl.uniformMatrix4fv(edgeMvpLoc, false, new Float32Array(mvp));
+        gl.uniform4f(edgeColorLoc, 1.0, 1.0, 1.0, 0.4);
+        gl.bindBuffer(gl.ARRAY_BUFFER, edgeBuffer);
+        gl.enableVertexAttribArray(edgePosLoc);
+        gl.vertexAttribPointer(edgePosLoc, 3, gl.FLOAT, false, 0, 0);
+        gl.drawArrays(gl.LINES, 0, 24);
+      }
+    }
+
+    function loadImage(src) {
+      return new Promise((resolve) => {
+        const img = new Image();
+        img.onload = () => resolve(img);
+        img.src = src;
+      });
+    }
+
+    function getScales() {
+      const rootStyles = getComputedStyle(document.documentElement);
+      return {
+        halfX: 0.5 * parseFloat(rootStyles.getPropertyValue('--scale-x')),
+        halfY: 0.5 * parseFloat(rootStyles.getPropertyValue('--scale-y')),
+        halfZ: 0.5 * parseFloat(rootStyles.getPropertyValue('--scale-z')),
+      };
+    }
+
+    function createCubeBuffers(gl) {
+      const { halfX, halfY, halfZ } = getScales();
+
+      const positions = [
+        // Top (+Y)
+        -halfX, halfY, halfZ,
+         halfX, halfY, halfZ,
+         halfX, halfY, -halfZ,
+        -halfX, halfY, -halfZ,
+        // Bottom (-Y)
+        -halfX, -halfY, -halfZ,
+         halfX, -halfY, -halfZ,
+         halfX, -halfY, halfZ,
+        -halfX, -halfY, halfZ,
+        // Front (+Z)
+        -halfX, halfY, halfZ,
+         halfX, halfY, halfZ,
+         halfX, -halfY, halfZ,
+        -halfX, -halfY, halfZ,
+        // Back (-Z)
+        halfX, halfY, -halfZ,
+        -halfX, halfY, -halfZ,
+        -halfX, -halfY, -halfZ,
+         halfX, -halfY, -halfZ,
+        // Right (+X)
+        halfX, halfY, halfZ,
+        halfX, halfY, -halfZ,
+        halfX, -halfY, -halfZ,
+        halfX, -halfY, halfZ,
+        // Left (-X)
+        -halfX, halfY, -halfZ,
+        -halfX, halfY, halfZ,
+        -halfX, -halfY, halfZ,
+        -halfX, -halfY, -halfZ,
+      ];
+
+      const uvs = [];
+      for (let i = 0; i < 6; i++) {
+        uvs.push(0, 0, 1, 0, 1, 1, 0, 1);
+      }
+
+      const faces = [
+        0, 0, 0, 0,  // top
+        3, 3, 3, 3,  // bottom filler
+        1, 1, 1, 1,  // front
+        3, 3, 3, 3,  // back filler
+        2, 2, 2, 2,  // right (side)
+        3, 3, 3, 3,  // left filler
+      ];
+
+      const indices = [];
+      for (let i = 0; i < 6; i++) {
+        const offset = i * 4;
+        indices.push(
+          offset, offset + 1, offset + 2,
+          offset, offset + 2, offset + 3
+        );
+      }
+
+      const posBuffer = gl.createBuffer();
+      gl.bindBuffer(gl.ARRAY_BUFFER, posBuffer);
+      gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(positions), gl.STATIC_DRAW);
+
+      const uvBuffer = gl.createBuffer();
+      gl.bindBuffer(gl.ARRAY_BUFFER, uvBuffer);
+      gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(uvs), gl.STATIC_DRAW);
+
+      const faceBuffer = gl.createBuffer();
+      gl.bindBuffer(gl.ARRAY_BUFFER, faceBuffer);
+      gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(faces), gl.STATIC_DRAW);
+
+      const indexBuffer = gl.createBuffer();
+      gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, indexBuffer);
+      gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, new Uint16Array(indices), gl.STATIC_DRAW);
+
+      return {
+        position: posBuffer,
+        uv: uvBuffer,
+        faceIndex: faceBuffer,
+        indices: indexBuffer,
+      };
+    }
+
+    function createEdgeBuffer(gl) {
+      const { halfX, halfY, halfZ } = getScales();
+      const edges = [
+        // Top square
+        -halfX, halfY, halfZ,   halfX, halfY, halfZ,
+         halfX, halfY, halfZ,   halfX, halfY, -halfZ,
+         halfX, halfY, -halfZ, -halfX, halfY, -halfZ,
+        -halfX, halfY, -halfZ, -halfX, halfY, halfZ,
+        // Bottom square
+        -halfX, -halfY, halfZ,  halfX, -halfY, halfZ,
+         halfX, -halfY, halfZ,  halfX, -halfY, -halfZ,
+         halfX, -halfY, -halfZ,-halfX, -halfY, -halfZ,
+        -halfX, -halfY, -halfZ,-halfX, -halfY, halfZ,
+        // Verticals
+        -halfX, -halfY, halfZ, -halfX, halfY, halfZ,
+         halfX, -halfY, halfZ,  halfX, halfY, halfZ,
+         halfX, -halfY, -halfZ, halfX, halfY, -halfZ,
+        -halfX, -halfY, -halfZ,-halfX, halfY, -halfZ,
+      ];
+
+      const buffer = gl.createBuffer();
+      gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+      gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(edges), gl.STATIC_DRAW);
+      return buffer;
+    }
+
+    window.onload = init;
+  </script>
+</body>
+</html>

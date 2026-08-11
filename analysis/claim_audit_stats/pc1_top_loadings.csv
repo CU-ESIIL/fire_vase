@@ -1,0 +1,681 @@
+feature_set,pc,rank,feature,loading
+full current feature set,PC1,1,growth_p02,0.19845809099518186
+full current feature set,PC1,2,growth_p03,0.19822811033697207
+full current feature set,PC1,3,growth_p01,0.19762876576602642
+full current feature set,PC1,4,growth_p04,0.19729699370300294
+full current feature set,PC1,5,growth_p05,0.19501958379075437
+full current feature set,PC1,6,growth_p00,0.19467648890544584
+full current feature set,PC1,7,growth_p06,0.19447537793859695
+full current feature set,PC1,8,growth_p07,0.19287249673755116
+full current feature set,PC2,1,terminal_taper_fraction,0.3521255062467222
+full current feature set,PC2,2,log_peak_growth_km2_per_day,-0.3071987772439911
+full current feature set,PC2,3,late_growth_fraction,0.2876441650605834
+full current feature set,PC2,4,observation_count,-0.2711150725494036
+full current feature set,PC2,5,reactivation_count,-0.26631490692770743
+full current feature set,PC2,6,pulse_count,-0.2663149069276505
+full current feature set,PC2,7,log_final_area_km2,-0.2521572285543529
+full current feature set,PC2,8,developmental_velocity,0.25026733729444317
+full current feature set,PC3,1,reactivation_count,-0.4349289495598208
+full current feature set,PC3,2,pulse_count,-0.43492894955958816
+full current feature set,PC3,3,peak_timing,-0.25147621467766823
+full current feature set,PC3,4,growth_p10,-0.22932631753811666
+full current feature set,PC3,5,terminal_taper_fraction,-0.2187148884753492
+full current feature set,PC3,6,growth_p09,-0.211368021167263
+full current feature set,PC3,7,growth_entropy,0.19425287120830556
+full current feature set,PC3,8,growth_p08,-0.18961322785590323
+full current feature set,PC4,1,log_peak_growth_km2_per_day,-0.5178719368532073
+full current feature set,PC4,2,log_slenderness_days_per_width,0.43572232192890914
+full current feature set,PC4,3,reactivation_count,0.3388675723556673
+full current feature set,PC4,4,pulse_count,0.3388675723554795
+full current feature set,PC4,5,developmental_acceleration,-0.2904834923546016
+full current feature set,PC4,6,peak_timing,-0.27781939618957735
+full current feature set,PC4,7,log_final_area_km2,-0.18701343094341474
+full current feature set,PC4,8,developmental_velocity,-0.11814434893269372
+full current feature set,PC5,1,developmental_acceleration,-0.5827185976478577
+full current feature set,PC5,2,log_peak_growth_km2_per_day,0.3978757066408757
+full current feature set,PC5,3,log_slenderness_days_per_width,-0.3195484484248236
+full current feature set,PC5,4,peak_timing,-0.23631464785663353
+full current feature set,PC5,5,late_growth_fraction,0.2331675874515908
+full current feature set,PC5,6,growth_entropy,0.1678101047079471
+full current feature set,PC5,7,growth_p05,-0.1545431102368531
+full current feature set,PC5,8,width_p02,0.1534216719791224
+scale variables removed,PC1,1,growth_p02,0.20181363917908207
+scale variables removed,PC1,2,growth_p03,0.20156895794679916
+scale variables removed,PC1,3,growth_p01,0.20095811013387122
+scale variables removed,PC1,4,growth_p04,0.20058449258135233
+scale variables removed,PC1,5,growth_p05,0.19821457004268903
+scale variables removed,PC1,6,growth_p00,0.19794229030570398
+scale variables removed,PC1,7,growth_p06,0.1975833073056569
+scale variables removed,PC1,8,growth_p07,0.19587720410730322
+scale variables removed,PC2,1,terminal_taper_fraction,0.371942784051277
+scale variables removed,PC2,2,reactivation_count,-0.30489801154271584
+scale variables removed,PC2,3,pulse_count,-0.3048980115426912
+scale variables removed,PC2,4,late_growth_fraction,0.2975737810340827
+scale variables removed,PC2,5,observation_count,-0.28974566026289206
+scale variables removed,PC2,6,developmental_velocity,0.2657009128447817
+scale variables removed,PC2,7,width_p09,-0.26319985631601045
+scale variables removed,PC2,8,width_p08,-0.24685357504206237
+scale variables removed,PC3,1,reactivation_count,0.5213316065372176
+scale variables removed,PC3,2,pulse_count,0.5213316065371192
+scale variables removed,PC3,3,terminal_taper_fraction,0.22302594715513557
+scale variables removed,PC3,4,observation_count,0.2116275026957001
+scale variables removed,PC3,5,growth_p10,0.20359781132001412
+scale variables removed,PC3,6,growth_p09,0.1852640182273864
+scale variables removed,PC3,7,developmental_acceleration,-0.16588966538586022
+scale variables removed,PC3,8,growth_p08,0.16315315243505607
+scale variables removed,PC4,1,developmental_acceleration,0.598874412373989
+scale variables removed,PC4,2,peak_timing,0.41567988500952413
+scale variables removed,PC4,3,growth_entropy,-0.24836592610424155
+scale variables removed,PC4,4,late_growth_fraction,-0.20388075527641436
+scale variables removed,PC4,5,width_p01,-0.1869686038004188
+scale variables removed,PC4,6,width_p02,-0.1852325345202919
+scale variables removed,PC4,7,width_p00,-0.18233791949339545
+scale variables removed,PC4,8,growth_p06,0.16973266266436626
+scale variables removed,PC5,1,developmental_velocity,-0.5590643222955214
+scale variables removed,PC5,2,developmental_acceleration,-0.3481797593752688
+scale variables removed,PC5,3,reactivation_count,-0.3065231244662088
+scale variables removed,PC5,4,pulse_count,-0.30652312446604246
+scale variables removed,PC5,5,observation_count,0.28764223630382185
+scale variables removed,PC5,6,late_growth_fraction,-0.28428513428611646
+scale variables removed,PC5,7,growth_entropy,-0.20377385316515195
+scale variables removed,PC5,8,width_p05,-0.18711966318878465
+final area removed,PC1,1,growth_p02,0.19988655748169845
+final area removed,PC1,2,growth_p03,0.19966113773377103
+final area removed,PC1,3,growth_p01,0.1990273305459704
+final area removed,PC1,4,growth_p04,0.19870672419797025
+final area removed,PC1,5,growth_p05,0.19638199969673217
+final area removed,PC1,6,growth_p00,0.1960308967310896
+final area removed,PC1,7,growth_p06,0.19578645049360727
+final area removed,PC1,8,growth_p07,0.1941242987754948
+final area removed,PC2,1,terminal_taper_fraction,-0.36876811703449597
+final area removed,PC2,2,late_growth_fraction,-0.2917120867116979
+final area removed,PC2,3,log_peak_growth_km2_per_day,0.2867362629016184
+final area removed,PC2,4,pulse_count,0.28426087049937654
+final area removed,PC2,5,reactivation_count,0.28426087049936105
+final area removed,PC2,6,observation_count,0.2830268638395773
+final area removed,PC2,7,width_p09,0.2555423346196879
+final area removed,PC2,8,developmental_velocity,-0.25432343256036505
+final area removed,PC3,1,pulse_count,0.48778403006597615
+final area removed,PC3,2,reactivation_count,0.487784030065916
+final area removed,PC3,3,terminal_taper_fraction,0.21562709959291107
+final area removed,PC3,4,growth_p10,0.21509982590315513
+final area removed,PC3,5,peak_timing,0.2083134142314266
+final area removed,PC3,6,observation_count,0.20247661536436545
+final area removed,PC3,7,growth_p09,0.19716954520973412
+final area removed,PC3,8,growth_entropy,-0.17898751069983276
+final area removed,PC4,1,log_peak_growth_km2_per_day,-0.5716857122899622
+final area removed,PC4,2,log_slenderness_days_per_width,0.47157093400952577
+final area removed,PC4,3,peak_timing,-0.3130990415437754
+final area removed,PC4,4,developmental_acceleration,-0.3104735344307782
+final area removed,PC4,5,pulse_count,0.24210734420959046
+final area removed,PC4,6,reactivation_count,0.24210734420955698
+final area removed,PC4,7,growth_entropy,0.13383822940048876
+final area removed,PC4,8,log_duration_days,0.1111428465718365
+final area removed,PC5,1,developmental_acceleration,0.5653616246914984
+final area removed,PC5,2,log_peak_growth_km2_per_day,-0.4302649553123336
+final area removed,PC5,3,log_slenderness_days_per_width,0.34380001179559344
+final area removed,PC5,4,late_growth_fraction,-0.2297742397918216
+final area removed,PC5,5,peak_timing,0.22700713770069672
+final area removed,PC5,6,growth_entropy,-0.16548923163201754
+final area removed,PC5,7,growth_p05,0.15381298010907718
+final area removed,PC5,8,growth_p06,0.15206627739284723
+duration and observation count removed,PC1,1,growth_p02,0.20397131894093237
+duration and observation count removed,PC1,2,growth_p03,0.20370260482355174
+duration and observation count removed,PC1,3,growth_p01,0.20311878890236493
+duration and observation count removed,PC1,4,growth_p04,0.2026831974873846
+duration and observation count removed,PC1,5,growth_p05,0.2002584091139453
+duration and observation count removed,PC1,6,growth_p00,0.2000776900210684
+duration and observation count removed,PC1,7,growth_p06,0.1995935845635051
+duration and observation count removed,PC1,8,growth_entropy,-0.19801079356840506
+duration and observation count removed,PC2,1,terminal_taper_fraction,0.38825177494344065
+duration and observation count removed,PC2,2,log_peak_growth_km2_per_day,-0.3404629645331075
+duration and observation count removed,PC2,3,late_growth_fraction,0.2861078672601274
+duration and observation count removed,PC2,4,log_final_area_km2,-0.27153293074450746
+duration and observation count removed,PC2,5,width_p09,-0.2520986186539765
+duration and observation count removed,PC2,6,pulse_count,-0.2467552906458466
+duration and observation count removed,PC2,7,reactivation_count,-0.24675529064536997
+duration and observation count removed,PC2,8,width_p08,-0.23759872193301174
+duration and observation count removed,PC3,1,pulse_count,-0.3791910733819351
+duration and observation count removed,PC3,2,reactivation_count,-0.3791910733807527
+duration and observation count removed,PC3,3,peak_timing,-0.30388258981393096
+duration and observation count removed,PC3,4,log_peak_growth_km2_per_day,-0.2962959842543659
+duration and observation count removed,PC3,5,log_slenderness_days_per_width,0.2790022078812388
+duration and observation count removed,PC3,6,growth_p10,-0.22432815647073975
+duration and observation count removed,PC3,7,growth_entropy,0.21905542232775674
+duration and observation count removed,PC3,8,growth_p09,-0.20983629113094543
+duration and observation count removed,PC4,1,pulse_count,-0.4764162565316907
+duration and observation count removed,PC4,2,reactivation_count,-0.47641625653010494
+duration and observation count removed,PC4,3,log_peak_growth_km2_per_day,0.4315118656679857
+duration and observation count removed,PC4,4,log_slenderness_days_per_width,-0.3724672706004057
+duration and observation count removed,PC4,5,developmental_acceleration,0.28423728275171056
+duration and observation count removed,PC4,6,peak_timing,0.22809074844194363
+duration and observation count removed,PC4,7,developmental_velocity,0.15439291614122203
+duration and observation count removed,PC4,8,log_final_area_km2,0.1366154750397741
+duration and observation count removed,PC5,1,developmental_acceleration,-0.588871932746716
+duration and observation count removed,PC5,2,log_peak_growth_km2_per_day,0.4048386780031588
+duration and observation count removed,PC5,3,log_slenderness_days_per_width,-0.32704272186698397
+duration and observation count removed,PC5,4,late_growth_fraction,0.23399507601900635
+duration and observation count removed,PC5,5,peak_timing,-0.22784363247498277
+duration and observation count removed,PC5,6,growth_entropy,0.1606734553159436
+duration and observation count removed,PC5,7,width_p02,0.15361550310966768
+duration and observation count removed,PC5,8,width_p01,0.15343700928865825
+all scale and duration variables removed,PC1,1,growth_p02,0.20750741439819134
+all scale and duration variables removed,PC1,2,growth_p03,0.2072209248751903
+all scale and duration variables removed,PC1,3,growth_p01,0.20662732570762976
+all scale and duration variables removed,PC1,4,growth_p04,0.20614083302488623
+all scale and duration variables removed,PC1,5,growth_p05,0.20361259250360117
+all scale and duration variables removed,PC1,6,growth_p00,0.20351889570164095
+all scale and duration variables removed,PC1,7,growth_p06,0.20284816035825295
+all scale and duration variables removed,PC1,8,growth_entropy,-0.20182495724874147
+all scale and duration variables removed,PC2,1,terminal_taper_fraction,0.419811295954686
+all scale and duration variables removed,PC2,2,late_growth_fraction,0.29613247381374963
+all scale and duration variables removed,PC2,3,reactivation_count,-0.27858646442209656
+all scale and duration variables removed,PC2,4,pulse_count,-0.27858646442208584
+all scale and duration variables removed,PC2,5,width_p09,-0.2704240261547322
+all scale and duration variables removed,PC2,6,width_p08,-0.256262490594957
+all scale and duration variables removed,PC2,7,developmental_velocity,0.2466189829999191
+all scale and duration variables removed,PC2,8,growth_p10,0.23024998979530956
+all scale and duration variables removed,PC3,1,reactivation_count,0.5915017310253262
+all scale and duration variables removed,PC3,2,pulse_count,0.5915017310253052
+all scale and duration variables removed,PC3,3,developmental_velocity,-0.17415300244913032
+all scale and duration variables removed,PC3,4,growth_p10,0.16749251801121773
+all scale and duration variables removed,PC3,5,terminal_taper_fraction,0.16588751486925346
+all scale and duration variables removed,PC3,6,growth_entropy,-0.15452796855188164
+all scale and duration variables removed,PC3,7,growth_p09,0.1526034107196958
+all scale and duration variables removed,PC3,8,developmental_acceleration,-0.14240333952592144
+all scale and duration variables removed,PC4,1,developmental_acceleration,-0.5988513222323107
+all scale and duration variables removed,PC4,2,peak_timing,-0.41761953990101625
+all scale and duration variables removed,PC4,3,growth_entropy,0.2526513669917408
+all scale and duration variables removed,PC4,4,late_growth_fraction,0.20623580765803315
+all scale and duration variables removed,PC4,5,width_p01,0.18654338830457914
+all scale and duration variables removed,PC4,6,width_p02,0.18502746239460482
+all scale and duration variables removed,PC4,7,width_p00,0.18192483370456436
+all scale and duration variables removed,PC4,8,growth_p06,-0.17241212229104044
+all scale and duration variables removed,PC5,1,developmental_velocity,0.6597392125444197
+all scale and duration variables removed,PC5,2,late_growth_fraction,0.3612378101728583
+all scale and duration variables removed,PC5,3,growth_entropy,0.20324780092225198
+all scale and duration variables removed,PC5,4,width_p07,0.19571381648476027
+all scale and duration variables removed,PC5,5,reactivation_count,0.1932007146562879
+all scale and duration variables removed,PC5,6,pulse_count,0.19320071465628025
+all scale and duration variables removed,PC5,7,width_p08,0.19153825206174485
+all scale and duration variables removed,PC5,8,width_p06,0.18931829333789613
+normalized profile variables only,PC1,1,growth_p02,0.23123678155200256
+normalized profile variables only,PC1,2,growth_p03,0.23112078390237373
+normalized profile variables only,PC1,3,growth_p04,0.230128381370953
+normalized profile variables only,PC1,4,growth_p01,0.23006379083529419
+normalized profile variables only,PC1,5,growth_p05,0.22755928373459755
+normalized profile variables only,PC1,6,growth_p06,0.2268353680848198
+normalized profile variables only,PC1,7,growth_p00,0.22641218560656237
+normalized profile variables only,PC1,8,growth_p07,0.22485319923378283
+normalized profile variables only,PC2,1,width_p09,-0.36942226204873496
+normalized profile variables only,PC2,2,width_p08,-0.3656541817280033
+normalized profile variables only,PC2,3,width_p07,-0.34532268393746324
+normalized profile variables only,PC2,4,growth_p10,0.34182489455959836
+normalized profile variables only,PC2,5,growth_p09,0.3092825926382455
+normalized profile variables only,PC2,6,width_p06,-0.3053208919694739
+normalized profile variables only,PC2,7,growth_p08,0.27067134872926596
+normalized profile variables only,PC2,8,width_p05,-0.25761135878367897
+normalized profile variables only,PC3,1,width_p02,0.34178161993582007
+normalized profile variables only,PC3,2,width_p01,0.3409359082952526
+normalized profile variables only,PC3,3,width_p00,0.33068923332128497
+normalized profile variables only,PC3,4,width_p09,-0.3287414890333251
+normalized profile variables only,PC3,5,width_p03,0.3065571578866563
+normalized profile variables only,PC3,6,width_p08,-0.29372480633668185
+normalized profile variables only,PC3,7,growth_p06,-0.23333610114688147
+normalized profile variables only,PC3,8,width_p04,0.22044717828333668
+normalized profile variables only,PC4,1,width_p05,-0.4248972207822485
+normalized profile variables only,PC4,2,width_p09,0.3832568426859342
+normalized profile variables only,PC4,3,width_p00,0.313851924334753
+normalized profile variables only,PC4,4,width_p04,-0.3076798387304877
+normalized profile variables only,PC4,5,width_p08,0.28309499599099447
+normalized profile variables only,PC4,6,growth_p00,0.27691492432123993
+normalized profile variables only,PC4,7,width_p06,-0.2697660678411299
+normalized profile variables only,PC4,8,width_p01,0.2338319058018112
+normalized profile variables only,PC5,1,width_p00,-0.36708659246631364
+normalized profile variables only,PC5,2,width_p03,0.33050196593271497
+normalized profile variables only,PC5,3,width_p09,0.3297804719870648
+normalized profile variables only,PC5,4,width_p06,-0.3147348289588841
+normalized profile variables only,PC5,5,growth_p05,-0.2986199821102917
+normalized profile variables only,PC5,6,growth_p06,-0.26338058906515177
+normalized profile variables only,PC5,7,width_p07,-0.25167400887729185
+normalized profile variables only,PC5,8,width_p04,0.2512715581610132
+growth-share profile only,PC1,1,growth_p06,0.3044349078916539
+growth-share profile only,PC1,2,growth_p04,0.3042824464066283
+growth-share profile only,PC1,3,growth_p07,0.3039399230015177
+growth-share profile only,PC1,4,growth_p03,0.30364712082323203
+growth-share profile only,PC1,5,growth_p05,0.30303527673866165
+growth-share profile only,PC1,6,growth_p08,0.30296540478983225
+growth-share profile only,PC1,7,growth_p02,0.3023834713910578
+growth-share profile only,PC1,8,growth_p09,0.3008552142409857
+growth-share profile only,PC2,1,growth_p00,0.44560225512749185
+growth-share profile only,PC2,2,growth_p10,-0.4078935673220426
+growth-share profile only,PC2,3,growth_p01,0.39067185604546645
+growth-share profile only,PC2,4,growth_p09,-0.3624300959581804
+growth-share profile only,PC2,5,growth_p02,0.32578423823879793
+growth-share profile only,PC2,6,growth_p08,-0.3106931184591527
+growth-share profile only,PC2,7,growth_p07,-0.2442012957843906
+growth-share profile only,PC2,8,growth_p03,0.23414277609936884
+growth-share profile only,PC3,1,growth_p05,0.49766205213489717
+growth-share profile only,PC3,2,growth_p00,-0.4144973188164405
+growth-share profile only,PC3,3,growth_p10,-0.39956169580663714
+growth-share profile only,PC3,4,growth_p04,0.3783849996013315
+growth-share profile only,PC3,5,growth_p06,0.30206162309368734
+growth-share profile only,PC3,6,growth_p09,-0.2624019247565094
+growth-share profile only,PC3,7,growth_p01,-0.2451581423179513
+growth-share profile only,PC3,8,growth_p03,0.1866978455777774
+growth-share profile only,PC4,1,growth_p03,-0.461530253964517
+growth-share profile only,PC4,2,growth_p00,0.3941656233405785
+growth-share profile only,PC4,3,growth_p07,0.39011777972070744
+growth-share profile only,PC4,4,growth_p06,0.3765341495264458
+growth-share profile only,PC4,5,growth_p10,-0.36958720256452593
+growth-share profile only,PC4,6,growth_p04,-0.29295378420552737
+growth-share profile only,PC4,7,growth_p02,-0.24118183962782266
+growth-share profile only,PC4,8,growth_p09,-0.1337399835965496
+growth-share profile only,PC5,1,growth_p05,0.46188906025998483
+growth-share profile only,PC5,2,growth_p02,-0.41454331811320183
+growth-share profile only,PC5,3,growth_p07,-0.3843486946052941
+growth-share profile only,PC5,4,growth_p10,0.351135235786886
+growth-share profile only,PC5,5,growth_p00,0.34726263965429116
+growth-share profile only,PC5,6,growth_p08,-0.3120688520567786
+growth-share profile only,PC5,7,growth_p03,-0.25735994768704323
+growth-share profile only,PC5,8,growth_p04,0.23897870706288843
+cumulative-width profile only,PC1,1,width_p04,0.32539267506049074
+cumulative-width profile only,PC1,2,width_p03,0.3251571807999853
+cumulative-width profile only,PC1,3,width_p02,0.3231269406380029
+cumulative-width profile only,PC1,4,width_p05,0.32113285896554955
+cumulative-width profile only,PC1,5,width_p01,0.3197695883363431
+cumulative-width profile only,PC1,6,width_p06,0.3189868277747089
+cumulative-width profile only,PC1,7,width_p00,0.3144829507990873
+cumulative-width profile only,PC1,8,width_p07,0.3121836273537595
+cumulative-width profile only,PC2,1,width_p09,-0.45391109451937756
+cumulative-width profile only,PC2,2,width_p08,-0.423118351889916
+cumulative-width profile only,PC2,3,width_p00,0.4054690091301448
+cumulative-width profile only,PC2,4,width_p01,0.37179515248527994
+cumulative-width profile only,PC2,5,width_p07,-0.33274779295709106
+cumulative-width profile only,PC2,6,width_p02,0.3139901368626228
+cumulative-width profile only,PC2,7,width_p03,0.22275341065536522
+cumulative-width profile only,PC2,8,width_p06,-0.19926136116520798
+cumulative-width profile only,PC3,1,width_p05,0.4918923432385884
+cumulative-width profile only,PC3,2,width_p09,-0.41496903720090345
+cumulative-width profile only,PC3,3,width_p00,-0.38444056630689577
+cumulative-width profile only,PC3,4,width_p04,0.3721564529777827
+cumulative-width profile only,PC3,5,width_p06,0.3271870052445085
+cumulative-width profile only,PC3,6,width_p08,-0.29517557369867126
+cumulative-width profile only,PC3,7,width_p01,-0.2671697676302841
+cumulative-width profile only,PC3,8,width_p03,0.16450761598758376
+cumulative-width profile only,PC4,1,width_p03,-0.4265332664138339
+cumulative-width profile only,PC4,2,width_p06,0.4123392876619512
+cumulative-width profile only,PC4,3,width_p07,0.40598675448117694
+cumulative-width profile only,PC4,4,width_p09,-0.39064560957911054
+cumulative-width profile only,PC4,5,width_p00,0.38540211675950764
+cumulative-width profile only,PC4,6,width_p04,-0.3368124121040927
+cumulative-width profile only,PC4,7,width_p02,-0.19863225226045758
+cumulative-width profile only,PC4,8,width_p01,0.13759996847480047
+cumulative-width profile only,PC5,1,width_p05,0.4854475348287574
+cumulative-width profile only,PC5,2,width_p07,-0.47950663874255756
+cumulative-width profile only,PC5,3,width_p09,0.393677283112525
+cumulative-width profile only,PC5,4,width_p02,-0.34667752717206163
+cumulative-width profile only,PC5,5,width_p00,0.33357889482957404
+cumulative-width profile only,PC5,6,width_p03,-0.31905922823255023
+cumulative-width profile only,PC5,7,width_p08,-0.18246061605343908
+cumulative-width profile only,PC5,8,width_p04,0.11160930334469701
+pulse timing taper entropy shape variables only,PC1,1,growth_entropy,-0.44758317011315285
+pulse timing taper entropy shape variables only,PC1,2,front_loaded_fraction,0.4292973576928757
+pulse timing taper entropy shape variables only,PC1,3,developmental_velocity,-0.3969502022380622
+pulse timing taper entropy shape variables only,PC1,4,late_growth_fraction,-0.39679035901059057
+pulse timing taper entropy shape variables only,PC1,5,peak_timing,-0.32277900702751056
+pulse timing taper entropy shape variables only,PC1,6,terminal_taper_fraction,0.2755155020590687
+pulse timing taper entropy shape variables only,PC1,7,developmental_acceleration,-0.25250785501741385
+pulse timing taper entropy shape variables only,PC1,8,reactivation_count,-0.16808589523033066
+pulse timing taper entropy shape variables only,PC2,1,reactivation_count,-0.6077417736183685
+pulse timing taper entropy shape variables only,PC2,2,pulse_count,-0.6077417736183457
+pulse timing taper entropy shape variables only,PC2,3,developmental_velocity,0.31184784115934233
+pulse timing taper entropy shape variables only,PC2,4,terminal_taper_fraction,0.2767862850263448
+pulse timing taper entropy shape variables only,PC2,5,late_growth_fraction,0.2615496868741259
+pulse timing taper entropy shape variables only,PC2,6,growth_entropy,0.08855123695582336
+pulse timing taper entropy shape variables only,PC2,7,developmental_acceleration,-0.07375911101625095
+pulse timing taper entropy shape variables only,PC2,8,peak_timing,0.07330891529419896
+pulse timing taper entropy shape variables only,PC3,1,developmental_acceleration,-0.6552345967678708
+pulse timing taper entropy shape variables only,PC3,2,terminal_taper_fraction,0.545503542744605
+pulse timing taper entropy shape variables only,PC3,3,late_growth_fraction,0.3230945324086828
+pulse timing taper entropy shape variables only,PC3,4,reactivation_count,0.26658449573360327
+pulse timing taper entropy shape variables only,PC3,5,pulse_count,0.26658449573359316
+pulse timing taper entropy shape variables only,PC3,6,developmental_velocity,0.11879253717752847
+pulse timing taper entropy shape variables only,PC3,7,front_loaded_fraction,-0.10080073526182716
+pulse timing taper entropy shape variables only,PC3,8,growth_entropy,0.0379018432701668
+pulse timing taper entropy shape variables only,PC4,1,peak_timing,0.7187509221722785
+pulse timing taper entropy shape variables only,PC4,2,growth_entropy,-0.4559786166310288
+pulse timing taper entropy shape variables only,PC4,3,terminal_taper_fraction,0.40576377820017473
+pulse timing taper entropy shape variables only,PC4,4,developmental_acceleration,0.2972818528533959
+pulse timing taper entropy shape variables only,PC4,5,front_loaded_fraction,-0.09116902994350928
+pulse timing taper entropy shape variables only,PC4,6,late_growth_fraction,-0.06268932785856195
+pulse timing taper entropy shape variables only,PC4,7,developmental_velocity,-0.06167733834577791
+pulse timing taper entropy shape variables only,PC4,8,reactivation_count,0.05663051916991014
+pulse timing taper entropy shape variables only,PC5,1,developmental_acceleration,-0.6201516632533125
+pulse timing taper entropy shape variables only,PC5,2,terminal_taper_fraction,-0.5168668706702292
+pulse timing taper entropy shape variables only,PC5,3,peak_timing,0.49322093000441203
+pulse timing taper entropy shape variables only,PC5,4,developmental_velocity,-0.23293446321747138
+pulse timing taper entropy shape variables only,PC5,5,reactivation_count,-0.12748937263256063
+pulse timing taper entropy shape variables only,PC5,6,pulse_count,-0.12748937263255591
+pulse timing taper entropy shape variables only,PC5,7,front_loaded_fraction,-0.10092665782397228
+pulse timing taper entropy shape variables only,PC5,8,late_growth_fraction,-0.06897871607183893
+one representative per correlated cluster,PC1,1,growth_p00,0.4559374914730594
+one representative per correlated cluster,PC1,2,observation_count,-0.3589401054984334
+one representative per correlated cluster,PC1,3,terminal_taper_fraction,0.3406952846882986
+one representative per correlated cluster,PC1,4,late_growth_fraction,-0.33231920450356894
+one representative per correlated cluster,PC1,5,log_final_area_km2,-0.3238104632369263
+one representative per correlated cluster,PC1,6,peak_timing,-0.31729948612282455
+one representative per correlated cluster,PC1,7,developmental_acceleration,-0.2856054746806312
+one representative per correlated cluster,PC1,8,log_slenderness_days_per_width,-0.2553782669705985
+one representative per correlated cluster,PC2,1,log_peak_growth_km2_per_day,-0.5808275080942041
+one representative per correlated cluster,PC2,2,log_slenderness_days_per_width,0.5042004252659189
+one representative per correlated cluster,PC2,3,late_growth_fraction,0.4301854531603247
+one representative per correlated cluster,PC2,4,log_final_area_km2,-0.2654078041629669
+one representative per correlated cluster,PC2,5,terminal_taper_fraction,0.23845048999530188
+one representative per correlated cluster,PC2,6,growth_p00,-0.16275434517439577
+one representative per correlated cluster,PC2,7,pulse_count,-0.15366040851327967
+one representative per correlated cluster,PC2,8,observation_count,-0.14488311912968807
+one representative per correlated cluster,PC3,1,pulse_count,0.6035866659020842
+one representative per correlated cluster,PC3,2,peak_timing,-0.37959685858558845
+one representative per correlated cluster,PC3,3,observation_count,0.3689305768100389
+one representative per correlated cluster,PC3,4,log_slenderness_days_per_width,0.3201872095496725
+one representative per correlated cluster,PC3,5,log_peak_growth_km2_per_day,-0.3045468460014386
+one representative per correlated cluster,PC3,6,late_growth_fraction,-0.2718995803597787
+one representative per correlated cluster,PC3,7,developmental_acceleration,-0.2544370896383483
+one representative per correlated cluster,PC3,8,terminal_taper_fraction,-0.120842914509775
+one representative per correlated cluster,PC4,1,developmental_acceleration,-0.6034284765578483
+one representative per correlated cluster,PC4,2,terminal_taper_fraction,0.4158164609847405
+one representative per correlated cluster,PC4,3,late_growth_fraction,0.38414653107772645
+one representative per correlated cluster,PC4,4,pulse_count,0.3393251493642168
+one representative per correlated cluster,PC4,5,peak_timing,0.2538377849585414
+one representative per correlated cluster,PC4,6,log_slenderness_days_per_width,-0.2451264778225852
+one representative per correlated cluster,PC4,7,log_peak_growth_km2_per_day,0.24478410681148066
+one representative per correlated cluster,PC4,8,observation_count,0.12119246324021622
+one representative per correlated cluster,PC5,1,developmental_acceleration,-0.5050974646916895
+one representative per correlated cluster,PC5,2,peak_timing,-0.4860263117438287
+one representative per correlated cluster,PC5,3,pulse_count,-0.4722770909364426
+one representative per correlated cluster,PC5,4,terminal_taper_fraction,-0.3519669440522055
+one representative per correlated cluster,PC5,5,late_growth_fraction,0.26957529939197666
+one representative per correlated cluster,PC5,6,log_final_area_km2,0.19016880402590944
+one representative per correlated cluster,PC5,7,log_peak_growth_km2_per_day,0.16142046495770765
+one representative per correlated cluster,PC5,8,log_slenderness_days_per_width,0.12081845682505728
+interpolated profile features removed,PC1,1,log_duration_days,-0.3657021707660262
+interpolated profile features removed,PC1,2,growth_entropy,-0.36408399183149587
+interpolated profile features removed,PC1,3,front_loaded_fraction,0.3490415869261706
+interpolated profile features removed,PC1,4,late_growth_fraction,-0.30171740915689677
+interpolated profile features removed,PC1,5,developmental_velocity,-0.300410310080042
+interpolated profile features removed,PC1,6,observation_count,-0.27573088255602635
+interpolated profile features removed,PC1,7,terminal_taper_fraction,0.2544064701644667
+interpolated profile features removed,PC1,8,peak_timing,-0.253208759887864
+interpolated profile features removed,PC2,1,reactivation_count,-0.3747195715967963
+interpolated profile features removed,PC2,2,pulse_count,-0.37471957159667274
+interpolated profile features removed,PC2,3,log_peak_growth_km2_per_day,-0.37420480355131486
+interpolated profile features removed,PC2,4,developmental_velocity,0.3491668479388634
+interpolated profile features removed,PC2,5,late_growth_fraction,0.34127339164663173
+interpolated profile features removed,PC2,6,observation_count,-0.2919052336217789
+interpolated profile features removed,PC2,7,log_final_area_km2,-0.2599992640304618
+interpolated profile features removed,PC2,8,terminal_taper_fraction,0.25775890737125656
+interpolated profile features removed,PC3,1,log_peak_growth_km2_per_day,-0.516434034200593
+interpolated profile features removed,PC3,2,reactivation_count,0.41334967982286047
+interpolated profile features removed,PC3,3,pulse_count,0.41334967982262955
+interpolated profile features removed,PC3,4,log_slenderness_days_per_width,0.39798283964693265
+interpolated profile features removed,PC3,5,developmental_acceleration,-0.2972191703940261
+interpolated profile features removed,PC3,6,log_final_area_km2,-0.19936476478529863
+interpolated profile features removed,PC3,7,peak_timing,-0.19217599788437809
+interpolated profile features removed,PC3,8,terminal_taper_fraction,0.16508912200631484
+interpolated profile features removed,PC4,1,terminal_taper_fraction,-0.44717791422303327
+interpolated profile features removed,PC4,2,developmental_acceleration,0.39633089612377026
+interpolated profile features removed,PC4,3,log_slenderness_days_per_width,0.36982587537968886
+interpolated profile features removed,PC4,4,late_growth_fraction,-0.32826370905361957
+interpolated profile features removed,PC4,5,peak_timing,-0.30484768771769083
+interpolated profile features removed,PC4,6,log_peak_growth_km2_per_day,-0.285250960563118
+interpolated profile features removed,PC4,7,reactivation_count,-0.2402444801086643
+interpolated profile features removed,PC4,8,pulse_count,-0.24024448010844476
+interpolated profile features removed,PC5,1,developmental_acceleration,-0.6238895637237222
+interpolated profile features removed,PC5,2,peak_timing,-0.5518645564601377
+interpolated profile features removed,PC5,3,growth_entropy,0.3160792721890355
+interpolated profile features removed,PC5,4,log_peak_growth_km2_per_day,0.23530384626535364
+interpolated profile features removed,PC5,5,terminal_taper_fraction,-0.18965000380095076
+interpolated profile features removed,PC5,6,reactivation_count,-0.1401332122706916
+interpolated profile features removed,PC5,7,pulse_count,-0.1401332122705222
+interpolated profile features removed,PC5,8,log_final_area_km2,0.13374468597361186
+summary features removed retaining profiles,PC1,1,growth_p02,0.23123678155200256
+summary features removed retaining profiles,PC1,2,growth_p03,0.23112078390237373
+summary features removed retaining profiles,PC1,3,growth_p04,0.230128381370953
+summary features removed retaining profiles,PC1,4,growth_p01,0.23006379083529419
+summary features removed retaining profiles,PC1,5,growth_p05,0.22755928373459755
+summary features removed retaining profiles,PC1,6,growth_p06,0.2268353680848198
+summary features removed retaining profiles,PC1,7,growth_p00,0.22641218560656237
+summary features removed retaining profiles,PC1,8,growth_p07,0.22485319923378283
+summary features removed retaining profiles,PC2,1,width_p09,-0.36942226204873496
+summary features removed retaining profiles,PC2,2,width_p08,-0.3656541817280033
+summary features removed retaining profiles,PC2,3,width_p07,-0.34532268393746324
+summary features removed retaining profiles,PC2,4,growth_p10,0.34182489455959836
+summary features removed retaining profiles,PC2,5,growth_p09,0.3092825926382455
+summary features removed retaining profiles,PC2,6,width_p06,-0.3053208919694739
+summary features removed retaining profiles,PC2,7,growth_p08,0.27067134872926596
+summary features removed retaining profiles,PC2,8,width_p05,-0.25761135878367897
+summary features removed retaining profiles,PC3,1,width_p02,0.34178161993582007
+summary features removed retaining profiles,PC3,2,width_p01,0.3409359082952526
+summary features removed retaining profiles,PC3,3,width_p00,0.33068923332128497
+summary features removed retaining profiles,PC3,4,width_p09,-0.3287414890333251
+summary features removed retaining profiles,PC3,5,width_p03,0.3065571578866563
+summary features removed retaining profiles,PC3,6,width_p08,-0.29372480633668185
+summary features removed retaining profiles,PC3,7,growth_p06,-0.23333610114688147
+summary features removed retaining profiles,PC3,8,width_p04,0.22044717828333668
+summary features removed retaining profiles,PC4,1,width_p05,-0.4248972207822485
+summary features removed retaining profiles,PC4,2,width_p09,0.3832568426859342
+summary features removed retaining profiles,PC4,3,width_p00,0.313851924334753
+summary features removed retaining profiles,PC4,4,width_p04,-0.3076798387304877
+summary features removed retaining profiles,PC4,5,width_p08,0.28309499599099447
+summary features removed retaining profiles,PC4,6,growth_p00,0.27691492432123993
+summary features removed retaining profiles,PC4,7,width_p06,-0.2697660678411299
+summary features removed retaining profiles,PC4,8,width_p01,0.2338319058018112
+summary features removed retaining profiles,PC5,1,width_p00,-0.36708659246631364
+summary features removed retaining profiles,PC5,2,width_p03,0.33050196593271497
+summary features removed retaining profiles,PC5,3,width_p09,0.3297804719870648
+summary features removed retaining profiles,PC5,4,width_p06,-0.3147348289588841
+summary features removed retaining profiles,PC5,5,growth_p05,-0.2986199821102917
+summary features removed retaining profiles,PC5,6,growth_p06,-0.26338058906515177
+summary features removed retaining profiles,PC5,7,width_p07,-0.25167400887729185
+summary features removed retaining profiles,PC5,8,width_p04,0.2512715581610132
+profiles normalized independently of final size,PC1,1,growth_p02,0.23123678155200256
+profiles normalized independently of final size,PC1,2,growth_p03,0.23112078390237373
+profiles normalized independently of final size,PC1,3,growth_p04,0.230128381370953
+profiles normalized independently of final size,PC1,4,growth_p01,0.23006379083529419
+profiles normalized independently of final size,PC1,5,growth_p05,0.22755928373459755
+profiles normalized independently of final size,PC1,6,growth_p06,0.2268353680848198
+profiles normalized independently of final size,PC1,7,growth_p00,0.22641218560656237
+profiles normalized independently of final size,PC1,8,growth_p07,0.22485319923378283
+profiles normalized independently of final size,PC2,1,width_p09,-0.36942226204873496
+profiles normalized independently of final size,PC2,2,width_p08,-0.3656541817280033
+profiles normalized independently of final size,PC2,3,width_p07,-0.34532268393746324
+profiles normalized independently of final size,PC2,4,growth_p10,0.34182489455959836
+profiles normalized independently of final size,PC2,5,growth_p09,0.3092825926382455
+profiles normalized independently of final size,PC2,6,width_p06,-0.3053208919694739
+profiles normalized independently of final size,PC2,7,growth_p08,0.27067134872926596
+profiles normalized independently of final size,PC2,8,width_p05,-0.25761135878367897
+profiles normalized independently of final size,PC3,1,width_p02,0.34178161993582007
+profiles normalized independently of final size,PC3,2,width_p01,0.3409359082952526
+profiles normalized independently of final size,PC3,3,width_p00,0.33068923332128497
+profiles normalized independently of final size,PC3,4,width_p09,-0.3287414890333251
+profiles normalized independently of final size,PC3,5,width_p03,0.3065571578866563
+profiles normalized independently of final size,PC3,6,width_p08,-0.29372480633668185
+profiles normalized independently of final size,PC3,7,growth_p06,-0.23333610114688147
+profiles normalized independently of final size,PC3,8,width_p04,0.22044717828333668
+profiles normalized independently of final size,PC4,1,width_p05,-0.4248972207822485
+profiles normalized independently of final size,PC4,2,width_p09,0.3832568426859342
+profiles normalized independently of final size,PC4,3,width_p00,0.313851924334753
+profiles normalized independently of final size,PC4,4,width_p04,-0.3076798387304877
+profiles normalized independently of final size,PC4,5,width_p08,0.28309499599099447
+profiles normalized independently of final size,PC4,6,growth_p00,0.27691492432123993
+profiles normalized independently of final size,PC4,7,width_p06,-0.2697660678411299
+profiles normalized independently of final size,PC4,8,width_p01,0.2338319058018112
+profiles normalized independently of final size,PC5,1,width_p00,-0.36708659246631364
+profiles normalized independently of final size,PC5,2,width_p03,0.33050196593271497
+profiles normalized independently of final size,PC5,3,width_p09,0.3297804719870648
+profiles normalized independently of final size,PC5,4,width_p06,-0.3147348289588841
+profiles normalized independently of final size,PC5,5,growth_p05,-0.2986199821102917
+profiles normalized independently of final size,PC5,6,growth_p06,-0.26338058906515177
+profiles normalized independently of final size,PC5,7,width_p07,-0.25167400887729185
+profiles normalized independently of final size,PC5,8,width_p04,0.2512715581610132
+duration >= 2 days,PC1,1,growth_p03,0.23810083238585855
+duration >= 2 days,PC1,2,growth_p02,0.2310379943126423
+duration >= 2 days,PC1,3,growth_p04,0.22880006964651944
+duration >= 2 days,PC1,4,width_p00,0.2284397997836187
+duration >= 2 days,PC1,5,width_p01,0.22666519035182767
+duration >= 2 days,PC1,6,growth_p01,0.22422188385774414
+duration >= 2 days,PC1,7,width_p02,0.2194210626659911
+duration >= 2 days,PC1,8,growth_p00,0.2104996152306362
+duration >= 2 days,PC2,1,late_growth_fraction,-0.2979407327823729
+duration >= 2 days,PC2,2,growth_p10,-0.28420001693353686
+duration >= 2 days,PC2,3,growth_p09,-0.27994927500919126
+duration >= 2 days,PC2,4,terminal_taper_fraction,-0.27653011003284617
+duration >= 2 days,PC2,5,developmental_velocity,-0.25255411101955716
+duration >= 2 days,PC2,6,width_p08,0.24763886566038
+duration >= 2 days,PC2,7,growth_p08,-0.24755611894292226
+duration >= 2 days,PC2,8,width_p09,0.24661821671828146
+duration >= 2 days,PC3,1,log_slenderness_days_per_width,-0.3530869097340821
+duration >= 2 days,PC3,2,growth_entropy,-0.3400076196526624
+duration >= 2 days,PC3,3,log_peak_growth_km2_per_day,0.32051784832115615
+duration >= 2 days,PC3,4,developmental_acceleration,0.29485395391413194
+duration >= 2 days,PC3,5,growth_p05,0.2342218548188353
+duration >= 2 days,PC3,6,peak_timing,0.21818898093678318
+duration >= 2 days,PC3,7,developmental_velocity,0.21087291279607523
+duration >= 2 days,PC3,8,growth_p06,0.210083073085852
+duration >= 2 days,PC4,1,log_slenderness_days_per_width,-0.4339266183235009
+duration >= 2 days,PC4,2,log_peak_growth_km2_per_day,0.358687597599336
+duration >= 2 days,PC4,3,growth_entropy,-0.2739380605949009
+duration >= 2 days,PC4,4,growth_p00,0.22859775246590297
+duration >= 2 days,PC4,5,growth_p01,0.22857660677089303
+duration >= 2 days,PC4,6,reactivation_count,0.222666059579146
+duration >= 2 days,PC4,7,pulse_count,0.2226660595791448
+duration >= 2 days,PC4,8,log_duration_days,-0.20205798071624825
+duration >= 2 days,PC5,1,reactivation_count,0.5383815455183697
+duration >= 2 days,PC5,2,pulse_count,0.5383815455183671
+duration >= 2 days,PC5,3,observation_count,0.2616783545967276
+duration >= 2 days,PC5,4,width_p09,0.2123013633994609
+duration >= 2 days,PC5,5,growth_p06,0.18745403330007787
+duration >= 2 days,PC5,6,width_p08,0.18635996639783517
+duration >= 2 days,PC5,7,growth_p05,0.18489506135806863
+duration >= 2 days,PC5,8,growth_p07,0.16914735407297005
+duration >= 4 days,PC1,1,growth_p02,-0.24094946085215665
+duration >= 4 days,PC1,2,growth_p01,-0.23760031378931615
+duration >= 4 days,PC1,3,growth_p03,-0.2295456123663438
+duration >= 4 days,PC1,4,width_p01,-0.22953485931576426
+duration >= 4 days,PC1,5,width_p00,-0.22631003809775618
+duration >= 4 days,PC1,6,width_p02,-0.22226225802617547
+duration >= 4 days,PC1,7,growth_p00,-0.2119125995365642
+duration >= 4 days,PC1,8,observation_count,0.2114283733442127
+duration >= 4 days,PC2,1,late_growth_fraction,-0.2946310011198189
+duration >= 4 days,PC2,2,growth_p10,-0.2707240119510803
+duration >= 4 days,PC2,3,width_p07,0.2684195959437629
+duration >= 4 days,PC2,4,width_p06,0.2632987485235282
+duration >= 4 days,PC2,5,growth_p09,-0.26214836490690735
+duration >= 4 days,PC2,6,width_p08,0.26148712865460927
+duration >= 4 days,PC2,7,width_p09,0.25711433156608954
+duration >= 4 days,PC2,8,terminal_taper_fraction,-0.25691885024843064
+duration >= 4 days,PC3,1,developmental_acceleration,0.3594730928868118
+duration >= 4 days,PC3,2,growth_entropy,-0.291473896433123
+duration >= 4 days,PC3,3,growth_p05,0.27665004631820833
+duration >= 4 days,PC3,4,log_slenderness_days_per_width,-0.2612961293605697
+duration >= 4 days,PC3,5,growth_p06,0.2565699522668545
+duration >= 4 days,PC3,6,developmental_velocity,0.24347812909924146
+duration >= 4 days,PC3,7,growth_p04,0.21301862177009465
+duration >= 4 days,PC3,8,peak_timing,0.2053598804857397
+duration >= 4 days,PC4,1,reactivation_count,0.4241019676489033
+duration >= 4 days,PC4,2,pulse_count,0.4241019676488913
+duration >= 4 days,PC4,3,growth_entropy,-0.341812178536347
+duration >= 4 days,PC4,4,log_slenderness_days_per_width,-0.2720288404071854
+duration >= 4 days,PC4,5,log_peak_growth_km2_per_day,0.2688970069895233
+duration >= 4 days,PC4,6,growth_p00,0.2634338671679247
+duration >= 4 days,PC4,7,growth_p01,0.23092512500961693
+duration >= 4 days,PC4,8,log_final_area_km2,0.21306428054879806
+duration >= 4 days,PC5,1,log_slenderness_days_per_width,0.3814847551398691
+duration >= 4 days,PC5,2,reactivation_count,0.3563254338789751
+duration >= 4 days,PC5,3,pulse_count,0.3563254338789672
+duration >= 4 days,PC5,4,log_duration_days,0.28991853468495565
+duration >= 4 days,PC5,5,log_peak_growth_km2_per_day,-0.2509384467766907
+duration >= 4 days,PC5,6,growth_p06,0.24127380712969135
+duration >= 4 days,PC5,7,growth_p05,0.23799523574432913
+duration >= 4 days,PC5,8,growth_entropy,0.22053340613148098
+duration >= 8 days,PC1,1,growth_p01,0.2577180568857359
+duration >= 8 days,PC1,2,width_p01,0.24331072132940512
+duration >= 8 days,PC1,3,width_p02,0.24156603006950148
+duration >= 8 days,PC1,4,growth_p02,0.23825728710844427
+duration >= 8 days,PC1,5,width_p03,0.2378372339444284
+duration >= 8 days,PC1,6,width_p04,0.22612848980376518
+duration >= 8 days,PC1,7,width_p00,0.22337042490226738
+duration >= 8 days,PC1,8,observation_count,-0.22281234000434538
+duration >= 8 days,PC2,1,growth_p09,0.2949774887591691
+duration >= 8 days,PC2,2,growth_p10,0.2773368025453889
+duration >= 8 days,PC2,3,late_growth_fraction,0.2698051059955892
+duration >= 8 days,PC2,4,terminal_taper_fraction,0.2618306877372339
+duration >= 8 days,PC2,5,growth_p08,0.2521642426085092
+duration >= 8 days,PC2,6,width_p07,-0.2494325357870907
+duration >= 8 days,PC2,7,width_p08,-0.2458835632531034
+duration >= 8 days,PC2,8,width_p09,-0.24124735274533532
+duration >= 8 days,PC3,1,developmental_acceleration,-0.32378790519996953
+duration >= 8 days,PC3,2,growth_p06,-0.2802297288235473
+duration >= 8 days,PC3,3,growth_p05,-0.27195250407088106
+duration >= 8 days,PC3,4,developmental_velocity,-0.2519224318985821
+duration >= 8 days,PC3,5,reactivation_count,0.23103731983856865
+duration >= 8 days,PC3,6,pulse_count,0.2310373198385685
+duration >= 8 days,PC3,7,growth_p07,-0.2264117522113608
+duration >= 8 days,PC3,8,growth_entropy,0.22477418728757367
+duration >= 8 days,PC4,1,reactivation_count,-0.47150653519960645
+duration >= 8 days,PC4,2,pulse_count,-0.47150653519960617
+duration >= 8 days,PC4,3,developmental_acceleration,-0.2833589393779128
+duration >= 8 days,PC4,4,growth_entropy,0.2260234778108277
+duration >= 8 days,PC4,5,growth_p03,-0.2131170182328142
+duration >= 8 days,PC4,6,growth_p02,-0.19096765129265056
+duration >= 8 days,PC4,7,growth_p04,-0.18681174666927064
+duration >= 8 days,PC4,8,observation_count,-0.18259175399486804
+duration >= 8 days,PC5,1,growth_p07,-0.3077259044086812
+duration >= 8 days,PC5,2,growth_p06,-0.29614081873188175
+duration >= 8 days,PC5,3,width_p09,-0.28333093402285986
+duration >= 8 days,PC5,4,width_p08,-0.2740949870763875
+duration >= 8 days,PC5,5,log_slenderness_days_per_width,-0.2540436754696119
+duration >= 8 days,PC5,6,reactivation_count,-0.221513233001298
+duration >= 8 days,PC5,7,pulse_count,-0.22151323300129797
+duration >= 8 days,PC5,8,growth_p03,0.21326960548240104
+duration >= 10 days,PC1,1,log_final_area_km2,0.25835781262345237
+duration >= 10 days,PC1,2,observation_count,0.24597083478194096
+duration >= 10 days,PC1,3,width_p00,-0.2433268302003751
+duration >= 10 days,PC1,4,developmental_velocity,-0.23947020785726264
+duration >= 10 days,PC1,5,growth_p10,-0.23685477732431517
+duration >= 10 days,PC1,6,growth_p09,-0.236413885229849
+duration >= 10 days,PC1,7,log_peak_growth_km2_per_day,0.23247520187299955
+duration >= 10 days,PC1,8,growth_p01,-0.2207700413689836
+duration >= 10 days,PC2,1,width_p05,0.3044811639565411
+duration >= 10 days,PC2,2,front_loaded_fraction,0.30417148878711237
+duration >= 10 days,PC2,3,width_p06,0.30189471789567524
+duration >= 10 days,PC2,4,width_p04,0.2861342528553407
+duration >= 10 days,PC2,5,width_p07,0.2784530834529729
+duration >= 10 days,PC2,6,late_growth_fraction,-0.25437552621223314
+duration >= 10 days,PC2,7,width_p03,0.2472643017451153
+duration >= 10 days,PC2,8,width_p08,0.23254359312113584
+duration >= 10 days,PC3,1,developmental_acceleration,0.3409812566518787
+duration >= 10 days,PC3,2,growth_entropy,-0.28594373002787826
+duration >= 10 days,PC3,3,growth_p05,0.2812215961764364
+duration >= 10 days,PC3,4,growth_p06,0.27870110528134545
+duration >= 10 days,PC3,5,developmental_velocity,0.24730387736484882
+duration >= 10 days,PC3,6,reactivation_count,-0.2303296601512363
+duration >= 10 days,PC3,7,pulse_count,-0.23032966015123596
+duration >= 10 days,PC3,8,growth_p04,0.2219071817654422
+duration >= 10 days,PC4,1,log_slenderness_days_per_width,0.3017376085227148
+duration >= 10 days,PC4,2,log_peak_growth_km2_per_day,-0.29649745097041136
+duration >= 10 days,PC4,3,width_p09,0.2859692297615525
+duration >= 10 days,PC4,4,width_p08,0.27827622702702814
+duration >= 10 days,PC4,5,growth_entropy,0.27231085386236575
+duration >= 10 days,PC4,6,log_final_area_km2,-0.2717366642192735
+duration >= 10 days,PC4,7,growth_p10,-0.2530639579268723
+duration >= 10 days,PC4,8,growth_p03,-0.23037166567618042
+duration >= 10 days,PC5,1,growth_p04,-0.306257019357719
+duration >= 10 days,PC5,2,growth_p00,0.2678512945775607
+duration >= 10 days,PC5,3,growth_p08,0.25615774678666653
+duration >= 10 days,PC5,4,growth_p01,0.2550107507321099
+duration >= 10 days,PC5,5,growth_p05,-0.2477822380649642
+duration >= 10 days,PC5,6,log_slenderness_days_per_width,-0.23344467813600178
+duration >= 10 days,PC5,7,growth_p07,0.2317650527656931
+duration >= 10 days,PC5,8,growth_entropy,-0.229497704174547

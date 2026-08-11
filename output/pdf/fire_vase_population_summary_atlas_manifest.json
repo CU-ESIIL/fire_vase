@@ -1,0 +1,14 @@
+{
+  "pdf": "output/pdf/fire_vase_population_summary_atlas.pdf",
+  "table_root": "scratch/fire_vase_run_full/tables",
+  "pages": 7,
+  "n_fires": 278569,
+  "generated_at": "2026-07-22T13:40:36+00:00",
+  "figures": {
+    "year_counts": "tmp/pdfs/fire_vase_population_summary_atlas/figures/year_counts.png",
+    "region_counts": "tmp/pdfs/fire_vase_population_summary_atlas/figures/region_counts.png",
+    "area_duration": "tmp/pdfs/fire_vase_population_summary_atlas/figures/area_duration.png",
+    "histograms": "tmp/pdfs/fire_vase_population_summary_atlas/figures/histograms.png",
+    "region_year": "tmp/pdfs/fire_vase_population_summary_atlas/figures/region_year.png"
+  }
+}

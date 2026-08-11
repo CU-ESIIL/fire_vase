@@ -1,50 +1,89 @@
-# Research Project Template
+# Fire VASE
 
-This repository is a **minimal template for research and data science projects** that combine code, documentation, and a project website.
+Fire VASE is the research repository for the fire developmental morphology and
+fire-climate VASE work that began inside
+[`CU-ESIIL/cubedynamics`](https://github.com/CU-ESIIL/cubedynamics).
 
-It includes:
+This repo is now the home for the publication-facing material: analysis scripts,
+lakehouse schemas, manuscript drafts, figure generation, rendered figures, and
+small derived tables. `cubedynamics` remains the reusable package home for the
+generic fire hull/VASE API and examples.
 
-* a clean project structure (`src`, `data`, `docs`, `tests`, etc.)
-* a documentation website built with **MkDocs + Material**
-* automatic deployment to **GitHub Pages** using GitHub Actions
-* development history files (changelog, roadmap, dev log)
-* an `AGENTS.md` file with guidance for AI coding agents
+## What Was Migrated
 
-The website is built from the `docs/` folder and automatically deployed when changes are pushed.
+The initial migration copied VASE-related material from `cubedynamics` `main` at
+commit `0f2538d393abde5d1ff503e2c5dd73d01562b53e`.
 
----
+Key copied areas:
 
-# Enable the Website
+- `src/cubedynamics/`: transitional copy of the runtime code needed by the
+  current scripts and tests.
+- `scripts/`: fire VASE lakehouse, climate, manuscript, atlas, and figure
+  generation scripts.
+- `schemas/` and `config/`: table schemas and pipeline configuration templates.
+- `analysis/`, `figures/`, `output/`, and `outputs/`: tracked analysis notes,
+  publication figures, rendered manuscripts, and small derived outputs.
+- `docs/manuscripts/`: manuscript drafts, citation audits, formal reviews, and
+  transparency notes.
+- `examples/`, `notebooks/`, and `tests/`: VASE examples and smoke tests copied
+  from the source project.
 
-After creating a repository from this template you must enable GitHub Pages once.
+## Data Boundary
 
-1. Go to **Settings → Pages**
-2. Under **Build and deployment**, choose
-   **Source: GitHub Actions**
+Large source data and runtime products are not expected to live in Git. Keep
+FIRED downloads, gridMET caches, lakehouse tables, Zarr stores, GeoParquet
+products, and ad hoc run directories under ignored roots such as `artifacts/`,
+`scratch/`, `lakehouse/`, and `tmp/`.
 
-The site will then deploy automatically on push.
+Small derived CSVs, manifests, manuscript figures, and publication PDFs may be
+tracked when they are part of the scholarly record.
 
-Your site will appear at:
+## Local Setup
 
-```
-https://<your-username>.github.io/<repository-name>/
-```
-
----
-
-# Preview Locally
-
-```
-pip install mkdocs mkdocs-material
+```bash
+python -m pip install -e ".[dev]"
+pytest tests/test_fire_vase_lakehouse.py
 mkdocs serve
 ```
 
-Then open:
+## Build The Shareable Data Lake
 
+Start with a complete manifest:
+
+```bash
+python scripts/prepare_data_lake.py --mode manifest
 ```
-http://127.0.0.1:8000
+
+This writes a handoff inventory under `data_lake/` for the whole Fire VASE lake:
+FIRED caches, gridMET NetCDF caches, full Parquet lakehouse tables,
+developmental morphology tables, derived outputs, schemas, figures, and
+manuscript artifacts.
+
+To materialize a handoff directory without duplicating bytes on the same
+filesystem:
+
+```bash
+python scripts/prepare_data_lake.py --mode hardlink --checksum
 ```
 
----
+Use `--mode copy --checksum` when preparing an independent folder for an
+external drive or cloud upload. The lake itself is ignored by Git; the manifest,
+checksums, and restore map are the reproducibility contract.
 
-Use **"Use this template"** on GitHub to start a new project.
+The website builds from `docs/` and is configured for GitHub Pages at:
+
+```text
+https://cu-esiil.github.io/fire_vase/
+```
+
+## Near-Term Cleanup
+
+The copied code intentionally preserves old `cubedynamics` import paths so the
+research scripts still run. A later pass should either:
+
+- keep `cubedynamics` as an explicit dependency and move project-specific code
+  into `src/fire_vase/`, or
+- retain the transitional runtime copy here only for reproducibility.
+
+That refactor should be separate from this migration so collaborators can review
+the copied research content first.

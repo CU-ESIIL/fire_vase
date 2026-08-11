@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: repository-size-check
+        name: repository size check
+        entry: python scripts/check_repository_size.py --mode staged
+        language: system
+        pass_filenames: false

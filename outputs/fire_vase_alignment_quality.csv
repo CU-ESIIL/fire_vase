@@ -1,0 +1,6 @@
+alignment_clock,n_fires,geometric_peak_concentration_within_1_obs,mean_among_fire_activity_variance,environmental_direction_consistency,minimum_lag_sample_size,question_answered,alignment_rank_for_geometry
+first observed perimeter,25,0.36,92.85247506806503,,25,Which event provides the most coherent fire-centered clock?,2.0
+peak expansion,25,1.0,90.29844439075909,0.5625,14,Which event provides the most coherent fire-centered clock?,1.0
+final meaningful expansion,25,0.32,62.96838463376527,0.59,9,Which event provides the most coherent fire-centered clock?,3.0
+transition into geometric quiescence,16,0.3125,84.46699039401618,0.578125,7,Which event provides the most coherent fire-centered clock?,4.0
+terminal observed record,25,0.04,1.2400834873054936,0.56,25,Which event provides the most coherent fire-centered clock?,5.0

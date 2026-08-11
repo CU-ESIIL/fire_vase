@@ -1,0 +1,16 @@
+{
+  "name": "processing_runs",
+  "description": "Run-level provenance for reproducible lakehouse builds.",
+  "primary_key": ["run_id"],
+  "required": ["run_id", "started_at", "processing_version", "output_root"],
+  "columns": {
+    "run_id": {"type": "string"},
+    "started_at": {"type": "string"},
+    "completed_at": {"type": "string"},
+    "processing_version": {"type": "string"},
+    "output_root": {"type": "string"},
+    "git_commit": {"type": "string"},
+    "config_hash": {"type": "string"},
+    "status": {"type": "string"}
+  }
+}

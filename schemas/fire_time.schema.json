@@ -1,0 +1,16 @@
+{
+  "name": "fire_time",
+  "description": "Canonical fire-time rows with cumulative time and size attributes.",
+  "primary_key": ["fire_id", "time_index"],
+  "required": ["fire_id", "time_index", "timestamp", "year", "processing_version"],
+  "columns": {
+    "fire_id": {"type": "string"},
+    "time_index": {"type": "integer"},
+    "timestamp": {"type": "string"},
+    "year": {"type": "integer"},
+    "active_area_km2": {"type": "number"},
+    "cumulative_area_km2": {"type": "number"},
+    "processing_version": {"type": "string"},
+    "geometry_cache_key": {"type": "string"}
+  }
+}

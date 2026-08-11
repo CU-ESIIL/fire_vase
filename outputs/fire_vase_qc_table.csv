@@ -1,0 +1,26 @@
+fire_id,observation_count,observed_sequence_duration_days,candidate_event_window_days,max_gap_days,usable_transitions,climate_records,expansion_pulse_count,usable_for_morphology,usable_for_pulse_detection,usable_for_lag_analysis,usable_for_terminal_observation_analysis,usable_for_clustering,usable_for_climate_transition_analysis,physical_cessation_inference_supported,qc_note
+2445,8,13.0,14,5,7,8,2,True,True,False,False,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+6833,13,13.0,14,2,12,13,1,True,True,True,True,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+6991,12,13.0,14,3,11,12,2,True,True,True,False,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+7115,11,13.0,14,2,10,11,2,True,True,True,True,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+7149,9,13.0,14,3,8,9,2,True,True,True,False,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+7421,8,13.0,14,3,7,8,4,True,True,False,False,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+7508,8,13.0,14,3,7,8,2,True,True,False,False,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+16331,10,13.0,14,3,9,10,3,True,True,False,False,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+17532,7,13.0,14,4,6,7,1,True,True,True,False,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+17903,5,13.0,14,4,4,5,2,True,True,False,False,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+18606,7,13.0,14,4,6,7,5,True,True,True,False,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+19752,11,13.0,14,2,10,11,4,True,True,True,True,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+22518,14,13.0,14,1,13,14,4,True,True,False,True,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+22615,6,13.0,14,5,5,6,1,True,True,False,False,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+23942,8,13.0,14,4,7,8,6,True,True,False,False,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+24184,7,13.0,14,3,6,7,4,True,True,False,False,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+25068,5,13.0,14,5,4,5,4,True,True,False,False,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+25790,6,13.0,14,5,5,6,3,True,True,False,False,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+30922,9,13.0,14,4,8,9,4,True,True,True,False,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+42013,13,13.0,14,2,12,13,3,True,True,True,True,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+43422,6,13.0,14,5,5,6,4,True,True,False,False,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+44170,12,13.0,14,2,11,12,3,True,True,True,True,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+44195,10,13.0,14,3,9,10,2,True,True,True,False,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+44221,13,13.0,14,2,12,13,3,True,True,True,True,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.
+44389,11,13.0,14,2,10,11,2,True,True,True,True,True,True,False,Task-specific flags; terminal analysis remains censored by observation timing.

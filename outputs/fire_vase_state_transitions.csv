@@ -1,0 +1,230 @@
+fire_id,from_state,to_state
+2445,low activity,low activity
+2445,low activity,major expansion
+2445,major expansion,low activity
+2445,low activity,major expansion
+2445,major expansion,active expansion
+2445,active expansion,quiescence
+2445,quiescence,quiescence
+2445,quiescence,terminal observed record
+6833,low activity,low activity
+6833,low activity,low activity
+6833,low activity,low activity
+6833,low activity,active expansion
+6833,active expansion,major expansion
+6833,major expansion,major expansion
+6833,major expansion,quiescence
+6833,quiescence,quiescence
+6833,quiescence,quiescence
+6833,quiescence,quiescence
+6833,quiescence,quiescence
+6833,quiescence,quiescence
+6833,quiescence,terminal observed record
+6991,low activity,low activity
+6991,low activity,low activity
+6991,low activity,active expansion
+6991,active expansion,active expansion
+6991,active expansion,active expansion
+6991,active expansion,major expansion
+6991,major expansion,quiescence
+6991,quiescence,quiescence
+6991,quiescence,quiescence
+6991,quiescence,quiescence
+6991,quiescence,quiescence
+6991,quiescence,terminal observed record
+7115,low activity,low activity
+7115,low activity,low activity
+7115,low activity,major expansion
+7115,major expansion,low activity
+7115,low activity,low activity
+7115,low activity,low activity
+7115,low activity,low activity
+7115,low activity,major expansion
+7115,major expansion,quiescence
+7115,quiescence,quiescence
+7115,quiescence,terminal observed record
+7149,low activity,low activity
+7149,low activity,low activity
+7149,low activity,major expansion
+7149,major expansion,low activity
+7149,low activity,low activity
+7149,low activity,low activity
+7149,low activity,low activity
+7149,low activity,active expansion
+7149,active expansion,terminal observed record
+7421,active expansion,major expansion
+7421,major expansion,major expansion
+7421,major expansion,low activity
+7421,low activity,low activity
+7421,low activity,major expansion
+7421,major expansion,major expansion
+7421,major expansion,active expansion
+7421,active expansion,terminal observed record
+7508,low activity,major expansion
+7508,major expansion,major expansion
+7508,major expansion,active expansion
+7508,active expansion,low activity
+7508,low activity,major expansion
+7508,major expansion,active expansion
+7508,active expansion,quiescence
+7508,quiescence,terminal observed record
+16331,major expansion,low activity
+16331,low activity,active expansion
+16331,active expansion,low activity
+16331,low activity,low activity
+16331,low activity,active expansion
+16331,active expansion,quiescence
+16331,quiescence,quiescence
+16331,quiescence,quiescence
+16331,quiescence,quiescence
+16331,quiescence,terminal observed record
+17532,low activity,low activity
+17532,low activity,low activity
+17532,low activity,major expansion
+17532,major expansion,major expansion
+17532,major expansion,quiescence
+17532,quiescence,quiescence
+17532,quiescence,terminal observed record
+17903,low activity,active expansion
+17903,active expansion,low activity
+17903,low activity,major expansion
+17903,major expansion,quiescence
+17903,quiescence,terminal observed record
+18606,major expansion,major expansion
+18606,major expansion,major expansion
+18606,major expansion,major expansion
+18606,major expansion,major expansion
+18606,major expansion,major expansion
+18606,major expansion,major expansion
+18606,major expansion,terminal observed record
+19752,low activity,active expansion
+19752,active expansion,active expansion
+19752,active expansion,major expansion
+19752,major expansion,major expansion
+19752,major expansion,active expansion
+19752,active expansion,major expansion
+19752,major expansion,low activity
+19752,low activity,major expansion
+19752,major expansion,quiescence
+19752,quiescence,quiescence
+19752,quiescence,terminal observed record
+22518,low activity,major expansion
+22518,major expansion,low activity
+22518,low activity,low activity
+22518,low activity,major expansion
+22518,major expansion,low activity
+22518,low activity,active expansion
+22518,active expansion,active expansion
+22518,active expansion,active expansion
+22518,active expansion,major expansion
+22518,major expansion,quiescence
+22518,quiescence,quiescence
+22518,quiescence,quiescence
+22518,quiescence,quiescence
+22518,quiescence,terminal observed record
+22615,low activity,major expansion
+22615,major expansion,major expansion
+22615,major expansion,quiescence
+22615,quiescence,quiescence
+22615,quiescence,quiescence
+22615,quiescence,terminal observed record
+23942,major expansion,major expansion
+23942,major expansion,active expansion
+23942,active expansion,active expansion
+23942,active expansion,active expansion
+23942,active expansion,active expansion
+23942,active expansion,active expansion
+23942,active expansion,active expansion
+23942,active expansion,terminal observed record
+24184,major expansion,major expansion
+24184,major expansion,major expansion
+24184,major expansion,major expansion
+24184,major expansion,active expansion
+24184,active expansion,major expansion
+24184,major expansion,active expansion
+24184,active expansion,terminal observed record
+25068,major expansion,major expansion
+25068,major expansion,major expansion
+25068,major expansion,major expansion
+25068,major expansion,major expansion
+25068,major expansion,terminal observed record
+25790,active expansion,major expansion
+25790,major expansion,active expansion
+25790,active expansion,major expansion
+25790,major expansion,major expansion
+25790,major expansion,major expansion
+25790,major expansion,terminal observed record
+30922,low activity,active expansion
+30922,active expansion,active expansion
+30922,active expansion,major expansion
+30922,major expansion,active expansion
+30922,active expansion,low activity
+30922,low activity,active expansion
+30922,active expansion,low activity
+30922,low activity,active expansion
+30922,active expansion,terminal observed record
+42013,low activity,low activity
+42013,low activity,low activity
+42013,low activity,low activity
+42013,low activity,major expansion
+42013,major expansion,major expansion
+42013,major expansion,active expansion
+42013,active expansion,active expansion
+42013,active expansion,low activity
+42013,low activity,low activity
+42013,low activity,active expansion
+42013,active expansion,quiescence
+42013,quiescence,quiescence
+42013,quiescence,terminal observed record
+43422,major expansion,major expansion
+43422,major expansion,major expansion
+43422,major expansion,major expansion
+43422,major expansion,major expansion
+43422,major expansion,major expansion
+43422,major expansion,terminal observed record
+44170,low activity,active expansion
+44170,active expansion,low activity
+44170,low activity,major expansion
+44170,major expansion,major expansion
+44170,major expansion,major expansion
+44170,major expansion,quiescence
+44170,quiescence,quiescence
+44170,quiescence,quiescence
+44170,quiescence,quiescence
+44170,quiescence,quiescence
+44170,quiescence,quiescence
+44170,quiescence,terminal observed record
+44195,low activity,active expansion
+44195,active expansion,major expansion
+44195,major expansion,low activity
+44195,low activity,major expansion
+44195,major expansion,active expansion
+44195,active expansion,quiescence
+44195,quiescence,quiescence
+44195,quiescence,quiescence
+44195,quiescence,quiescence
+44195,quiescence,terminal observed record
+44221,low activity,major expansion
+44221,major expansion,major expansion
+44221,major expansion,major expansion
+44221,major expansion,quiescence
+44221,quiescence,quiescence
+44221,quiescence,quiescence
+44221,quiescence,quiescence
+44221,quiescence,quiescence
+44221,quiescence,quiescence
+44221,quiescence,quiescence
+44221,quiescence,quiescence
+44221,quiescence,quiescence
+44221,quiescence,terminal observed record
+44389,low activity,low activity
+44389,low activity,low activity
+44389,low activity,low activity
+44389,low activity,major expansion
+44389,major expansion,major expansion
+44389,major expansion,active expansion
+44389,active expansion,active expansion
+44389,active expansion,quiescence
+44389,quiescence,quiescence
+44389,quiescence,quiescence
+44389,quiescence,terminal observed record

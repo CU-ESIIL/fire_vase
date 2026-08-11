@@ -1,0 +1,26 @@
+# Copy to config/storage.yml for local or production runs. The real file is ignored.
+profile: local
+
+roots:
+  lakehouse: ./scratch/fire_vase_lakehouse
+  climate_zarr: ./scratch/fire_vase_lakehouse/climate_zarr
+  assets: ./scratch/fire_vase_lakehouse/assets
+  manifests: ./scratch/fire_vase_lakehouse/manifests
+
+object_storage:
+  enabled: false
+  bucket: ""
+  prefix: fire-vase/
+  endpoint_url: ""
+
+tables:
+  format: parquet
+  compression: zstd
+  partitioning:
+    - year
+    - region
+    - spatial_bucket
+    - processing_version
+
+duckdb:
+  database: ./scratch/fire_vase_lakehouse/fire_vase.duckdb

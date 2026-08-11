@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools>=64.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fire-vase"
+version = "0.1.0"
+description = "Research workflows for Fire VASE developmental morphology and fire-climate analysis"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Ty Tuff" },
+]
+license = { file = "LICENSE" }
+keywords = ["fire", "vase", "climate", "geospatial", "morphology"]
+dependencies = [
+    "numpy<2",
+    "xarray",
+    "pandas",
+    "geopandas",
+    "shapely",
+    "rasterio",
+    "rioxarray",
+    "pyproj",
+    "requests",
+    "dask",
+    "h5netcdf",
+    "h5py",
+    "cubo",
+    "crc32c",
+    "pystac-client",
+    "planetary-computer",
+    "matplotlib",
+    "Pillow",
+    "plotly",
+    "scipy",
+    "duckdb",
+    "reportlab",
+    "PyYAML",
+    "jsonschema",
+    "ipython",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+]
+docs = [
+    "mkdocs>=1.6",
+    "mkdocs-material",
+]
+dev = [
+    "pytest",
+    "mkdocs>=1.6",
+    "mkdocs-material",
+]
+
+[project.urls]
+Homepage = "https://github.com/CU-ESIIL/fire_vase"
+Repository = "https://github.com/CU-ESIIL/fire_vase"
+Documentation = "https://cu-esiil.github.io/fire_vase/"
+Issues = "https://github.com/CU-ESIIL/fire_vase/issues"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.package-data]
+"cubedynamics.viewers" = ["templates/*.html"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["cubedynamics*"]

@@ -1,0 +1,16 @@
+column,label,units,slice_non_null
+maximum_temperature_c,Maximum temperature,degrees C,550961
+minimum_temperature_c,Minimum temperature,degrees C,550961
+vpd_kpa,VPD,kPa,550961
+wind_speed_m_s,Wind speed,m s-1,550961
+precipitation_mm,Precipitation,mm d-1,550961
+maximum_relative_humidity_pct,Maximum relative humidity,%,550961
+minimum_relative_humidity_pct,Minimum relative humidity,%,550961
+specific_humidity_kg_kg,Specific humidity,kg kg-1,550961
+fuel_moisture_100hr_pct,100-hour fuel moisture,%,550961
+fuel_moisture_1000hr_pct,1000-hour fuel moisture,%,550961
+energy_release_component,Energy release component,index,550961
+burning_index,Burning index,index,550961
+reference_evapotranspiration_mm,Reference evapotranspiration,mm d-1,550961
+potential_evapotranspiration_mm,Potential evapotranspiration,mm d-1,550961
+solar_radiation_w_m2,Solar radiation,W m-2,550961

@@ -1,0 +1,115 @@
+run:
+  name: fire_vase_lakehouse
+  processing_version: fvase-lakehouse-v0
+  output_root: ./scratch/fire_vase_run
+  sample_size: 1000
+  random_seed: 20260721
+  full_population_allowed: false
+
+source:
+  fire_catalog_uri: ./artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_events_nov2001-march2021.gpkg
+  source_name: fired
+  source_version: local-real-data
+  immutable_raw_table: fire_observations_raw
+
+storage:
+  config: config/storage.yml
+  fallback_config: config/storage.example.yml
+  table_format: parquet
+  geometry_format: geoparquet
+  climate_format: zarr
+  asset_formats:
+    - glb
+    - png
+    - svg
+    - pdf
+
+versions:
+  source: fired-local-real-data
+  geometry: geometry-v0
+  climate: gridmet-daily-centroid-v0
+  perimeter_climate: gridmet-daily-perimeter-v0
+  events: event-method-v0
+  traits: trait-v0
+  vase: vase-ring-v0
+  render: render-v0
+
+geometry:
+  reuse_existing: true
+  validate_topology: true
+  newly_added_geometry_flag: true
+  partition_table: fire_geometry
+
+climate:
+  source: gridmet
+  temporal_resolution: daily
+  extraction_method: event_centroid_nearest_grid_cell
+  variables:
+    maximum_temperature_c: tmmx
+    minimum_temperature_c: tmmn
+    vapor_pressure_deficit_kpa: vpd
+    wind_speed_m_s: vs
+  optional_variables:
+    precipitation_mm: pr
+    maximum_relative_humidity_pct: rmax
+    minimum_relative_humidity_pct: rmin
+    specific_humidity_kg_kg: sph
+    fuel_moisture_100hr_pct: fm100
+    fuel_moisture_1000hr_pct: fm1000
+    energy_release_component: erc
+    burning_index: bi
+    reference_evapotranspiration_mm: etr
+    potential_evapotranspiration_mm: pet
+    solar_radiation_w_m2: srad
+  perimeter_exposure:
+    extraction_method: gridmet_gridcell_zone_summary
+    zones:
+      - active_burned_area
+      - cumulative_burned_area
+      - perimeter_extension
+    extension_distances_m:
+      - 5000
+      - 10000
+      - 25000
+  wind_present_threshold_m_s: 0.1
+
+events:
+  methods:
+    - peak_growth
+    - peak_temperature
+    - peak_vpd
+    - wind_present
+  event_alignment_unit: hours
+
+traits:
+  include:
+    - total_area_km2
+    - duration_hours
+    - peak_growth_km2_per_hour
+    - peak_temperature_c
+    - minimum_temperature_c
+    - peak_vpd_kpa
+    - wind_present_fraction
+
+render:
+  generate_individual_assets: false
+  generate_cohort_assets: true
+  climate_coloring:
+    variable: maximum_temperature_c
+    units: celsius
+  panels:
+    - temperature
+    - minimum_temperature
+    - vapor_pressure_deficit
+    - wind_presence
+
+processing:
+  batch_size: 100
+  retry_failed: true
+  max_attempts: 3
+  write_manifest_every_n_fires: 25
+
+qc:
+  max_missing_climate_fraction: 0.05
+  fail_empty_geometry: true
+  fail_nonpositive_area: true

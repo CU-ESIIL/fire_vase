@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-07-22T20:06:10+00:00",
+  "pdf": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/output/pdf/fire_vase_developmental_morphology_manuscript.pdf",
+  "source_figures": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/main",
+  "figures": [
+    "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/tmp/pdfs/fire_vase_manuscript_figures/figure_1.png",
+    "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/tmp/pdfs/fire_vase_manuscript_figures/figure_2.png",
+    "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/tmp/pdfs/fire_vase_manuscript_figures/figure_3.png",
+    "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/tmp/pdfs/fire_vase_manuscript_figures/figure_4.png"
+  ],
+  "supplementary_figures": [
+    "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/supplement/Supplementary_Figure_1_validation.png",
+    "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/supplement/Supplementary_Figure_2_prediction.png"
+  ],
+  "format": "Science initial-submission-style draft: single column, double spaced, line numbered, figures grouped after text",
+  "compliance_note": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/docs/manuscripts/fire_vase_developmental_morphology/science_author_guidelines_compliance.md"
+}

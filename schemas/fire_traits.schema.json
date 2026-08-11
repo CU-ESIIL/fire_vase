@@ -1,0 +1,19 @@
+{
+  "name": "fire_traits",
+  "description": "Derived per-fire traits used for cohort and medoid selection.",
+  "primary_key": ["fire_id", "trait_version"],
+  "required": ["fire_id", "trait_version", "processing_version"],
+  "columns": {
+    "fire_id": {"type": "string"},
+    "trait_version": {"type": "string"},
+    "processing_version": {"type": "string"},
+    "year": {"type": "integer"},
+    "region": {"type": "string"},
+    "total_area_km2": {"type": "number"},
+    "duration_hours": {"type": "number"},
+    "peak_growth_km2_per_hour": {"type": "number"},
+    "geometry_cache_key": {"type": "string"},
+    "climate_cache_key": {"type": "string"},
+    "event_cache_key": {"type": "string"}
+  }
+}

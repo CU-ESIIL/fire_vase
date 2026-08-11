@@ -1,0 +1,27 @@
+Fire VASE claim-audit final report
+
+Strongest supported discovery:
+Fire VASE provides a shared, reproducible, low-dimensional coordinate system for observed wildfire-development histories.
+
+Strongest unsupported claim removed:
+Observed fires occupy a restricted subset of all plausible developmental trajectories after accounting for monotonicity, size, duration, and feature redundancy.
+
+Whether PC1 survives scale and duration controls:
+Partly. Full PC1 explains 0.810; after removing scale and duration variables, PC1 explains 0.841 and PC1-PC5 explain 0.976. The axis survives, but its interpretation shifts toward profile/allocation structure and remains affected by cumulative-profile redundancy.
+
+Whether observed histories differ from plausible null histories:
+Yes against easy feature-permutation nulls; unresolved or weaker against strict duration/profile-preserving nulls. The strongest strict null in this audit has mean PC1-PC5 variance around 0.969, so Level 4 constraint language is not justified yet.
+
+Recommended number of main figures:
+4.
+
+Whether climate remains in the main text:
+Yes, but compressed to a proof-of-concept projection/association figure.
+
+Whether prediction remains in the main text:
+No. Move to supplement as a leakage audit and benchmark.
+
+Top three issues still preventing submission:
+1. A stronger possible-space null hierarchy must be finalized and interpreted conservatively.
+2. Centroid climate should be replaced or supplemented by perimeter/active-area climate exposure and local anomalies.
+3. State-space/dynamic claims need transition tests, or the manuscript must consistently avoid state-space language.

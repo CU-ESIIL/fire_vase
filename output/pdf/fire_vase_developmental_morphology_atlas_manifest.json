@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-07-22T15:15:32+00:00",
+  "input_table_root": "scratch/fire_vase_run_full/tables",
+  "pdf": "output/pdf/fire_vase_developmental_morphology_atlas.pdf",
+  "n_fires": 278569,
+  "n_climate_complete_fires": 237235,
+  "n_representatives": 36,
+  "morphospace_explained_variance_pc1_to_pc5": [
+    0.8098926007015654,
+    0.06640399828946669,
+    0.035444656829815124,
+    0.03304360360067242,
+    0.017962349036304275
+  ],
+  "mean_directional_coupling_r2": {
+    "P(climate | morphology)": 0.01995644174790121,
+    "P(morphology | climate)": 0.19089989688453468
+  },
+  "outputs": {
+    "features": "scratch/fire_vase_developmental_morphology/developmental_morphospace_features.parquet",
+    "medoids": "scratch/fire_vase_developmental_morphology/developmental_morphospace_medoids.parquet",
+    "geometry_events": "scratch/fire_vase_developmental_morphology/developmental_geometry_events.parquet",
+    "stage_table": "scratch/fire_vase_developmental_morphology/developmental_stage_table.parquet",
+    "climate_coupling": "scratch/fire_vase_developmental_morphology/developmental_climate_coupling.parquet",
+    "control_profile": "scratch/fire_vase_developmental_morphology/developmental_control_profile.parquet",
+    "matched_pairs": "scratch/fire_vase_developmental_morphology/developmental_matched_pairs.parquet",
+    "loadings": "scratch/fire_vase_developmental_morphology/developmental_morphospace_loadings.csv"
+  },
+  "notes": [
+    "Morphospace PCA is fit on geometry-only VASE profile and developmental trait features.",
+    "Climate is evaluated afterward from the full daily gridMET-attributed vase_slices table.",
+    "Coupling R2 values are first-pass linear information proxies, not optimized predictive models."
+  ]
+}

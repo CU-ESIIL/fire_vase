@@ -1,0 +1,16 @@
+{
+  "name": "vase_assets",
+  "description": "Registered rendered views of VASE data objects.",
+  "primary_key": ["asset_id"],
+  "required": ["asset_id", "fire_id", "asset_type", "asset_uri", "render_version"],
+  "columns": {
+    "asset_id": {"type": "string"},
+    "fire_id": {"type": "string"},
+    "asset_type": {"type": "string"},
+    "asset_uri": {"type": "string"},
+    "render_version": {"type": "string"},
+    "render_cache_key": {"type": "string"},
+    "vase_cache_key": {"type": "string"},
+    "created_at": {"type": "string"}
+  }
+}

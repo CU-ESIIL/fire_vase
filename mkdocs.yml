@@ -1,15 +1,31 @@
-site_name: "basic_OASIS"
-site_description: "Minimal project website"
-site_url: "https://cu-esiil.github.io/basic_OASIS/"
+site_name: "Fire VASE"
+site_description: "Research repository for fire VASE developmental morphology and fire-climate publication workflows"
+site_url: "https://cu-esiil.github.io/fire_vase/"
 
-repo_name: "CU-ESIIL/basic_OASIS"
-repo_url: "https://github.com/CU-ESIIL/basic_OASIS"
+repo_name: "CU-ESIIL/fire_vase"
+repo_url: "https://github.com/CU-ESIIL/fire_vase"
 edit_uri: "edit/main/docs/"
 
 nav:
-  - Site:
-      - Home: index.md
-      - Examples: examples.md
+  - Home: index.md
+  - Migration: migration.md
+  - Data Boundary: data.md
+  - Examples: examples.md
+  - Fire VASE:
+      - Capability: capabilities/fire-vase.md
+      - Synthetic Recipe: recipes/fire_vase_synthetic.md
+      - Fire Event + Climate: recipes/fire_event_vase_hull.md
+      - Lakehouse Architecture: dev/fire_vase_lakehouse.md
+      - FIRED Dataset: datasets/fired.md
+  - Manuscript:
+      - Science Style Revision: manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision_science_style.md
+      - Climate Revision: manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision.md
+      - AI Transparency: manuscripts/fire_vase_developmental_morphology/ai_transparency_statement.md
+      - Citation Audit: manuscripts/fire_vase_developmental_morphology/final_citation_check_2026-07-23.md
+  - Development:
+      - Fire VASE Status: developer/fire_vase_status.md
+      - Fire Plot Architecture: dev/fire_plot_architecture.md
+      - Legacy Vase Volumes: legacy/vase-volumes.md
 
 theme:
   name: material

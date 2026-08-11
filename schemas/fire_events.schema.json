@@ -1,0 +1,17 @@
+{
+  "name": "fire_events",
+  "description": "Detected fire or climate events aligned to fire time.",
+  "primary_key": ["fire_id", "event_id", "event_version"],
+  "required": ["fire_id", "event_id", "event_version", "event_type", "event_time"],
+  "columns": {
+    "fire_id": {"type": "string"},
+    "event_id": {"type": "string"},
+    "event_version": {"type": "string"},
+    "event_type": {"type": "string"},
+    "event_time": {"type": "string"},
+    "event_offset_hours": {"type": "number"},
+    "magnitude": {"type": "number"},
+    "event_cache_key": {"type": "string"},
+    "qc_flags": {"type": "array"}
+  }
+}

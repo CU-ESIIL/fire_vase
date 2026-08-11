@@ -1,0 +1,17 @@
+{
+  "pdf": "output/pdf/fire_vase_morphology_atlas.pdf",
+  "n_fires": 278569,
+  "panel_size": 216,
+  "shape_counts": {
+    "single flash": 161073,
+    "skinny persistent": 38094,
+    "compact steady": 31250,
+    "multi-pulse complex": 24418,
+    "late surge": 16079,
+    "front-loaded plateau": 7655
+  },
+  "climate_sample_rows": 300,
+  "traits_csv": "scratch/fire_vase_morphology_atlas/fire_vase_morphology_traits.csv",
+  "climate_csv": "scratch/fire_vase_morphology_atlas/fire_vase_morphology_climate_sample.csv",
+  "generated_at": "2026-07-22T13:57:59+00:00"
+}

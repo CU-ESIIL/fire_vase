@@ -1,0 +1,4 @@
+representation,method,candidate_k,silhouette_width,n_fires
+derived developmental traits,hierarchical ward,2,0.4771087785162307,25
+derived developmental traits,hierarchical ward,3,0.40717927655620817,25
+derived developmental traits,hierarchical ward,4,0.4401702979365784,25

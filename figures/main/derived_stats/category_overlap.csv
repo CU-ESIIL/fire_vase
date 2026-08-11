@@ -1,0 +1,3 @@
+metric,value,null_or_reference,interpretation
+15-nearest-neighbor same-label purity,0.952608,0.3738158111999999,Values near the class-frequency reference indicate overlapping landmarks rather than sharply separated classes.
+mean nearest-neighbor purity margin,0.9369759999999999,,Low margins indicate mixed local neighborhoods.

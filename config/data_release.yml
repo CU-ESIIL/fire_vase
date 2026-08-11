@@ -1,0 +1,142 @@
+release:
+  id: fire-vase-data-lake-v0.1
+  title: Fire VASE data lake package
+  description: >-
+    Full data-lake handoff definition for Fire VASE, including source caches,
+    gridMET climate cache files, lakehouse tables, developmental morphology
+    tables, derived analysis tables, schemas, configuration, manifests, figures,
+    and manuscript artifacts.
+  version: "0.1"
+  license_note: >-
+    Repository code and locally authored documentation follow the repository
+    license. Source fire and climate data may be included in a full data-lake
+    handoff, but users must follow the upstream FIRED and gridMET access,
+    citation, and reuse terms.
+  source_snapshot:
+    repository: CU-ESIIL/fire_vase
+    migrated_from: CU-ESIIL/cubedynamics
+    migrated_from_commit: 0f2538d393abde5d1ff503e2c5dd73d01562b53e
+
+external_inputs:
+  - id: fired_conus_ak_events
+    description: FIRED CONUS+AK event polygons, November 2001 to March 2021.
+    expected_local_path: artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_events_nov2001-march2021.gpkg
+    included: true
+    notes: See docs/datasets/fired.md for citation and cache guidance.
+  - id: fired_conus_ak_daily
+    description: FIRED CONUS+AK daily fire perimeter polygons, November 2001 to March 2021.
+    expected_local_path: artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_daily_nov2001-march2021.gpkg
+    included: true
+    notes: See docs/datasets/fired.md for citation and cache guidance.
+  - id: gridmet_daily_cache
+    description: Locally cached daily gridMET variables used for climate attribution.
+    expected_local_path: artifacts/fire-vase-gridmet-real/gridmet-cache
+    included: true
+    notes: Rebuild with scripts/cache_gridmet_years.py when needed.
+  - id: full_fire_vase_lakehouse_tables
+    description: Full Parquet lakehouse products used by manuscript-scale analyses.
+    expected_local_path: scratch/fire_vase_run_full/tables
+    included: true
+    notes: Rebuild with scripts/fire_vase_lakehouse_pilot.py and climate table builders.
+
+local_source_roots:
+  - source: /Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/artifacts/fire-vase-gridmet-real
+    destination: artifacts/fire-vase-gridmet-real
+    role: source-and-climate-cache
+    description: FIRED GeoPackage cache, candidate event lists, and full gridMET NetCDF cache.
+  - source: /Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/scratch/fire_vase_run_full
+    destination: scratch/fire_vase_run_full
+    role: lakehouse
+    description: Full Fire VASE run reports and Parquet lakehouse tables.
+  - source: /Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/scratch/fire_vase_developmental_morphology
+    destination: scratch/fire_vase_developmental_morphology
+    role: derived-lakehouse
+    description: Developmental morphospace and stage/coupling Parquet products.
+
+collections:
+  repository_products:
+    role: repository-product
+    description: Repository-side derived outputs, figures, manuscripts, schemas, and documentation.
+    include:
+      - analysis/**
+      - config/**
+      - schemas/**
+      - figures/**
+      - output/**
+      - outputs/**
+      - docs/data.md
+      - docs/migration.md
+      - docs/datasets/fired.md
+      - docs/dev/fire_vase_lakehouse.md
+      - docs/manuscripts/fire_vase_developmental_morphology/**
+  derived_tables:
+    role: derived-data
+    description: Small CSV/JSON analysis products used by manuscript figures and claims.
+    include:
+      - analysis/claim_audit_manifest.json
+      - analysis/claim_audit_stats/*.csv
+      - analysis/climate_revision_stats/*.csv
+      - analysis/climate_revision_stats/*.json
+      - figures/main/derived_stats/*.csv
+      - figures/main/derived_stats/*.json
+      - figures/main/figure_manifest.json
+      - outputs/*.csv
+      - outputs/*manifest*.json
+      - outputs/fire_vase_developmental_atlas_100_size_sample/*.csv
+      - outputs/fire_vase_developmental_atlas_100_size_sample/*manifest*.json
+  schemas:
+    role: schema
+    description: JSON schema contracts for Fire VASE lakehouse tables.
+    include:
+      - schemas/*.schema.json
+  configs:
+    role: configuration
+    description: Pipeline, storage, and repository policy configuration.
+    include:
+      - config/fire_vase_pipeline.yml
+      - config/fire_vase_developmental_atlas.yml
+      - config/storage.example.yml
+      - config/repository_policy.yml
+      - config/data_release.yml
+  analysis_notes:
+    role: analysis-documentation
+    description: Human-readable analysis decisions, audits, and method notes.
+    include:
+      - analysis/*.md
+      - analysis/*.txt
+      - docs/data.md
+      - docs/migration.md
+      - docs/datasets/fired.md
+      - docs/dev/fire_vase_lakehouse.md
+      - docs/manuscripts/fire_vase_developmental_morphology/ai_transparency_statement.md
+      - docs/manuscripts/fire_vase_developmental_morphology/final_citation_check_2026-07-23.md
+  publication_artifacts:
+    role: publication-artifact
+    description: Optional figures, reports, manuscripts, and rendered views.
+    optional: true
+    include:
+      - figures/**/*.pdf
+      - figures/**/*.png
+      - figures/**/*.svg
+      - figures/**/*.md
+      - output/pdf/*.pdf
+      - output/pdf/*manifest*.json
+      - output/docx/*.docx
+      - outputs/**/*.pdf
+      - outputs/**/*.html
+      - outputs/**/*.png
+      - outputs/**/*.svg
+
+reproduction:
+  setup:
+    - python -m pip install -e ".[dev]"
+  checks:
+    - pytest tests/test_fire_vase_lakehouse.py
+    - mkdocs build --strict --clean
+  main_workflow:
+    - python scripts/cache_gridmet_years.py --preset comprehensive --keep-going
+    - python scripts/fire_vase_lakehouse_pilot.py --config config/fire_vase_pipeline.yml --output-root scratch/fire_vase_run
+    - python scripts/fire_vase_build_climate_tables.py
+    - python scripts/fire_vase_build_perimeter_climate_tables.py --include-optional-variables
+    - python scripts/fire_vase_developmental_morphology_analysis.py
+    - python scripts/fire_vase_climate_revision.py

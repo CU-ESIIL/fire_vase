@@ -1,0 +1,15 @@
+{
+  "name": "processing_failures",
+  "description": "Structured failure records for retry and triage.",
+  "primary_key": ["run_id", "fire_id", "failed_at"],
+  "required": ["run_id", "fire_id", "failed_at", "stage", "message"],
+  "columns": {
+    "run_id": {"type": "string"},
+    "fire_id": {"type": "string"},
+    "failed_at": {"type": "string"},
+    "stage": {"type": "string"},
+    "message": {"type": "string"},
+    "retryable": {"type": "boolean"},
+    "context": {"type": "object"}
+  }
+}

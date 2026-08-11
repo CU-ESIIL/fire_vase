@@ -1,0 +1,26 @@
+fire_id,observation_count,event_duration_days,observed_span_days,max_gap_days,terminal_index_any_positive,terminal_index_one_pixel,terminal_index_primary,absolute_threshold_km2,primary_threshold_km2,qc_class,primary_quality_pass,notes
+2445,8,14,14,5,7,7,7,0.2146586732968637,0.2146586732968637,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+6833,13,14,14,2,12,12,10,0.2146586732968637,0.6021175785977027,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+6991,12,14,14,3,11,11,11,0.2146586732968637,0.2146586732968637,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+7115,11,14,14,2,10,10,10,0.2146586732968637,0.2146586732968637,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+7149,9,14,14,3,8,8,8,0.2146586732968637,0.2146586732968637,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+7421,8,14,14,3,7,7,7,0.2146586732968637,0.2146586732968637,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+7508,8,14,14,3,7,7,7,0.2146586732968637,0.2146586732968637,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+16331,10,14,14,3,9,9,9,0.2146586732968637,0.2146586732968637,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+17532,7,14,14,4,6,6,6,0.2146586732968637,0.2146586732968637,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+17903,5,14,14,4,4,4,4,0.2146586732968637,0.2146586732968637,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+18606,7,14,14,4,6,6,6,0.2146586732968637,0.2146586732968637,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+19752,11,14,14,2,10,10,10,0.2146586732968637,0.2146586732968637,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+22518,14,14,14,1,13,13,11,0.2146586732968637,1.3061980270114157,probable cessation,True,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+22615,6,14,14,5,5,5,5,0.2146586732968637,0.2146586732968637,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+23942,8,14,14,4,7,7,7,0.2146586732968637,0.2146586732968637,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+24184,7,14,14,3,6,6,6,0.2146586732968637,0.2146586732968637,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+25068,5,14,14,5,4,4,4,0.2146586732968637,0.2146586732968637,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+25790,6,14,14,5,5,5,5,0.2146586732968637,0.2146586732968637,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+30922,9,14,14,4,8,8,8,0.2146586732968637,0.2146586732968637,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+42013,13,14,14,2,12,12,10,0.2146586732968637,0.44434345372450784,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+43422,6,14,14,5,5,5,5,0.2146586732968637,0.2146586732968637,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+44170,12,14,14,2,11,11,11,0.2146586732968637,0.2146586732968637,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+44195,10,14,14,3,9,9,9,0.2146586732968637,0.2146586732968637,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+44221,13,14,14,2,12,12,9,0.2146586732968637,0.7470121830730857,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.
+44389,11,14,14,2,10,10,10,0.2146586732968637,0.2146586732968637,sequence gap near ending,False,No zero-growth post-terminal observation available; terminal means last meaningful detected growth.

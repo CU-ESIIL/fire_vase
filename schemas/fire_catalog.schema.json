@@ -1,0 +1,17 @@
+{
+  "name": "fire_catalog",
+  "description": "Published lookup catalog for fire products and current cache keys.",
+  "primary_key": ["fire_id", "catalog_version"],
+  "required": ["fire_id", "catalog_version", "year", "region", "processing_version"],
+  "columns": {
+    "fire_id": {"type": "string"},
+    "catalog_version": {"type": "string"},
+    "year": {"type": "integer"},
+    "region": {"type": "string"},
+    "processing_version": {"type": "string"},
+    "latest_manifest_status": {"type": "string"},
+    "geometry_cache_key": {"type": "string"},
+    "climate_cache_key": {"type": "string"},
+    "vase_cache_key": {"type": "string"}
+  }
+}

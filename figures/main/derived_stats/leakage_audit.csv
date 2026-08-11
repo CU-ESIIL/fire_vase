@@ -1,0 +1,5 @@
+feature_source,status,reason,action
+developmental_stage_table.stage_growth_fraction,leakage risk,"Computed as growth divided by final event area, unavailable at early prediction time.",Excluded from safe fixed-day prediction models.
+developmental_stage_table.stage_width_mean,leakage risk,Uses normalized VASE width based on final cumulative area.,Excluded from safe fixed-day prediction models.
+developmental_stage_table.pulse_count,leakage risk,Full-event pulse count can include future pulses.,Excluded from safe fixed-day prediction models.
+fixed-day safe stage predictors,audited,"Use only cumulative area, growth, active days, and climate observed up to day 1, 2, 4, or 8.",Used for Figure 5.

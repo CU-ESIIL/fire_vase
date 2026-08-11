@@ -1,0 +1,35 @@
+max_file_size_mb: 10
+max_repository_size_mb: 500
+
+blocked_extensions:
+  - .parquet
+  - .geoparquet
+  - .zarr
+  - .nc
+  - .nc4
+  - .glb
+  - .gltf
+  - .gpkg
+  - .tif
+  - .tiff
+  - .las
+  - .laz
+  - .zip
+
+blocked_paths:
+  - artifacts/
+  - scratch/
+  - lakehouse/
+  - local-data/
+  - tmp/
+  - outputs/fire_vase_lakehouse/
+  - manifests/runs/
+  - manifests/checkpoints/
+
+allowed_paths:
+  - docs/assets/
+  - tests/fixtures/
+  - examples/
+  - config/storage.example.yml
+  - schemas/
+  - manifests/releases/

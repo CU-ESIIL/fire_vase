@@ -1,0 +1,15 @@
+{
+  "name": "processing_manifest",
+  "description": "One row per fire and run with component versions and processing state.",
+  "primary_key": ["fire_id", "run_id"],
+  "required": ["fire_id", "run_id", "status", "component_versions", "updated_at"],
+  "columns": {
+    "fire_id": {"type": "string"},
+    "run_id": {"type": "string"},
+    "status": {"type": "string"},
+    "component_versions": {"type": "object"},
+    "attempts": {"type": "integer"},
+    "failure_reason": {"type": "string"},
+    "updated_at": {"type": "string"}
+  }
+}

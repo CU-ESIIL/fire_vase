@@ -1,0 +1,29 @@
+{
+  "name": "vase_slices",
+  "description": "Scientific VASE slices: geometry plus climate attribution by time ring.",
+  "primary_key": ["fire_id", "slice_index", "vase_version"],
+  "required": ["fire_id", "slice_index", "timestamp", "vase_version", "vase_cache_key", "climate_cache_key"],
+  "columns": {
+    "fire_id": {"type": "string"},
+    "slice_index": {"type": "integer"},
+    "timestamp": {"type": "string"},
+    "year": {"type": "integer"},
+    "vase_version": {"type": "string"},
+    "vase_cache_key": {"type": "string"},
+    "geometry_cache_key": {"type": "string"},
+    "climate_cache_key": {"type": "string"},
+    "climate_source": {"type": "string"},
+    "climate_temporal_resolution": {"type": "string"},
+    "climate_extraction_method": {"type": "string"},
+    "ring_area_km2": {"type": "number"},
+    "cumulative_area_km2": {"type": "number"},
+    "normalized_vase_width": {"type": "number"},
+    "maximum_temperature_c": {"type": "number"},
+    "minimum_temperature_c": {"type": "number"},
+    "vpd_kpa": {"type": "number"},
+    "wind_speed_m_s": {"type": "number"},
+    "wind_present": {"type": "boolean"},
+    "climate_available": {"type": "boolean"},
+    "climate_failure_reason": {"type": "string"}
+  }
+}

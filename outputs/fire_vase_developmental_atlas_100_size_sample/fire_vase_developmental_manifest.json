@@ -1,0 +1,60 @@
+{
+  "title": "Fire developmental atlas: geometric life histories and environmental transitions",
+  "n_fires": 100,
+  "n_fire_time_records": 784,
+  "n_events": 730,
+  "climate_variables": {
+    "tmmx": {
+      "label": "maximum temperature",
+      "output_name": "tmmx_c",
+      "units": "C"
+    },
+    "tmmn": {
+      "label": "minimum temperature",
+      "output_name": "tmmn_c",
+      "units": "C"
+    },
+    "vpd": {
+      "label": "vapor pressure deficit",
+      "output_name": "vpd_kpa",
+      "units": "kPa"
+    },
+    "vs": {
+      "label": "wind speed",
+      "output_name": "wind_speed_m_s",
+      "units": "m/s"
+    }
+  },
+  "best_cluster": {
+    "k": 2,
+    "silhouette": 0.7265734514277056
+  },
+  "outputs": {
+    "pdf": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_developmental_atlas.pdf",
+    "html": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_developmental_atlas.html",
+    "time_table": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_time_table.csv",
+    "traits": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_developmental_traits.csv",
+    "event_table": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_event_table.csv",
+    "qc": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_qc_table.csv",
+    "candidate_results": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_candidate_results.csv",
+    "figures": {
+      "observational_raster": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_developmental_figures/01_observational_structure_raster.png",
+      "activity_correlations": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_developmental_figures/02_activity_metric_correlations.png",
+      "event_sensitivity": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_developmental_figures/03_event_detection_sensitivity.png",
+      "alignment_grid": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_developmental_figures/04_alignment_comparison_grid.png",
+      "alignment_quality": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_developmental_figures/05_alignment_quality_rankings.png",
+      "trait_panels": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_developmental_figures/06_developmental_trait_panels.png",
+      "clustering": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_developmental_figures/07_geometry_clustering.png",
+      "pca": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_developmental_figures/08_continuous_axes_pca.png",
+      "event_centered_climate": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_developmental_figures/09_event_centered_climate.png",
+      "environmental_roles": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_developmental_figures/10_environmental_roles.png",
+      "compound_conditions": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_developmental_figures/11_compound_conditions.png",
+      "state_transitions": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_developmental_figures/12_state_transitions.png",
+      "terminal_secondary": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_developmental_figures/13_terminal_secondary_analysis.png",
+      "outlier_influence": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_developmental_figures/14_outlier_influence.png",
+      "sample_size_power": "outputs/fire_vase_developmental_atlas_100_size_sample/fire_vase_developmental_figures/15_sample_size_power.png"
+    }
+  },
+  "terminology": "final meaningful expansion != terminal observed record != physical extinction",
+  "prescribed_fire_comparison": false
+}

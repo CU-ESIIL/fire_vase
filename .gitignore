@@ -49,3 +49,40 @@ rsconnect/
 
 # macOS
 .DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.tools/
+build/
+dist/
+*.egg-info/
+
+# Fire VASE local data and generated runtime products
+artifacts/
+scratch/
+lakehouse/
+data_lake/
+tmp/
+manifests/runs/
+manifests/checkpoints/
+
+# Large scientific products should be archived externally or added intentionally.
+*.zarr/
+*.nc
+*.nc4
+*.tif
+*.tiff
+*.gpkg
+*.geojson
+*.parquet
+*.geoparquet
+*.glb

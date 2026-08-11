@@ -1,0 +1,691 @@
+model,fold_kind,fold,target,n_train,n_test,r2,predictors,stage,stage_order
+trivial stage summary,random,0,morph_pc1,222955,55614,0.00685656649763966,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,random,0,morph_pc2,222955,55614,0.06958429828767543,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,random,0,morph_pc3,222955,55614,0.006440445147248286,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,random,1,morph_pc1,222907,55662,0.006374333850225455,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,random,1,morph_pc2,222907,55662,0.06443984607193132,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,random,1,morph_pc3,222907,55662,0.00495335521942486,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,random,2,morph_pc1,222807,55762,0.004512518786760622,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,random,2,morph_pc2,222807,55762,0.04300678316030104,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,random,2,morph_pc3,222807,55762,0.004401229879173241,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,random,3,morph_pc1,222586,55983,0.0069719064704997225,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,random,3,morph_pc2,222586,55983,0.06771307664185577,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,random,3,morph_pc3,222586,55983,0.005675004789929106,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,random,4,morph_pc1,223021,55548,0.006362623849831883,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,random,4,morph_pc2,223021,55548,0.0657108442012434,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,random,4,morph_pc3,223021,55548,0.0068076268293093545,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,region,0,morph_pc1,193318,85251,-0.0017466866559021632,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,region,0,morph_pc2,193318,85251,0.0455686454296399,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,region,0,morph_pc3,193318,85251,0.0027335566130275435,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,region,1,morph_pc1,188985,89584,0.006421622597162391,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,region,1,morph_pc2,188985,89584,0.05899160092886713,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,region,1,morph_pc3,188985,89584,0.005491134516511509,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,region,2,morph_pc1,233786,44783,-0.02955370288172987,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,region,2,morph_pc2,233786,44783,-0.10274283917511662,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,region,2,morph_pc3,233786,44783,-0.009221439692537192,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,region,3,morph_pc1,278514,55,-0.08278606697128721,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,region,3,morph_pc2,278514,55,-0.07113111611894496,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,region,3,morph_pc3,278514,55,-0.025304132147533354,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,region,4,morph_pc1,219673,58896,-0.005272271451061794,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,region,4,morph_pc2,219673,58896,0.08725479588733875,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,region,4,morph_pc3,219673,58896,0.009254303988964652,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,year_block,0,morph_pc1,210489,68080,0.005544880160254784,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,year_block,0,morph_pc2,210489,68080,0.06775282774552949,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,year_block,0,morph_pc3,210489,68080,0.005176439755513296,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,year_block,1,morph_pc1,224444,54125,0.004848917391805263,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,year_block,1,morph_pc2,224444,54125,0.06989489748215583,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,year_block,1,morph_pc3,224444,54125,0.006815809347879065,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,year_block,2,morph_pc1,226203,52366,-0.00039623360267193597,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,year_block,2,morph_pc2,226203,52366,0.01907860338977796,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,year_block,2,morph_pc3,226203,52366,0.0026501780985027645,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,year_block,3,morph_pc1,219774,58795,0.005813796080219258,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,year_block,3,morph_pc2,219774,58795,0.057163045827718695,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,year_block,3,morph_pc3,219774,58795,0.0044950609898480876,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,year_block,4,morph_pc1,233366,45203,0.008383614936858574,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,year_block,4,morph_pc2,233366,45203,0.07959592630975731,"area_so_far_km2,elapsed_observations",day 1,1
+trivial stage summary,year_block,4,morph_pc3,233366,45203,0.007857145351044315,"area_so_far_km2,elapsed_observations",day 1,1
+geometry only,random,0,morph_pc1,222955,55614,0.0068207464133202,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,random,0,morph_pc2,222955,55614,0.06958188583485381,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,random,0,morph_pc3,222955,55614,0.006437589301451219,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,random,1,morph_pc1,222907,55662,0.006377922529342439,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,random,1,morph_pc2,222907,55662,0.06444430687794234,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,random,1,morph_pc3,222907,55662,0.005000521470028607,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,random,2,morph_pc1,222807,55762,0.004621987207707012,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,random,2,morph_pc2,222807,55762,0.0433989916551748,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,random,2,morph_pc3,222807,55762,0.004580036010022992,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,random,3,morph_pc1,222586,55983,0.006927384313322182,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,random,3,morph_pc2,222586,55983,0.06771510135979575,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,random,3,morph_pc3,222586,55983,0.0056729387794113295,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,random,4,morph_pc1,223021,55548,0.006352082759003785,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,random,4,morph_pc2,223021,55548,0.06563555584273517,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,random,4,morph_pc3,223021,55548,0.0067075402455971656,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,region,0,morph_pc1,193318,85251,-0.0015423530831664145,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,region,0,morph_pc2,193318,85251,0.044696167588974545,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,region,0,morph_pc3,193318,85251,0.002686967067939139,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,region,1,morph_pc1,188985,89584,0.006369805252810057,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,region,1,morph_pc2,188985,89584,0.058844875868999225,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,region,1,morph_pc3,188985,89584,0.005280331758204637,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,region,2,morph_pc1,233786,44783,-0.029450886930225018,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,region,2,morph_pc2,233786,44783,-0.10131949513681415,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,region,2,morph_pc3,233786,44783,-0.0073737601052530355,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,region,3,morph_pc1,278514,55,-0.08282127411715323,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,region,3,morph_pc2,278514,55,-0.07128536271346841,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,region,3,morph_pc3,278514,55,-0.026183979765896703,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,region,4,morph_pc1,219673,58896,-0.005237224702995036,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,region,4,morph_pc2,219673,58896,0.08726024287310719,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,region,4,morph_pc3,219673,58896,0.009252768622540986,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,year_block,0,morph_pc1,210489,68080,0.005718797758486049,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,year_block,0,morph_pc2,210489,68080,0.06855447466247178,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,year_block,0,morph_pc3,210489,68080,0.005178914075305019,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,year_block,1,morph_pc1,224444,54125,0.00483093589479433,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,year_block,1,morph_pc2,224444,54125,0.06981227436746895,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,year_block,1,morph_pc3,224444,54125,0.006707359929179368,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,year_block,2,morph_pc1,226203,52366,-0.00019850948510224953,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,year_block,2,morph_pc2,226203,52366,0.019866420627678738,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,year_block,2,morph_pc3,226203,52366,0.003077963285628038,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,year_block,3,morph_pc1,219774,58795,0.005813328947322782,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,year_block,3,morph_pc2,219774,58795,0.05719636044733567,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,year_block,3,morph_pc3,219774,58795,0.00457094568114369,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,year_block,4,morph_pc1,233366,45203,0.008318521270809565,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,year_block,4,morph_pc2,233366,45203,0.07937984580957413,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+geometry only,year_block,4,morph_pc3,233366,45203,0.007565681560966264,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 1,1
+climate only,random,0,morph_pc1,189905,47330,0.0022152156130544887,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,random,0,morph_pc2,189905,47330,0.005123171786918901,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,random,0,morph_pc3,189905,47330,5.8735357190919935e-05,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,random,1,morph_pc1,189881,47354,0.0016493921234415065,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,random,1,morph_pc2,189881,47354,0.0078246397181857,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,random,1,morph_pc3,189881,47354,-2.9258399622866804e-05,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,random,2,morph_pc1,189783,47452,0.0012004690708066201,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,random,2,morph_pc2,189783,47452,0.006921071661359357,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,random,2,morph_pc3,189783,47452,0.0002717811934667136,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,random,3,morph_pc1,189489,47746,0.002037012373873659,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,random,3,morph_pc2,189489,47746,0.008250637632639113,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,random,3,morph_pc3,189489,47746,0.00030996660251014774,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,random,4,morph_pc1,189882,47353,0.0017914326797380253,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,random,4,morph_pc2,189882,47353,0.007191592167396954,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,random,4,morph_pc3,189882,47353,0.00023222030260916515,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,region,0,morph_pc1,193263,43972,-0.015189773770994508,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,region,0,morph_pc2,193263,43972,-0.004309034648240617,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,region,0,morph_pc3,193263,43972,-0.00011645957026829024,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,region,1,morph_pc1,147651,89584,-0.0083752800930601,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,region,1,morph_pc2,147651,89584,-0.011011005498750448,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,region,1,morph_pc3,147651,89584,-0.0005457852781916017,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,region,2,morph_pc1,192452,44783,0.00044287681817878344,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,region,2,morph_pc2,192452,44783,0.00946861216242012,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,region,2,morph_pc3,192452,44783,0.00011433166273344675,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,region,3,morph_pc1,178339,58896,-0.006915318393496017,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,region,3,morph_pc2,178339,58896,0.0056047056341108625,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,region,3,morph_pc3,178339,58896,2.102365254230687e-05,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,year_block,0,morph_pc1,185382,51853,0.0021390025633938325,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,year_block,0,morph_pc2,185382,51853,0.007266917367470982,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,year_block,0,morph_pc3,185382,51853,0.00018598362145383351,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,year_block,1,morph_pc1,188048,49187,0.0013708006978042642,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,year_block,1,morph_pc2,188048,49187,0.007317832213806552,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,year_block,1,morph_pc3,188048,49187,0.00016471508463700157,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,year_block,2,morph_pc1,189410,47825,0.001149320976737922,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,year_block,2,morph_pc2,189410,47825,0.00337057012554709,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,year_block,2,morph_pc3,189410,47825,0.00027294852849923945,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,year_block,3,morph_pc1,189308,47927,0.0020473636209673574,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,year_block,3,morph_pc2,189308,47927,0.007328895282559977,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,year_block,3,morph_pc3,189308,47927,-0.000491738681077436,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,year_block,4,morph_pc1,196792,40443,0.000935831067802817,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,year_block,4,morph_pc2,196792,40443,0.006432372916915119,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+climate only,year_block,4,morph_pc3,196792,40443,-0.00013338754966230049,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,random,0,morph_pc1,189905,47330,0.007836580450172215,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,random,0,morph_pc2,189905,47330,0.06865423942602611,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,random,0,morph_pc3,189905,47330,0.005335948896232678,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,random,1,morph_pc1,189881,47354,0.007445845190531819,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,random,1,morph_pc2,189881,47354,0.07244924686599385,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,random,1,morph_pc3,189881,47354,0.006303656535356916,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,random,2,morph_pc1,189783,47452,0.006705461958517289,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,random,2,morph_pc2,189783,47452,0.06984829073503507,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,random,2,morph_pc3,189783,47452,0.007302527672271242,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,random,3,morph_pc1,189489,47746,0.00829818402518101,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,random,3,morph_pc2,189489,47746,0.08122292542315179,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,random,3,morph_pc3,189489,47746,0.007495199552275178,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,random,4,morph_pc1,189882,47353,0.0048434735262000705,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,random,4,morph_pc2,189882,47353,0.04214591541051127,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,random,4,morph_pc3,189882,47353,0.0041865904883964244,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,region,0,morph_pc1,193263,43972,-0.01006945305550877,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,region,0,morph_pc2,193263,43972,0.04191520128417925,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,region,0,morph_pc3,193263,43972,0.003689428038967435,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,region,1,morph_pc1,147651,89584,-0.0023918078343505567,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,region,1,morph_pc2,147651,89584,0.050824310962422015,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,region,1,morph_pc3,147651,89584,0.004821704048850073,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,region,2,morph_pc1,192452,44783,-0.017861609980587057,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,region,2,morph_pc2,192452,44783,-0.06789558437895038,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,region,2,morph_pc3,192452,44783,-0.007571208964342935,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,region,3,morph_pc1,178339,58896,0.0004292063582409522,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,region,3,morph_pc2,178339,58896,0.09331648218929156,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,region,3,morph_pc3,178339,58896,0.009025491960937493,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,year_block,0,morph_pc1,185382,51853,0.007780791015985278,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,year_block,0,morph_pc2,185382,51853,0.0756297032866321,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,year_block,0,morph_pc3,185382,51853,0.0062070171457651035,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,year_block,1,morph_pc1,188048,49187,0.007471235085188321,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,year_block,1,morph_pc2,188048,49187,0.07543324969352205,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,year_block,1,morph_pc3,188048,49187,0.006999688869081755,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,year_block,2,morph_pc1,189410,47825,0.0023059634760379533,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,year_block,2,morph_pc2,189410,47825,0.024863260791765818,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,year_block,2,morph_pc3,189410,47825,0.0034983344265321348,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,year_block,3,morph_pc1,189308,47927,0.007224872026911466,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,year_block,3,morph_pc2,189308,47927,0.0634602232473982,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,year_block,3,morph_pc3,189308,47927,0.0043792077467040835,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,year_block,4,morph_pc1,196792,40443,0.008347210381303927,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,year_block,4,morph_pc2,196792,40443,0.08351602545004788,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+geometry + climate,year_block,4,morph_pc3,196792,40443,0.007878628043651026,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 1,1
+trivial stage summary,random,0,morph_pc1,94010,23486,-2.6336794265890973e-05,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,random,0,morph_pc2,94010,23486,0.0037954205172057165,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,random,0,morph_pc3,94010,23486,-0.0008851733295278663,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,random,1,morph_pc1,94270,23226,-0.00014299252792149275,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,random,1,morph_pc2,94270,23226,0.08675285540728872,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,random,1,morph_pc3,94270,23226,0.0016522750502930839,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,random,2,morph_pc1,93885,23611,4.411267951043296e-05,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,random,2,morph_pc2,93885,23611,0.0919808263742441,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,random,2,morph_pc3,93885,23611,0.0013798049875607399,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,random,3,morph_pc1,93845,23651,-4.376149078666458e-05,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,random,3,morph_pc2,93845,23651,0.08970310299909856,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,random,3,morph_pc3,93845,23651,0.001245866315749633,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,random,4,morph_pc1,93974,23522,8.471293129963531e-05,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,random,4,morph_pc2,93974,23522,0.09365756795016889,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,random,4,morph_pc3,93974,23522,0.0015264632403034772,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,region,0,morph_pc1,84695,32801,-0.0017379724191712853,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,region,0,morph_pc2,84695,32801,0.05282557246535724,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,region,0,morph_pc3,84695,32801,-0.0011685477695422275,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,region,1,morph_pc1,79923,37573,-0.0032404981593447957,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,region,1,morph_pc2,79923,37573,0.06000426792491609,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,region,1,morph_pc3,79923,37573,0.001093531216714072,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,region,2,morph_pc1,98460,19036,-0.005679134713345579,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,region,2,morph_pc2,98460,19036,-0.0871472834225493,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,region,2,morph_pc3,98460,19036,9.115047696661716e-05,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,region,3,morph_pc1,117466,30,-0.12903060356585105,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,region,3,morph_pc2,117466,30,-0.030640741228121104,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,region,3,morph_pc3,117466,30,-0.04756703685887098,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,region,4,morph_pc1,89440,28056,-0.0028558678151886507,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,region,4,morph_pc2,89440,28056,0.10918092976955207,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,region,4,morph_pc3,89440,28056,0.0017371185122414534,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,year_block,0,morph_pc1,89752,27744,-0.0003384452873407273,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,year_block,0,morph_pc2,89752,27744,0.08552341653367879,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,year_block,0,morph_pc3,89752,27744,0.0006740381133718554,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,year_block,1,morph_pc1,93661,23835,6.627893490707137e-07,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,year_block,1,morph_pc2,93661,23835,0.09091899659628044,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,year_block,1,morph_pc3,93661,23835,0.001724140435138355,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,year_block,2,morph_pc1,94834,22662,-0.00022378634437525413,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,year_block,2,morph_pc2,94834,22662,0.08833624879986246,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,year_block,2,morph_pc3,94834,22662,0.0012082010742711091,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,year_block,3,morph_pc1,93429,24067,-0.00019461438148615784,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,year_block,3,morph_pc2,93429,24067,0.024629807439890405,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,year_block,3,morph_pc3,93429,24067,-0.00015729676568554396,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,year_block,4,morph_pc1,98308,19188,-8.762941642759259e-06,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,year_block,4,morph_pc2,98308,19188,0.0919207943123661,"area_so_far_km2,elapsed_observations",day 2,2
+trivial stage summary,year_block,4,morph_pc3,98308,19188,0.0017945607587940282,"area_so_far_km2,elapsed_observations",day 2,2
+geometry only,random,0,morph_pc1,94010,23486,-0.0001577780000387996,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,random,0,morph_pc2,94010,23486,0.004088898336605085,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,random,0,morph_pc3,94010,23486,-0.0010081867711710935,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,random,1,morph_pc1,94270,23226,0.00010893945374101932,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,random,1,morph_pc2,94270,23226,0.0826458150914029,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,random,1,morph_pc3,94270,23226,0.0016879920134637016,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,random,2,morph_pc1,93885,23611,0.00028000553358431546,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,random,2,morph_pc2,93885,23611,0.09184654948886528,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,random,2,morph_pc3,93885,23611,0.0015106516800532654,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,random,3,morph_pc1,93845,23651,9.776472719658091e-05,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,random,3,morph_pc2,93845,23651,0.08970007863822771,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,random,3,morph_pc3,93845,23651,0.0011687812589455948,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,random,4,morph_pc1,93974,23522,0.00015857395742968627,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,random,4,morph_pc2,93974,23522,0.0935542829351057,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,random,4,morph_pc3,93974,23522,0.0015967237993105288,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,region,0,morph_pc1,84695,32801,-0.0014225353920760408,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,region,0,morph_pc2,84695,32801,0.051879798893010864,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,region,0,morph_pc3,84695,32801,-0.001143684226409647,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,region,1,morph_pc1,79923,37573,-0.0029906932327525837,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,region,1,morph_pc2,79923,37573,0.059942818893436334,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,region,1,morph_pc3,79923,37573,0.0012416768441037007,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,region,2,morph_pc1,98460,19036,-0.00691999397929588,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,region,2,morph_pc2,98460,19036,-0.08964919134713156,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,region,2,morph_pc3,98460,19036,-0.0017484225771828843,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,region,3,morph_pc1,117466,30,-0.12304544902362458,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,region,3,morph_pc2,117466,30,-0.026140189033881045,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,region,3,morph_pc3,117466,30,-0.04428073065518334,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,region,4,morph_pc1,89440,28056,-0.002608689590059665,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,region,4,morph_pc2,89440,28056,0.10933488441082051,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,region,4,morph_pc3,89440,28056,0.0017719523396571013,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,year_block,0,morph_pc1,89752,27744,-0.00024030128246987914,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,year_block,0,morph_pc2,89752,27744,0.08797875474842787,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,year_block,0,morph_pc3,89752,27744,0.0007137900306396494,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,year_block,1,morph_pc1,93661,23835,0.00013021740968732765,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,year_block,1,morph_pc2,93661,23835,0.09151988223801799,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,year_block,1,morph_pc3,93661,23835,0.0017285007034451016,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,year_block,2,morph_pc1,94834,22662,0.00013772744165363449,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,year_block,2,morph_pc2,94834,22662,0.08087748823817098,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,year_block,2,morph_pc3,94834,22662,0.0011076570763034477,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,year_block,3,morph_pc1,93429,24067,-0.0006856523559388705,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,year_block,3,morph_pc2,93429,24067,0.01297740242069978,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,year_block,3,morph_pc3,93429,24067,-0.001539632876653485,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,year_block,4,morph_pc1,98308,19188,0.0002366558174224931,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,year_block,4,morph_pc2,98308,19188,0.08908310183799795,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+geometry only,year_block,4,morph_pc3,98308,19188,0.001954214248172992,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 2,2
+climate only,random,0,morph_pc1,84573,21162,0.004306219170077785,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,random,0,morph_pc2,84573,21162,0.011027205130480833,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,random,0,morph_pc3,84573,21162,0.0009527986334730842,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,random,1,morph_pc1,84852,20883,0.0027252819984703303,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,random,1,morph_pc2,84852,20883,0.013898521311255907,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,random,1,morph_pc3,84852,20883,0.0004897315025498283,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,random,2,morph_pc1,84474,21261,0.004590998461641904,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,random,2,morph_pc2,84474,21261,0.013899358455968569,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,random,2,morph_pc3,84474,21261,0.0012230971272146896,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,random,3,morph_pc1,84474,21261,0.0035891920674544497,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,random,3,morph_pc2,84474,21261,0.014978910423607772,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,random,3,morph_pc3,84474,21261,0.0013129669509253095,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,random,4,morph_pc1,84567,21168,0.002659069816416393,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,random,4,morph_pc2,84567,21168,0.013265715779061327,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,random,4,morph_pc3,84567,21168,0.00016657254815755085,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,region,0,morph_pc1,84665,21070,-0.005124402006458473,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,region,0,morph_pc2,84665,21070,-0.014064593777386447,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,region,0,morph_pc3,84665,21070,-0.0012037561345774606,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,region,1,morph_pc1,68162,37573,0.001317987135238785,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,region,1,morph_pc2,68162,37573,-0.016196215434240546,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,region,1,morph_pc3,68162,37573,-0.0006893228734607959,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,region,2,morph_pc1,86699,19036,-0.008134493544899923,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,region,2,morph_pc2,86699,19036,0.021700377588634412,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,region,2,morph_pc3,86699,19036,-0.0007630849461599531,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,region,3,morph_pc1,77679,28056,-0.006265204768882038,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,region,3,morph_pc2,77679,28056,0.010459200074518282,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,region,3,morph_pc3,77679,28056,-0.0015756165738520789,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,year_block,0,morph_pc1,82606,23129,0.004809657413088808,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,year_block,0,morph_pc2,82606,23129,0.012892900173956834,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,year_block,0,morph_pc3,82606,23129,0.0012147862058720094,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,year_block,1,morph_pc1,83407,22328,0.0019044290602685532,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,year_block,1,morph_pc2,83407,22328,0.013360243876510247,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,year_block,1,morph_pc3,83407,22328,0.0005626735278421169,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,year_block,2,morph_pc1,84438,21297,0.004675377016739923,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,year_block,2,morph_pc2,84438,21297,0.005250525478575074,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,year_block,2,morph_pc3,84438,21297,0.0007807770298636774,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,year_block,3,morph_pc1,84607,21128,0.0012124183853279291,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,year_block,3,morph_pc2,84607,21128,0.01574822547578958,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,year_block,3,morph_pc3,84607,21128,-0.0004057883152779329,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,year_block,4,morph_pc1,87882,17853,0.003156664082212046,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,year_block,4,morph_pc2,87882,17853,0.012325585033545083,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+climate only,year_block,4,morph_pc3,87882,17853,0.00043814846575485067,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,random,0,morph_pc1,84573,21162,0.004597146691914578,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,random,0,morph_pc2,84573,21162,0.09133325378969126,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,random,0,morph_pc3,84573,21162,0.0022036855748619466,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,random,1,morph_pc1,84852,20883,0.0027304119089280876,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,random,1,morph_pc2,84852,20883,0.09429062197071558,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,random,1,morph_pc3,84852,20883,0.001945341499598796,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,random,2,morph_pc1,84474,21261,0.004951460292071386,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,random,2,morph_pc2,84474,21261,0.09466770136978642,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,random,2,morph_pc3,84474,21261,0.003471548085385301,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,random,3,morph_pc1,84474,21261,0.00366609331331913,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,random,3,morph_pc2,84474,21261,0.05831551372006072,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,random,3,morph_pc3,84474,21261,0.0018259415799937173,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,random,4,morph_pc1,84567,21168,0.0027569088344358006,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,random,4,morph_pc2,84567,21168,0.08613016867047618,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,random,4,morph_pc3,84567,21168,0.001322267293989654,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,region,0,morph_pc1,84665,21070,-0.00503861387395621,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,region,0,morph_pc2,84665,21070,0.032376881838000915,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,region,0,morph_pc3,84665,21070,-0.0007544561042136522,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,region,1,morph_pc1,68162,37573,0.0015738835756093916,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,region,1,morph_pc2,68162,37573,0.04959229997565029,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,region,1,morph_pc3,68162,37573,0.0005792359827543336,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,region,2,morph_pc1,86699,19036,-0.009437467736203242,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,region,2,morph_pc2,86699,19036,-0.035172029239362246,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,region,2,morph_pc3,86699,19036,-0.0023185092037656396,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,region,3,morph_pc1,77679,28056,-0.005984206133234249,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,region,3,morph_pc2,77679,28056,0.11511379986649561,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,region,3,morph_pc3,77679,28056,-0.00016635609579074284,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,year_block,0,morph_pc1,82606,23129,0.0049414467379456095,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,year_block,0,morph_pc2,82606,23129,0.09466017411889138,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,year_block,0,morph_pc3,82606,23129,0.002223635041131322,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,year_block,1,morph_pc1,83407,22328,0.002099774547382305,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,year_block,1,morph_pc2,83407,22328,0.09764605537531479,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,year_block,1,morph_pc3,83407,22328,0.0023113074651740506,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,year_block,2,morph_pc1,84438,21297,0.005112247603739184,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,year_block,2,morph_pc2,84438,21297,0.08207824232290883,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,year_block,2,morph_pc3,84438,21297,0.00212884576839667,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,year_block,3,morph_pc1,84607,21128,0.0007973886376341222,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,year_block,3,morph_pc2,84607,21128,0.021581732027204703,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,year_block,3,morph_pc3,84607,21128,-0.001554749644592901,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,year_block,4,morph_pc1,87882,17853,0.003494013371521665,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,year_block,4,morph_pc2,87882,17853,0.09386821762103426,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+geometry + climate,year_block,4,morph_pc3,87882,17853,0.0024878959562094627,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 2,2
+trivial stage summary,random,0,morph_pc1,36129,9066,0.0038983546898810895,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,random,0,morph_pc2,36129,9066,0.0726308247129851,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,random,0,morph_pc3,36129,9066,0.0006605797785550482,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,random,1,morph_pc1,36201,8994,0.0027008926766307617,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,random,1,morph_pc2,36201,8994,0.05677180686565697,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,random,1,morph_pc3,36201,8994,0.000449173370938305,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,random,2,morph_pc1,36066,9129,0.0038198630561266933,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,random,2,morph_pc2,36066,9129,0.061081474254845336,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,random,2,morph_pc3,36066,9129,0.0007264932055205398,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,random,3,morph_pc1,36093,9102,0.003827222643060346,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,random,3,morph_pc2,36093,9102,0.06880464666910335,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,random,3,morph_pc3,36093,9102,0.000666887062083843,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,random,4,morph_pc1,36291,8904,-0.0008257933137787443,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,random,4,morph_pc2,36291,8904,0.0004848796552697765,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,random,4,morph_pc3,36291,8904,-0.0006018547588970691,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,region,0,morph_pc1,32467,12728,-0.010025407437170397,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,region,0,morph_pc2,32467,12728,0.03281894038435762,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,region,0,morph_pc3,32467,12728,-0.008597485997215104,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,region,1,morph_pc1,30426,14769,-0.0025969992767960193,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,region,1,morph_pc2,30426,14769,-0.00654365476229013,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,region,1,morph_pc3,30426,14769,0.0003059443874513512,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,region,2,morph_pc1,38003,7192,0.0016772496313668395,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,region,2,morph_pc2,38003,7192,0.06309038903794362,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,region,2,morph_pc3,38003,7192,-0.00032943292268394764,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,region,3,morph_pc1,45174,21,-0.030712301514850493,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,region,3,morph_pc2,45174,21,-0.042887308432946636,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,region,3,morph_pc3,45174,21,-0.6233885167928106,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,region,4,morph_pc1,34710,10485,-0.018336369824990095,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,region,4,morph_pc2,34710,10485,-0.005491933162373286,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,region,4,morph_pc3,34710,10485,-0.008297389473190364,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,year_block,0,morph_pc1,34850,10345,0.0020059624106709695,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,year_block,0,morph_pc2,34850,10345,0.060448197461253295,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,year_block,0,morph_pc3,34850,10345,9.076890246584313e-05,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,year_block,1,morph_pc1,35839,9356,0.003934441853382653,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,year_block,1,morph_pc2,35839,9356,0.06001895916928335,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,year_block,1,morph_pc3,35839,9356,0.0007582274101881614,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,year_block,2,morph_pc1,36419,8776,4.925043314052413e-05,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,year_block,2,morph_pc2,36419,8776,0.06770657398960833,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,year_block,2,morph_pc3,36419,8776,-0.00229494462166846,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,year_block,3,morph_pc1,35965,9230,-0.0033606581719693995,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,year_block,3,morph_pc2,35965,9230,-0.04522546122012927,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,year_block,3,morph_pc3,35965,9230,-0.0006151484106338145,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,year_block,4,morph_pc1,37707,7488,0.0039625961869205195,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,year_block,4,morph_pc2,37707,7488,0.07841628667761436,"area_so_far_km2,elapsed_observations",day 4,4
+trivial stage summary,year_block,4,morph_pc3,37707,7488,0.0005604846477041958,"area_so_far_km2,elapsed_observations",day 4,4
+geometry only,random,0,morph_pc1,36129,9066,0.004084462424476021,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,random,0,morph_pc2,36129,9066,0.0768636352833163,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,random,0,morph_pc3,36129,9066,0.0007701181893066122,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,random,1,morph_pc1,36201,8994,0.003675977726174784,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,random,1,morph_pc2,36201,8994,0.06613268398105776,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,random,1,morph_pc3,36201,8994,0.00047102404121590613,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,random,2,morph_pc1,36066,9129,0.0021853335096698734,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,random,2,morph_pc2,36066,9129,0.07205375635377476,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,random,2,morph_pc3,36066,9129,0.0007588433075124135,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,random,3,morph_pc1,36093,9102,0.002825425418935379,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,random,3,morph_pc2,36093,9102,0.05742714395791748,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,random,3,morph_pc3,36093,9102,0.0005022908017071614,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,random,4,morph_pc1,36291,8904,0.0025210730344926713,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,random,4,morph_pc2,36291,8904,0.04609445309421767,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,random,4,morph_pc3,36291,8904,-0.0011583460451745076,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,region,0,morph_pc1,32467,12728,-0.00953957514889514,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,region,0,morph_pc2,32467,12728,0.043844949690566515,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,region,0,morph_pc3,32467,12728,-0.008558685458847082,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,region,1,morph_pc1,30426,14769,-0.0013645901522465476,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,region,1,morph_pc2,30426,14769,0.0038018307332855494,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,region,1,morph_pc3,30426,14769,0.0003387351747142775,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,region,2,morph_pc1,38003,7192,-0.0014616093438271083,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,region,2,morph_pc2,38003,7192,-0.037969450254450754,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,region,2,morph_pc3,38003,7192,-0.00019854421376730436,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,region,3,morph_pc1,45174,21,-0.013904180441296932,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,region,3,morph_pc2,45174,21,0.007172503610881176,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,region,3,morph_pc3,45174,21,-0.624896388591687,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,region,4,morph_pc1,34710,10485,-0.014612034685659525,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,region,4,morph_pc2,34710,10485,0.0449916837917026,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,region,4,morph_pc3,34710,10485,-0.010918934387166956,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,year_block,0,morph_pc1,34850,10345,0.002601881158389441,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,year_block,0,morph_pc2,34850,10345,0.07502813277022236,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,year_block,0,morph_pc3,34850,10345,0.00012903655123552848,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,year_block,1,morph_pc1,35839,9356,0.0036640954121729408,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,year_block,1,morph_pc2,35839,9356,0.03952538218505741,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,year_block,1,morph_pc3,35839,9356,0.0008147405621906634,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,year_block,2,morph_pc1,36419,8776,0.0007896796808333217,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,year_block,2,morph_pc2,36419,8776,0.08040481720445414,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,year_block,2,morph_pc3,36419,8776,-0.002295426893733188,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,year_block,3,morph_pc1,35965,9230,0.0013399902689416043,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,year_block,3,morph_pc2,35965,9230,0.01171348409919426,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,year_block,3,morph_pc3,35965,9230,-0.002682889302177527,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,year_block,4,morph_pc1,37707,7488,0.004623858198242847,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,year_block,4,morph_pc2,37707,7488,0.08723052848542956,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+geometry only,year_block,4,morph_pc3,37707,7488,0.0006490231734593843,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 4,4
+climate only,random,0,morph_pc1,33301,8332,0.012320096569838346,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,random,0,morph_pc2,33301,8332,0.04000139174099371,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,random,0,morph_pc3,33301,8332,0.004763474859906913,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,random,1,morph_pc1,33354,8279,0.011219457593431348,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,random,1,morph_pc2,33354,8279,0.03297465892519835,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,random,1,morph_pc3,33354,8279,0.005247955299004903,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,random,2,morph_pc1,33198,8435,0.007944234722188637,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,random,2,morph_pc2,33198,8435,0.029235794900565604,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,random,2,morph_pc3,33198,8435,0.003951845280668054,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,random,3,morph_pc1,33238,8395,0.008073988045830593,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,random,3,morph_pc2,33238,8395,0.03222140195082224,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,random,3,morph_pc3,33238,8395,0.0038601269076488087,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,random,4,morph_pc1,33441,8192,0.011735141725695897,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,random,4,morph_pc2,33441,8192,0.035825490082682654,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,random,4,morph_pc3,33441,8192,0.005442839153685153,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,region,0,morph_pc1,32446,9187,0.005207912259820646,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,region,0,morph_pc2,32446,9187,-0.009549402147422947,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,region,0,morph_pc3,32446,9187,0.002666160621571878,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,region,1,morph_pc1,26864,14769,-0.004727298468395258,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,region,1,morph_pc2,26864,14769,-0.03130060351226138,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,region,1,morph_pc3,26864,14769,-0.001024963847152227,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,region,2,morph_pc1,34441,7192,0.008310138653915833,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,region,2,morph_pc2,34441,7192,0.005581588050129094,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,region,2,morph_pc3,34441,7192,0.002506362129084061,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,region,3,morph_pc1,31148,10485,0.0027394985038325936,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,region,3,morph_pc2,31148,10485,0.025639694429894555,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,region,3,morph_pc3,31148,10485,-0.003145932228836079,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,year_block,0,morph_pc1,32763,8870,0.014522714228272116,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,year_block,0,morph_pc2,32763,8870,0.035369075087827495,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,year_block,0,morph_pc3,32763,8870,0.00671081939838325,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,year_block,1,morph_pc1,32758,8875,0.00714181992407803,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,year_block,1,morph_pc2,32758,8875,0.03182446789679294,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,year_block,1,morph_pc3,32758,8875,0.0033198440879955715,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,year_block,2,morph_pc1,33219,8414,0.01258880345126856,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,year_block,2,morph_pc2,33219,8414,0.01318007811467703,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,year_block,2,morph_pc3,33219,8414,0.005234649871583175,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,year_block,3,morph_pc1,33219,8414,0.0034320284370527032,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,year_block,3,morph_pc2,33219,8414,0.03874499071887172,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,year_block,3,morph_pc3,33219,8414,0.0021254281433579214,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,year_block,4,morph_pc1,34573,7060,0.01044329056519655,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,year_block,4,morph_pc2,34573,7060,0.03759286282759755,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+climate only,year_block,4,morph_pc3,34573,7060,0.003612454485450778,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,random,0,morph_pc1,33301,8332,0.011707620379223793,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,random,0,morph_pc2,33301,8332,0.04754699884988878,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,random,0,morph_pc3,33301,8332,0.0050442338283510635,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,random,1,morph_pc1,33354,8279,0.014198490480416548,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,random,1,morph_pc2,33354,8279,0.09540946561302555,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,random,1,morph_pc3,33354,8279,0.0056449345223450464,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,random,2,morph_pc1,33198,8435,0.010269668965979806,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,random,2,morph_pc2,33198,8435,0.08636578194125277,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,random,2,morph_pc3,33198,8435,0.004286319473937317,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,random,3,morph_pc1,33238,8395,0.008107502028184,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,random,3,morph_pc2,33238,8395,0.004909191052219319,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,random,3,morph_pc3,33238,8395,0.0014342245429244116,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,random,4,morph_pc1,33441,8192,0.013926060473335888,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,random,4,morph_pc2,33441,8192,0.09598700606698951,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,random,4,morph_pc3,33441,8192,0.005678502513373318,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,region,0,morph_pc1,32446,9187,0.006118482378525081,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,region,0,morph_pc2,32446,9187,0.018073903717507722,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,region,0,morph_pc3,32446,9187,0.002723670629382058,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,region,1,morph_pc1,26864,14769,-0.0017934926261351514,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,region,1,morph_pc2,26864,14769,0.009473120723560657,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,region,1,morph_pc3,26864,14769,-0.0007986134295370206,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,region,2,morph_pc1,34441,7192,0.011270146623703403,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,region,2,morph_pc2,34441,7192,0.03743081928386294,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,region,2,morph_pc3,34441,7192,0.002946130427581406,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,region,3,morph_pc1,31148,10485,0.0005685992023989339,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,region,3,morph_pc2,31148,10485,0.08055434481759005,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,region,3,morph_pc3,31148,10485,-0.010921660471276962,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,year_block,0,morph_pc1,32763,8870,0.016191408182976597,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,year_block,0,morph_pc2,32763,8870,0.09026601617556129,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,year_block,0,morph_pc3,32763,8870,0.006914020038503943,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,year_block,1,morph_pc1,32758,8875,0.009253950633012487,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,year_block,1,morph_pc2,32758,8875,0.06542932352462572,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,year_block,1,morph_pc3,32758,8875,0.003758353695224481,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,year_block,2,morph_pc1,33219,8414,0.01477840641493644,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,year_block,2,morph_pc2,33219,8414,0.08374301207529189,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,year_block,2,morph_pc3,33219,8414,0.005188190997635678,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,year_block,3,morph_pc1,33219,8414,0.00620917396820575,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,year_block,3,morph_pc2,33219,8414,0.039091352360534515,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,year_block,3,morph_pc3,33219,8414,0.0007279688631056658,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,year_block,4,morph_pc1,34573,7060,0.012944497587061177,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,year_block,4,morph_pc2,34573,7060,0.10316155058880183,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+geometry + climate,year_block,4,morph_pc3,34573,7060,0.0039320967479263835,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 4,4
+trivial stage summary,random,0,morph_pc1,8657,2161,0.010290422662864396,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,random,0,morph_pc2,8657,2161,0.05355011260789466,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,random,0,morph_pc3,8657,2161,0.0041773592554593675,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,random,1,morph_pc1,8684,2134,0.014671378265145862,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,random,1,morph_pc2,8684,2134,0.09128325786167946,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,random,1,morph_pc3,8684,2134,0.0053403254739176065,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,random,2,morph_pc1,8559,2259,0.016462635419405403,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,random,2,morph_pc2,8559,2259,0.0865045227016954,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,random,2,morph_pc3,8559,2259,0.004273577052194999,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,random,3,morph_pc1,8621,2197,0.012417578874368562,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,random,3,morph_pc2,8621,2197,0.10505724507865566,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,random,3,morph_pc3,8621,2197,0.003767309981033584,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,random,4,morph_pc1,8751,2067,0.017904877699949306,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,random,4,morph_pc2,8751,2067,0.09206438075579759,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,random,4,morph_pc3,8751,2067,0.005076872079303518,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,region,0,morph_pc1,7438,3380,-0.002953616696261152,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,region,0,morph_pc2,7438,3380,0.06455417551718534,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,region,0,morph_pc3,7438,3380,-0.01167233723842176,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,region,1,morph_pc1,7547,3271,-0.008401729585740147,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,region,1,morph_pc2,7547,3271,-0.10430577834827037,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,region,1,morph_pc3,7547,3271,0.0012847587238987712,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,region,2,morph_pc1,8824,1994,0.020291464186857344,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,region,2,morph_pc2,8824,1994,0.0032436487405839154,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,region,2,morph_pc3,8824,1994,0.00834249184617486,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,region,4,morph_pc1,8649,2169,-0.009909662601768066,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,region,4,morph_pc2,8649,2169,0.07431759092697865,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,region,4,morph_pc3,8649,2169,-0.014609174813234427,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,year_block,0,morph_pc1,8310,2508,0.00810732933384739,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,year_block,0,morph_pc2,8310,2508,0.09847873621173786,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,year_block,0,morph_pc3,8310,2508,0.001315106896444651,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,year_block,1,morph_pc1,8549,2269,0.017058826316955433,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,year_block,1,morph_pc2,8549,2269,0.06746154452890252,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,year_block,1,morph_pc3,8549,2269,0.006235941467865436,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,year_block,2,morph_pc1,8865,1953,0.01281001069446197,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,year_block,2,morph_pc2,8865,1953,0.08651601394438313,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,year_block,2,morph_pc3,8865,1953,0.0037123888213742573,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,year_block,3,morph_pc1,8527,2291,0.01889332810574096,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,year_block,3,morph_pc2,8527,2291,0.04772037292769471,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,year_block,3,morph_pc3,8527,2291,0.008117837097060487,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,year_block,4,morph_pc1,9021,1797,0.012502268372082348,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,year_block,4,morph_pc2,9021,1797,0.11649475193611691,"area_so_far_km2,elapsed_observations",day 8,8
+trivial stage summary,year_block,4,morph_pc3,9021,1797,0.0025539934332033942,"area_so_far_km2,elapsed_observations",day 8,8
+geometry only,random,0,morph_pc1,8657,2161,0.010554242541999992,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,random,0,morph_pc2,8657,2161,0.09380980375197345,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,random,0,morph_pc3,8657,2161,-0.00041018117438285095,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,random,1,morph_pc1,8684,2134,0.014759444487121853,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,random,1,morph_pc2,8684,2134,0.09527633443439343,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,random,1,morph_pc3,8684,2134,0.005809171591825257,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,random,2,morph_pc1,8559,2259,0.016492643431584852,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,random,2,morph_pc2,8559,2259,0.10593072090341904,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,random,2,morph_pc3,8559,2259,0.005174494585375111,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,random,3,morph_pc1,8621,2197,0.01280585595283279,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,random,3,morph_pc2,8621,2197,0.11891814881581764,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,random,3,morph_pc3,8621,2197,0.004468581560863827,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,random,4,morph_pc1,8751,2067,0.016201056339630537,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,random,4,morph_pc2,8751,2067,0.07862887586328327,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,random,4,morph_pc3,8751,2067,0.006504424031327449,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,region,0,morph_pc1,7438,3380,-0.0029132715485589156,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,region,0,morph_pc2,7438,3380,0.0790771036842437,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,region,0,morph_pc3,7438,3380,-0.011190600278558005,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,region,1,morph_pc1,7547,3271,-0.00710326502790104,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,region,1,morph_pc2,7547,3271,-0.09082630550351523,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,region,1,morph_pc3,7547,3271,0.0014798919118143017,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,region,2,morph_pc1,8824,1994,0.018349227396253998,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,region,2,morph_pc2,8824,1994,-0.07661306815953894,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,region,2,morph_pc3,8824,1994,0.00961671464785685,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,region,4,morph_pc1,8649,2169,-0.009888653651814128,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,region,4,morph_pc2,8649,2169,0.12766505182197485,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,region,4,morph_pc3,8649,2169,-0.04994912529855755,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,year_block,0,morph_pc1,8310,2508,0.007364478786035744,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,year_block,0,morph_pc2,8310,2508,0.10993102719983561,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,year_block,0,morph_pc3,8310,2508,0.002484449644537312,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,year_block,1,morph_pc1,8549,2269,0.016869735583933454,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,year_block,1,morph_pc2,8549,2269,0.07336239292474844,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,year_block,1,morph_pc3,8549,2269,0.007051275401744217,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,year_block,2,morph_pc1,8865,1953,0.012092389988095364,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,year_block,2,morph_pc2,8865,1953,0.0797361162579534,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,year_block,2,morph_pc3,8865,1953,0.004803335657197705,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,year_block,3,morph_pc1,8527,2291,0.01504592290170681,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,year_block,3,morph_pc2,8527,2291,0.09637953726895698,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,year_block,3,morph_pc3,8527,2291,-0.008297926531831923,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,year_block,4,morph_pc1,9021,1797,0.01020392265579062,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,year_block,4,morph_pc2,9021,1797,0.1295640712244256,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+geometry only,year_block,4,morph_pc3,9021,1797,0.004141034519477116,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations",day 8,8
+climate only,random,0,morph_pc1,7740,1934,0.02796334953738766,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,random,0,morph_pc2,7740,1934,0.06401240329653746,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,random,0,morph_pc3,7740,1934,0.017112347149056184,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,random,1,morph_pc1,7758,1916,0.025752017951399808,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,random,1,morph_pc2,7758,1916,0.07425800979066444,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,random,1,morph_pc3,7758,1916,0.011841580679847308,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,random,2,morph_pc1,7659,2015,0.01596959455627356,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,random,2,morph_pc2,7659,2015,0.0691223881648988,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,random,2,morph_pc3,7659,2015,0.003642364225820316,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,random,3,morph_pc1,7712,1962,0.029906623227507145,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,random,3,morph_pc2,7712,1962,0.051609058354489035,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,random,3,morph_pc3,7712,1962,0.017904676634458272,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,random,4,morph_pc1,7827,1847,0.023047850739972287,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,random,4,morph_pc2,7827,1847,0.059455075832487214,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,random,4,morph_pc3,7827,1847,0.018185645796372607,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,region,0,morph_pc1,7434,2240,0.002933877220799075,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,region,0,morph_pc2,7434,2240,-0.023740216058741215,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,region,0,morph_pc3,7434,2240,0.001679686806159264,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,region,1,morph_pc1,6403,3271,-0.022212591137737103,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,region,1,morph_pc2,6403,3271,-0.09332746332195119,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,region,1,morph_pc3,6403,3271,-0.012265496097829898,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,region,2,morph_pc1,7680,1994,0.02811293519441116,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,region,2,morph_pc2,7680,1994,-0.03204823732499085,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,region,2,morph_pc3,7680,1994,0.012455678271711346,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,region,3,morph_pc1,7505,2169,0.02608300030971178,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,region,3,morph_pc2,7505,2169,0.02842351056132908,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,region,3,morph_pc3,7505,2169,-0.0002637363203341625,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,year_block,0,morph_pc1,7632,2042,0.03435867021830352,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,year_block,0,morph_pc2,7632,2042,0.07030520213914315,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,year_block,0,morph_pc3,7632,2042,0.018098669029724568,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,year_block,1,morph_pc1,7557,2117,0.008595210351781901,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,year_block,1,morph_pc2,7557,2117,0.04640893746013919,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,year_block,1,morph_pc3,7557,2117,0.007462288925573435,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,year_block,2,morph_pc1,7810,1864,0.030173850471200026,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,year_block,2,morph_pc2,7810,1864,0.018646538788373967,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,year_block,2,morph_pc3,7810,1864,0.020690898533840207,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,year_block,3,morph_pc1,7660,2014,0.015132357659090379,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,year_block,3,morph_pc2,7660,2014,0.06336406377324155,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,year_block,3,morph_pc3,7660,2014,0.012329872495793648,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,year_block,4,morph_pc1,8037,1637,0.028333749314814693,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,year_block,4,morph_pc2,8037,1637,0.09490194559499143,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+climate only,year_block,4,morph_pc3,8037,1637,0.012597052823103638,"mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,random,0,morph_pc1,7740,1934,0.03652592973243318,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,random,0,morph_pc2,7740,1934,0.11304994170622462,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,random,0,morph_pc3,7740,1934,0.02068016401447248,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,random,1,morph_pc1,7758,1916,0.030398236733966022,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,random,1,morph_pc2,7758,1916,0.11916853531417038,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,random,1,morph_pc3,7758,1916,0.009417470418229712,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,random,2,morph_pc1,7659,2015,0.02442452400212125,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,random,2,morph_pc2,7659,2015,0.13792212438935136,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,random,2,morph_pc3,7659,2015,0.006775598545484263,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,random,3,morph_pc1,7712,1962,0.037119382337967965,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,random,3,morph_pc2,7712,1962,0.11481782393682438,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,random,3,morph_pc3,7712,1962,0.020540434211641756,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,random,4,morph_pc1,7827,1847,0.0270178051696901,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,random,4,morph_pc2,7827,1847,0.12148158886909233,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,random,4,morph_pc3,7827,1847,0.020220165824674896,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,region,0,morph_pc1,7434,2240,0.005241825035590564,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,region,0,morph_pc2,7434,2240,0.0102530037349855,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,region,0,morph_pc3,7434,2240,0.0018136841643087154,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,region,1,morph_pc1,6403,3271,-0.01596681567347069,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,region,1,morph_pc2,6403,3271,-0.039902882660126426,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,region,1,morph_pc3,6403,3271,-0.010504204774733905,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,region,2,morph_pc1,7680,1994,0.04198420390087243,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,region,2,morph_pc2,7680,1994,0.02720390809847595,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,region,2,morph_pc3,7680,1994,0.016764899663552657,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,region,3,morph_pc1,7505,2169,0.018410113129472827,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,region,3,morph_pc2,7505,2169,0.13251738704941807,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,region,3,morph_pc3,7505,2169,-0.02941795820163029,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,year_block,0,morph_pc1,7632,2042,0.034709276375679665,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,year_block,0,morph_pc2,7632,2042,0.1201535136389229,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,year_block,0,morph_pc3,7632,2042,0.019221955029272375,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,year_block,1,morph_pc1,7557,2117,0.02001791102388717,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,year_block,1,morph_pc2,7557,2117,0.0963443141989272,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,year_block,1,morph_pc3,7557,2117,0.0116573868108657,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,year_block,2,morph_pc1,7810,1864,0.03767324502308267,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,year_block,2,morph_pc2,7810,1864,0.09323973945234298,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,year_block,2,morph_pc3,7810,1864,0.022896689440178863,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,year_block,3,morph_pc1,7660,2014,0.022499067766351133,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,year_block,3,morph_pc2,7660,2014,0.11447035503666159,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,year_block,3,morph_pc3,7660,2014,0.00392936303128999,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,year_block,4,morph_pc1,8037,1637,0.030469570022010894,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,year_block,4,morph_pc2,8037,1637,0.16982958777878032,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8
+geometry + climate,year_block,4,morph_pc3,8037,1637,0.014460328955080204,"area_so_far_km2,growth_so_far_km2,max_growth_so_far_km2,active_days_so_far,elapsed_observations,mean_tmax_so_far_c,mean_vpd_so_far_kpa,mean_wind_so_far_m_s",day 8,8

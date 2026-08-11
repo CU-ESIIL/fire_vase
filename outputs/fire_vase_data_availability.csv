@@ -1,0 +1,13 @@
+requested_variable,available,source_file_or_object,units,temporal_resolution,spatial_support,missingness,used_in_analysis
+fire polygons/perimeters,True,fired_conus-ak_daily_nov2001-march2021.gpkg,"FIRED sinusoidal projected CRS, metre units",irregular daily detections,FIRED candidate event polygons,0.0,True
+fire IDs,True,daily/events GeoPackages,integer id,event-level/time-level,FIRED id,0.0,True
+timestamps,True,daily GeoPackage date column,calendar date,detected timesteps,daily records,0.0,True
+maximum temperature,True,gridmet-cache/tmmx_2001-2003.nc,deg C after K conversion,daily,nearest grid cell to event centroid,0.0,True
+minimum temperature,False,not cached,unavailable,daily requested,gridMET,,False
+vapor pressure deficit,False,not cached,unavailable,daily requested,gridMET,,False
+relative humidity,False,not cached,unavailable,daily requested,gridMET,,False
+wind speed,False,not cached,unavailable,daily requested,gridMET,,False
+precipitation,False,not cached,unavailable,daily requested,gridMET,,False
+fuel moisture,False,not cached,unavailable,daily requested,gridMET,,False
+drought index,False,not cached,unavailable,daily requested,gridMET,,False
+elevation,False,not available in cached FIRED candidate data,unavailable,static,context,,False

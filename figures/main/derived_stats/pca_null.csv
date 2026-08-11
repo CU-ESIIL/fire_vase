@@ -1,0 +1,122 @@
+null_model,replicate,cumvar_pc1_5
+observed,-1,0.9627472084578238
+feature-wise permutation,0,0.42565142382619603
+within-fire growth-profile permutation,0,0.9572104324068952
+feature-wise permutation,1,0.4261735706260301
+within-fire growth-profile permutation,1,0.9572162384349058
+feature-wise permutation,2,0.4251793057409438
+within-fire growth-profile permutation,2,0.9572111680068209
+feature-wise permutation,3,0.42610749761547
+within-fire growth-profile permutation,3,0.9572097942877477
+feature-wise permutation,4,0.42628954287455845
+within-fire growth-profile permutation,4,0.9572092766626916
+feature-wise permutation,5,0.42566390302417106
+within-fire growth-profile permutation,5,0.9572127311323653
+feature-wise permutation,6,0.4260080068629374
+within-fire growth-profile permutation,6,0.9572138563383725
+feature-wise permutation,7,0.4256699050995655
+within-fire growth-profile permutation,7,0.957211678787732
+feature-wise permutation,8,0.4258799759587696
+within-fire growth-profile permutation,8,0.9572091489694143
+feature-wise permutation,9,0.42575091788623154
+within-fire growth-profile permutation,9,0.9572133833220506
+feature-wise permutation,10,0.42526237740605877
+within-fire growth-profile permutation,10,0.9572090318256148
+feature-wise permutation,11,0.42574075521305016
+within-fire growth-profile permutation,11,0.9572053205065764
+feature-wise permutation,12,0.4263767908360462
+within-fire growth-profile permutation,12,0.9572123185092969
+feature-wise permutation,13,0.42537962094694476
+within-fire growth-profile permutation,13,0.95721427719477
+feature-wise permutation,14,0.42518153768702865
+within-fire growth-profile permutation,14,0.9572090371150324
+feature-wise permutation,15,0.4257276775766495
+within-fire growth-profile permutation,15,0.9572149774186087
+feature-wise permutation,16,0.4257765883286848
+within-fire growth-profile permutation,16,0.9572131398860209
+feature-wise permutation,17,0.4252929345648006
+within-fire growth-profile permutation,17,0.9572107894786657
+feature-wise permutation,18,0.42597605381748543
+within-fire growth-profile permutation,18,0.9572081244108135
+feature-wise permutation,19,0.42556108333860904
+within-fire growth-profile permutation,19,0.9572119502835784
+feature-wise permutation,20,0.4255191824265312
+within-fire growth-profile permutation,20,0.9572124930311718
+feature-wise permutation,21,0.4255654559357624
+within-fire growth-profile permutation,21,0.9572066259874007
+feature-wise permutation,22,0.42565813332724833
+within-fire growth-profile permutation,22,0.9572116380062385
+feature-wise permutation,23,0.42556162378762863
+within-fire growth-profile permutation,23,0.957214108673252
+feature-wise permutation,24,0.42592479723370624
+within-fire growth-profile permutation,24,0.9572089137581952
+feature-wise permutation,25,0.42545035102957746
+within-fire growth-profile permutation,25,0.9572058982843552
+feature-wise permutation,26,0.42704627462513084
+within-fire growth-profile permutation,26,0.9572115511644678
+feature-wise permutation,27,0.42541645128897343
+within-fire growth-profile permutation,27,0.9572121854701888
+feature-wise permutation,28,0.42626933970530045
+within-fire growth-profile permutation,28,0.9572143406970145
+feature-wise permutation,29,0.4254574401278073
+within-fire growth-profile permutation,29,0.9572112993088996
+feature-wise permutation,30,0.42558703311647866
+within-fire growth-profile permutation,30,0.9572123057569285
+feature-wise permutation,31,0.4261800312467297
+within-fire growth-profile permutation,31,0.9572115938677216
+feature-wise permutation,32,0.4258985372157256
+within-fire growth-profile permutation,32,0.9572078196928754
+feature-wise permutation,33,0.4256394125125793
+within-fire growth-profile permutation,33,0.9572058256337729
+feature-wise permutation,34,0.42562526472280116
+within-fire growth-profile permutation,34,0.9572171454106491
+feature-wise permutation,35,0.4262174675076363
+within-fire growth-profile permutation,35,0.9572168104585845
+feature-wise permutation,36,0.425666331175102
+within-fire growth-profile permutation,36,0.957218314280752
+feature-wise permutation,37,0.42592682129587556
+within-fire growth-profile permutation,37,0.9572130254557397
+feature-wise permutation,38,0.4256613414580695
+within-fire growth-profile permutation,38,0.957208812647723
+feature-wise permutation,39,0.4251103994686246
+within-fire growth-profile permutation,39,0.9572069308484022
+feature-wise permutation,40,0.42568968720539047
+within-fire growth-profile permutation,40,0.9572105319628281
+feature-wise permutation,41,0.4258782912237479
+within-fire growth-profile permutation,41,0.9572102649299015
+feature-wise permutation,42,0.42612036990255175
+within-fire growth-profile permutation,42,0.9572165326319136
+feature-wise permutation,43,0.4257908798298366
+within-fire growth-profile permutation,43,0.9572118811632571
+feature-wise permutation,44,0.42593337065083
+within-fire growth-profile permutation,44,0.9572139442987772
+feature-wise permutation,45,0.4258493134901389
+within-fire growth-profile permutation,45,0.9572128638099776
+feature-wise permutation,46,0.4259135869309498
+within-fire growth-profile permutation,46,0.9572076806001684
+feature-wise permutation,47,0.42644311593115203
+within-fire growth-profile permutation,47,0.9572164222478942
+feature-wise permutation,48,0.42605073191915893
+within-fire growth-profile permutation,48,0.9572127333539858
+feature-wise permutation,49,0.42549189161387985
+within-fire growth-profile permutation,49,0.957211153351575
+feature-wise permutation,50,0.4258744940301396
+within-fire growth-profile permutation,50,0.9572104767064189
+feature-wise permutation,51,0.4255931302688971
+within-fire growth-profile permutation,51,0.9572122404744939
+feature-wise permutation,52,0.4254549445540653
+within-fire growth-profile permutation,52,0.9572116622978667
+feature-wise permutation,53,0.42553844050557393
+within-fire growth-profile permutation,53,0.9572120242455898
+feature-wise permutation,54,0.42577856278870885
+within-fire growth-profile permutation,54,0.9572144766272812
+feature-wise permutation,55,0.4259599839238692
+within-fire growth-profile permutation,55,0.9572102311904639
+feature-wise permutation,56,0.4260800756871013
+within-fire growth-profile permutation,56,0.9572098478118067
+feature-wise permutation,57,0.42612428622802373
+within-fire growth-profile permutation,57,0.9572083786534302
+feature-wise permutation,58,0.42554493153164863
+within-fire growth-profile permutation,58,0.9572084842293244
+feature-wise permutation,59,0.42644838490609377
+within-fire growth-profile permutation,59,0.9572103836285629

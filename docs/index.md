@@ -1,31 +1,45 @@
-# basic_OASIS
+# Fire VASE
 
-`basic_OASIS` is a lightweight MkDocs + Material starter for clear project documentation. It is designed to stay minimal, readable, and easy to extend.
+Fire VASE is the research workspace for treating fire events as developmental
+space-time objects. It collects the manuscript, analysis scripts, schemas,
+figures, and tracked derived outputs that were previously embedded in the
+`cubedynamics` package repository.
 
-[Explore Examples](examples.md){ .md-button .md-button--primary }
-[View Repository](https://github.com/CU-ESIIL/basic_OASIS){ .md-button }
+[Read the Migration Note](migration.md){ .md-button .md-button--primary }
+[View Manuscripts](manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision_science_style.md){ .md-button }
 
 <div class="grid cards" markdown>
 
-- **Code**
+- **Research Corpus**
 
   ---
 
-  Capture setup steps, scripts, and reproducible snippets in one place.
+  Manuscript drafts, citation audits, formal reviews, analysis notes, and
+  figure legends live with the code that generated them.
 
-- **Data**
-
-  ---
-
-  Document data access, formats, and provenance so work stays transparent.
-
-- **Docs**
+- **Lakehouse Contract**
 
   ---
 
-  Write concise guides that future contributors can quickly understand.
+  Schemas, configs, and the data-lake exporter define source fire records,
+  canonical fire time, VASE slices, climate exposures, traits, manifests, and
+  derived assets.
+
+- **Publication Outputs**
+
+  ---
+
+  Selected figures, PDFs, derived CSVs, and manifests are tracked as current
+  publication artifacts; bulk data products remain external or ignored.
 
 </div>
 
-!!! note "Template-first by design"
-    This site is intentionally minimal. Start simple, then extend only what your project needs.
+## Repository Roles
+
+`cubedynamics` remains the reusable package for generic cube operations and the
+public fire hull/VASE API. This repository is the project-specific research
+home for the fire VASE publication pipeline.
+
+The first migration preserved source paths and imports so the current scripts
+remain traceable. Later cleanup can move project-specific pieces into a native
+`fire_vase` package namespace once the copied content has settled.

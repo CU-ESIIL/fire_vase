@@ -1,0 +1,17 @@
+{
+  "name": "fire_geometry",
+  "description": "Validated geometry artifacts for canonical fire time slices.",
+  "primary_key": ["fire_id", "time_index", "geometry_version"],
+  "required": ["fire_id", "time_index", "geometry_version", "geometry_cache_key", "geometry_uri"],
+  "columns": {
+    "fire_id": {"type": "string"},
+    "time_index": {"type": "integer"},
+    "geometry_version": {"type": "string"},
+    "geometry_cache_key": {"type": "string"},
+    "geometry_uri": {"type": "string"},
+    "centroid_lon": {"type": "number"},
+    "centroid_lat": {"type": "number"},
+    "area_km2": {"type": "number"},
+    "qc_flags": {"type": "array"}
+  }
+}

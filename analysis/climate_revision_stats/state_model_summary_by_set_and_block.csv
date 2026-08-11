@@ -1,0 +1,25 @@
+predictor_set,block,r2,n
+core climate only,random_fire,0.04774869094044554,313726.0
+core climate only,region_block,0.025131780460421305,313726.0
+core climate only,region_year_hash,0.04511766885796875,313726.0
+core climate only,year_block,0.04514442457330137,313726.0
+core climate plus state,random_fire,0.33943451687389925,313726.0
+core climate plus state,region_block,0.32058254440107126,313726.0
+core climate plus state,region_year_hash,0.33820931505473584,313726.0
+core climate plus state,year_block,0.3387996869564869,313726.0
+core climate-state interaction,random_fire,0.35444248131300227,313726.0
+core climate-state interaction,region_block,0.3426383387473778,313726.0
+core climate-state interaction,region_year_hash,0.35353058552100614,313726.0
+core climate-state interaction,year_block,0.35333413262126534,313726.0
+expanded climate only,random_fire,0.09275023039885721,313726.0
+expanded climate only,region_block,0.0793226505425848,313726.0
+expanded climate only,region_year_hash,0.0905383177049871,313726.0
+expanded climate only,year_block,0.09054718632473291,313726.0
+expanded climate plus state,random_fire,0.3466345096966621,313726.0
+expanded climate plus state,region_block,0.3301265266786594,313726.0
+expanded climate plus state,region_year_hash,0.3454001708609472,313726.0
+expanded climate plus state,year_block,0.34591068459869734,313726.0
+state only,random_fire,0.3312741002228188,313726.0
+state only,region_block,0.31126977922786603,313726.0
+state only,region_year_hash,0.33022502295674405,313726.0
+state only,year_block,0.3309032237464088,313726.0
