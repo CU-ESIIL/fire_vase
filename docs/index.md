@@ -1,4 +1,5 @@
 <section class="fire-home-hero">
+<img class="fire-hero-vase" src="assets/hero-vase-vpd.png" alt="VPD-colored Fire VASE rendering for a 2018 multi-pulse fire">
 <div class="fire-home-hero__content">
 <p class="fire-kicker">Supplementary information for reproducible wildfire science</p>
 

@@ -1,0 +1,18 @@
+{
+  "output": "docs/assets/hero-vase-vpd.png",
+  "source": "Fire VASE data lake",
+  "fire_id": "387635",
+  "year": 2018,
+  "region": "west",
+  "shape_label": "multi-pulse complex",
+  "final_area_km2": 924.7495645628888,
+  "duration_days": 33.0,
+  "observation_count": 31,
+  "pulse_count": 4,
+  "reactivation_count": 3,
+  "mean_vpd_kpa": 2.8461290322580646,
+  "max_vpd_kpa": 4.15,
+  "daily_vpd_min_kpa": 2.02,
+  "daily_vpd_max_kpa": 4.15,
+  "render_note": "Transparent 3D surface of cumulative normalized VASE width, colored by daily centroid gridMET VPD."
+}

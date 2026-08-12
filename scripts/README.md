@@ -52,6 +52,7 @@ The collaboration-friendly numbered figure entry points live in
 | Script | Purpose |
 |---|---|
 | `check_repository_size.py` | Checks for large generated artifacts before committing. |
+| `generate_hero_vase.py` | Regenerates the transparent VPD-colored homepage hero from the data lake. |
 
 ## Recommended Starting Points
 

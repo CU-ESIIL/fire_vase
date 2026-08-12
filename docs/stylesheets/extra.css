@@ -84,20 +84,42 @@
 }
 
 .fire-home-hero {
+  position: relative;
   min-height: min(68vh, 620px);
   display: grid;
   align-items: end;
+  overflow: hidden;
+  isolation: isolate;
   margin: -1.2rem -1.2rem 2.2rem;
   padding: clamp(2rem, 5vw, 4.8rem);
   color: #fffaf2;
   background:
-    linear-gradient(90deg, rgba(10, 9, 7, 0.9), rgba(10, 9, 7, 0.58) 42%, rgba(10, 9, 7, 0.18)),
-    linear-gradient(0deg, rgba(10, 9, 7, 0.38), rgba(10, 9, 7, 0)),
-    url("../assets/hero.jpg") center / cover;
+    radial-gradient(circle at 76% 42%, rgba(216, 82, 40, 0.34), rgba(216, 82, 40, 0) 34%),
+    radial-gradient(circle at 84% 18%, rgba(242, 184, 75, 0.20), rgba(242, 184, 75, 0) 26%),
+    linear-gradient(90deg, rgba(10, 9, 7, 0.98), rgba(10, 9, 7, 0.88) 42%, rgba(10, 9, 7, 0.64)),
+    var(--fire-ink);
 }
 
 .fire-home-hero__content {
+  position: relative;
+  z-index: 2;
   width: min(820px, 100%);
+}
+
+.fire-hero-vase {
+  position: absolute;
+  z-index: 1;
+  top: -34%;
+  right: -22%;
+  height: 162%;
+  max-width: none;
+  opacity: 0.88;
+  transform: rotate(-4deg);
+  filter:
+    drop-shadow(0 2.2rem 2.2rem rgba(0, 0, 0, 0.58))
+    drop-shadow(0 0 2.2rem rgba(216, 82, 40, 0.32))
+    saturate(1.12);
+  pointer-events: none;
 }
 
 .fire-home-hero h1 {
@@ -331,8 +353,16 @@
     margin-left: 0;
     padding: 2rem 1.25rem;
     background:
-      linear-gradient(90deg, rgba(10, 9, 7, 0.92), rgba(10, 9, 7, 0.64)),
-      url("../assets/hero.jpg") center / cover;
+      radial-gradient(circle at 86% 42%, rgba(216, 82, 40, 0.34), rgba(216, 82, 40, 0) 40%),
+      linear-gradient(90deg, rgba(10, 9, 7, 0.98), rgba(10, 9, 7, 0.82)),
+      var(--fire-ink);
+  }
+
+  .fire-hero-vase {
+    top: 4%;
+    right: -76%;
+    height: 112%;
+    opacity: 0.48;
   }
 
   .fire-home-strip,

@@ -18,6 +18,8 @@ recreating the Fire VASE data lake, manuscript analyses, or figures.
   inventories, checksums, hardlinks, or copies the full handoff package.
 - [check_reproducibility.py](https://github.com/CU-ESIIL/fire_vase/blob/main/scripts/check_reproducibility.py):
   checks data-lake hashes, derived statistics, and figure pixel identity.
+- [generate_hero_vase.py](https://github.com/CU-ESIIL/fire_vase/blob/main/scripts/generate_hero_vase.py):
+  regenerates the transparent VPD-colored homepage hero from the data lake.
 - [config/data_release.yml](https://github.com/CU-ESIIL/fire_vase/blob/main/config/data_release.yml):
   declares what belongs in the public data-lake release.
 

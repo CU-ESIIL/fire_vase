@@ -21,6 +21,8 @@
   vignette.
 - Redesigned the website homepage with stronger Fire VASE branding, hierarchy,
   and reproduction pathways.
+- Added a Python-generated transparent VPD-colored Fire VASE hero asset and
+  generation script.
 - Archived legacy CubeDynamics docs, superseded manuscript review/history
   materials, and ad hoc visual checks outside the public supplement docs tree.
 - Added a `--full-population` lakehouse-build option and aligned the data

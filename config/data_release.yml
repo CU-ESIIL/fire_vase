@@ -61,6 +61,7 @@ collections:
       - analysis/**
       - config/**
       - schemas/**
+      - scripts/generate_hero_vase.py
       - figures/**
       - output/**
       - outputs/**
@@ -68,6 +69,7 @@ collections:
       - docs/migration.md
       - docs/datasets/fired.md
       - docs/dev/fire_vase_lakehouse.md
+      - docs/assets/hero-vase-vpd.*
       - docs/manuscripts/fire_vase_developmental_morphology/**
       - archive/manuscript_history/**
     exclude:
@@ -111,6 +113,7 @@ collections:
       - docs/migration.md
       - docs/datasets/fired.md
       - docs/dev/fire_vase_lakehouse.md
+      - docs/assets/hero-vase-vpd.json
       - docs/manuscripts/fire_vase_developmental_morphology/ai_transparency_statement.md
       - docs/manuscripts/fire_vase_developmental_morphology/final_citation_check_2026-07-23.md
       - archive/manuscript_history/**/*.md
