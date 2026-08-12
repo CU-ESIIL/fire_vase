@@ -4,7 +4,8 @@ This site is the supplementary information hub for the Fire VASE manuscript. It
 points to the data lake, the code used to build the analysis tables, and the
 numbered scripts that regenerate the manuscript figures.
 
-[Reproduce the Data Lake](reproduce-data-lake.md){ .md-button .md-button--primary }
+[Full Reproduction Vignette](vignette-reproduce-pipeline.md){ .md-button .md-button--primary }
+[Reproduce the Data Lake](reproduce-data-lake.md){ .md-button }
 [Reproduce the Figures](reproduce-figures.md){ .md-button }
 [Code Map](code-map.md){ .md-button }
 
@@ -16,6 +17,13 @@ numbered scripts that regenerate the manuscript figures.
 
   Download or rebuild the FIRED/gridMET caches, Parquet lakehouse tables,
   developmental morphology tables, figures, schemas, and manuscript artifacts.
+
+- **Full Pipeline**
+
+  ---
+
+  Follow a single vignette from repository setup through data-lake verification,
+  analysis regeneration, figure rendering, and final reproducibility checks.
 
 - **Methods**
 
@@ -41,6 +49,8 @@ numbered scripts that regenerate the manuscript figures.
   [CU-ESIIL/fire_vase](https://github.com/CU-ESIIL/fire_vase)
 - Script summaries:
   [Code Map](code-map.md)
+- End-to-end pipeline:
+  [Full Reproduction Vignette](vignette-reproduce-pipeline.md)
 - Reusable VASE implementation:
   [CU-ESIIL/cubedynamics](https://github.com/CU-ESIIL/cubedynamics)
 - Current manuscript draft:

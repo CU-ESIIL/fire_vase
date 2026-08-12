@@ -14,6 +14,9 @@
   with focused pages for data-lake, figure, and methods reproduction.
 - Added collaborator-facing code maps and expanded inline documentation for the
   data-lake, reproducibility, and manuscript-figure orchestration scripts.
+- Added an end-to-end website vignette for reproducing the data lake, analysis
+  products, manuscript figures, and final reproducibility checks as one
+  pipeline.
 - Added a `--full-population` lakehouse-build option and aligned the data
   release rebuild workflow with the full data-lake paths.
 

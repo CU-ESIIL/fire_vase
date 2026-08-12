@@ -8,6 +8,7 @@ edit_uri: "edit/main/docs/"
 
 nav:
   - Home: index.md
+  - Full Reproduction Vignette: vignette-reproduce-pipeline.md
   - Reproduce Data Lake: reproduce-data-lake.md
   - Reproduce Figures: reproduce-figures.md
   - Methods Notes: methods.md
