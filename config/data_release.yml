@@ -70,6 +70,8 @@ collections:
       - docs/migration.md
       - docs/datasets/fired.md
       - docs/dev/fire_vase_lakehouse.md
+      - docs/assets/figures/climate_revision_main/**
+      - docs/assets/figures/climate_revision_supplement/**
       - docs/assets/hero-vase-vpd.*
       - docs/assets/ai_transparency/**
       - docs/manuscripts/fire_vase_developmental_morphology/**

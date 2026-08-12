@@ -26,6 +26,8 @@
 - Added an expanded, periodically regenerable AI transparency report with
   prompt-basis statistics, repository artifact inventories, vetting summaries,
   test summaries, and charts.
+- Added current manuscript figure galleries to the website figure reproduction
+  page so readers can see the rendered outputs as well as the code.
 - Archived legacy CubeDynamics docs, superseded manuscript review/history
   materials, and ad hoc visual checks outside the public supplement docs tree.
 - Added a `--full-population` lakehouse-build option and aligned the data

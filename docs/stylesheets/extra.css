@@ -65,6 +65,47 @@
   border: 0;
 }
 
+/* Figure galleries used by the manuscript reproduction page. */
+.figure-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 1.4rem 0 2.2rem;
+}
+
+.figure-gallery--compact {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.figure-gallery figure {
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(21, 17, 13, 0.12);
+  border-radius: 0.45rem;
+  overflow: hidden;
+  background: #fffaf2;
+  box-shadow: 0 0.45rem 1.2rem rgba(21, 17, 13, 0.08);
+}
+
+.figure-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background: #ffffff;
+}
+
+.figure-gallery figcaption {
+  padding: 0.85rem 1rem 1rem;
+  color: rgba(21, 17, 13, 0.78);
+  font-size: 0.76rem;
+  line-height: 1.42;
+}
+
+.figure-gallery figcaption p {
+  margin: 0;
+}
+
 /* Homepage: bold science storytelling with a compact supplement workflow. */
 .md-content:has(.fire-home-hero) {
   max-width: none;
@@ -341,6 +382,10 @@
 }
 
 @media screen and (max-width: 980px) {
+  .figure-gallery--compact {
+    grid-template-columns: 1fr;
+  }
+
   .fire-home-pathways {
     grid-template-columns: 1fr;
   }
