@@ -9,6 +9,30 @@ lakehouse schemas, manuscript drafts, figure generation, rendered figures, and
 small derived tables. `cubedynamics` remains the reusable package home for the
 generic fire hull/VASE API and examples.
 
+## Start Here
+
+Use the website vignette or notebook when handing the project to a collaborator:
+
+- Website:
+  [Fire VASE supplement](https://cu-esiil.github.io/fire_vase/)
+- End-to-end vignette:
+  [`docs/vignette-reproduce-pipeline.md`](docs/vignette-reproduce-pipeline.md)
+- Runnable notebook:
+  [`notebooks/reproduce_fire_vase_pipeline.ipynb`](notebooks/reproduce_fire_vase_pipeline.ipynb)
+- Data-lake guide:
+  [`docs/reproduce-data-lake.md`](docs/reproduce-data-lake.md)
+- Figure guide:
+  [`docs/reproduce-figures.md`](docs/reproduce-figures.md)
+- Code map:
+  [`docs/code-map.md`](docs/code-map.md)
+
+The fastest reproduction path is: install the environment, sync the shared
+CyVerse data lake to `data_lake/fire-vase-data-lake-v0.1`, run the
+reproducibility checker, and then run the numbered figure scripts.
+
+Shared data lake:
+[CyVerse Fire_Vase folder](https://de.cyverse.org/data/ds/iplant/home/shared/esiil/Fire_Vase?type=folder&resourceId=ce3e72e4-95d1-11f1-852a-90e2ba675364)
+
 ## What Was Migrated
 
 The initial migration copied VASE-related material from `cubedynamics` `main` at
@@ -28,6 +52,11 @@ Key copied areas:
   and formal review logs preserved for traceability.
 - `examples/`, `notebooks/`, and `tests/`: VASE examples and smoke tests copied
   from the source project.
+- `docs/assets/hero-vase-vpd.png` and
+  `scripts/generate_hero_vase.py`: reproducible VPD-colored homepage hero asset.
+- `docs/manuscripts/.../ai_transparency_report.md` and
+  `scripts/generate_ai_transparency_report.py`: expanded AI transparency report
+  and regenerable usage-summary charts.
 
 ## Data Boundary
 
@@ -42,15 +71,28 @@ tracked when they are part of the scholarly record.
 ## Local Setup
 
 ```bash
-python -m pip install -e ".[dev]"
-pytest tests/test_fire_vase_lakehouse.py
-mkdocs serve
+uv sync
+uv run --extra test pytest tests/test_fire_vase_lakehouse.py
+uv run --extra docs mkdocs serve
 ```
 
 The installed package currently exposes the transitional CubeDynamics runtime
 under `src/cubedynamics/`. That preserves the original fire VASE import paths
 while this research repository is split out from the general-purpose
 [`CU-ESIIL/cubedynamics`](https://github.com/CU-ESIIL/cubedynamics) package.
+
+## Vignette And Notebook
+
+The canonical collaboration handoff is the full reproduction vignette:
+[`docs/vignette-reproduce-pipeline.md`](docs/vignette-reproduce-pipeline.md).
+It walks through repository setup, shared data-lake verification, optional
+source rebuild, manuscript analysis products, figure reproduction, final checks,
+and data-lake package refresh.
+
+The same workflow is available as a runnable Jupyter notebook:
+[`notebooks/reproduce_fire_vase_pipeline.ipynb`](notebooks/reproduce_fire_vase_pipeline.ipynb).
+The notebook defaults to the shared-data-lake workflow and keeps expensive
+source rebuild steps behind explicit switches.
 
 ## Data Lake Reproduction
 
@@ -65,6 +107,9 @@ The release definition lives in
 [`config/data_release.yml`](config/data_release.yml). It records the expected
 data-lake layout, upstream inputs, generated tables, derived outputs, schemas,
 and the command order for a full rebuild.
+
+Detailed guide:
+[`docs/reproduce-data-lake.md`](docs/reproduce-data-lake.md)
 
 ### Use Or Package An Existing Data Lake
 
@@ -200,7 +245,8 @@ python scripts/prepare_data_lake.py --mode manifest
 
 The easiest figure workflow starts from an existing data-lake package. The
 figure guide is in
-[`manuscript_figures/README.md`](manuscript_figures/README.md).
+[`docs/reproduce-figures.md`](docs/reproduce-figures.md), and the script-level
+README is [`manuscript_figures/README.md`](manuscript_figures/README.md).
 
 Run every manuscript figure:
 
@@ -262,6 +308,31 @@ The website builds from `docs/` and is configured for GitHub Pages at:
 
 ```text
 https://cu-esiil.github.io/fire_vase/
+```
+
+## Website, Manuscript, And Transparency
+
+The website source is `docs/`. It is intentionally organized as manuscript
+supplementary information rather than as a package manual. The homepage links
+the reproduction vignette, notebook, data-lake guide, figure guide, manuscript
+text, and AI transparency materials.
+
+Useful pages:
+
+- Methods notes: [`docs/methods.md`](docs/methods.md)
+- Current manuscript:
+  [`docs/manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision_science_style.md`](docs/manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision_science_style.md)
+- Short AI transparency statement:
+  [`docs/manuscripts/fire_vase_developmental_morphology/ai_transparency_statement.md`](docs/manuscripts/fire_vase_developmental_morphology/ai_transparency_statement.md)
+- Expanded AI transparency report:
+  [`docs/manuscripts/fire_vase_developmental_morphology/ai_transparency_report.md`](docs/manuscripts/fire_vase_developmental_morphology/ai_transparency_report.md)
+
+Regenerate website-derived assets and transparency summaries with:
+
+```bash
+uv run python scripts/generate_hero_vase.py
+uv run python scripts/generate_ai_transparency_report.py
+uv run --extra docs mkdocs build --strict --clean
 ```
 
 ## Near-Term Cleanup
