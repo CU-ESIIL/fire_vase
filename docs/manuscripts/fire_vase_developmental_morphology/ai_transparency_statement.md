@@ -2,6 +2,15 @@
 
 Date prepared: 2026-07-22
 
+Expanded report:
+[AI Transparency Report](ai_transparency_report.md)
+
+Refresh command:
+
+```bash
+uv run python scripts/generate_ai_transparency_report.py
+```
+
 ## Manuscript-ready statement
 
 OpenAI Codex/ChatGPT was used as an AI-assisted coding, analysis, visualization, and editorial tool during development of this project. AI assistance included drafting and revising Python scripts for Fire VASE data ingestion, climate attribution, morphospace analysis, statistical summaries, figure generation, PDF/report production, and render-based quality checks; drafting and revising manuscript text, figure legends, response-to-review material, and simulated reviewer critiques; searching for and organizing candidate citations and author-guideline requirements; and helping maintain logs, manifests, tests, schemas, and documentation. The AI system did not originate the underlying FIRED, MODIS burned-area, gridMET, PRISM, or other observational data, did not make final scientific judgments independently, and is not listed as an author. Human investigators directed the analyses, selected the scientific claims, reviewed code and outputs, verified calculations and citations where reported, and remain responsible for the integrity, interpretation, and final content of the manuscript. Synthetic or illustrative demonstrations created during repository development are documented separately and were not used as evidentiary data for the manuscript analyses.

@@ -103,5 +103,6 @@ analysis, figures, and scientific claims can be read together.
 
 [Science-style revision](manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision_science_style.md){ .md-button .fire-button }
 [AI transparency](manuscripts/fire_vase_developmental_morphology/ai_transparency_statement.md){ .md-button .fire-button }
+[Expanded AI report](manuscripts/fire_vase_developmental_morphology/ai_transparency_report.md){ .md-button .fire-button }
 </div>
 </section>

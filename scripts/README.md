@@ -53,6 +53,7 @@ The collaboration-friendly numbered figure entry points live in
 |---|---|
 | `check_repository_size.py` | Checks for large generated artifacts before committing. |
 | `generate_hero_vase.py` | Regenerates the transparent VPD-colored homepage hero from the data lake. |
+| `generate_ai_transparency_report.py` | Regenerates the expanded AI transparency report, charts, and summary tables from repository evidence. |
 
 ## Recommended Starting Points
 

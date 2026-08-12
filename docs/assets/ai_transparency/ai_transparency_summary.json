@@ -1,0 +1,73 @@
+{
+  "generated_on": "2026-08-12",
+  "source_basis": "Repository-recorded AI/prompt-assisted project record; no raw chat transcript file was found.",
+  "prompt_basis_item_count": 9,
+  "prompt_type_counts": {
+    "Analysis and statistics": 2,
+    "Citations and compliance": 2,
+    "Code and data engineering": 5,
+    "Documentation and handoff": 3,
+    "Manuscript drafting and revision": 1,
+    "Review, critique, and response": 1,
+    "Testing and reproducibility": 1,
+    "Visualization and figures": 6
+  },
+  "evidence_file_count": 54,
+  "evidence_dominant_category_counts": {
+    "Analysis and statistics": 12,
+    "Citations and compliance": 4,
+    "Code and data engineering": 17,
+    "Documentation and handoff": 2,
+    "Manuscript drafting and revision": 3,
+    "Visualization and figures": 16
+  },
+  "artifact_counts": {
+    "Python scripts": 159,
+    "Tests": 17,
+    "Documentation pages": 19,
+    "Archived review/audit docs": 13,
+    "Analysis reports": 17,
+    "Schemas/configs": 18,
+    "Figures and visual assets": 66,
+    "Notebooks": 3,
+    "Manuscript/PDF/DOCX outputs": 15
+  },
+  "vetting_counts": {
+    "Formal review rounds": 5,
+    "Citation audits": 3,
+    "Compliance checks": 2,
+    "Claim/analysis audit reports": 8,
+    "Reproducibility reports": 1,
+    "Figure validation tables": 18
+  },
+  "test_file_count": 17,
+  "test_function_count": 81,
+  "tests_by_area": {
+    "Data/lakehouse and climate": 17,
+    "Fire VASE geometry/API": 27,
+    "Visualization/rendering": 37
+  },
+  "reproducibility": {
+    "available": true,
+    "data_lake_status": "pass",
+    "derived_stats_status": "pass",
+    "figures_pixel_status": "fail",
+    "raw_keys": [
+      "data_lake",
+      "derived_stats",
+      "figures"
+    ]
+  },
+  "output_files": {
+    "prompt_type_chart": "docs/assets/ai_transparency/prompt_type_breakdown.png",
+    "artifact_chart": "docs/assets/ai_transparency/artifact_inventory.png",
+    "vetting_chart": "docs/assets/ai_transparency/vetting_records.png",
+    "test_chart": "docs/assets/ai_transparency/tests_by_area.png",
+    "summary_json": "docs/assets/ai_transparency/ai_transparency_summary.json",
+    "prompt_csv": "docs/assets/ai_transparency/prompt_type_breakdown.csv",
+    "evidence_csv": "docs/assets/ai_transparency/evidence_file_classification.csv",
+    "artifacts_csv": "docs/assets/ai_transparency/artifact_inventory.csv",
+    "vetting_csv": "docs/assets/ai_transparency/vetting_records.csv",
+    "tests_csv": "docs/assets/ai_transparency/tests_by_area.csv"
+  }
+}

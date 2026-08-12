@@ -62,6 +62,7 @@ collections:
       - config/**
       - schemas/**
       - scripts/generate_hero_vase.py
+      - scripts/generate_ai_transparency_report.py
       - figures/**
       - output/**
       - outputs/**
@@ -70,6 +71,7 @@ collections:
       - docs/datasets/fired.md
       - docs/dev/fire_vase_lakehouse.md
       - docs/assets/hero-vase-vpd.*
+      - docs/assets/ai_transparency/**
       - docs/manuscripts/fire_vase_developmental_morphology/**
       - archive/manuscript_history/**
     exclude:
@@ -114,7 +116,9 @@ collections:
       - docs/datasets/fired.md
       - docs/dev/fire_vase_lakehouse.md
       - docs/assets/hero-vase-vpd.json
+      - docs/assets/ai_transparency/ai_transparency_summary.json
       - docs/manuscripts/fire_vase_developmental_morphology/ai_transparency_statement.md
+      - docs/manuscripts/fire_vase_developmental_morphology/ai_transparency_report.md
       - docs/manuscripts/fire_vase_developmental_morphology/final_citation_check_2026-07-23.md
       - archive/manuscript_history/**/*.md
   publication_artifacts:

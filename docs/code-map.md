@@ -20,6 +20,8 @@ recreating the Fire VASE data lake, manuscript analyses, or figures.
   checks data-lake hashes, derived statistics, and figure pixel identity.
 - [generate_hero_vase.py](https://github.com/CU-ESIIL/fire_vase/blob/main/scripts/generate_hero_vase.py):
   regenerates the transparent VPD-colored homepage hero from the data lake.
+- [generate_ai_transparency_report.py](https://github.com/CU-ESIIL/fire_vase/blob/main/scripts/generate_ai_transparency_report.py):
+  regenerates the expanded AI transparency report and usage charts from repository evidence.
 - [config/data_release.yml](https://github.com/CU-ESIIL/fire_vase/blob/main/config/data_release.yml):
   declares what belongs in the public data-lake release.
 
