@@ -95,18 +95,23 @@ def _write_table(frame: pd.DataFrame, path: Path) -> str:
         return path.with_suffix(".csv").as_posix()
 
 
-def run(config_path: Path, output_root: Path, sample_size: int | None = None) -> dict[str, Any]:
+def run(config_path: Path, output_root: Path, sample_size: int | None = None, *, full_population: bool = False) -> dict[str, Any]:
     start = time.perf_counter()
     config = _read_config(config_path)
     run_config = config.get("run", {})
     versions = config.get("versions", {})
     source_uri = Path(config["source"]["fire_catalog_uri"])
-    requested = int(sample_size or run_config.get("sample_size", 1000))
     seed = int(run_config.get("random_seed", 20260721))
     output_root.mkdir(parents=True, exist_ok=True)
 
     source = _read_source_catalog(source_uri)
-    sampled, sample_note = _stratified_sample(source, requested, seed)
+    if full_population:
+        requested = len(source)
+        sampled = source.copy()
+        sample_note = "full_population"
+    else:
+        requested = int(sample_size or run_config.get("sample_size", 1000))
+        sampled, sample_note = _stratified_sample(source, requested, seed)
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     run_id = f"pilot-{now.replace(':', '').replace('+', 'z')}"
 
@@ -231,11 +236,12 @@ def main() -> int:
     parser.add_argument("--config", default="config/fire_vase_pipeline.yml")
     parser.add_argument("--output-root", default=None)
     parser.add_argument("--sample-size", type=int, default=None)
+    parser.add_argument("--full-population", action="store_true", help="Write every source-catalog fire instead of a sampled pilot.")
     args = parser.parse_args()
     config_path = Path(args.config)
     config = _read_config(config_path)
     output_root = Path(args.output_root or config.get("run", {}).get("output_root", "./scratch/fire_vase_run"))
-    report = run(config_path, output_root, args.sample_size)
+    report = run(config_path, output_root, args.sample_size, full_population=args.full_population)
     print(json.dumps(report, indent=2))
     return 0
 

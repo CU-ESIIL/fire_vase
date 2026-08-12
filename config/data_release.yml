@@ -135,8 +135,8 @@ reproduction:
     - mkdocs build --strict --clean
   main_workflow:
     - python scripts/cache_gridmet_years.py --preset comprehensive --keep-going
-    - python scripts/fire_vase_lakehouse_pilot.py --config config/fire_vase_pipeline.yml --output-root scratch/fire_vase_run
-    - python scripts/fire_vase_build_climate_tables.py
+    - python scripts/fire_vase_lakehouse_pilot.py --config config/fire_vase_pipeline.yml --output-root scratch/fire_vase_run_full --full-population
+    - python scripts/fire_vase_build_climate_tables.py --include-optional-variables --table-root scratch/fire_vase_run_full/tables
     - python scripts/fire_vase_build_perimeter_climate_tables.py --include-optional-variables
-    - python scripts/fire_vase_developmental_morphology_analysis.py
+    - python scripts/fire_vase_developmental_morphology_analysis.py --table-root scratch/fire_vase_run_full/tables --data-output-dir scratch/fire_vase_developmental_morphology
     - python scripts/fire_vase_climate_revision.py

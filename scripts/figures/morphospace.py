@@ -8,11 +8,11 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from style import ROOT
+from style import DATA_ROOT
 
 
-DATA_DIR = ROOT / "scratch/fire_vase_developmental_morphology"
-TABLE_DIR = ROOT / "scratch/fire_vase_run_full/tables"
+DATA_DIR = DATA_ROOT / "scratch/fire_vase_developmental_morphology"
+TABLE_DIR = DATA_ROOT / "scratch/fire_vase_run_full/tables"
 
 CLIMATE_COLS = [
     "mean_maximum_temperature_c",

@@ -1,0 +1,8 @@
+Figure_*.pdf
+Figure_*.png
+Figure_*.svg
+Supplementary_Figure_*.pdf
+Supplementary_Figure_*.png
+Supplementary_Figure_*.svg
+derived_stats/
+__pycache__/

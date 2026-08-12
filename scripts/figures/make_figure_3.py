@@ -9,9 +9,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from style import CHARCOAL, FIREBRICK, MORPH_BLUE, ROOT, save_figure, set_style
+from style import CHARCOAL, DATA_ROOT, FIREBRICK, MORPH_BLUE, save_figure, set_style
 
-AUDIT_DIR = ROOT / "analysis" / "claim_audit_stats"
+_REPOSITORY_DIR = DATA_ROOT / "repository"
+AUDIT_DIR = (_REPOSITORY_DIR if _REPOSITORY_DIR.exists() else DATA_ROOT) / "analysis" / "claim_audit_stats"
 
 
 def _require_csv(name: str) -> pd.DataFrame:

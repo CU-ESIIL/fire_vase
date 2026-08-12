@@ -46,7 +46,26 @@ pytest tests/test_fire_vase_lakehouse.py
 mkdocs serve
 ```
 
-## Build The Shareable Data Lake
+The installed package currently exposes the transitional CubeDynamics runtime
+under `src/cubedynamics/`. That preserves the original fire VASE import paths
+while this research repository is split out from the general-purpose
+[`CU-ESIIL/cubedynamics`](https://github.com/CU-ESIIL/cubedynamics) package.
+
+## Data Lake Reproduction
+
+There are two supported collaborator workflows:
+
+1. Use an existing Fire VASE data-lake package when you only need to reproduce
+   manuscript figures or inspect the derived tables.
+2. Rebuild the data lake from source FIRED and gridMET caches when you need to
+   audit or extend the full processing pipeline.
+
+The release definition lives in
+[`config/data_release.yml`](config/data_release.yml). It records the expected
+data-lake layout, upstream inputs, generated tables, derived outputs, schemas,
+and the command order for a full rebuild.
+
+### Use Or Package An Existing Data Lake
 
 Start with a complete manifest:
 
@@ -69,6 +88,146 @@ python scripts/prepare_data_lake.py --mode hardlink --checksum
 Use `--mode copy --checksum` when preparing an independent folder for an
 external drive or cloud upload. The lake itself is ignored by Git; the manifest,
 checksums, and restore map are the reproducibility contract.
+
+Packager code:
+[`scripts/prepare_data_lake.py`](scripts/prepare_data_lake.py)
+
+Data boundary guide:
+[`docs/data.md`](docs/data.md)
+
+FIRED source notes:
+[`docs/datasets/fired.md`](docs/datasets/fired.md)
+
+### Rebuild The Lake With CubeDynamics/Fire VASE Code
+
+This is the heavy path. It rebuilds the lakehouse from FIRED caches and cached
+gridMET files, then regenerates the morphology and climate-revision products.
+It may download many NetCDF files and write large ignored directories under
+`artifacts/` and `scratch/`.
+
+1. Install the repository environment.
+
+   ```bash
+   python -m pip install -e ".[dev]"
+   ```
+
+2. Put the FIRED event and daily perimeter GeoPackages where the pipeline
+   expects them, or update
+   [`config/fire_vase_pipeline.yml`](config/fire_vase_pipeline.yml).
+
+   ```text
+   artifacts/fire-vase-gridmet-real/fired-cache/
+     fired_conus-ak_events_nov2001-march2021.gpkg
+     fired_conus-ak_daily_nov2001-march2021.gpkg
+   ```
+
+3. Cache gridMET variables.
+
+   ```bash
+   python scripts/cache_gridmet_years.py --preset comprehensive --keep-going
+   ```
+
+   Code:
+   [`scripts/cache_gridmet_years.py`](scripts/cache_gridmet_years.py)
+
+4. Build the base Fire VASE lakehouse tables.
+
+   ```bash
+   python scripts/fire_vase_lakehouse_pilot.py \
+     --config config/fire_vase_pipeline.yml \
+     --output-root scratch/fire_vase_run_full \
+     --full-population
+   ```
+
+   Code:
+   [`scripts/fire_vase_lakehouse_pilot.py`](scripts/fire_vase_lakehouse_pilot.py)
+
+   Note: the script does not fabricate rows. Use `--sample-size N` instead of
+   `--full-population` when you want a smaller pilot run.
+
+5. Attach daily centroid gridMET climate to VASE slices.
+
+   ```bash
+   python scripts/fire_vase_build_climate_tables.py \
+     --include-optional-variables \
+     --table-root scratch/fire_vase_run_full/tables
+   ```
+
+   Code:
+   [`scripts/fire_vase_build_climate_tables.py`](scripts/fire_vase_build_climate_tables.py)
+
+6. Build perimeter and active-area climate exposure products.
+
+   ```bash
+   python scripts/fire_vase_build_perimeter_climate_tables.py \
+     --include-optional-variables \
+     --table-root scratch/fire_vase_run_full/tables
+   ```
+
+   Code:
+   [`scripts/fire_vase_build_perimeter_climate_tables.py`](scripts/fire_vase_build_perimeter_climate_tables.py)
+
+7. Build developmental morphology tables.
+
+   ```bash
+   python scripts/fire_vase_developmental_morphology_analysis.py \
+     --table-root scratch/fire_vase_run_full/tables \
+     --data-output-dir scratch/fire_vase_developmental_morphology
+   ```
+
+   Code:
+   [`scripts/fire_vase_developmental_morphology_analysis.py`](scripts/fire_vase_developmental_morphology_analysis.py)
+
+8. Regenerate climate-revision analysis products, figures, and manuscript
+   source outputs.
+
+   ```bash
+   python scripts/fire_vase_climate_revision.py
+   ```
+
+   Code:
+   [`scripts/fire_vase_climate_revision.py`](scripts/fire_vase_climate_revision.py)
+
+After a rebuild, run the packager again to create a shareable data-lake manifest
+or materialized handoff directory.
+
+```bash
+python scripts/prepare_data_lake.py --mode manifest
+```
+
+## Figure Reproduction
+
+The easiest figure workflow starts from an existing data-lake package. The
+figure guide is in
+[`manuscript_figures/README.md`](manuscript_figures/README.md).
+
+Run every manuscript figure:
+
+```bash
+uv run python manuscript_figures/00_run_all.py \
+  --data-lake data_lake/fire-vase-data-lake-v0.1
+```
+
+Run one figure:
+
+```bash
+uv run python manuscript_figures/03_figure_3.py \
+  --data-lake data_lake/fire-vase-data-lake-v0.1
+```
+
+Figure entry points:
+
+- [`manuscript_figures/00_run_all.py`](manuscript_figures/00_run_all.py)
+- [`manuscript_figures/01_figure_1.py`](manuscript_figures/01_figure_1.py)
+- [`manuscript_figures/02_figure_2.py`](manuscript_figures/02_figure_2.py)
+- [`manuscript_figures/03_figure_3.py`](manuscript_figures/03_figure_3.py)
+- [`manuscript_figures/04_figure_4.py`](manuscript_figures/04_figure_4.py)
+- [`manuscript_figures/05_figure_5.py`](manuscript_figures/05_figure_5.py)
+- [`manuscript_figures/06_supplementary_figure_1.py`](manuscript_figures/06_supplementary_figure_1.py)
+
+Shared figure implementation lives in
+[`scripts/figures/`](scripts/figures/). The wrapper scripts set data-lake paths
+and write PDF, PNG, and SVG outputs back into `manuscript_figures/`.
 
 The website builds from `docs/` and is configured for GitHub Pages at:
 

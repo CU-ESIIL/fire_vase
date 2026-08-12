@@ -13,9 +13,10 @@ import matplotlib.pyplot as plt
 
 
 ROOT = Path(__file__).resolve().parents[2]
-MAIN_FIGURE_DIR = ROOT / "figures/main"
-SUPPLEMENT_DIR = ROOT / "figures/supplement"
-DERIVED_STATS_DIR = MAIN_FIGURE_DIR / "derived_stats"
+DATA_ROOT = Path(os.environ.get("FIRE_VASE_DATA_ROOT", ROOT)).expanduser().resolve()
+MAIN_FIGURE_DIR = Path(os.environ.get("FIRE_VASE_MAIN_FIGURE_DIR", ROOT / "figures/main")).expanduser().resolve()
+SUPPLEMENT_DIR = Path(os.environ.get("FIRE_VASE_SUPPLEMENT_DIR", ROOT / "figures/supplement")).expanduser().resolve()
+DERIVED_STATS_DIR = Path(os.environ.get("FIRE_VASE_DERIVED_STATS_DIR", MAIN_FIGURE_DIR / "derived_stats")).expanduser().resolve()
 
 SEED = 20260722
 FULL_WIDTH = (7.1, 4.8)
