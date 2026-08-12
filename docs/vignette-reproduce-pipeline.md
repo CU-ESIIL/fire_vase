@@ -8,6 +8,9 @@ Use the shared data lake when you want to reproduce the analysis and figures
 quickly. Rebuild from source when you need to audit or recreate the full data
 lake itself.
 
+Runnable notebook:
+[notebooks/reproduce_fire_vase_pipeline.ipynb](https://github.com/CU-ESIIL/fire_vase/blob/main/notebooks/reproduce_fire_vase_pipeline.ipynb)
+
 ## 1. Set Up The Repository
 
 Clone the manuscript repository and install the locked Python environment:

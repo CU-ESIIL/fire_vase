@@ -1,61 +1,106 @@
-# Fire VASE Supplement
+<section class="fire-home-hero">
+<div class="fire-home-hero__content">
+<p class="fire-kicker">Supplementary information for reproducible wildfire science</p>
 
-This site is the supplementary information hub for the Fire VASE manuscript. It
-points to the data lake, the code used to build the analysis tables, and the
-numbered scripts that regenerate the manuscript figures.
+<h1>Fire VASE</h1>
 
-[Full Reproduction Vignette](vignette-reproduce-pipeline.md){ .md-button .md-button--primary }
-[Reproduce the Data Lake](reproduce-data-lake.md){ .md-button }
-[Reproduce the Figures](reproduce-figures.md){ .md-button }
-[Code Map](code-map.md){ .md-button }
+<h2>A developmental view of wildfire growth, climate exposure, and reproducible manuscript analysis.</h2>
 
-<div class="grid cards" markdown>
+<p>Fire VASE turns daily fire histories into comparable shapes, then links those
+forms to climate context through an open data lake and numbered figure pipeline.</p>
 
-- **Data Lake**
-
-  ---
-
-  Download or rebuild the FIRED/gridMET caches, Parquet lakehouse tables,
-  developmental morphology tables, figures, schemas, and manuscript artifacts.
-
-- **Full Pipeline**
-
-  ---
-
-  Follow a single vignette from repository setup through data-lake verification,
-  analysis regeneration, figure rendering, and final reproducibility checks.
-
-- **Methods**
-
-  ---
-
-  Follow the manuscript workflow from source fire records through VASE
-  construction, climate attribution, developmental morphology, and validation.
-
-- **Figures**
-
-  ---
-
-  Run one command to regenerate the manuscript figure set, or run the numbered
-  scripts for individual figures.
-
+<p>
+<a class="md-button md-button--primary fire-button" href="vignette-reproduce-pipeline/">Run the Full Pipeline</a>
+<a class="md-button fire-button" href="https://github.com/CU-ESIIL/fire_vase/blob/main/notebooks/reproduce_fire_vase_pipeline.ipynb">Open the Notebook</a>
+</p>
 </div>
+</section>
 
-## What To Use
+<section class="fire-home-strip" markdown>
+<div markdown>
+<span>278,569</span>
+FIRED events represented as developmental histories
+</div>
+<div markdown>
+<span>237,235</span>
+climate-complete fires for centroid gridMET analysis
+</div>
+<div markdown>
+<span>1</span>
+shareable data lake for reproducing the manuscript workflow
+</div>
+</section>
 
-- Data lake handoff:
+<section class="fire-home-intro" markdown>
+<p class="fire-kicker">Where to start</p>
+
+## Recreate the dataset, analysis, and figures
+
+This site is the manuscript-support hub for collaborators, reviewers, and
+readers who want to inspect the data boundary or rerun the analysis. Start from
+the shared CyVerse data lake for fast reproduction, or rebuild from source
+caches when auditing the complete pipeline.
+</section>
+
+<section class="fire-home-pathways">
+
+<a class="fire-pathway fire-pathway--data" href="reproduce-data-lake/">
+<span>Data Lake</span>
+<h2>Get the research package</h2>
+<p>Download, verify, or rebuild the FIRED/gridMET caches, Parquet tables,
+developmental morphology products, schemas, and manuscript artifacts.</p>
+</a>
+
+<a class="fire-pathway fire-pathway--pipeline" href="vignette-reproduce-pipeline/">
+<span>Pipeline</span>
+<h2>Run the full workflow</h2>
+<p>Move from repository setup through data-lake verification, analysis
+regeneration, figure rendering, and final reproducibility checks.</p>
+</a>
+
+<a class="fire-pathway fire-pathway--figures" href="reproduce-figures/">
+<span>Figures</span>
+<h2>Rebuild the manuscript visuals</h2>
+<p>Use the numbered scripts in <code>manuscript_figures/</code> to reproduce every main figure
+and the validation supplement.</p>
+</a>
+
+<a class="fire-pathway fire-pathway--methods" href="methods/">
+<span>Methods</span>
+<h2>Follow the scientific chain</h2>
+<p>Trace source fire records through VASE construction, climate attribution,
+developmental morphology, validation, and interpretation.</p>
+</a>
+
+</section>
+
+<section class="fire-home-links" markdown>
+<div markdown>
+<p class="fire-kicker">Core resources</p>
+
+## Handoff links
+
+- Data lake:
   [CyVerse Fire_Vase folder](https://de.cyverse.org/data/ds/iplant/home/shared/esiil/Fire_Vase?type=folder&resourceId=ce3e72e4-95d1-11f1-852a-90e2ba675364)
 - Source code:
   [CU-ESIIL/fire_vase](https://github.com/CU-ESIIL/fire_vase)
+- Runnable notebook:
+  [reproduce_fire_vase_pipeline.ipynb](https://github.com/CU-ESIIL/fire_vase/blob/main/notebooks/reproduce_fire_vase_pipeline.ipynb)
 - Script summaries:
   [Code Map](code-map.md)
-- End-to-end pipeline:
-  [Full Reproduction Vignette](vignette-reproduce-pipeline.md)
 - Reusable VASE implementation:
   [CU-ESIIL/cubedynamics](https://github.com/CU-ESIIL/cubedynamics)
-- Current manuscript draft:
-  [Science-style revision](manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision_science_style.md)
+</div>
 
-Start with the data-lake page if you want to reproduce the dataset. Start with
-the figure page if you already have the data lake and want to regenerate the
-publication figures.
+<div markdown>
+<p class="fire-kicker">Manuscript</p>
+
+## Current text
+
+The current manuscript draft and transparency materials are included so the
+analysis, figures, and scientific claims can be read together.
+
+[Science-style revision](manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision_science_style.md){ .md-button .fire-button }
+[AI transparency](manuscripts/fire_vase_developmental_morphology/ai_transparency_statement.md){ .md-button .fire-button }
+</div>
+</section>

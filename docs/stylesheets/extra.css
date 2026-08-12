@@ -1,15 +1,23 @@
 /* Central extension point for lightweight, reusable visual tweaks. */
 
 :root {
+  --md-primary-fg-color: #15110d;
+  --md-accent-fg-color: #d85228;
   --oasis-accent: #135d7f;
+  --fire-ink: #15110d;
+  --fire-paper: #fff7ea;
+  --fire-ember: #d85228;
+  --fire-gold: #f2b84b;
+  --fire-moss: #496044;
+  --fire-sky: #2c6f84;
 }
 
-/* Keep homepage hero content a bit more breathable. */
+/* Keep documentation text breathable without flattening the homepage hero. */
 .md-content h1 {
   margin-bottom: 0.5rem;
 }
 
-.md-content > p:first-of-type {
+.md-content > p:first-of-type:not(.fire-kicker) {
   font-size: 1.05rem;
   max-width: 68ch;
 }
@@ -17,6 +25,17 @@
 /* Subtle polish for Material buttons used across docs. */
 .md-button {
   border-radius: 999px;
+}
+
+.md-header {
+  background: var(--fire-ink);
+}
+
+.md-header__button.md-logo img,
+.md-nav__button.md-logo img {
+  padding: 0.1rem 0.35rem;
+  border-radius: 999px;
+  background: rgba(255, 250, 242, 0.92);
 }
 
 .oasis-hover-button {
@@ -44,4 +63,289 @@
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+/* Homepage: bold science storytelling with a compact supplement workflow. */
+.md-content:has(.fire-home-hero) {
+  max-width: none;
+}
+
+.md-content:has(.fire-home-hero) .md-content__inner {
+  margin: 0;
+  padding: 0;
+}
+
+.md-content:has(.fire-home-hero) .md-content__inner::before {
+  display: none;
+}
+
+.md-content:has(.fire-home-hero) .md-content__inner > h1:first-child {
+  display: none;
+}
+
+.fire-home-hero {
+  min-height: min(68vh, 620px);
+  display: grid;
+  align-items: end;
+  margin: -1.2rem -1.2rem 2.2rem;
+  padding: clamp(2rem, 5vw, 4.8rem);
+  color: #fffaf2;
+  background:
+    linear-gradient(90deg, rgba(10, 9, 7, 0.9), rgba(10, 9, 7, 0.58) 42%, rgba(10, 9, 7, 0.18)),
+    linear-gradient(0deg, rgba(10, 9, 7, 0.38), rgba(10, 9, 7, 0)),
+    url("../assets/hero.jpg") center / cover;
+}
+
+.fire-home-hero__content {
+  width: min(820px, 100%);
+}
+
+.fire-home-hero h1 {
+  margin: 0;
+  color: #fffaf2;
+  font-size: clamp(3rem, 8vw, 7.5rem);
+  line-height: 0.86;
+  letter-spacing: 0;
+}
+
+.fire-home-hero h2 {
+  max-width: 760px;
+  margin: 1.1rem 0 0;
+  color: #fff0d6;
+  font-size: clamp(1.25rem, 2vw, 2rem);
+  line-height: 1.16;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.fire-home-hero p:not(.fire-kicker) {
+  max-width: 660px;
+  margin: 1rem 0 1.4rem;
+  color: #fff7ea;
+  font-size: 1.02rem;
+}
+
+.fire-kicker {
+  margin: 0 0 0.65rem;
+  color: var(--fire-ember);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.fire-home-hero .fire-kicker {
+  color: var(--fire-gold);
+}
+
+.fire-home-hero .md-button--primary {
+  color: #fffaf2;
+  background: var(--fire-ember);
+  border-color: var(--fire-ember);
+}
+
+.fire-home-hero .md-button:not(.md-button--primary) {
+  color: #fffaf2;
+  border-color: var(--fire-gold);
+}
+
+.fire-home-hero .md-button:hover {
+  color: var(--fire-ink);
+  background: var(--fire-gold);
+  border-color: var(--fire-gold);
+}
+
+.fire-button {
+  margin-right: 0.45rem;
+  margin-bottom: 0.45rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.fire-home-strip,
+.fire-home-intro,
+.fire-home-pathways,
+.fire-home-links {
+  width: min(1120px, calc(100% - 2.4rem));
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.fire-home-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  margin-top: -3.4rem;
+  margin-bottom: 3rem;
+  color: var(--fire-paper);
+  background: rgba(21, 17, 13, 0.24);
+  border-radius: 0.45rem;
+  box-shadow: 0 1rem 2.5rem rgba(21, 17, 13, 0.18);
+}
+
+.fire-home-strip > div {
+  min-height: 7.5rem;
+  padding: 1.1rem;
+  background: var(--fire-ink);
+}
+
+.fire-home-strip span {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--fire-gold);
+  font-size: clamp(1.7rem, 3vw, 2.7rem);
+  line-height: 1;
+  font-weight: 850;
+}
+
+.fire-home-intro {
+  margin-bottom: 1.4rem;
+}
+
+.fire-home-intro h2 {
+  max-width: 820px;
+  margin: 0;
+  color: var(--fire-ink);
+  font-size: clamp(1.9rem, 4vw, 3.4rem);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.fire-home-intro p:not(.fire-kicker) {
+  max-width: 780px;
+  font-size: 1.04rem;
+}
+
+.fire-home-pathways {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 3.2rem;
+}
+
+.fire-pathway {
+  display: block;
+  min-height: 11.5rem;
+  padding: 1.15rem;
+  color: var(--fire-ink);
+  text-decoration: none;
+  border: 1px solid rgba(21, 17, 13, 0.12);
+  border-top: 0.42rem solid var(--fire-ember);
+  border-radius: 0.45rem;
+  background: #fffaf2;
+  transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
+}
+
+.fire-pathway:hover {
+  color: var(--fire-ink);
+  transform: translateY(-3px);
+  box-shadow: 0 0.9rem 1.8rem rgba(21, 17, 13, 0.12);
+}
+
+.fire-pathway span {
+  display: inline-block;
+  margin-bottom: 1.8rem;
+  color: var(--fire-ember);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.fire-pathway h2 {
+  margin: 0 0 0.6rem;
+  color: var(--fire-ink);
+  font-size: 1.25rem;
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.fire-pathway p {
+  margin: 0;
+  color: rgba(21, 17, 13, 0.76);
+  font-size: 0.76rem;
+  line-height: 1.42;
+}
+
+.fire-pathway--data {
+  border-top-color: var(--fire-ember);
+}
+
+.fire-pathway--pipeline {
+  border-top-color: var(--fire-gold);
+}
+
+.fire-pathway--figures {
+  border-top-color: var(--fire-sky);
+}
+
+.fire-pathway--methods {
+  border-top-color: var(--fire-moss);
+}
+
+.fire-home-links {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  color: var(--fire-paper);
+  border-radius: 0.45rem;
+  background: var(--fire-ink);
+}
+
+.fire-home-links h2 {
+  margin-top: 0;
+  color: var(--fire-paper);
+  font-size: clamp(1.45rem, 2.4vw, 2.35rem);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.fire-home-links a {
+  color: #ffd984;
+}
+
+.fire-home-links .md-button {
+  color: #fffaf2;
+  border-color: rgba(255, 250, 242, 0.72);
+}
+
+.fire-home-links .md-button:hover {
+  color: var(--fire-ink);
+  background: var(--fire-gold);
+  border-color: var(--fire-gold);
+}
+
+@media screen and (max-width: 980px) {
+  .fire-home-pathways {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .fire-home-hero {
+    min-height: 560px;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 2rem 1.25rem;
+    background:
+      linear-gradient(90deg, rgba(10, 9, 7, 0.92), rgba(10, 9, 7, 0.64)),
+      url("../assets/hero.jpg") center / cover;
+  }
+
+  .fire-home-strip,
+  .fire-home-pathways,
+  .fire-home-links {
+    grid-template-columns: 1fr;
+  }
+
+  .fire-home-strip {
+    margin-top: -2.4rem;
+  }
+
+  .fire-home-links {
+    padding: 1.35rem;
+  }
 }

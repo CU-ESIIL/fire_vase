@@ -23,8 +23,9 @@ Key copied areas:
 - `schemas/` and `config/`: table schemas and pipeline configuration templates.
 - `analysis/`, `figures/`, `output/`, and `outputs/`: tracked analysis notes,
   publication figures, rendered manuscripts, and small derived outputs.
-- `docs/manuscripts/`: manuscript drafts, citation audits, formal reviews, and
-  transparency notes.
+- `docs/manuscripts/`: current manuscript-facing pages and transparency notes.
+- `archive/manuscript_history/`: superseded drafts, citation/compliance audits,
+  and formal review logs preserved for traceability.
 - `examples/`, `notebooks/`, and `tests/`: VASE examples and smoke tests copied
   from the source project.
 
@@ -264,6 +265,11 @@ https://cu-esiil.github.io/fire_vase/
 ```
 
 ## Near-Term Cleanup
+
+Historical manuscript review logs, superseded drafts, older generic
+CubeDynamics docs, and ad hoc visual checks are preserved under `archive/` so
+the public supplement website can stay focused on reproduction while the project
+record remains intact.
 
 The copied code intentionally preserves old `cubedynamics` import paths so the
 research scripts still run. A later pass should either:
