@@ -1,5 +1,16 @@
 #!/usr/bin/env python3
-"""Run manuscript figure builders against a Fire VASE data-lake package."""
+"""Run manuscript figure builders against a Fire VASE data-lake package.
+
+The numbered scripts in this folder are thin command-line wrappers. This module
+holds the shared behavior so each figure uses the same data-lake resolution,
+environment variables, validation-cache behavior, and output directory.
+
+Accepted `--data-lake` values are deliberately flexible:
+
+- the package root, such as `data_lake/fire-vase-data-lake-v0.1`;
+- the package `files/` directory;
+- a restored repository-style root containing `scratch/...`.
+"""
 
 from __future__ import annotations
 
@@ -28,6 +39,7 @@ MAIN_FIGURES = {
 
 
 def build_parser(description: str) -> argparse.ArgumentParser:
+    """Create the shared CLI parser used by every figure wrapper."""
     parser = argparse.ArgumentParser(description=description)
     parser.add_argument(
         "--data-lake",
@@ -46,6 +58,7 @@ def build_parser(description: str) -> argparse.ArgumentParser:
 
 
 def resolve_data_root(data_lake: Path) -> Path:
+    """Resolve a package path, `files/` path, or restored root to data root."""
     path = data_lake.expanduser().resolve()
     candidates = [path, path / "files"]
     for candidate in candidates:
@@ -60,7 +73,11 @@ def resolve_data_root(data_lake: Path) -> Path:
 
 
 def configure_paths(args: argparse.Namespace) -> Path:
+    """Set environment variables consumed by the shared plotting modules."""
     data_root = resolve_data_root(args.data_lake)
+    # The plotting code predates these wrappers and reads paths from
+    # environment variables. Setting them here keeps the old code reusable while
+    # giving collaborators a clean `--data-lake` interface.
     os.environ["FIRE_VASE_DATA_ROOT"] = str(data_root)
     os.environ["FIRE_VASE_MAIN_FIGURE_DIR"] = str(SCRIPT_DIR)
     os.environ["FIRE_VASE_SUPPLEMENT_DIR"] = str(SCRIPT_DIR)
@@ -73,6 +90,7 @@ def configure_paths(args: argparse.Namespace) -> Path:
 
 
 def seed_cached_stats(data_root: Path) -> None:
+    """Copy cached validation tables from the data lake when available."""
     destination = SCRIPT_DIR / "derived_stats"
     if destination.exists() and any(destination.iterdir()):
         return
@@ -86,6 +104,7 @@ def seed_cached_stats(data_root: Path) -> None:
 
 
 def load_data_and_stats(args: argparse.Namespace):
+    """Load morphospace inputs and validation statistics for figure builders."""
     configure_paths(args)
     from morphospace import load_data
     from statistics import compute_validation_bundle
@@ -101,6 +120,7 @@ def load_data_and_stats(args: argparse.Namespace):
 
 
 def render_main_figure(number: int, args: argparse.Namespace) -> dict[str, str]:
+    """Render one numbered manuscript figure and return output paths."""
     data, stats = load_data_and_stats(args)
     module_name, output_name = MAIN_FIGURES[number]
     module = importlib.import_module(module_name)
@@ -114,6 +134,7 @@ def render_main_figure(number: int, args: argparse.Namespace) -> dict[str, str]:
 
 
 def render_supplementary(args: argparse.Namespace) -> dict[str, str]:
+    """Render the supplementary validation figure and return output paths."""
     data, stats = load_data_and_stats(args)
     module = importlib.import_module("make_supplementary_figures")
     fig = module.build(data, stats)
@@ -124,6 +145,7 @@ def render_supplementary(args: argparse.Namespace) -> dict[str, str]:
 
 
 def render_all(args: argparse.Namespace) -> dict[str, dict[str, str]]:
+    """Render all main and supplementary figures in one shared data pass."""
     data, stats = load_data_and_stats(args)
     from style import save_figure
 

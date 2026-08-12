@@ -8,6 +8,12 @@
 - Expanded the root and manuscript-figure README guides with linked data-lake
   rebuild steps, CubeDynamics/Fire VASE pipeline scripts, and figure
   reproduction entry points.
+- Added `scripts/check_reproducibility.py` to verify data-lake checksums,
+  derived-stat byte identity, and figure pixel reproducibility.
+- Reorganized the documentation website as manuscript supplementary material
+  with focused pages for data-lake, figure, and methods reproduction.
+- Added collaborator-facing code maps and expanded inline documentation for the
+  data-lake, reproducibility, and manuscript-figure orchestration scripts.
 - Added a `--full-population` lakehouse-build option and aligned the data
   release rebuild workflow with the full data-lake paths.
 

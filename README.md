@@ -229,6 +229,34 @@ Shared figure implementation lives in
 [`scripts/figures/`](scripts/figures/). The wrapper scripts set data-lake paths
 and write PDF, PNG, and SVG outputs back into `manuscript_figures/`.
 
+## Reproducibility Checks
+
+After regenerating the figures, compare the outputs against the checked-in
+reference figures and derived statistics:
+
+```bash
+uv run python scripts/check_reproducibility.py --skip-data-lake
+```
+
+The checker reports byte-level differences for PDF, PNG, and SVG files, and a
+pixel-level comparison for PNG figures. Byte-identical figure files are stricter
+than visual reproduction because PDF/SVG metadata can change across plotting
+environments.
+
+To verify the materialized data lake itself, run the full SHA-256 pass:
+
+```bash
+uv run python scripts/check_reproducibility.py
+```
+
+This reads every data-lake file listed in `checksums.sha256`, so it can take
+several minutes on the full package. To save a machine-readable report:
+
+```bash
+uv run python scripts/check_reproducibility.py \
+  --json-output analysis/reproducibility_check_latest.json
+```
+
 The website builds from `docs/` and is configured for GitHub Pages at:
 
 ```text

@@ -1,45 +1,51 @@
-# Fire VASE
+# Fire VASE Supplement
 
-Fire VASE is the research workspace for treating fire events as developmental
-space-time objects. It collects the manuscript, analysis scripts, schemas,
-figures, and tracked derived outputs that were previously embedded in the
-`cubedynamics` package repository.
+This site is the supplementary information hub for the Fire VASE manuscript. It
+points to the data lake, the code used to build the analysis tables, and the
+numbered scripts that regenerate the manuscript figures.
 
-[Read the Migration Note](migration.md){ .md-button .md-button--primary }
-[View Manuscripts](manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision_science_style.md){ .md-button }
+[Reproduce the Data Lake](reproduce-data-lake.md){ .md-button .md-button--primary }
+[Reproduce the Figures](reproduce-figures.md){ .md-button }
+[Code Map](code-map.md){ .md-button }
 
 <div class="grid cards" markdown>
 
-- **Research Corpus**
+- **Data Lake**
 
   ---
 
-  Manuscript drafts, citation audits, formal reviews, analysis notes, and
-  figure legends live with the code that generated them.
+  Download or rebuild the FIRED/gridMET caches, Parquet lakehouse tables,
+  developmental morphology tables, figures, schemas, and manuscript artifacts.
 
-- **Lakehouse Contract**
-
-  ---
-
-  Schemas, configs, and the data-lake exporter define source fire records,
-  canonical fire time, VASE slices, climate exposures, traits, manifests, and
-  derived assets.
-
-- **Publication Outputs**
+- **Methods**
 
   ---
 
-  Selected figures, PDFs, derived CSVs, and manifests are tracked as current
-  publication artifacts; bulk data products remain external or ignored.
+  Follow the manuscript workflow from source fire records through VASE
+  construction, climate attribution, developmental morphology, and validation.
+
+- **Figures**
+
+  ---
+
+  Run one command to regenerate the manuscript figure set, or run the numbered
+  scripts for individual figures.
 
 </div>
 
-## Repository Roles
+## What To Use
 
-`cubedynamics` remains the reusable package for generic cube operations and the
-public fire hull/VASE API. This repository is the project-specific research
-home for the fire VASE publication pipeline.
+- Data lake handoff:
+  [CyVerse Fire_Vase folder](https://de.cyverse.org/data/ds/iplant/home/shared/esiil/Fire_Vase?type=folder&resourceId=ce3e72e4-95d1-11f1-852a-90e2ba675364)
+- Source code:
+  [CU-ESIIL/fire_vase](https://github.com/CU-ESIIL/fire_vase)
+- Script summaries:
+  [Code Map](code-map.md)
+- Reusable VASE implementation:
+  [CU-ESIIL/cubedynamics](https://github.com/CU-ESIIL/cubedynamics)
+- Current manuscript draft:
+  [Science-style revision](manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision_science_style.md)
 
-The first migration preserved source paths and imports so the current scripts
-remain traceable. Later cleanup can move project-specific pieces into a native
-`fire_vase` package namespace once the copied content has settled.
+Start with the data-lake page if you want to reproduce the dataset. Start with
+the figure page if you already have the data lake and want to regenerate the
+publication figures.

@@ -64,6 +64,7 @@ venv/
 .tools/
 build/
 dist/
+site/
 *.egg-info/
 
 # Fire VASE local data and generated runtime products

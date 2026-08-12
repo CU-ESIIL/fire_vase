@@ -5,6 +5,12 @@ This script can either inventory the complete lake or materialize it into an
 ignored handoff directory. Use `--mode manifest` first; use `--mode hardlink`
 for a local no-duplicate handoff on the same filesystem; use `--mode copy` when
 preparing a directory for external drives or cloud upload.
+
+The script is driven by `config/data_release.yml`. That config declares the
+local source roots, repository products, and reproduction commands that belong
+in the public data-lake package. The output package always includes machine
+readable metadata; in `hardlink` and `copy` modes it also includes a `files/`
+tree laid out like a restored repository root.
 """
 
 from __future__ import annotations
@@ -12,6 +18,7 @@ from __future__ import annotations
 import argparse
 import csv
 import datetime as dt
+import fnmatch
 import glob
 import hashlib
 import json
@@ -31,6 +38,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def load_yaml(path: Path) -> dict[str, Any]:
+    """Load a YAML mapping from disk and fail early if the file is malformed."""
     with path.open("r", encoding="utf-8") as handle:
         data = yaml.safe_load(handle) or {}
     if not isinstance(data, dict):
@@ -39,6 +47,7 @@ def load_yaml(path: Path) -> dict[str, Any]:
 
 
 def git_value(*args: str) -> str | None:
+    """Return a small Git metadata value, or `None` outside a Git checkout."""
     try:
         result = subprocess.run(
             ["git", *args],
@@ -53,6 +62,7 @@ def git_value(*args: str) -> str | None:
 
 
 def sha256_file(path: Path) -> str:
+    """Return a SHA-256 digest for `path` using bounded memory."""
     digest = hashlib.sha256()
     with path.open("rb") as handle:
         for chunk in iter(lambda: handle.read(1024 * 1024), b""):
@@ -61,6 +71,7 @@ def sha256_file(path: Path) -> str:
 
 
 def iter_files(path: Path) -> list[Path]:
+    """Return all regular files below `path`, sorted for stable manifests."""
     if path.is_file():
         return [path]
     if not path.exists():
@@ -68,13 +79,18 @@ def iter_files(path: Path) -> list[Path]:
     return sorted(p for p in path.rglob("*") if p.is_file())
 
 
-def expand_repo_patterns(patterns: list[str]) -> list[Path]:
+def expand_repo_patterns(patterns: list[str], exclude: list[str] | None = None) -> list[Path]:
+    """Expand repository-relative glob patterns, applying optional excludes."""
     out: list[Path] = []
     seen: set[Path] = set()
+    exclude = exclude or []
     for pattern in patterns:
         for match in glob.glob(str(ROOT / pattern), recursive=True):
             path = Path(match)
             if not path.is_file():
+                continue
+            rel = path.relative_to(ROOT).as_posix()
+            if any(fnmatch.fnmatch(rel, exclude_pattern) for exclude_pattern in exclude):
                 continue
             if path in seen:
                 continue
@@ -84,6 +100,7 @@ def expand_repo_patterns(patterns: list[str]) -> list[Path]:
 
 
 def kind_for(path: Path) -> str:
+    """Assign a broad human-readable artifact kind from the file extension."""
     suffix = path.suffix.lower()
     if suffix in {".gpkg", ".geojson", ".geoparquet"}:
         return "geospatial"
@@ -99,6 +116,7 @@ def kind_for(path: Path) -> str:
 
 
 def link_or_copy(src: Path, dest: Path, mode: str) -> None:
+    """Materialize `src` at `dest`, or do nothing when only making a manifest."""
     dest.parent.mkdir(parents=True, exist_ok=True)
     if mode == "manifest":
         return
@@ -121,6 +139,7 @@ def add_row(
     source_root: str,
     checksum: bool,
 ) -> None:
+    """Append one normalized file-inventory row to the package manifest."""
     stat = src.stat()
     rows.append(
         {
@@ -140,6 +159,7 @@ def add_row(
 
 
 def write_csv(rows: list[dict[str, Any]], path: Path) -> None:
+    """Write the tabular file inventory used by people and scripts."""
     fieldnames = [
         "path",
         "source_path",
@@ -159,6 +179,7 @@ def write_csv(rows: list[dict[str, Any]], path: Path) -> None:
 
 
 def write_checksums(rows: list[dict[str, Any]], path: Path) -> None:
+    """Write a standard `shasum -c` compatible checksum file."""
     with path.open("w", encoding="utf-8") as handle:
         for row in rows:
             if row.get("sha256"):
@@ -166,6 +187,7 @@ def write_checksums(rows: list[dict[str, Any]], path: Path) -> None:
 
 
 def write_readme(path: Path, manifest: dict[str, Any], config: dict[str, Any]) -> None:
+    """Write a short README inside the generated data-lake package."""
     release = config.get("release", {})
     lines = [
         f"# {release.get('title', manifest['release_id'])}",
@@ -207,6 +229,7 @@ def build_package(
     checksum: bool,
     include_repo_products: bool,
 ) -> Path:
+    """Build the data-lake package metadata and optional `files/` tree."""
     config = load_yaml(config_path)
     release_id = config.get("release", {}).get("id", "fire-vase-data-lake")
     package_root = output_root / release_id
@@ -220,6 +243,8 @@ def build_package(
     rows: list[dict[str, Any]] = []
     missing_roots: list[dict[str, str]] = []
 
+    # External source roots are typically ignored by Git and may be large:
+    # FIRED caches, gridMET NetCDFs, and full Parquet lakehouse outputs.
     for root_def in config.get("local_source_roots", []):
         source = Path(root_def["source"]).expanduser()
         destination = Path(root_def["destination"])
@@ -248,9 +273,12 @@ def build_package(
             )
 
     if include_repo_products:
+        # Repository products are smaller, publication-facing files such as
+        # figures, schemas, configs, manuscripts, and derived CSV/JSON tables.
         repo_collection = config.get("collections", {}).get("repository_products", {})
         patterns = repo_collection.get("include", [])
-        for src in expand_repo_patterns(patterns):
+        exclude = repo_collection.get("exclude", [])
+        for src in expand_repo_patterns(patterns, exclude):
             rel = src.relative_to(ROOT)
             dest_rel = Path("repository") / rel
             link_or_copy(src, files_root / dest_rel, mode)
@@ -265,6 +293,8 @@ def build_package(
 
     rows.sort(key=lambda row: row["path"])
     total_size = sum(int(row["size_bytes"]) for row in rows)
+    # `created_utc` is intentionally volatile; `file_manifest.csv` and
+    # `checksums.sha256` are the stable files to compare across reruns.
     manifest = {
         "release_id": release_id,
         "created_utc": dt.datetime.now(dt.timezone.utc).isoformat(),

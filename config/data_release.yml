@@ -69,6 +69,8 @@ collections:
       - docs/datasets/fired.md
       - docs/dev/fire_vase_lakehouse.md
       - docs/manuscripts/fire_vase_developmental_morphology/**
+    exclude:
+      - analysis/reproducibility_check_*.json
   derived_tables:
     role: derived-data
     description: Small CSV/JSON analysis products used by manuscript figures and claims.
