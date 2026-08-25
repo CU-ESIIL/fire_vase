@@ -1,0 +1,27 @@
+{
+  "contract": "CubeViewer validation payload v1",
+  "fire_id": "20657",
+  "variable": "tmmx",
+  "dims": [
+    "time",
+    "lat",
+    "lon"
+  ],
+  "shape": [
+    38,
+    10,
+    13
+  ],
+  "source_value_sha256": "cdbb88d825c589fc276f013555f80d205b7dcb05cd2b73bc6d7f364c4f04352f",
+  "coordinate_sha256": {
+    "time": "1e3ad309af5ed7de6aa31d6c6e8d8d2d460876752f92ca357809f8d5da950a0f",
+    "lat": "bc1e4a91230a3d792add0a95d4f5535df998ce19cb427e30fec365b1ce02ec26",
+    "lon": "290ac09ccb5319a4057932f9b87c5accc9e2238766f94584602fd7f7b32533c1"
+  },
+  "finite_cells": 4940,
+  "missing_cells": 0,
+  "first_time": "2002-07-07 00:00:00",
+  "last_time": "2002-08-13 00:00:00",
+  "thin_time_factor": 1,
+  "all_interior_time_planes_requested": true
+}

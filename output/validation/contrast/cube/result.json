@@ -1,0 +1,26 @@
+{
+  "module": "cube_negative_controls",
+  "status": "fail",
+  "summary": "Expected FAIL: the baseline passes, while latitude reversal, time-value scrambling, and a dropped date are all rejected by the cube/HTML audit.",
+  "metrics": {
+    "fire_id": "20657",
+    "variable": "tmmx",
+    "uncorrupted_baseline_passed": true,
+    "corrupted_variants": 3,
+    "corruptions_detected": 3,
+    "all_negative_controls_detected": true,
+    "latitude_reversal_failed_comparisons": 61,
+    "time_scramble_failed_comparisons": 25,
+    "dropped_day_daily_contiguity": false
+  },
+  "artifacts": {
+    "plot": "output/validation/contrast/cube/cube_negative_controls.png",
+    "metrics": "output/validation/contrast/cube/cube_negative_control_metrics.csv",
+    "baseline_html": "output/validation/contrast/cube/baseline/cube_integrity.html",
+    "result": "output/validation/contrast/cube/result.json"
+  },
+  "notes": [
+    "FAIL is the intended result in this contrast module. The run command succeeds only when the clean baseline passes and every corruption is detected.",
+    "The latitude and time corruptions keep coordinate labels unchanged, demonstrating that value-to-index checks are required in addition to monotonic-coordinate checks."
+  ]
+}

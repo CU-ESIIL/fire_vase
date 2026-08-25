@@ -1,0 +1,30 @@
+{
+  "module": "hull3d",
+  "status": "pass",
+  "summary": "The plotted construction exactly reproduces the production directional-support hull and exposes alternative temporal averaging decisions in 3-D.",
+  "metrics": {
+    "fire_id": "20657",
+    "daily_layers": 29,
+    "ring_samples": 128,
+    "directional_angles": 96,
+    "averaging_decisions": [
+      "daily support (production)",
+      "3-day centered mean",
+      "7-day centered mean",
+      "cumulative envelope"
+    ],
+    "production_max_abs_radial_residual_km": 1.7763568394002505e-15,
+    "largest_alternative_mean_radial_change_km": 2.9010788132667864,
+    "largest_alternative_max_radial_change_km": 6.989561112223742
+  },
+  "artifacts": {
+    "plot": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/hull3d/hull_3d_construction_and_alternatives.png",
+    "interactive_html": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/hull3d/hull_averaging_alternatives.html",
+    "metrics": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/hull3d/hull_averaging_metrics.csv",
+    "result": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/hull3d/result.json"
+  },
+  "notes": [
+    "The production hull does not temporally average observed days: it computes one directional support ring per FIRED day and triangulates linearly between adjacent rings.",
+    "The 3-day, 7-day, and cumulative alternatives are sensitivity scenarios, not silently substituted production choices."
+  ]
+}

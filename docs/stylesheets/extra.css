@@ -381,6 +381,27 @@
   border-color: var(--fire-gold);
 }
 
+.validation-embed {
+  width: 100%;
+  margin: 1.25rem 0;
+  overflow: hidden;
+  border: 1px solid rgba(36, 52, 61, 0.18);
+  border-radius: 0.45rem;
+  background: #fff;
+  box-shadow: 0 0.6rem 1.6rem rgba(36, 52, 61, 0.08);
+}
+
+.validation-embed iframe {
+  display: block;
+  width: 100%;
+  height: min(72vh, 760px);
+  border: 0;
+}
+
+.validation-embed--cube iframe {
+  height: min(78vh, 860px);
+}
+
 @media screen and (max-width: 980px) {
   .figure-gallery--compact {
     grid-template-columns: 1fr;

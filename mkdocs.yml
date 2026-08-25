@@ -12,9 +12,12 @@ nav:
   - Validation:
       - Overview: validation/index.md
       - Pipe And Stream: validation/pipeline.md
+      - Cube And HTML Integrity: validation/cube.md
       - Geometry And Hull: validation/geometry.md
+      - 3-D Hull Decisions: validation/hull3d.md
       - Climate Attribution: validation/climate.md
       - External Sources: validation/external.md
+      - Expected-Failure Contrast: validation/contrast.md
   - Reproduce Data Lake: reproduce-data-lake.md
   - Reproduce Figures: reproduce-figures.md
   - Methods Notes: methods.md

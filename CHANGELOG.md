@@ -2,6 +2,19 @@
 
 ## 2026-08-25
 
+- Added a separate expected-failure contrast report: a clean cube control,
+  deterministic latitude-reversal/time-scramble/dropped-day corruptions, and a
+  real FIRED event whose 125 m simplification exceeds the operational area
+  threshold. Added its modular evidence and website walkthrough without
+  changing the six-module production PASS report.
+- Added a real-cube HTML integrity audit that verifies canonical dimension
+  order, coordinate uniqueness/direction, contiguous daily time, all six shell
+  faces, every interior time/x/y plane, corner landmarks, exact decoded RGBA
+  pixels, and embedded source/coordinate hashes.
+- Added 3-D FIRED hull construction plots showing raw polygons, equal-step
+  boundary samples, directional support rings, and the triangulated production
+  mesh, plus interactive 1-, 3-, and 7-day averaging and cumulative-envelope
+  alternatives with quantitative displacement metrics.
 - Added a modular real-data validation suite for CubeDynamics pipe/direct
   equivalence, chunk-preserving GridMET access, FIRED simplification and
   time-hull sensitivity, centroid/date table reproduction, fractional

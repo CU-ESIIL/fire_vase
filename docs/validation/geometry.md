@@ -38,3 +38,6 @@ then the transition between daily profiles is linear along each hull wall.
 The module writes both `polygon_simplification_metrics.csv` and
 `hull_sensitivity_metrics.csv`, so tolerance and angular-resolution decisions
 can be reviewed numerically as well as visually.
+
+Continue to the [three-dimensional hull audit](hull3d.md) to see these stages
+stacked in time and compare alternative temporal averaging decisions.

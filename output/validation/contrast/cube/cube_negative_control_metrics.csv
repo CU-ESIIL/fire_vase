@@ -1,0 +1,5 @@
+variant,expected_status,observed_status,detected_as_expected,time_steps,daily_dates_contiguous,all_planes_present,all_time_slices_serialized_once,all_pixels_exact,failing_raster_comparisons,total_raster_comparisons,maximum_rgba_channel_residual,negative_control
+uncorrupted_baseline,pass,pass,True,38,True,True,True,True,0,61,0,none
+latitude_values_reversed,fail,fail,True,38,True,True,True,False,61,61,184,latitude values reversed while coordinates remain unchanged
+time_values_scrambled,fail,fail,True,38,True,True,True,False,25,61,189,values at time indices 5 and 32 swapped while timestamps remain unchanged
+middle_day_dropped,fail,fail,True,37,False,False,True,False,40,60,62,time index 19 removed

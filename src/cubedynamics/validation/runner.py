@@ -10,13 +10,15 @@ from typing import Iterable
 
 from .climate import run_climate_validation
 from .core import QAResult, ValidationPaths
+from .cube import run_cube_validation
 from .external import run_external_validation
 from .geometry import run_geometry_validation
+from .hull3d import run_hull3d_validation
 from .pipeline import run_pipeline_validation
 from .report import build_validation_pdf
 
 
-MODULE_ORDER = ("pipeline", "geometry", "climate", "external")
+MODULE_ORDER = ("pipeline", "cube", "geometry", "hull3d", "climate", "external")
 
 
 def publish_validation_plots(
@@ -35,6 +37,11 @@ def publish_validation_plots(
         target = destination / f"{result.module}.png"
         shutil.copy2(source, target)
         copied.append(target)
+        interactive_source = result.artifacts.get("interactive_html")
+        if interactive_source and Path(interactive_source).exists():
+            interactive_target = destination / f"{result.module}.html"
+            shutil.copy2(interactive_source, interactive_target)
+            copied.append(interactive_target)
     if report_pdf is not None and Path(report_pdf).exists():
         target = destination / "fire_vase_validation_report.pdf"
         shutil.copy2(Path(report_pdf), target)
@@ -51,6 +58,7 @@ def run_validation_suite(
     tolerances_m: Iterable[float] = (0, 125, 500, 1000),
     operational_max_tolerance_m: float = 125,
     n_theta: int = 96,
+    averaging_windows: Iterable[int] = (1, 3, 7),
     external_network: bool = False,
     build_pdf: bool = True,
     publish_docs: bool = False,
@@ -68,6 +76,8 @@ def run_validation_suite(
             continue
         if module == "pipeline":
             result = run_pipeline_validation(paths, fire_id=fire_id, variable=variable)
+        elif module == "cube":
+            result = run_cube_validation(paths, fire_id=fire_id, variable=variable)
         elif module == "geometry":
             result = run_geometry_validation(
                 paths,
@@ -75,6 +85,13 @@ def run_validation_suite(
                 tolerances_m=tuple(tolerances_m),
                 operational_max_tolerance_m=operational_max_tolerance_m,
                 n_theta=n_theta,
+            )
+        elif module == "hull3d":
+            result = run_hull3d_validation(
+                paths,
+                fire_id=fire_id,
+                n_theta=n_theta,
+                averaging_windows=tuple(averaging_windows),
             )
         elif module == "climate":
             result = run_climate_validation(paths, fire_id=fire_id, variable=variable)

@@ -36,6 +36,7 @@ def main() -> int:
         tolerances_m=config.get("geometry", {}).get("simplification_tolerances_m", [0, 125, 500, 1000]),
         operational_max_tolerance_m=float(config.get("geometry", {}).get("operational_max_tolerance_m", 125)),
         n_theta=int(config.get("geometry", {}).get("n_theta", 96)),
+        averaging_windows=config.get("geometry", {}).get("temporal_averaging_windows_days", [1, 3, 7]),
         external_network=args.external,
         build_pdf=not args.no_pdf,
         publish_docs=args.publish_docs,

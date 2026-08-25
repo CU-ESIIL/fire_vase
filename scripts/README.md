@@ -10,7 +10,8 @@ data-lake and figure commands rather than running every script manually.
 |---|---|---|
 | `prepare_data_lake.py` | Inventories or materializes the shareable data-lake package from `config/data_release.yml`. | `uv run python scripts/prepare_data_lake.py --mode manifest --checksum` |
 | `check_reproducibility.py` | Verifies data-lake checksums, derived-stat identity, and figure pixel reproducibility. | `uv run python scripts/check_reproducibility.py` |
-| `run_validation.py` | Runs modular pipe, hull, climate-attribution, and external-source QA and collates one PDF report. | `uv run python scripts/run_validation.py --external` |
+| `run_validation.py` | Runs modular pipe, complete HTML-cube, 2-D/3-D hull, climate-attribution, and external-source QA and collates one PDF report. | `uv run python scripts/run_validation.py --external` |
+| `run_validation_contrast.py` | Runs deliberate cube corruptions plus a real FIRED geometry threshold failure and builds the separate expected-FAIL contrast report. | `uv run python scripts/run_validation_contrast.py --publish-docs` |
 | `cyverse_upload_data_lake.sh` | Uploads a local data-lake package to the shared CyVerse destination with `gocmd`. | `bash scripts/cyverse_upload_data_lake.sh` |
 
 ## Dataset Construction

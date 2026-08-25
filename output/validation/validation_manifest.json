@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T15:01:20+00:00",
+  "generated_at": "2026-08-25T16:36:33+00:00",
   "fire_id": "20657",
   "variable": "tmmx",
   "modules": [
@@ -27,6 +27,54 @@
         "result": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/pipeline/result.json"
       },
       "notes": []
+    },
+    {
+      "module": "cube",
+      "status": "pass",
+      "summary": "The real GridMET cube retains ordered coordinates and contiguous dates; every source time plane and every decoded HTML raster matches the declared source indexing exactly.",
+      "metrics": {
+        "fire_id": "20657",
+        "variable": "tmmx",
+        "dims": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "shape": {
+          "time": 38,
+          "lat": 10,
+          "lon": 13
+        },
+        "source_cells": 4940,
+        "finite_cells": 4940,
+        "missing_cells": 0,
+        "time_contiguous_daily": true,
+        "coordinate_integrity": true,
+        "all_html_planes_present": true,
+        "all_html_pixels_exact": true,
+        "all_time_slices_serialized_once": true,
+        "decoded_shell_faces": 6,
+        "decoded_interior_planes": 55,
+        "maximum_rgba_channel_residual": 0,
+        "corner_landmarks_exact": true,
+        "source_value_sha256": "cdbb88d825c589fc276f013555f80d205b7dcb05cd2b73bc6d7f364c4f04352f",
+        "embedded_manifest_matches_source": true
+      },
+      "artifacts": {
+        "plot": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/cube/cube_axis_html_integrity.png",
+        "interactive_html": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/cube/cube_integrity.html",
+        "plane_metrics": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/cube/cube_html_plane_audit.csv",
+        "coordinate_metrics": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/cube/cube_coordinate_audit.csv",
+        "landmarks": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/cube/cube_corner_landmarks.csv",
+        "time_slice_checksums": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/cube/cube_time_slice_checksums.csv",
+        "source_manifest": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/cube/cube_source_manifest.json",
+        "result": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/cube/result.json"
+      },
+      "notes": [
+        "The validation HTML uses thin_time_factor=1 and includes every interior time plane, so no sampled date is omitted from this audit view.",
+        "The back face reverses longitude intentionally because CSS rotates that plane by 180 degrees; the audit reverses the source expectation before requiring exact pixel equality.",
+        "The HTML remains a rendered view. The NetCDF/xarray cube is the data authority; the embedded SHA-256 manifest ties the view back to that complete source sample."
+      ]
     },
     {
       "module": "geometry",
@@ -58,6 +106,36 @@
       "notes": [
         "The hull uses directional support radii; concavities and high-frequency boundary roughness are intentionally averaged before adjacent daily layers are triangulated.",
         "The 500 m and 1000 m settings are stress tests. The configured acceptance range is 0-125 m; larger tolerances visibly discard too much area for this event."
+      ]
+    },
+    {
+      "module": "hull3d",
+      "status": "pass",
+      "summary": "The plotted construction exactly reproduces the production directional-support hull and exposes alternative temporal averaging decisions in 3-D.",
+      "metrics": {
+        "fire_id": "20657",
+        "daily_layers": 29,
+        "ring_samples": 128,
+        "directional_angles": 96,
+        "averaging_decisions": [
+          "daily support (production)",
+          "3-day centered mean",
+          "7-day centered mean",
+          "cumulative envelope"
+        ],
+        "production_max_abs_radial_residual_km": 1.7763568394002505e-15,
+        "largest_alternative_mean_radial_change_km": 2.9010788132667864,
+        "largest_alternative_max_radial_change_km": 6.989561112223742
+      },
+      "artifacts": {
+        "plot": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/hull3d/hull_3d_construction_and_alternatives.png",
+        "interactive_html": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/hull3d/hull_averaging_alternatives.html",
+        "metrics": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/hull3d/hull_averaging_metrics.csv",
+        "result": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/hull3d/result.json"
+      },
+      "notes": [
+        "The production hull does not temporally average observed days: it computes one directional support ring per FIRED day and triangulates linearly between adjacent rings.",
+        "The 3-day, 7-day, and cumulative alternatives are sensitivity scenarios, not silently substituted production choices."
       ]
     },
     {

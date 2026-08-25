@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-08-25T16:55:38+00:00",
+  "purpose": "expected-failure negative controls",
+  "expected_failures_detected": true,
+  "modules": [
+    {
+      "module": "cube_negative_controls",
+      "status": "fail",
+      "summary": "Expected FAIL: the baseline passes, while latitude reversal, time-value scrambling, and a dropped date are all rejected by the cube/HTML audit.",
+      "metrics": {
+        "fire_id": "20657",
+        "variable": "tmmx",
+        "uncorrupted_baseline_passed": true,
+        "corrupted_variants": 3,
+        "corruptions_detected": 3,
+        "all_negative_controls_detected": true,
+        "latitude_reversal_failed_comparisons": 61,
+        "time_scramble_failed_comparisons": 25,
+        "dropped_day_daily_contiguity": false
+      },
+      "artifacts": {
+        "plot": "output/validation/contrast/cube/cube_negative_controls.png",
+        "metrics": "output/validation/contrast/cube/cube_negative_control_metrics.csv",
+        "baseline_html": "output/validation/contrast/cube/baseline/cube_integrity.html",
+        "result": "output/validation/contrast/cube/result.json"
+      },
+      "notes": [
+        "FAIL is the intended result in this contrast module. The run command succeeds only when the clean baseline passes and every corruption is detected.",
+        "The latitude and time corruptions keep coordinate labels unchanged, demonstrating that value-to-index checks are required in addition to monotonic-coordinate checks."
+      ]
+    },
+    {
+      "module": "geometry",
+      "status": "fail",
+      "summary": "Expected FAIL: real FIRED event 72016 changes cumulative area by 26.86% at the operational 125 m simplification, exceeding the 10% threshold.",
+      "metrics": {
+        "fire_id": "72016",
+        "daily_polygon_rows": 7,
+        "tolerances_m": [
+          0.0,
+          125.0,
+          500.0,
+          1000.0
+        ],
+        "n_theta": 96,
+        "operational_max_tolerance_m": 125.0,
+        "all_simplified_geometries_valid": true,
+        "operational_max_absolute_area_change_pct": 26.856982547314722,
+        "max_absolute_area_change_pct": 51.02901984717752,
+        "base_daily_polygon_vertices": 130,
+        "most_simplified_daily_polygon_vertices": 72
+      },
+      "artifacts": {
+        "plot": "output/validation/contrast/geometry/geometry_hull_sensitivity.png",
+        "simplification_metrics": "output/validation/contrast/geometry/polygon_simplification_metrics.csv",
+        "hull_metrics": "output/validation/contrast/geometry/hull_sensitivity_metrics.csv",
+        "result": "output/validation/contrast/geometry/result.json"
+      },
+      "notes": [
+        "This deliberately selected real-world counterexample demonstrates a sensitivity limit; it does not indicate that the production validation run failed.",
+        "The hull uses directional support radii; concavities and high-frequency boundary roughness are intentionally averaged before adjacent daily layers are triangulated.",
+        "The 500 m and 1000 m settings are stress tests. The configured acceptance range is 0-125 m; larger tolerances visibly discard too much area for this event."
+      ]
+    }
+  ]
+}

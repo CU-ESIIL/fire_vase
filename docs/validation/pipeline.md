@@ -35,3 +35,7 @@ and both remained Dask-backed until the comparison was requested.
 The backend shown here is the one used to build the lake tables: chunked annual
 GridMET NetCDF. The separate external module then checks its raw packed values
 against the NCAR/GDEX mirror.
+
+The [data cube and HTML integrity audit](cube.md) separately traces this real
+cube through the viewer, checks every rendered plane, and verifies that dates
+and spatial indices were not omitted or permuted.

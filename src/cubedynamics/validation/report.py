@@ -24,11 +24,11 @@ from reportlab.platypus import (
 from .core import QAResult
 
 
-def _footer(canvas, doc) -> None:
+def _footer(canvas, doc, label: str = "Fire VASE validation report") -> None:
     canvas.saveState()
     canvas.setFont("Helvetica", 8)
     canvas.setFillColor(colors.HexColor("#59636b"))
-    canvas.drawString(0.7 * inch, 0.42 * inch, "Fire VASE validation report")
+    canvas.drawString(0.7 * inch, 0.42 * inch, label)
     canvas.drawRightString(7.8 * inch, 0.42 * inch, f"page {doc.page}")
     canvas.restoreState()
 
@@ -51,7 +51,14 @@ def _metric_rows(metrics: dict, cell_style: ParagraphStyle) -> list[list[Paragra
     return rows
 
 
-def build_validation_pdf(results: Iterable[QAResult], output_path: str | Path) -> Path:
+def build_validation_pdf(
+    results: Iterable[QAResult],
+    output_path: str | Path,
+    *,
+    title: str = "Fire VASE Validation Report",
+    lead: str | None = None,
+    footer_label: str = "Fire VASE validation report",
+) -> Path:
     """Build a stable, figure-forward PDF from module result objects."""
 
     results = list(results)
@@ -113,14 +120,15 @@ def build_validation_pdf(results: Iterable[QAResult], output_path: str | Path) -
         leftMargin=0.65 * inch,
         topMargin=0.62 * inch,
         bottomMargin=0.62 * inch,
-        title="Fire VASE Validation Report",
+        title=title,
         author="Fire VASE project",
     )
     story = [
         Spacer(1, 0.45 * inch),
-        Paragraph("Fire VASE Validation Report", styles["ReportTitle"]),
+        Paragraph(title, styles["ReportTitle"]),
         Paragraph(
-            "Independent, rerunnable QA for the CubeDynamics grammar, GridMET streaming and attribution, FIRED polygon-to-hull construction, and upstream source consistency.",
+            lead
+            or "Independent, rerunnable QA for the CubeDynamics grammar, complete HTML cube serialization, GridMET streaming and attribution, FIRED polygon-to-hull construction and 3-D averaging sensitivity, and upstream source consistency.",
             ParagraphStyle("Lead", parent=styles["BodyText"], fontSize=12, leading=17, alignment=TA_CENTER, textColor=colors.HexColor("#46545c")),
         ),
         Spacer(1, 0.35 * inch),
@@ -213,7 +221,10 @@ def build_validation_pdf(results: Iterable[QAResult], output_path: str | Path) -
         if index < len(results):
             story.append(PageBreak())
 
-    doc.build(story, onFirstPage=_footer, onLaterPages=_footer)
+    def footer(canvas, document) -> None:
+        _footer(canvas, document, footer_label)
+
+    doc.build(story, onFirstPage=footer, onLaterPages=footer)
     return output
 
 

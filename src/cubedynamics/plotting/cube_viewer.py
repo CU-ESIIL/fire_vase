@@ -231,6 +231,7 @@ def _render_cube_html(
             transform = _interior_plane_transform(axis, idx, meta or interior_meta, size_css)
             interior_html_parts.append(
                 "<div class=\"interior-plane\" "
+                f"data-axis=\"{axis}\" data-index=\"{int(idx)}\" "
                 f"style=\"transform: {transform}; background-image: url('data:image/png;base64,{b64}');\"></div>"
             )
     interior_html = "".join(interior_html_parts)

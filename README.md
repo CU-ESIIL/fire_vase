@@ -34,15 +34,25 @@ The fastest reproduction path is: install the environment, sync the shared
 CyVerse data lake to `data_lake/fire-vase-data-lake-v0.1`, run the
 reproducibility checker, and then run the numbered figure scripts.
 
-To audit one real FIRED/GridMET sample through the pipe, hull, climate, and
-external-source boundaries, run:
+To audit one real FIRED/GridMET sample through the pipe, complete HTML cube,
+2-D and 3-D hull decisions, climate, and external-source boundaries, run:
 
 ```bash
 uv run python scripts/run_validation.py --external
 ```
 
-This writes modular CSV/JSON/PNG evidence under `output/validation/` and the
-collated report at `output/pdf/fire_vase_validation_report.pdf`.
+This writes modular CSV/JSON/PNG/HTML evidence under `output/validation/` and
+the collated report at `output/pdf/fire_vase_validation_report.pdf`.
+
+To demonstrate that the same checks reject plausible axis, time, and geometry
+errors, run the separate expected-failure contrast:
+
+```bash
+uv run python scripts/run_validation_contrast.py --publish-docs
+```
+
+The walkthrough is documented in
+[`docs/validation/contrast.md`](docs/validation/contrast.md).
 
 Shared data lake:
 [CyVerse Fire_Vase folder](https://de.cyverse.org/data/ds/iplant/home/shared/esiil/Fire_Vase?type=folder&resourceId=ce3e72e4-95d1-11f1-852a-90e2ba675364)

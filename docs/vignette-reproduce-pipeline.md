@@ -164,8 +164,9 @@ uv run python manuscript_figures/00_run_all.py \
 
 ## 5. Check The Whole Pipeline
 
-Run the scientific validation modules for pipe execution, hull construction,
-climate attribution, and source agreement:
+Run the scientific validation modules for pipe execution, complete HTML-cube
+serialization, 2-D and 3-D hull construction/averaging decisions, climate
+attribution, and source agreement:
 
 ```bash
 uv run python scripts/run_validation.py --external
