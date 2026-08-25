@@ -1,0 +1,25 @@
+{
+  "module": "pipeline",
+  "status": "pass",
+  "summary": "Pipe grammar and direct verb calls produce identical values while preserving lazy chunks.",
+  "metrics": {
+    "fire_id": "20657",
+    "variable": "tmmx",
+    "shape": {
+      "time": 38,
+      "lat": 10,
+      "lon": 13
+    },
+    "chunks": "((38,), (10,), (13,))",
+    "max_abs_residual": 0.0,
+    "lazy_before": true,
+    "lazy_after": true,
+    "same_object_on_noop_unwrap": true
+  },
+  "artifacts": {
+    "plot": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/pipeline/pipeline_grammar_equivalence.png",
+    "metrics": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/pipeline/pipeline_grammar_metrics.csv",
+    "result": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/pipeline/result.json"
+  },
+  "notes": []
+}

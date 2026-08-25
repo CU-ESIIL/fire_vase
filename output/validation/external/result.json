@@ -1,0 +1,21 @@
+{
+  "module": "external",
+  "status": "pass",
+  "summary": "Packaged GridMET raw values exactly match the NCAR mirror and FIRED event geometry matches the union of daily polygons.",
+  "metrics": {
+    "fire_id": "20657",
+    "gridmet_variable": "tmmx",
+    "external_network_requested": true,
+    "gridmet_max_abs_raw_residual": 0.0,
+    "gridmet_external_url": "https://tds.gdex.ucar.edu/thredds/dodsC/files/d761426/tmmx_2002.nc.ascii?air_temperature[206:1:208][32:1:34][109:1:111]",
+    "fired_intersection_over_union": 0.9999999826761925,
+    "fired_hausdorff_distance_m": 0.0001247120738568293
+  },
+  "artifacts": {
+    "plot": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/external/external_source_validation.png",
+    "fired_metrics": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/external/fired_event_consistency.csv",
+    "gridmet_mirror_samples": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/external/gridmet_ncar_mirror_samples.csv",
+    "result": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/external/result.json"
+  },
+  "notes": []
+}

@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-08-25
+
+- Added a modular real-data validation suite for CubeDynamics pipe/direct
+  equivalence, chunk-preserving GridMET access, FIRED simplification and
+  time-hull sensitivity, centroid/date table reproduction, fractional
+  polygon-pixel climate overlap, and independent NCAR GridMET mirror checks.
+- Added per-module PNG/CSV/JSON QA artifacts and a rendered, visually verified
+  collated validation PDF.
+- Added a runnable validation notebook and a multi-page website validation
+  section with one vignette-style page per scientific boundary.
+- Documented the accepted 0-125 m simplification range separately from 500 m
+  and 1000 m stress tests, and retained centroid climate as the explicit
+  lakehouse baseline while exposing fractional overlap as sensitivity analysis.
+
 ## 2026-08-12
 
 - Expanded the climate-revision manuscript methods with reproducible data-lake,

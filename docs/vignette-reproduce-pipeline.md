@@ -164,7 +164,18 @@ uv run python manuscript_figures/00_run_all.py \
 
 ## 5. Check The Whole Pipeline
 
-Run the full reproducibility checker:
+Run the scientific validation modules for pipe execution, hull construction,
+climate attribution, and source agreement:
+
+```bash
+uv run python scripts/run_validation.py --external
+```
+
+See the [validation vignette](validation/index.md) or open
+[notebooks/validate_fire_vase_pipeline.ipynb](https://github.com/CU-ESIIL/fire_vase/blob/main/notebooks/validate_fire_vase_pipeline.ipynb)
+to rerun one QA plot at a time.
+
+Then run the full artifact-level reproducibility checker:
 
 ```bash
 uv run python scripts/check_reproducibility.py \
@@ -215,6 +226,7 @@ The release inventory is controlled by
 - [Data release config](https://github.com/CU-ESIIL/fire_vase/blob/main/config/data_release.yml)
 - [Data-lake packager](https://github.com/CU-ESIIL/fire_vase/blob/main/scripts/prepare_data_lake.py)
 - [Reproducibility checker](https://github.com/CU-ESIIL/fire_vase/blob/main/scripts/check_reproducibility.py)
+- [Scientific validation runner](https://github.com/CU-ESIIL/fire_vase/blob/main/scripts/run_validation.py)
 - [Lakehouse builder](https://github.com/CU-ESIIL/fire_vase/blob/main/scripts/fire_vase_lakehouse_pilot.py)
 - [Climate table builder](https://github.com/CU-ESIIL/fire_vase/blob/main/scripts/fire_vase_build_climate_tables.py)
 - [Perimeter climate builder](https://github.com/CU-ESIIL/fire_vase/blob/main/scripts/fire_vase_build_perimeter_climate_tables.py)

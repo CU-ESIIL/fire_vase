@@ -9,6 +9,12 @@ edit_uri: "edit/main/docs/"
 nav:
   - Home: index.md
   - Full Reproduction Vignette: vignette-reproduce-pipeline.md
+  - Validation:
+      - Overview: validation/index.md
+      - Pipe And Stream: validation/pipeline.md
+      - Geometry And Hull: validation/geometry.md
+      - Climate Attribution: validation/climate.md
+      - External Sources: validation/external.md
   - Reproduce Data Lake: reproduce-data-lake.md
   - Reproduce Figures: reproduce-figures.md
   - Methods Notes: methods.md

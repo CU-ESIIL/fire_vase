@@ -1,0 +1,29 @@
+{
+  "module": "climate",
+  "status": "pass",
+  "summary": "Lake-table dates and centroid values match FIRED/GridMET inputs; fractional overlap attribution is computed and exposed as a deliberate alternative.",
+  "metrics": {
+    "fire_id": "20657",
+    "variable": "tmmx",
+    "centroid_lat": 48.00781087513061,
+    "centroid_lon": -120.17427984812414,
+    "max_abs_table_residual": 0.0,
+    "table_dates_equal_fired_dates": true,
+    "table_dates_present_in_gridmet": true,
+    "table_rows": 29,
+    "daily_polygon_rows_compared": 29,
+    "min_overlap_cells": 1,
+    "max_overlap_cells": 15,
+    "max_abs_area_weighted_minus_centroid": 1.6390664673533024
+  },
+  "artifacts": {
+    "plot": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/climate/gridmet_time_space_attribution.png",
+    "centroid_audit": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/climate/centroid_table_audit.csv",
+    "attribution_comparison": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/climate/polygon_attribution_comparison.csv",
+    "result": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/climate/result.json"
+  },
+  "notes": [
+    "Centroid attribution reproduces the current vase_slices table contract.",
+    "Fractional overlap weights each GridMET cell by intersected equal-area square meters; it is a sensitivity analysis, not a silent replacement of the table baseline."
+  ]
+}

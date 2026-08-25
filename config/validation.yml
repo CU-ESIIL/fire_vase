@@ -1,0 +1,26 @@
+version: 1
+
+modules:
+  - pipeline
+  - geometry
+  - climate
+  - external
+
+sample:
+  fire_id: 20657
+  gridmet_variable: tmmx
+
+geometry:
+  operational_max_tolerance_m: 125
+  simplification_tolerances_m:
+    - 0
+    - 125
+    - 500
+    - 1000
+  n_theta: 96
+
+thresholds:
+  pipe_max_abs_residual: 0.0
+  centroid_table_max_abs_residual: 1.0e-8
+  fired_event_daily_iou_minimum: 0.99
+  simplification_max_abs_area_change_pct: 10.0

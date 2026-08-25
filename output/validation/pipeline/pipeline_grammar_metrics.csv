@@ -1,0 +1,2 @@
+variable,time_steps,lat_cells,lon_cells,lazy_before,lazy_after,max_abs_residual,same_object_on_noop_unwrap
+tmmx,38,10,13,True,True,0.0,True

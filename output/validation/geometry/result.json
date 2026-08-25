@@ -1,0 +1,32 @@
+{
+  "module": "geometry",
+  "status": "pass",
+  "summary": "FIRED polygons remain valid through the configured simplification range and yield stable, positive time-hull metrics.",
+  "metrics": {
+    "fire_id": "20657",
+    "daily_polygon_rows": 29,
+    "tolerances_m": [
+      0.0,
+      125.0,
+      500.0,
+      1000.0
+    ],
+    "n_theta": 96,
+    "operational_max_tolerance_m": 125.0,
+    "all_simplified_geometries_valid": true,
+    "operational_max_absolute_area_change_pct": 0.2538943308263701,
+    "max_absolute_area_change_pct": 25.944624780202286,
+    "base_daily_polygon_vertices": 1911,
+    "most_simplified_daily_polygon_vertices": 633
+  },
+  "artifacts": {
+    "plot": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/geometry/geometry_hull_sensitivity.png",
+    "simplification_metrics": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/geometry/polygon_simplification_metrics.csv",
+    "hull_metrics": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/geometry/hull_sensitivity_metrics.csv",
+    "result": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/fire_vase/output/validation/geometry/result.json"
+  },
+  "notes": [
+    "The hull uses directional support radii; concavities and high-frequency boundary roughness are intentionally averaged before adjacent daily layers are triangulated.",
+    "The 500 m and 1000 m settings are stress tests. The configured acceptance range is 0-125 m; larger tolerances visibly discard too much area for this event."
+  ]
+}

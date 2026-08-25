@@ -19,6 +19,10 @@ Use the website vignette or notebook when handing the project to a collaborator:
   [`docs/vignette-reproduce-pipeline.md`](docs/vignette-reproduce-pipeline.md)
 - Runnable notebook:
   [`notebooks/reproduce_fire_vase_pipeline.ipynb`](notebooks/reproduce_fire_vase_pipeline.ipynb)
+- Validation vignette:
+  [`docs/validation/index.md`](docs/validation/index.md)
+- Validation notebook:
+  [`notebooks/validate_fire_vase_pipeline.ipynb`](notebooks/validate_fire_vase_pipeline.ipynb)
 - Data-lake guide:
   [`docs/reproduce-data-lake.md`](docs/reproduce-data-lake.md)
 - Figure guide:
@@ -29,6 +33,16 @@ Use the website vignette or notebook when handing the project to a collaborator:
 The fastest reproduction path is: install the environment, sync the shared
 CyVerse data lake to `data_lake/fire-vase-data-lake-v0.1`, run the
 reproducibility checker, and then run the numbered figure scripts.
+
+To audit one real FIRED/GridMET sample through the pipe, hull, climate, and
+external-source boundaries, run:
+
+```bash
+uv run python scripts/run_validation.py --external
+```
+
+This writes modular CSV/JSON/PNG evidence under `output/validation/` and the
+collated report at `output/pdf/fire_vase_validation_report.pdf`.
 
 Shared data lake:
 [CyVerse Fire_Vase folder](https://de.cyverse.org/data/ds/iplant/home/shared/esiil/Fire_Vase?type=folder&resourceId=ce3e72e4-95d1-11f1-852a-90e2ba675364)
