@@ -101,7 +101,13 @@ def normalize_daily(events: pd.DataFrame, daily: pd.DataFrame, cached_years: lis
     merged["year"] = merged["date"].dt.year.astype(int)
     merged["fire_id"] = merged["id"].astype(str)
     merged["slice_index"] = merged.groupby("fire_id").cumcount().astype(int)
-    merged["ring_area_km2"] = merged["dy_ar_km2"].fillna(0).clip(lower=0)
+    # Missing or invalid area is not a zero-growth observation. Refuse to
+    # fabricate a cumulative history; the source must be corrected explicitly.
+    if merged["date"].isna().any() or merged.duplicated(["id", "date"]).any():
+        raise ValueError("FIRED daily rows require unique, nonmissing calendar dates")
+    if not np.isfinite(merged["dy_ar_km2"]).all() or merged["dy_ar_km2"].lt(0).any():
+        raise ValueError("FIRED daily growth is missing, nonfinite or negative; cannot impute zero")
+    merged["ring_area_km2"] = merged["dy_ar_km2"]
     merged["cumulative_area_km2"] = merged.groupby("fire_id")["ring_area_km2"].cumsum()
     final = merged.groupby("fire_id")["cumulative_area_km2"].transform("max").replace(0, np.nan)
     merged["normalized_vase_width"] = np.sqrt(merged["cumulative_area_km2"] / final).fillna(0.0)

@@ -1,0 +1,9 @@
+Issue,Finding,Correction/evidence,Old,New,Scientific consequence
+Peak versus mean,Confirmed,108214 changed peaks,Catalog area/duration called peak,Maximum observed daily increment,Scale-free PCA unaffected by absolute units; legacy mixed-space claims replaced
+Entropy probabilities,Implementation confirmed; current values unchanged,Normalize by observed increment sum,Catalog-based denominator,0 changed within tolerance,Incomplete-reconstruction failure mode fixed; observed entropy values survive
+Pulse branch,Confirmed,17837 count-only assignments,Count >=6 could imply multi-pulse,Actual prominent local maxima; branch table exported,Natural-class interpretation removed
+Date transitions,Confirmed,150922 longer gaps,313726 modeled adjacent rows,Exact calendar transitions; shared AR cohort,Old next-day interpretation removed
+PCA centering and scale,Confirmed,Mean-centered profile-only PCA,PC1 .810; first five .963,PC1 0.341496; first five 0.894436,"Compression survives, universal restricted wedge does not"
+Weather predictor/cohort comparison,Confirmed,Nested sets; one cohort; fixed-length sensitivities,Median .349348,Response-specific; PC1 region/core+max 0.006641,Median headline withdrawn; heterogeneous associations remain
+Final-geometry state leakage,Confirmed,Day-t growth-centroid extraction; same-row exposure comparison,Final-event centroid; no calendar-gap filter,87944 shared AR transitions,"Prospective covariate design, but operational availability unresolved"
+Adversarial matching,Confirmed,Greedy disjoint nearest pairs with calipers and conditional permutations,Maximum other-space discordance among neighbors,Weather matched 0.805471; morphology matched 0.682805,Representative mismatch survives only as a diagnostic; no causal mechanism inferred

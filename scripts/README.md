@@ -1,5 +1,18 @@
 # Fire VASE Script Map
 
+## Current v2 workflow
+
+`fire_vase_v2.py` computes corrected, real-data statistics under `analysis/v2/`.
+`fire_vase_v2_inputs.py` audits original FIRED attributes and constructs day-t
+newly burned-area centroid weather. Core tested methods live in
+`src/cubedynamics/analysis_v2.py`; `figures/make_figures_v2.py` draws saved
+statistics and `fire_vase_v2_manuscript.py` writes the manuscript and audit.
+
+Run `manuscript_figures/00_run_all.py --generation v2` for the full workflow.
+The developmental and climate-revision scripts listed below are historical v1
+implementations; they are not the corrected scientific pipeline. Use
+`reproduce_v1_comparison.py` to reproduce them without overwriting current work.
+
 This folder contains the code used to build, analyze, package, and verify the
 Fire VASE manuscript data products. Most collaborators should start with the
 data-lake and figure commands rather than running every script manually.

@@ -1,0 +1,51 @@
+{
+  "best_event_set": "core event means",
+  "best_event_r2": 0.3493478297928571,
+  "event_r2_by_set": {
+    "core event means": 0.3493478297928571,
+    "time-resolved exposure": 0.02188822221070058,
+    "comprehensive event means": 0.0024702582798912798,
+    "moisture and humidity": 0.001305820494262755,
+    "region-season anomalies": 0.001302264661384278,
+    "fire danger and energy": 0.0004421208420645195,
+    "extreme days": 0.0002224429063095168
+  },
+  "best_state_set": "core climate-state interaction",
+  "best_state_r2": 0.35333413262126534,
+  "state_r2_by_set": {
+    "core climate-state interaction": 0.35333413262126534,
+    "expanded climate plus state": 0.3454001708609472,
+    "core climate plus state": 0.33820931505473584,
+    "state only": 0.33022502295674405,
+    "expanded climate only": 0.0905383177049871,
+    "core climate only": 0.04511766885796875
+  },
+  "anomalies_outperform_raw": false,
+  "resolved_outperform_event_means": false,
+  "comprehensive_outperform_core": false,
+  "interaction_survives_blocking": true,
+  "pca_evr": [
+    0.8098926007015654,
+    0.06640399828946669,
+    0.035444656829815124,
+    0.03304360360067242,
+    0.017962349036304275,
+    0.009010425004372392,
+    0.007867602518398823,
+    0.00482992191202547,
+    0.004372631714972583,
+    0.003090442514582507
+  ],
+  "comparisons": [
+    {
+      "table": "event_level_blocked_model_performance.csv",
+      "rows": 280,
+      "max_abs_r2_difference": 9.8879238130678e-17
+    },
+    {
+      "table": "state_dependent_blocked_model_performance.csv",
+      "rows": 24,
+      "max_abs_r2_difference": 6.938893903907228e-17
+    }
+  ]
+}

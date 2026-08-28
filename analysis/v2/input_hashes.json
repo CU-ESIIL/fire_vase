@@ -1,0 +1,7 @@
+{
+  "artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_daily_nov2001-march2021.gpkg": "added786e5741f835c4277b38478f446c1bb7269596998ad2ddda482cb59bf62",
+  "artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_events_nov2001-march2021.gpkg": "a77f06f9344bc1c2f6fbabf630948f4e263bc14bf341577bf32a39ad884d570d",
+  "scratch/fire_vase_run_full/tables/vase_slices.parquet": "40ccca537301e408d74b072e9079edc8fb97b47c6e27a11e579786d52406f066",
+  "scratch/fire_vase_run_full/tables/fire_traits.parquet": "7ed36a65e775048b54fc49d7b8c63f72085c2b097fc09d73df3727f650108f23",
+  "scratch/fire_vase_developmental_morphology/developmental_morphospace_features.parquet": "78bbf4a9beb6682d84b7d849a0bcfc98823d78816d5e43e300a8e0ea2a0ae002"
+}

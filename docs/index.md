@@ -1,17 +1,17 @@
 <section class="fire-home-hero">
-<img class="fire-hero-vase" src="assets/hero-vase-vpd.png" alt="VPD-colored Fire VASE rendering for a 2018 multi-pulse fire">
+<img class="fire-hero-vase" src="assets/hero-vase-vpd.png" alt="Historical VPD-colored Fire VASE rendering for a 2018 fire">
 <div class="fire-home-hero__content">
 <p class="fire-kicker">Supplementary information for reproducible wildfire science</p>
 
 <h1>Fire VASE</h1>
 
-<h2>A developmental view of wildfire growth, climate exposure, and reproducible manuscript analysis.</h2>
+<h2>Developmental morphology first. Weather as an external layer.</h2>
 
 <p>Fire VASE turns daily fire histories into comparable shapes, then links those
-forms to climate context through an open data lake and numbered figure pipeline.</p>
+forms to meteorological exposure through an open data lake and numbered figure pipeline.</p>
 
 <p>
-<a class="md-button md-button--primary fire-button" href="vignette-reproduce-pipeline/">Run the Full Pipeline</a>
+<a class="md-button md-button--primary fire-button" href="reanalysis-v2/">Corrected V2 Analysis</a>
 <a class="md-button fire-button" href="https://github.com/CU-ESIIL/fire_vase/blob/main/notebooks/reproduce_fire_vase_pipeline.ipynb">Open the Notebook</a>
 </p>
 </div>
@@ -23,8 +23,8 @@ forms to climate context through an open data lake and numbered figure pipeline.
 FIRED events represented as developmental histories
 </div>
 <div markdown>
-<span>237,235</span>
-climate-complete fires for centroid gridMET analysis
+<span>10,246</span>
+consecutive multi-observation histories in the primary v2 morphospace
 </div>
 <div markdown>
 <span>1</span>
@@ -101,7 +101,7 @@ developmental morphology, validation, and interpretation.</p>
 The current manuscript draft and transparency materials are included so the
 analysis, figures, and scientific claims can be read together.
 
-[Science-style revision](manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision_science_style.md){ .md-button .fire-button }
+[Current v2 manuscript](manuscripts/fire_vase_developmental_morphology/manuscript_v2.md){ .md-button .fire-button }
 [AI transparency](manuscripts/fire_vase_developmental_morphology/ai_transparency_statement.md){ .md-button .fire-button }
 [Expanded AI report](manuscripts/fire_vase_developmental_morphology/ai_transparency_report.md){ .md-button .fire-button }
 </div>

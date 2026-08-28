@@ -1,0 +1,9 @@
+priority,landmark,rule,n
+1,invalid growth,missing/nonfinite/negative increment or nonpositive reconstructed total,0
+2,one observation,observation_count == 1 (no internal history),161073
+3,two observations,observation_count == 2 (limited internal history),47950
+4,gappy or undated,missing/duplicate dates or any non-one-day interval,59300
+5,multiple detected pulses,at least 2 local maxima with prominence >= 0.20 * observed peak,2142
+6,late peak,peak_timing >= 2/3,1361
+7,front-loaded taper,front_loaded_fraction >= .75 and terminal_taper_fraction <= .35,1469
+8,distributed growth,all remaining eligible histories,5274

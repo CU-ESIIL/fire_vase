@@ -1,0 +1,16 @@
+{
+  "rows": 626102,
+  "one_day_transitions": 196611,
+  "longer_gaps": 150922,
+  "missing_dates": 0,
+  "duplicate_date_rows": 0,
+  "terminal_rows": 278569,
+  "zero_day_transitions": 0,
+  "eligible_transitions": 196611,
+  "excluded_rows": 429491,
+  "day_t_geometry_rows": 196611,
+  "missing_previous_calendar_day": 95811,
+  "missing_day_t_weather": 21721,
+  "shared_AR_cohort_rows": 87944,
+  "shared_AR_cohort_fires": 31700
+}

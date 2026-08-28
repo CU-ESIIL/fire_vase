@@ -181,7 +181,9 @@ def run(config_path: Path, output_root: Path, sample_size: int | None = None, *,
             "region": region,
             "total_area_km2": total_area,
             "duration_hours": duration_hours,
-            "peak_growth_km2_per_hour": total_area / duration_hours if duration_hours else 0.0,
+            # Catalog summaries cannot identify a within-event peak. The v2
+            # daily-history analysis computes peak_growth_km2_per_day from rows.
+            "mean_catalog_growth_km2_per_hour": total_area / duration_hours if duration_hours else None,
             "geometry_cache_key": geom_key,
             "climate_cache_key": clim_key,
             "event_cache_key": evt_key,

@@ -1,5 +1,25 @@
 # Changelog
 
+## 2026-08-28
+
+- Reproduced the v1 event/state statistics and five figures in an isolated
+  comparison archive before introducing corrected versioned results.
+- Added v2 source-to-table audits, true observed daily peaks, correctly normalized
+  entropy, dated observation support and actual-pulse neighborhood rules.
+- Replaced the primary mixed-scale median-centered SVD with mean-centered PCA
+  of mass-conserving normalized growth allocation. Added observation/resolution,
+  trait/legacy-space, bootstrap, year/region and allocation-null sensitivities.
+- Added common-cohort nested weather models, exact calendar-day autoregressive
+  models, day-t newly burned-area centroid weather, blocked transfer, conditional
+  cluster uncertainty and disjoint caliper-constrained matching with nulls.
+- Made the numbered figure pipeline default to v2, with explicit legacy mode.
+  Added five versioned main figures, a supplement, manuscript/PDF and audit;
+  preserved prior generations and withdrew the 0.349 cross-response headline.
+- Renamed the pilot's catalog mean growth quantity and rejected missing/invalid
+  raw growth instead of imputing zeros. Added methodological invariant tests.
+- Synchronized documentation with the versioned outputs; source data and large
+  regenerable Parquet products remain outside Git.
+
 ## 2026-08-25
 
 - Added a separate expected-failure contrast report: a clean cube control,

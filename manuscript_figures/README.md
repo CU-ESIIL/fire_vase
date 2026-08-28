@@ -1,5 +1,18 @@
 # Manuscript Figure Reproduction
 
+The default is now the corrected **v2** generation. Run
+`00_run_all.py --generation v2 --data-lake data_lake/fire-vase-data-lake-v0.1`
+from the repository root using the Python environment. Statistics are computed
+before figures, which are written to `figures/v2/`; the manuscript goes to
+`docs/manuscripts/fire_vase_developmental_morphology/manuscript_v2.md` and
+`output/pdf/fire_vase_v2_manuscript.pdf`. Individual numbered entry points also
+ensure the entire consistent v2 bundle exists. Add `--render-only` to avoid
+recomputing existing statistics.
+
+The historical instructions below describe `--generation legacy`, which reads
+the immutable v0.1 tables and writes to this folder. Those figures and claims
+are comparison artifacts, not current scientific results.
+
 This folder contains numbered scripts for regenerating the Fire VASE manuscript
 figures from a Fire VASE data-lake package. Each script reads from the data lake
 and writes its figure outputs back into this folder as PDF, PNG, and SVG.

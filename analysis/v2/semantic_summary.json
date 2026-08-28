@@ -1,0 +1,9 @@
+{
+  "n": 278569,
+  "primary_n": 10246,
+  "peak_changed_n": 108214,
+  "entropy_changed_n": 0,
+  "max_area_relative_discrepancy": 6.45874135421607e-16,
+  "area_discrepancy_gt_1pct": 0,
+  "old_multi_pulse_without_three_pulses": 17837
+}

@@ -41,6 +41,10 @@ MAIN_FIGURES = {
 def build_parser(description: str) -> argparse.ArgumentParser:
     """Create the shared CLI parser used by every figure wrapper."""
     parser = argparse.ArgumentParser(description=description)
+    parser.add_argument("--generation", choices=["v2", "legacy"], default="v2",
+                        help="v2 is the corrected analysis; legacy requires the immutable v0.1 input tables.")
+    parser.add_argument("--render-only", action="store_true",
+                        help="v2: require existing corrected statistics and only render figures/manuscript.")
     parser.add_argument(
         "--data-lake",
         type=Path,
@@ -121,6 +125,8 @@ def load_data_and_stats(args: argparse.Namespace):
 
 def render_main_figure(number: int, args: argparse.Namespace) -> dict[str, str]:
     """Render one numbered manuscript figure and return output paths."""
+    if args.generation == "v2":
+        return render_v2(args)[f"Figure_{number}"]
     data, stats = load_data_and_stats(args)
     module_name, output_name = MAIN_FIGURES[number]
     module = importlib.import_module(module_name)
@@ -135,6 +141,8 @@ def render_main_figure(number: int, args: argparse.Namespace) -> dict[str, str]:
 
 def render_supplementary(args: argparse.Namespace) -> dict[str, str]:
     """Render the supplementary validation figure and return output paths."""
+    if args.generation == "v2":
+        return render_v2(args)["Supplementary_Figure_1"]
     data, stats = load_data_and_stats(args)
     module = importlib.import_module("make_supplementary_figures")
     fig = module.build(data, stats)
@@ -146,6 +154,8 @@ def render_supplementary(args: argparse.Namespace) -> dict[str, str]:
 
 def render_all(args: argparse.Namespace) -> dict[str, dict[str, str]]:
     """Render all main and supplementary figures in one shared data pass."""
+    if args.generation == "v2":
+        return render_v2(args)
     data, stats = load_data_and_stats(args)
     from style import save_figure
 
@@ -164,4 +174,19 @@ def render_all(args: argparse.Namespace) -> dict[str, dict[str, str]]:
         outputs["Supplementary_Figure_1_validation"] = supplement.save_supplement(fig, "Supplementary_Figure_1_validation")
     finally:
         plt.close(fig)
+    return outputs
+
+
+def render_v2(args: argparse.Namespace):
+    """Normal pipeline for the versioned corrected statistics and manuscript."""
+    for path in [REPO_ROOT / "src", REPO_ROOT / "scripts"]:
+        if str(path) not in sys.path:
+            sys.path.insert(0, str(path))
+    from fire_vase_v2 import main as analyze
+    from figures.make_figures_v2 import render
+    from fire_vase_v2_manuscript import build
+    if not args.render_only:
+        analyze(["--data-lake", str(args.data_lake)])
+    outputs = render(REPO_ROOT, resolve_data_root(args.data_lake))
+    build(REPO_ROOT)
     return outputs

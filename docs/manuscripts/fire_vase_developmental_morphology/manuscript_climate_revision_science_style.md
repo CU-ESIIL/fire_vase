@@ -1,5 +1,11 @@
 # Climate Organizes but Does Not Determine Wildfire Development
 
+> Historical v1 manuscript, preserved for comparison. Its numerical and
+> methodological claims are superseded by the [v2 reanalysis](manuscript_v2.md).
+> In particular, the 0.349 headline, row-adjacent growth target and adversarial
+> matching are not current evidence. An unchanged copy is retained in the
+> repository's `archive/comparison_v1/reference/`.
+
 Authors: Author names and affiliations to be added.
 
 Correspondence: Corresponding author email to be added.

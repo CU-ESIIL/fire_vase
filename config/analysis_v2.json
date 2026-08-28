@@ -1,0 +1,21 @@
+{
+  "version": "2.0",
+  "seed": 20260828,
+  "profile_bins": 20,
+  "alternative_bins": [10, 40],
+  "bootstrap_replicates": 200,
+  "null_replicates": 100,
+  "null_sample_size": 4000,
+  "pca_bootstrap_sample_size": 10000,
+  "ridge_alphas": [0.01, 1.0, 100.0],
+  "primary_minimum_observations": 3,
+  "primary_requires_consecutive_dates": true,
+  "matching_caliper": 0.5,
+  "matching_area_ratio_caliper": 2.0,
+  "matching_neighbors": [1, 5, 10, 20],
+  "matching_metrics": ["euclidean", "cityblock"],
+  "weather_vpd_exceedance_kpa": 2.0,
+  "weather_precipitation_exceedance_mm": 0.1,
+  "state_exposure": "day_t_newly_burned_centroid",
+  "state_information_time": "end of day t; reconstructed observation, not operational forecast"
+}

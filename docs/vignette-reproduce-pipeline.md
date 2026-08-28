@@ -1,5 +1,11 @@
 # Vignette: Reproduce The Fire VASE Pipeline
 
+For the current scientific analysis, follow [Corrected V2 Analysis](reanalysis-v2.md).
+After obtaining the real v0.1 data package, the numbered pipeline defaults to v2
+and writes `analysis/v2/`, `figures/v2/` and the versioned manuscript. The original
+developmental/climate-revision stages and identity checks below are historical
+and should be selected explicitly as legacy, not used to support current claims.
+
 This vignette walks through the complete manuscript-support workflow: set up
 the repository, obtain or rebuild the data lake, regenerate analysis products,
 render the manuscript figures, and run reproducibility checks.

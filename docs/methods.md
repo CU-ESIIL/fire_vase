@@ -1,5 +1,11 @@
 # Methods Notes
 
+The [v2 methods and audit](reanalysis-v2.md) and
+[current manuscript](manuscripts/fire_vase_developmental_morphology/manuscript_v2.md)
+supersede the original analysis below. Current shape-only PCA, dated transitions,
+nested same-cohort models and matched pairs are generated in `analysis/v2/`.
+Historical lakehouse tables remain read-only source inputs, not corrected traits.
+
 These notes connect the manuscript methods to the scripts and data products
 needed for reproduction.
 

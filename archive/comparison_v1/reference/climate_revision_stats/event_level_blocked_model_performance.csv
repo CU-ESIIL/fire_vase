@@ -1,0 +1,281 @@
+response,block,n,r2,baseline_r2,predictor_set
+front_loaded_fraction,random_fire,237235,0.3844482792518945,0.0,core event means
+front_loaded_fraction,year_block,237235,0.38294615245439134,0.0,core event means
+front_loaded_fraction,region_block,237235,0.35830850818999505,0.0,core event means
+front_loaded_fraction,region_year_hash,237235,0.38353439569785375,0.0,core event means
+late_growth_fraction,random_fire,237235,0.17025685498015952,0.0,core event means
+late_growth_fraction,year_block,237235,0.16962647003750642,0.0,core event means
+late_growth_fraction,region_block,237235,0.15637196014906773,0.0,core event means
+late_growth_fraction,region_year_hash,237235,0.16976292049731845,0.0,core event means
+terminal_taper_fraction,random_fire,237235,0.3410851552761429,0.0,core event means
+terminal_taper_fraction,year_block,237235,0.3388934390014209,0.0,core event means
+terminal_taper_fraction,region_block,237235,0.3312597983123061,0.0,core event means
+terminal_taper_fraction,region_year_hash,237235,0.3403871513957192,0.0,core event means
+growth_entropy,random_fire,237235,0.38667119591133126,0.0,core event means
+growth_entropy,year_block,237235,0.38510746334840185,0.0,core event means
+growth_entropy,region_block,237235,0.36399695388451303,0.0,core event means
+growth_entropy,region_year_hash,237235,0.3857610375178554,0.0,core event means
+pulse_count,random_fire,237235,0.15723030920046954,0.0,core event means
+pulse_count,year_block,237235,0.15604192130517436,0.0,core event means
+pulse_count,region_block,237235,0.14589374876146133,0.0,core event means
+pulse_count,region_year_hash,237235,0.15674562391577096,0.0,core event means
+reactivation_count,random_fire,237235,0.1600016618060196,0.0,core event means
+reactivation_count,year_block,237235,0.158822939853427,0.0,core event means
+reactivation_count,region_block,237235,0.14857367874206495,0.0,core event means
+reactivation_count,region_year_hash,237235,0.15952692135379387,0.0,core event means
+peak_timing,random_fire,237235,0.17980749735652524,0.0,core event means
+peak_timing,year_block,237235,0.17918295190818045,0.0,core event means
+peak_timing,region_block,237235,0.16905651450460568,0.0,core event means
+peak_timing,region_year_hash,237235,0.17944314305154752,0.0,core event means
+duration_days,random_fire,237235,0.559557336655087,0.0,core event means
+duration_days,year_block,237235,0.5570352500389045,0.0,core event means
+duration_days,region_block,237235,0.5311929059949098,0.0,core event means
+duration_days,region_year_hash,237235,0.5586835817017972,0.0,core event means
+final_area_km2,random_fire,237235,0.42542856234235515,0.0,core event means
+final_area_km2,year_block,237235,0.4217381575995732,0.0,core event means
+final_area_km2,region_block,237235,0.41732696378135625,0.0,core event means
+final_area_km2,region_year_hash,237235,0.424409352059015,0.0,core event means
+morph_pc1,random_fire,237235,0.5122938723413153,0.0,core event means
+morph_pc1,year_block,237235,0.5101285968811877,0.0,core event means
+morph_pc1,region_block,237235,0.48715550451482403,0.0,core event means
+morph_pc1,region_year_hash,237235,0.5113879788892851,0.0,core event means
+front_loaded_fraction,random_fire,237235,0.001874458416533109,0.0,moisture and humidity
+front_loaded_fraction,year_block,237235,0.0017484726157986907,0.0,moisture and humidity
+front_loaded_fraction,region_block,237235,-0.0027034763928150962,0.0,moisture and humidity
+front_loaded_fraction,region_year_hash,237235,0.0016037489754336942,0.0,moisture and humidity
+late_growth_fraction,random_fire,237235,0.001146271529246845,0.0,moisture and humidity
+late_growth_fraction,year_block,237235,0.0010161548706520973,0.0,moisture and humidity
+late_growth_fraction,region_block,237235,-0.001126880406952413,0.0,moisture and humidity
+late_growth_fraction,region_year_hash,237235,0.000991871487645457,0.0,moisture and humidity
+terminal_taper_fraction,random_fire,237235,0.006105416248682549,0.0,moisture and humidity
+terminal_taper_fraction,year_block,237235,0.005602977133792653,0.0,moisture and humidity
+terminal_taper_fraction,region_block,237235,-0.0017119920075705508,0.0,moisture and humidity
+terminal_taper_fraction,region_year_hash,237235,0.005450247685346299,0.0,moisture and humidity
+growth_entropy,random_fire,237235,0.0030115077848491545,0.0,moisture and humidity
+growth_entropy,year_block,237235,0.002778259085060464,0.0,moisture and humidity
+growth_entropy,region_block,237235,-0.0018236523499743917,0.0,moisture and humidity
+growth_entropy,region_year_hash,237235,0.0026683919986815186,0.0,moisture and humidity
+pulse_count,random_fire,237235,0.0014399016406745346,0.0,moisture and humidity
+pulse_count,year_block,237235,0.0013862266517298272,0.0,moisture and humidity
+pulse_count,region_block,237235,-0.0018774820772149425,0.0,moisture and humidity
+pulse_count,region_year_hash,237235,0.0012880827917322035,0.0,moisture and humidity
+reactivation_count,random_fire,237235,0.0014120464153938306,0.0,moisture and humidity
+reactivation_count,year_block,237235,0.0013582015929729518,0.0,moisture and humidity
+reactivation_count,region_block,237235,-0.0018571500054673784,0.0,moisture and humidity
+reactivation_count,region_year_hash,237235,0.0012657651064720277,0.0,moisture and humidity
+peak_timing,random_fire,237235,0.00043715082172113284,0.0,moisture and humidity
+peak_timing,year_block,237235,0.00032459916306815106,0.0,moisture and humidity
+peak_timing,region_block,237235,-0.003462551528253366,0.0,moisture and humidity
+peak_timing,region_year_hash,237235,0.00025852067514675614,0.0,moisture and humidity
+duration_days,random_fire,237235,0.001732619586985562,0.0,moisture and humidity
+duration_days,year_block,237235,0.001548405744698278,0.0,moisture and humidity
+duration_days,region_block,237235,-0.004215748714832213,0.0,moisture and humidity
+duration_days,region_year_hash,237235,0.0013235581967933063,0.0,moisture and humidity
+final_area_km2,random_fire,237235,0.016702265747730816,0.0,moisture and humidity
+final_area_km2,year_block,237235,0.01593644644317249,0.0,moisture and humidity
+final_area_km2,region_block,237235,0.00558386494272467,0.0,moisture and humidity
+final_area_km2,region_year_hash,237235,0.015559752655594616,0.0,moisture and humidity
+morph_pc1,random_fire,237235,0.002789067598324535,0.0,moisture and humidity
+morph_pc1,year_block,237235,0.002540655501989675,0.0,moisture and humidity
+morph_pc1,region_block,237235,-0.003938326839863171,0.0,moisture and humidity
+morph_pc1,region_year_hash,237235,0.0023678972392044972,0.0,moisture and humidity
+front_loaded_fraction,random_fire,237235,0.000718711863817667,0.0,fire danger and energy
+front_loaded_fraction,year_block,237235,0.0005845563217918848,0.0,fire danger and energy
+front_loaded_fraction,region_block,237235,-0.002726966019482857,0.0,fire danger and energy
+front_loaded_fraction,region_year_hash,237235,0.0004859765159358487,0.0,fire danger and energy
+late_growth_fraction,random_fire,237235,0.0005143992667590025,0.0,fire danger and energy
+late_growth_fraction,year_block,237235,0.00038339150072574935,0.0,fire danger and energy
+late_growth_fraction,region_block,237235,-0.0013378980384710637,0.0,fire danger and energy
+late_growth_fraction,region_year_hash,237235,0.00038844808700433386,0.0,fire danger and energy
+terminal_taper_fraction,random_fire,237235,0.006625299569218757,0.0,fire danger and energy
+terminal_taper_fraction,year_block,237235,0.006151062591552403,0.0,fire danger and energy
+terminal_taper_fraction,region_block,237235,0.00044522053002571393,0.0,fire danger and energy
+terminal_taper_fraction,region_year_hash,237235,0.0059003662146189795,0.0,fire danger and energy
+growth_entropy,random_fire,237235,0.0013869717883180366,0.0,fire danger and energy
+growth_entropy,year_block,237235,0.0011775680098190522,0.0,fire danger and energy
+growth_entropy,region_block,237235,-0.002653149451655512,0.0,fire danger and energy
+growth_entropy,region_year_hash,237235,0.0011249905386044867,0.0,fire danger and energy
+pulse_count,random_fire,237235,0.0005416658926331586,0.0,fire danger and energy
+pulse_count,year_block,237235,0.0004874662793402651,0.0,fire danger and energy
+pulse_count,region_block,237235,-0.0015753427502065431,0.0,fire danger and energy
+pulse_count,region_year_hash,237235,0.0003907883197459272,0.0,fire danger and energy
+reactivation_count,random_fire,237235,0.000519242467808656,0.0,fire danger and energy
+reactivation_count,year_block,237235,0.0004678640934185907,0.0,fire danger and energy
+reactivation_count,region_block,237235,-0.0015682014030657943,0.0,fire danger and energy
+reactivation_count,region_year_hash,237235,0.0003749388110511065,0.0,fire danger and energy
+peak_timing,random_fire,237235,0.0005696066816862633,0.0,fire danger and energy
+peak_timing,year_block,237235,0.0004390211541033251,0.0,fire danger and energy
+peak_timing,region_block,237235,-0.0022114275320388455,0.0,fire danger and energy
+peak_timing,region_year_hash,237235,0.0003995860537123752,0.0,fire danger and energy
+duration_days,random_fire,237235,0.0007274379335354686,0.0,fire danger and energy
+duration_days,year_block,237235,0.000513350967753623,0.0,fire danger and energy
+duration_days,region_block,237235,-0.003403483514651251,0.0,fire danger and energy
+duration_days,region_year_hash,237235,0.0003761851382028114,0.0,fire danger and energy
+final_area_km2,random_fire,237235,0.01768368678967458,0.0,fire danger and energy
+final_area_km2,year_block,237235,0.016899011994553126,0.0,fire danger and energy
+final_area_km2,region_block,237235,0.008417097470658663,0.0,fire danger and energy
+final_area_km2,region_year_hash,237235,0.016331358046655198,0.0,fire danger and energy
+morph_pc1,random_fire,237235,0.0019042778746362066,0.0,fire danger and energy
+morph_pc1,year_block,237235,0.001658272504143854,0.0,fire danger and energy
+morph_pc1,region_block,237235,-0.003107730465206515,0.0,fire danger and energy
+morph_pc1,region_year_hash,237235,0.0015137362630709417,0.0,fire danger and energy
+front_loaded_fraction,random_fire,237235,0.003097823835616298,0.0,comprehensive event means
+front_loaded_fraction,year_block,237235,0.002651991664158193,0.0,comprehensive event means
+front_loaded_fraction,region_block,237235,-0.003698006600312942,0.0,comprehensive event means
+front_loaded_fraction,region_year_hash,237235,0.0026726490411150827,0.0,comprehensive event means
+late_growth_fraction,random_fire,237235,0.0016419742689688377,0.0,comprehensive event means
+late_growth_fraction,year_block,237235,0.0013807840135430238,0.0,comprehensive event means
+late_growth_fraction,region_block,237235,-0.002136447027008659,0.0,comprehensive event means
+late_growth_fraction,region_year_hash,237235,0.0013708570621693283,0.0,comprehensive event means
+terminal_taper_fraction,random_fire,237235,0.009120359913747711,0.0,comprehensive event means
+terminal_taper_fraction,year_block,237235,0.008081750468626803,0.0,comprehensive event means
+terminal_taper_fraction,region_block,237235,-0.001136220779906827,0.0,comprehensive event means
+terminal_taper_fraction,region_year_hash,237235,0.008151116919710488,0.0,comprehensive event means
+growth_entropy,random_fire,237235,0.003696746441169796,0.0,comprehensive event means
+growth_entropy,year_block,237235,0.0031059227750642737,0.0,comprehensive event means
+growth_entropy,region_block,237235,-0.004213971621650714,0.0,comprehensive event means
+growth_entropy,region_year_hash,237235,0.0031605780126410243,0.0,comprehensive event means
+pulse_count,random_fire,237235,0.0026991367621524986,0.0,comprehensive event means
+pulse_count,year_block,237235,0.0025633613139149913,0.0,comprehensive event means
+pulse_count,region_block,237235,-0.001397236545286562,0.0,comprehensive event means
+pulse_count,region_year_hash,237235,0.002442784319207858,0.0,comprehensive event means
+reactivation_count,random_fire,237235,0.0026328240882412812,0.0,comprehensive event means
+reactivation_count,year_block,237235,0.0024977322405747016,0.0,comprehensive event means
+reactivation_count,region_block,237235,-0.0014376937434505965,0.0,comprehensive event means
+reactivation_count,region_year_hash,237235,0.0023892800879732334,0.0,comprehensive event means
+peak_timing,random_fire,237235,0.0015078425325336653,0.0,comprehensive event means
+peak_timing,year_block,237235,0.0012352189727583562,0.0,comprehensive event means
+peak_timing,region_block,237235,-0.003575355120926327,0.0,comprehensive event means
+peak_timing,region_year_hash,237235,0.0012145669331943276,0.0,comprehensive event means
+duration_days,random_fire,237235,0.0036119703983255036,0.0,comprehensive event means
+duration_days,year_block,237235,0.00293268665020463,0.0,comprehensive event means
+duration_days,region_block,237235,-0.004143604487389041,0.0,comprehensive event means
+duration_days,region_year_hash,237235,0.002990723092435421,0.0,comprehensive event means
+final_area_km2,random_fire,237235,0.024698588894245366,0.0,comprehensive event means
+final_area_km2,year_block,237235,0.023205439598431465,0.0,comprehensive event means
+final_area_km2,region_block,237235,0.01093347228179642,0.0,comprehensive event means
+final_area_km2,region_year_hash,237235,0.0231000443812327,0.0,comprehensive event means
+morph_pc1,random_fire,237235,0.004193182947827112,0.0,comprehensive event means
+morph_pc1,year_block,237235,0.0034546921240837802,0.0,comprehensive event means
+morph_pc1,region_block,237235,-0.005590509854344949,0.0,comprehensive event means
+morph_pc1,region_year_hash,237235,0.003518971634281276,0.0,comprehensive event means
+front_loaded_fraction,random_fire,237235,0.0026267974059365207,0.0,region-season anomalies
+front_loaded_fraction,year_block,237235,0.002446043734287584,0.0,region-season anomalies
+front_loaded_fraction,region_block,237235,-0.00024291190417113917,0.0,region-season anomalies
+front_loaded_fraction,region_year_hash,237235,0.0023640989481197305,0.0,region-season anomalies
+late_growth_fraction,random_fire,237235,0.0011656414528944392,0.0,region-season anomalies
+late_growth_fraction,year_block,237235,0.0010334683854930082,0.0,region-season anomalies
+late_growth_fraction,region_block,237235,-0.0007376256482005683,0.0,region-season anomalies
+late_growth_fraction,region_year_hash,237235,0.0009540157775262958,0.0,region-season anomalies
+terminal_taper_fraction,random_fire,237235,0.007890575950271872,0.0,region-season anomalies
+terminal_taper_fraction,year_block,237235,0.007142844740519849,0.0,region-season anomalies
+terminal_taper_fraction,region_block,237235,0.001000892201124537,0.0,region-season anomalies
+terminal_taper_fraction,region_year_hash,237235,0.007283190034570564,0.0,region-season anomalies
+growth_entropy,random_fire,237235,0.003472460179112402,0.0,region-season anomalies
+growth_entropy,year_block,237235,0.0031541397136628513,0.0,region-season anomalies
+growth_entropy,region_block,237235,-0.00013823016858927062,0.0,region-season anomalies
+growth_entropy,region_year_hash,237235,0.003104354804978615,0.0,region-season anomalies
+pulse_count,random_fire,237235,0.00131239712786968,0.0,region-season anomalies
+pulse_count,year_block,237235,0.0012374956815989213,0.0,region-season anomalies
+pulse_count,region_block,237235,-0.0008080539643595674,0.0,region-season anomalies
+pulse_count,region_year_hash,237235,0.0012697618621250184,0.0,region-season anomalies
+reactivation_count,random_fire,237235,0.0013204958740504757,0.0,region-season anomalies
+reactivation_count,year_block,237235,0.001245719996024297,0.0,region-season anomalies
+reactivation_count,region_block,237235,-0.0007741214690082376,0.0,region-season anomalies
+reactivation_count,region_year_hash,237235,0.001279865093118393,0.0,region-season anomalies
+peak_timing,random_fire,237235,0.0017230861962233002,0.0,region-season anomalies
+peak_timing,year_block,237235,0.0015653517058796806,0.0,region-season anomalies
+peak_timing,region_block,237235,-0.0006109419106874459,0.0,region-season anomalies
+peak_timing,region_year_hash,237235,0.0015377894309875906,0.0,region-season anomalies
+duration_days,random_fire,237235,0.0040659313188695645,0.0,region-season anomalies
+duration_days,year_block,237235,0.0038126346171426517,0.0,region-season anomalies
+duration_days,region_block,237235,0.0007610505925320643,0.0,region-season anomalies
+duration_days,region_year_hash,237235,0.0037896568454596213,0.0,region-season anomalies
+final_area_km2,random_fire,237235,0.014927174078479322,0.0,region-season anomalies
+final_area_km2,year_block,237235,0.013706579985421352,0.0,region-season anomalies
+final_area_km2,region_block,237235,0.0013246642296501632,0.0,region-season anomalies
+final_area_km2,region_year_hash,237235,0.013834134865307712,0.0,region-season anomalies
+morph_pc1,random_fire,237235,0.0049612912956984445,0.0,region-season anomalies
+morph_pc1,year_block,237235,0.004586584164290808,0.0,region-season anomalies
+morph_pc1,region_block,237235,0.0005838034421560279,0.0,region-season anomalies
+morph_pc1,region_year_hash,237235,0.004562414193438835,0.0,region-season anomalies
+front_loaded_fraction,random_fire,237235,0.00012194418750599567,0.0,extreme days
+front_loaded_fraction,year_block,237235,1.9592204778207112e-05,0.0,extreme days
+front_loaded_fraction,region_block,237235,-0.003467914026629826,0.0,extreme days
+front_loaded_fraction,region_year_hash,237235,-5.5786602446206146e-05,0.0,extreme days
+late_growth_fraction,random_fire,237235,0.0003523751543832443,0.0,extreme days
+late_growth_fraction,year_block,237235,0.0002594895598314606,0.0,extreme days
+late_growth_fraction,region_block,237235,-0.001124289197577788,0.0,extreme days
+late_growth_fraction,region_year_hash,237235,0.00031463642078466414,0.0,extreme days
+terminal_taper_fraction,random_fire,237235,0.007144169190709815,0.0,extreme days
+terminal_taper_fraction,year_block,237235,0.006641945850962339,0.0,extreme days
+terminal_taper_fraction,region_block,237235,-0.0019651507858193806,0.0,extreme days
+terminal_taper_fraction,region_year_hash,237235,0.0065796588560256275,0.0,extreme days
+growth_entropy,random_fire,237235,0.0003546202113517971,0.0,extreme days
+growth_entropy,year_block,237235,0.00014730481830083075,0.0,extreme days
+growth_entropy,region_block,237235,-0.00362464334143775,0.0,extreme days
+growth_entropy,region_year_hash,237235,0.00015993260608826443,0.0,extreme days
+pulse_count,random_fire,237235,0.0003609445239156628,0.0,extreme days
+pulse_count,year_block,237235,0.0003380326288529023,0.0,extreme days
+pulse_count,region_block,237235,-0.0017815186837628616,0.0,extreme days
+pulse_count,region_year_hash,237235,0.000185396252787573,0.0,extreme days
+reactivation_count,random_fire,237235,0.00032523377994964076,0.0,extreme days
+reactivation_count,year_block,237235,0.00030302137111082317,0.0,extreme days
+reactivation_count,region_block,237235,-0.001836213640284523,0.0,extreme days
+reactivation_count,region_year_hash,237235,0.00016003270404374437,0.0,extreme days
+peak_timing,random_fire,237235,0.0007174919278515324,0.0,extreme days
+peak_timing,year_block,237235,0.0006178610218761094,0.0,extreme days
+peak_timing,region_block,237235,-0.002542799008568908,0.0,extreme days
+peak_timing,region_year_hash,237235,0.0005465630210317318,0.0,extreme days
+duration_days,random_fire,237235,0.0006741122505276032,0.0,extreme days
+duration_days,year_block,237235,0.000489823683113233,0.0,extreme days
+duration_days,region_block,237235,-0.0040458774516938245,0.0,extreme days
+duration_days,region_year_hash,237235,0.000367277967426749,0.0,extreme days
+final_area_km2,random_fire,237235,0.022038635413795693,0.0,extreme days
+final_area_km2,year_block,237235,0.021377983203714312,0.0,extreme days
+final_area_km2,region_block,237235,0.007364615001868691,0.0,extreme days
+final_area_km2,region_year_hash,237235,0.021114112580192468,0.0,extreme days
+morph_pc1,random_fire,237235,0.001151675134662522,0.0,extreme days
+morph_pc1,year_block,237235,0.0009083356953116795,0.0,extreme days
+morph_pc1,region_block,237235,-0.004806114170525788,0.0,extreme days
+morph_pc1,region_year_hash,237235,0.0008425810113744658,0.0,extreme days
+front_loaded_fraction,random_fire,63840,0.02326943356233313,0.0,time-resolved exposure
+front_loaded_fraction,year_block,63840,0.022302308757545908,0.0,time-resolved exposure
+front_loaded_fraction,region_block,63840,0.01719122477373125,0.0,time-resolved exposure
+front_loaded_fraction,region_year_hash,63840,0.02211434169577886,0.0,time-resolved exposure
+late_growth_fraction,random_fire,63840,0.022304160938466544,0.0,time-resolved exposure
+late_growth_fraction,year_block,63840,0.021425598815934865,0.0,time-resolved exposure
+late_growth_fraction,region_block,63840,0.01731147430580504,0.0,time-resolved exposure
+late_growth_fraction,region_year_hash,63840,0.021188686764388787,0.0,time-resolved exposure
+terminal_taper_fraction,random_fire,63840,0.029872026225086,0.0,time-resolved exposure
+terminal_taper_fraction,year_block,63840,0.028764921493716678,0.0,time-resolved exposure
+terminal_taper_fraction,region_block,63840,0.023217315847932407,0.0,time-resolved exposure
+terminal_taper_fraction,region_year_hash,63840,0.028870380549298802,0.0,time-resolved exposure
+growth_entropy,random_fire,63840,0.08651263343918769,0.0,time-resolved exposure
+growth_entropy,year_block,63840,0.08322341173475745,0.0,time-resolved exposure
+growth_entropy,region_block,63840,0.07113150869117868,0.0,time-resolved exposure
+growth_entropy,region_year_hash,63840,0.08375340662496311,0.0,time-resolved exposure
+pulse_count,random_fire,63840,0.022122920723053774,0.0,time-resolved exposure
+pulse_count,year_block,63840,0.022219216085622162,0.0,time-resolved exposure
+pulse_count,region_block,63840,0.014239822544169334,0.0,time-resolved exposure
+pulse_count,region_year_hash,63840,0.02094745667683151,0.0,time-resolved exposure
+reactivation_count,random_fire,63840,0.021433325529036207,0.0,time-resolved exposure
+reactivation_count,year_block,63840,0.021546279024409976,0.0,time-resolved exposure
+reactivation_count,region_block,63840,0.013787020132247085,0.0,time-resolved exposure
+reactivation_count,region_year_hash,63840,0.020353931416307813,0.0,time-resolved exposure
+peak_timing,random_fire,63840,0.003171541808967171,0.0,time-resolved exposure
+peak_timing,year_block,63840,0.0028594513119347686,0.0,time-resolved exposure
+peak_timing,region_block,63840,0.00156496655867977,0.0,time-resolved exposure
+peak_timing,region_year_hash,63840,0.003052991589562515,0.0,time-resolved exposure
+duration_days,random_fire,63840,0.058550309057211036,0.0,time-resolved exposure
+duration_days,year_block,63840,0.05681202324268553,0.0,time-resolved exposure
+duration_days,region_block,63840,0.03777187036064866,0.0,time-resolved exposure
+duration_days,region_year_hash,63840,0.055708914711865565,0.0,time-resolved exposure
+final_area_km2,random_fire,63840,0.11153552013217571,0.0,time-resolved exposure
+final_area_km2,year_block,63840,0.1088694476415275,0.0,time-resolved exposure
+final_area_km2,region_block,63840,0.0935005269705248,0.0,time-resolved exposure
+final_area_km2,region_year_hash,63840,0.10876663366932682,0.0,time-resolved exposure
+morph_pc1,random_fire,63840,0.02247588715518556,0.0,time-resolved exposure
+morph_pc1,year_block,63840,0.0216621027256223,0.0,time-resolved exposure
+morph_pc1,region_block,63840,0.014574862127492372,0.0,time-resolved exposure
+morph_pc1,region_year_hash,63840,0.021131966856565598,0.0,time-resolved exposure

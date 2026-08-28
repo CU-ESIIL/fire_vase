@@ -1,5 +1,25 @@
 # Fire VASE
 
+## Current analysis: v2 (2026-08-28)
+
+Fire morphology is primary; daily weather is an external demonstration, not its
+definition or a causal explanation. The corrected, versioned analysis is in
+[`analysis/v2/`](analysis/v2/), with an [audit](analysis/v2/audit_report.md),
+[manuscript](docs/manuscripts/fire_vase_developmental_morphology/manuscript_v2.md),
+[PDF](output/pdf/fire_vase_v2_manuscript.pdf), and [figures](figures/v2/).
+The older 0.349 weather-model headline is withdrawn. Legacy generations and their
+reproduction remain in [`archive/comparison_v1/`](archive/comparison_v1/).
+
+```sh
+PYTHONPATH=src:scripts OPENBLAS_NUM_THREADS=1 MPLCONFIGDIR=/tmp/fire-vase-v2-mpl .venv/bin/python manuscript_figures/00_run_all.py --generation v2 --data-lake data_lake/fire-vase-data-lake-v0.1
+```
+
+This is now the numbered pipeline's default. It writes statistics first, then
+five PDF/PNG/SVG figures, a supplement and manuscript PDF. Use `--render-only`
+only after statistics exist; `--generation legacy` explicitly selects the older
+pipeline. [V2 methods and reproduction](docs/reanalysis-v2.md) explain the source
+audits, strict cohort, day-specific spatial exposure and remaining limitations.
+
 Fire VASE is the research repository for the fire developmental morphology and
 fire-climate VASE work that began inside
 [`CU-ESIIL/cubedynamics`](https://github.com/CU-ESIIL/cubedynamics).

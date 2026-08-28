@@ -8,6 +8,7 @@ edit_uri: "edit/main/docs/"
 
 nav:
   - Home: index.md
+  - Corrected V2 Analysis: reanalysis-v2.md
   - Full Reproduction Vignette: vignette-reproduce-pipeline.md
   - Validation:
       - Overview: validation/index.md
@@ -23,10 +24,11 @@ nav:
   - Methods Notes: methods.md
   - Code Map: code-map.md
   - Manuscript:
-      - Science Style Revision: manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision_science_style.md
+      - Current V2 Manuscript: manuscripts/fire_vase_developmental_morphology/manuscript_v2.md
+      - Historical Science Style Revision: manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision_science_style.md
       - AI Transparency: manuscripts/fire_vase_developmental_morphology/ai_transparency_statement.md
       - Expanded AI Transparency Report: manuscripts/fire_vase_developmental_morphology/ai_transparency_report.md
-      - Climate Revision: manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision.md
+      - Historical Climate Revision: manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision.md
       - Citation Audit: manuscripts/fire_vase_developmental_morphology/final_citation_check_2026-07-23.md
   - Reference:
       - Data Boundary: data.md

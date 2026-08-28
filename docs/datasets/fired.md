@@ -1,4 +1,4 @@
-# FIRED (Fire Event Reconstruction and Discussion)
+# FIRED (Fire Events Delineation)
 
 ### What this dataset is
 FIRED provides event-level and per-day fire perimeter polygons for the conterminous United States and Alaska from November 2001 to March 2021. Daily footprints track fire growth through time, while event tables summarize ignition, containment, and size.
@@ -32,7 +32,15 @@ FIRED layers are pulled from a CU Scholar ZIP archive, extracted on-the-fly, and
 | area_ha (if present) | Burned area for the polygon | hectares |
 
 ### Citation
-Balch, J. K., Iglesias, V., Braswell, A., Rossi, M. W., Joseph, M. B., Mahood, A., Arkle, R. S., & Boer, M. M. (2020). FIRED: A global fire event database. *Scientific Data*, 7, 164. https://doi.org/10.1038/s41597-020-0524-5
+Balch et al. (2020). FIRED (Fire Events Delineation): An Open, Flexible Algorithm
+and Database of US Fire Events Derived from the MODIS Burned Area Product
+(2001-2019). *Remote Sensing*, 12, 3498.
+[Original FIRED article](https://doi.org/10.3390/rs12213498).
+
+The v2 source audit identifies actual cached dates from 2 November 2000 to
+1 May 2021; do not infer exact coverage from the GeoPackage filename. Daily
+records are not always consecutive calendar days. See the
+[corrected analysis](../reanalysis-v2.md).
 
 ---
 Back to [Data Boundary](../data.md)

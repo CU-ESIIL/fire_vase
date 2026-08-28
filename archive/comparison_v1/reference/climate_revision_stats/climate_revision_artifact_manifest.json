@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-07-23T01:49:49.927609+00:00",
+  "figures": {
+    "Figure_1": {
+      "png": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_main/Figure_1_climate_revision.png",
+      "pdf": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_main/Figure_1_climate_revision.pdf",
+      "svg": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_main/Figure_1_climate_revision.svg"
+    },
+    "Figure_2": {
+      "png": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_main/Figure_2_climate_revision.png",
+      "pdf": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_main/Figure_2_climate_revision.pdf",
+      "svg": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_main/Figure_2_climate_revision.svg"
+    },
+    "Figure_3": {
+      "png": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_main/Figure_3_climate_revision.png",
+      "pdf": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_main/Figure_3_climate_revision.pdf",
+      "svg": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_main/Figure_3_climate_revision.svg"
+    },
+    "Figure_4": {
+      "png": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_main/Figure_4_climate_revision.png",
+      "pdf": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_main/Figure_4_climate_revision.pdf",
+      "svg": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_main/Figure_4_climate_revision.svg"
+    },
+    "Figure_5": {
+      "png": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_main/Figure_5_climate_revision.png",
+      "pdf": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_main/Figure_5_climate_revision.pdf",
+      "svg": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_main/Figure_5_climate_revision.svg"
+    }
+  },
+  "supplementary_figures": {
+    "Supplementary_Figure_1_event_models": {
+      "png": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_supplement/Supplementary_Figure_1_event_models.png",
+      "pdf": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_supplement/Supplementary_Figure_1_event_models.pdf",
+      "svg": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_supplement/Supplementary_Figure_1_event_models.svg"
+    },
+    "Supplementary_Figure_2_state_models": {
+      "png": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_supplement/Supplementary_Figure_2_state_models.png",
+      "pdf": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_supplement/Supplementary_Figure_2_state_models.pdf",
+      "svg": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_supplement/Supplementary_Figure_2_state_models.svg"
+    },
+    "Supplementary_Figure_3_perimeter_pilot": {
+      "png": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_supplement/Supplementary_Figure_3_perimeter_pilot.png",
+      "pdf": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_supplement/Supplementary_Figure_3_perimeter_pilot.pdf",
+      "svg": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/figures/climate_revision_supplement/Supplementary_Figure_3_perimeter_pilot.svg"
+    }
+  },
+  "manuscript": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/docs/manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision_science_style.md",
+  "pdf": "/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/cubedynamics/output/pdf/fire_vase_climate_revision_science_style_manuscript.pdf",
+  "summary": {
+    "best_event_set": "core event means",
+    "best_event_r2": 0.3493478297928571,
+    "event_r2_by_set": {
+      "core event means": 0.3493478297928571,
+      "time-resolved exposure": 0.02188822221070058,
+      "comprehensive event means": 0.0024702582798912798,
+      "moisture and humidity": 0.001305820494262755,
+      "region-season anomalies": 0.001302264661384278,
+      "fire danger and energy": 0.0004421208420645195,
+      "extreme days": 0.0002224429063095168
+    },
+    "best_state_set": "core climate-state interaction",
+    "best_state_r2": 0.35333413262126534,
+    "state_r2_by_set": {
+      "core climate-state interaction": 0.35333413262126534,
+      "expanded climate plus state": 0.3454001708609472,
+      "core climate plus state": 0.33820931505473584,
+      "state only": 0.33022502295674405,
+      "expanded climate only": 0.0905383177049871,
+      "core climate only": 0.04511766885796875
+    },
+    "anomalies_outperform_raw": false,
+    "resolved_outperform_event_means": false,
+    "comprehensive_outperform_core": false,
+    "interaction_survives_blocking": true
+  }
+}

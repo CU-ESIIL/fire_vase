@@ -1,0 +1,22 @@
+{
+  "rows": 626102,
+  "one_day_transitions": 196611,
+  "longer_gaps": 150922,
+  "missing_dates": 0,
+  "duplicate_date_rows": 0,
+  "terminal_rows": 278569,
+  "zero_day_transitions": 0,
+  "eligible_transitions": 196611,
+  "excluded_rows": 429491,
+  "raw_daily_rows": 627033,
+  "raw_events": 278569,
+  "cached_events": 278569,
+  "source_rows_absent_from_cache": 931,
+  "daily_increment_max_abs_error": 0.0,
+  "source_missing_growth": 0,
+  "source_negative_growth": 0,
+  "mislabeled_peak_equals_catalog_mean": 278569,
+  "weather_extraction_methods": {
+    "event_centroid_nearest_grid_cell": 626102
+  }
+}

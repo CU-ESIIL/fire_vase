@@ -95,15 +95,20 @@ def clean_axis(ax: plt.Axes) -> None:
     ax.grid(color=LIGHT, lw=0.45, alpha=0.9)
 
 
-def save_figure(fig: plt.Figure, name: str) -> dict[str, str]:
-    MAIN_FIGURE_DIR.mkdir(parents=True, exist_ok=True)
+def save_figure(fig: plt.Figure, name: str, *, directory: Path | None = None,
+                dpi: int = 600, deterministic: bool = False) -> dict[str, str]:
+    directory = directory or MAIN_FIGURE_DIR
+    directory.mkdir(parents=True, exist_ok=True)
     paths = {
-        "pdf": MAIN_FIGURE_DIR / f"{name}.pdf",
-        "png": MAIN_FIGURE_DIR / f"{name}.png",
-        "svg": MAIN_FIGURE_DIR / f"{name}.svg",
+        "pdf": directory / f"{name}.pdf",
+        "png": directory / f"{name}.png",
+        "svg": directory / f"{name}.svg",
     }
     for suffix, path in paths.items():
-        fig.savefig(path, bbox_inches="tight", dpi=600)
+        metadata = None
+        if deterministic:
+            metadata = {"CreationDate": None, "ModDate": None} if suffix == "pdf" else ({"Date": None} if suffix == "svg" else {})
+        fig.savefig(path, bbox_inches="tight", dpi=dpi, metadata=metadata)
     return {key: value.as_posix() for key, value in paths.items()}
 
 

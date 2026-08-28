@@ -11,7 +11,8 @@
     "region": {"type": "string"},
     "total_area_km2": {"type": "number"},
     "duration_hours": {"type": "number"},
-    "peak_growth_km2_per_hour": {"type": "number"},
+    "mean_catalog_growth_km2_per_hour": {"type": "number"},
+    "peak_growth_km2_per_day": {"type": "number"},
     "geometry_cache_key": {"type": "string"},
     "climate_cache_key": {"type": "string"},
     "event_cache_key": {"type": "string"}

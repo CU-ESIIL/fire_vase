@@ -1,0 +1,112 @@
+{
+  "config": {
+    "version": "2.0",
+    "seed": 20260828,
+    "profile_bins": 20,
+    "alternative_bins": [
+      10,
+      40
+    ],
+    "bootstrap_replicates": 200,
+    "null_replicates": 100,
+    "null_sample_size": 4000,
+    "pca_bootstrap_sample_size": 10000,
+    "ridge_alphas": [
+      0.01,
+      1.0,
+      100.0
+    ],
+    "primary_minimum_observations": 3,
+    "primary_requires_consecutive_dates": true,
+    "matching_caliper": 0.5,
+    "matching_area_ratio_caliper": 2.0,
+    "matching_neighbors": [
+      1,
+      5,
+      10,
+      20
+    ],
+    "matching_metrics": [
+      "euclidean",
+      "cityblock"
+    ],
+    "weather_vpd_exceedance_kpa": 2.0,
+    "weather_precipitation_exceedance_mm": 0.1,
+    "state_exposure": "day_t_newly_burned_centroid",
+    "state_information_time": "end of day t; reconstructed observation, not operational forecast"
+  },
+  "command": [
+    "manuscript_figures/00_run_all.py",
+    "--generation",
+    "v2",
+    "--data-lake",
+    "data_lake/fire-vase-data-lake-v0.1"
+  ],
+  "python": "3.11.11",
+  "numpy": "1.26.4",
+  "pandas": "2.3.3",
+  "git_commit": "ced20b4410bd18272d47077f119427f82f08414c",
+  "input_hashes": {
+    "artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_daily_nov2001-march2021.gpkg": "added786e5741f835c4277b38478f446c1bb7269596998ad2ddda482cb59bf62",
+    "artifacts/fire-vase-gridmet-real/fired-cache/fired_conus-ak_events_nov2001-march2021.gpkg": "a77f06f9344bc1c2f6fbabf630948f4e263bc14bf341577bf32a39ad884d570d",
+    "scratch/fire_vase_run_full/tables/vase_slices.parquet": "40ccca537301e408d74b072e9079edc8fb97b47c6e27a11e579786d52406f066",
+    "scratch/fire_vase_run_full/tables/fire_traits.parquet": "7ed36a65e775048b54fc49d7b8c63f72085c2b097fc09d73df3727f650108f23",
+    "scratch/fire_vase_developmental_morphology/developmental_morphospace_features.parquet": "78bbf4a9beb6682d84b7d849a0bcfc98823d78816d5e43e300a8e0ea2a0ae002"
+  },
+  "code_hashes": {
+    "scripts/fire_vase_v2.py": "ffff27e27387ddd783776c21bc945abe9bf81d3e0c3df8309d2224324a2fad9f",
+    "src/cubedynamics/analysis_v2.py": "a77cf08e9dafc218c84e9777cafd263cd548ee46e083a8661e1a456b95e0f6b9",
+    "scripts/fire_vase_v2_inputs.py": "ce2d7b743796a4065c9981605e966821cb9c4bd0e79dfa47d4c3dc4ebeefa848",
+    "config/analysis_v2.json": "82ffbdb1b703b5d78422f7fb7690fd0585320304be58d886de24dd60d9f66479"
+  },
+  "output_hashes": {
+    "adjusted_associations.csv": "3fa574590a5355832f6ff3eafb581454fdba0923ccb5000dce1ffcea82f0f8c5",
+    "audit_report.md": "0a482c622fd4c51f31a7888525967bace4e4a4d7621777c60308cf3e6e6e4529",
+    "axis_attribute_projections.csv": "93a815a8e4c6a343e5c8f07412196c88ecef5439683f2a6bf9f508b19ce0d825",
+    "day_t_weather.parquet": "9eead4c5c9dbb7cda1dcd92ae9c3a1c61eb2105e9ed1d17a63fd3f7bc52b7477",
+    "day_t_weather_manifest.json": "7073f85d39c7f521349dc60719277de033de9c409e045fde6a13757cd5671e4a",
+    "event_analysis.parquet": "bf533b0f723169417d14405eb688bf84e74cd0642044b245c157304e1725e105",
+    "event_cohort.parquet": "4d99a9d015ea678d5321c2f6918843ed0787b8c39c9fe5a4c8bd3ffa53aef135",
+    "event_features.parquet": "b1dadea2cdd612934b8584b563da209da922cd1de91155d62497ace35b711e3a",
+    "event_fixed_length_strata.csv": "fedb293a66a82189ca53a355b921cb7608f0d2ccaa84aab97fad7e6b1ecbadd6",
+    "event_folds.csv": "ca1f3f575b557e0b900487bef317135315e5a00fbe45d515fffd77a69effebd5",
+    "event_gappy_cohort_sensitivity.csv": "c2b714c7b8cbe566662e6cee532afd37d34ce0b73c7a5a8bfb9670a76ced47ae",
+    "event_performance.csv": "507b534f2ee517f515341da018fc188569b861580ae8cf7e45953437c430c67f",
+    "event_predictors.csv": "7e461502ba5b26e682b4c41785bfcfcd8fedc8459b7dd0071391ec98282d138d",
+    "event_preprocessing.csv": "a0dbe96fdf4c583a259bb146e8806c8e2d36a356a7cba73d37d6291dfb64cc8c",
+    "event_semantic_audit.csv.gz": "7cbb2ebd8adb4988376176fcdaddd55be0a63d5e5ad5abdc8174a20b5233af36",
+    "event_uncertainty.csv": "787eabd8d7ed3a29377c1cc4825a3fca9794428b0f30595102a9064010730131",
+    "input_audit.json": "a7dc9c1f4d00bf1a831886ed797d55e5130d29b7ae8c33efea33b2f76dad71f6",
+    "input_hashes.json": "b8e7a6c1723074bb3ffe5bd827953ddf813a794cad0b0702fedb8d5b9488c860",
+    "issue_audit.csv": "64622072d9dcb4294a147b06ba4f9b7d709fb61f510d4757babebb69a602156e",
+    "legacy_outcome_feature_cohort_comparison.csv": "756fde111acd9e47c2fc8eaf1a44cc7bd83339029a9059a47e2ef999ff265b7f",
+    "matched_examples.csv": "54122455940b83771810e71d6ae3264e293f9c3fda9f851e7f235c75e737c1a8",
+    "matched_pairs.csv": "631365abbf6c161803bfb9b3c6355d4432cde5df8d86e134e47222da82a851a3",
+    "matching_permutation.csv": "9de3a0c72b5a9c8dcff8421a8536640bbdf4c45b54653ffc0d3ed60317129bce",
+    "matching_sensitivity.csv": "5b0307cf8884a30badde9e223f8031788905189291ab1e65816a422f8aada770",
+    "morphospace_sensitivity.csv": "ea48078c1de49951bbf57eba7027f564ca288097f7c313e29caeeb9a29090ee8",
+    "neighborhood_rules.csv": "3d36f78bf190373afaad2eef4beb59bd4b0c9fb13573bfc5e8dabc036de3b29f",
+    "null_comparisons.csv": "379410728eb83ff250eb11a6b4003cf515797bd4ed0cab350321faa0199929cd",
+    "null_tests.csv": "1b4b334d578e292b2e3cf124e6af9df7e22dd11c92c468810645a40065cecc9a",
+    "pca_bootstrap.csv": "6aa0689bd4b53114644143417ba4ce317ec719eb25f4d0f076a56f1bd494ce66",
+    "pca_bootstrap_loadings.csv": "5f01587dfd28af20bb9984b498b19ea3e21254d0692af8bdf1bed2c39fcd980d",
+    "pca_geographic_year_stability.csv": "505977934b9b1ae3dad3bbd85a5e74791ce9fbc3f0963c27d8fe408e08662072",
+    "pca_loadings.csv": "2f8f2f7e7ad6cf08c8cb9001259ebf3a6a767ebeb7bd5ad96850f132999b2b1d",
+    "pca_variance.csv": "9717ea9d71d8616171520a51f495370af7379681998f053fc8c4c9d6a71f34a9",
+    "publication_manifest.json": "a5b8dbdf8df0b6321b36fc2e727443d7699ab2812f70674b3b6f9fa150804091",
+    "semantic_summary.json": "132c703103ccafaffb3e18b905de3440d7a7795545067b0c87ecb05c70dbbedd",
+    "source_row_exclusions.csv": "82d87984807f17216c407e8c7239739ecbd479fd87074337c11e4ea71b5ae3de",
+    "state_cohort.parquet": "0053e79c5c2c0880d686f4c1dfe4ae9a7781cedbd322d4d023052d7de1bd78e5",
+    "state_folds.csv": "d8432de0da483e463cdeb800d47b9ca45a14da88cb05ac410b3fcfbe0d37954e",
+    "state_interaction_increment.csv": "baf029d78c4a4496e536bcc4775e8a5d203f0ff98625750f4f28c23437e9b6fc",
+    "state_performance.csv": "aaf71f3532ad0a045a95c55ce0bed9227f34adcf0bea5ab305cf6359c6320507",
+    "state_predictions.parquet": "8b48a2e2a913d749a5d52222bf703c5779b726e72f0c4c72889d2d133c32b5c0",
+    "state_predictors.csv": "978ece1d296d759e1fcae15398a4639278c9537af6d71426579182db9230c95e",
+    "state_preprocessing.csv": "3ad3fafe7e1eb166fb8d5e5439fd2172400d2ff9797d7259e3662c3f45e8363c",
+    "state_spatial_exposure_sensitivity.csv": "cf6e259ba6d56166b5b4244880bb71595855171c36ef9a988c4199bb92da7373",
+    "state_subgroup_sensitivity.csv": "f3417b5b0d77e5e6386f5e2bf11f7771f2fd52195b49f5ce8642f8937521cfb9",
+    "state_uncertainty.csv": "18030bfd92b15b20d0cf1f3f3994a5e806bc2ffe2a7e4d78e03312125d9c62f0",
+    "transition_audit.json": "10f8ae811f8480fc7ef9e3d9b2c09b109513709836f16d62ce8d06f304123e2b",
+    "weather_inclusion_exclusion.csv": "eaedc4c145b67e088693dc9e50cf87a4d74f83d491a8627ca563f96476ad8e97"
+  }
+}
