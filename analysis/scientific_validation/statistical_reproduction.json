@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "scope": "All second-pass population, stability, expanded null, adjusted-weather, VPD-specific and matching stages rerun with fixed seeds; candidate v2 PCA, primary event models at alpha=1, three principal state models and exact pair IDs replayed.",
+  "artifact_comparison_before_final_table_layout": {
+    "compared_files": 66,
+    "changed_files": [],
+    "added_files": [],
+    "status": "byte_identical"
+  },
+  "event_max_r2_error_vs_v2_csv": 4.888311977424564e-13,
+  "state_max_r2_error_vs_v2_csv": 4.897748873133878e-13,
+  "scope_limit": "Archived legacy/gappy/fixed-length/penalty grids were preserved and hashed, not all blindly rerun. Conditional uncertainty is not full training-refit uncertainty. Final PDF table formatting and extra landmark comparison rows were then regenerated and independently replayed."
+}

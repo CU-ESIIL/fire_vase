@@ -9,6 +9,12 @@ newly burned-area centroid weather. Core tested methods live in
 statistics and `fire_vase_v2_manuscript.py` writes the manuscript and audit.
 
 Run `manuscript_figures/00_run_all.py --generation v2` for the full workflow.
+The full workflow also runs `validate_fire_vase_science.py` for the bounded
+second-pass tests. `finalize_fire_vase_science.py` generates the correction audit,
+claim matrix, result comparison and Prism handoff from saved tables under
+`analysis/scientific_validation/`. `verify_fire_vase_science.py --snapshot PATH`
+and `--compare PATH` verify invariant checks, deterministic regeneration and
+the final artifact hashes. Use `MPLBACKEND=Agg` for headless tests and rendering.
 The developmental and climate-revision scripts listed below are historical v1
 implementations; they are not the corrected scientific pipeline. Use
 `reproduce_v1_comparison.py` to reproduce them without overwriting current work.

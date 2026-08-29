@@ -5,6 +5,12 @@ Weather is an external demonstration, not a definition or causal explanation
 of the structure. The [v2 manuscript](manuscripts/fire_vase_developmental_morphology/manuscript_v2.md)
 supersedes the climate-centered v1 generation.
 
+The second-pass validation now freezes a bounded scientific story: broad shape
+gradients and nonrandom temporal ordering are supported, but event-weather
+predictability is weak and heterogeneous. The supplied manuscript reference
+`main-16.pdf` guided the title, author block and framing; its retired numerical
+claims were not restored.
+
 ## What changed
 
 - True observed daily peak replaces catalog area divided by duration. Entropy
@@ -29,6 +35,35 @@ supersedes the climate-centered v1 generation.
   Observed mismatch rates are compatible with conditional permutation ranges;
   mechanistic interpretations remain hypothesis-generating.
 
+## What survived scientific validation
+
+At least seven consecutive observations leaves 1,171 fires. Relative to the
+primary fit, five-axis distance ranks on shared anchors correlate 0.969, but
+15-neighbor overlap is 71.8% and five-axis coverage falls to 74.2%. Broad
+gradients are more stable than exact local neighbors or extreme exemplars.
+
+In a recorded 4,000-fire sample, first-half growth allocation averages 0.541
+versus 0.500 after shuffling the same increments, and detected pulses average
+1.249 versus 1.413. This supports nonrandom observed ordering, not a uniquely
+biological low-dimensional wedge. Excluded endpoint attributes remain moderately
+associated with shape. No formal test establishes the absence of latent classes.
+
+Adding year to duration/count/area/region/month controls leaves small weather
+associations: mean VPD versus late allocation has partial rank correlation
+-0.069; precipitation versus pulses is only 0.025, with a regional interval
+including zero. The weather-complete population is CONUS-only in these inputs.
+
+VPD-by-current/prior growth products add about 0.006-0.012 R² above the other
+weather interactions across holdouts. This is supported with caveats: coefficients
+vary by region, fire size and partial edge years; all exposures are reconstructed
+end-of-day observations. Matching caliper sensitivity confirms design-dependent
+coverage, not ecological mismatch prevalence.
+
+The repository's `analysis/scientific_validation/` contains the 26-point final
+report, correction audit, complete A-M claim matrix, scientific story, and
+`PRISM_HANDOFF.md`. Those files control manuscript interpretation; the original
+`analysis/v2/` remains the separately identified candidate baseline.
+
 ## Reproduce
 
 Use the existing real data lake; absent required inputs raise an error. No new
@@ -41,6 +76,18 @@ PYTHONPATH=src:scripts OPENBLAS_NUM_THREADS=1 MPLCONFIGDIR=/tmp/fire-vase-v2-mpl
 
 The configuration is `config/analysis_v2.json`, seed 20260828. Use
 `--render-only` with the figure command after successful statistics generation.
+The full pipeline also runs the bounded scientific-validation stage. To rerun
+only that stage or verify its artifacts:
+
+```sh
+PYTHONPATH=src:scripts MPLBACKEND=Agg MPLCONFIGDIR=/tmp/fire-vase-v2-mpl OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/validate_fire_vase_science.py
+PYTHONPATH=src:scripts MPLBACKEND=Agg MPLCONFIGDIR=/tmp/fire-vase-v2-mpl .venv/bin/python scripts/verify_fire_vase_science.py
+```
+
+Full test collection currently fails in two pre-existing modules importing the
+missing `tests.helpers.contracts`; the remaining suite passes (132 tests, two
+skipped). Dedicated v2/validation tests are included. This is a disclosed testing
+gap, not a fully green repository test claim.
 The v1 comparison is deliberately separate:
 
 ```sh
@@ -56,7 +103,8 @@ PYTHONPATH=scripts/figures:scripts:src .venv/bin/python scripts/reproduce_v1_com
 | PCA, nulls, stability and every model comparison | `analysis/v2/*.csv` |
 | Source and exposure provenance | `input_audit.json`, `input_hashes.json`, `day_t_weather_manifest.json` in `analysis/v2/` |
 | Code/configuration/output hashes | `analysis/v2/run_manifest.json`, `publication_manifest.json` |
-| Five main figures and supplement, PDF/PNG/SVG | `figures/v2/` |
+| Five main figures and three supplements, PDF/PNG/SVG | `figures/v2/` |
+| Second-pass audit, claims, stress tests, handoff and frozen hashes | `analysis/scientific_validation/` |
 | Current manuscript source and PDF | `docs/manuscripts/fire_vase_developmental_morphology/manuscript_v2.md`, `output/pdf/fire_vase_v2_manuscript.pdf` |
 | Preserved references and reproduced v1 outputs | `archive/comparison_v1/` |
 
@@ -70,10 +118,16 @@ number of region clusters, satellite/date uncertainty and matching assumptions.
 
 ![Figure 1: dated real growth observations and VASE encoding.](assets/figures/v2/Figure_1.png)
 
-![Figure 2: shape-only morphospace, observation support, loadings and null comparison.](assets/figures/v2/Figure_2.png)
+![Figure 2: shape-only morphospace, observation support, leading loadings and real glyphs.](assets/figures/v2/Figure_2.png)
 
-![Figure 3: external weather gradients, adjusted associations and response-specific validation.](assets/figures/v2/Figure_3.png)
+![Figure 3: external weather mapping and weak response-specific blocked prediction.](assets/figures/v2/Figure_3.png)
 
 ![Figure 4: exact subsequent-day growth and incremental weather skill above state.](assets/figures/v2/Figure_4.png)
 
 ![Figure 5: caliper-constrained unique pairs and conditional mismatch references.](assets/figures/v2/Figure_5.png)
+
+## Second-pass supplements
+
+![Figure S2: observation-threshold, null, endpoint, adjustment and matching-caliper tests.](assets/figures/v2/Supplementary_Figure_2.png)
+
+![Figure S3: VPD-specific joint support, coefficient heterogeneity and held-out ablation.](assets/figures/v2/Supplementary_Figure_3.png)

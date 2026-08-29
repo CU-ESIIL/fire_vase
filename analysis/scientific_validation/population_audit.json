@@ -1,0 +1,16 @@
+{
+  "events": 278569,
+  "slices": 626102,
+  "adjacent_observed_pairs": 347533,
+  "exactly_one_day": 196611,
+  "exactly_two_days": 81940,
+  "greater_than_two_days": 68982,
+  "missing_dates": 0,
+  "duplicate_dates": 0,
+  "zero_growth_observations": 0,
+  "primary": 10246,
+  "weather_complete": 237235,
+  "primary_weather_complete": 9212,
+  "date_min": "2000-11-02 00:00:00",
+  "date_max": "2021-05-01 00:00:00"
+}

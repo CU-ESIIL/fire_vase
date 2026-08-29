@@ -109,6 +109,9 @@ def save_figure(fig: plt.Figure, name: str, *, directory: Path | None = None,
         if deterministic:
             metadata = {"CreationDate": None, "ModDate": None} if suffix == "pdf" else ({"Date": None} if suffix == "svg" else {})
         fig.savefig(path, bbox_inches="tight", dpi=dpi, metadata=metadata)
+        if deterministic and suffix == "svg":
+            # Matplotlib emits trailing path whitespace; normalize text artifacts.
+            path.write_text("\n".join(line.rstrip() for line in path.read_text().splitlines())+"\n")
     return {key: value.as_posix() for key, value in paths.items()}
 
 

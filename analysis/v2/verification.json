@@ -4,5 +4,8 @@
   "event_model_cohort": 9212,
   "state_model_rows": 87944,
   "pairs_checked": 6855,
-  "snapshot_files": 60
+  "deterministic_regeneration": "pass",
+  "compared_files": 60,
+  "changed_files": [],
+  "added_files": []
 }

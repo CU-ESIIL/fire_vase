@@ -1,0 +1,18 @@
+{
+  "scientific_invariants": "pass",
+  "primary_events": 10246,
+  "event_model_cohort": 9212,
+  "state_model_rows": 87944,
+  "pairs_checked": 6855,
+  "claim_matrix": "pass",
+  "null_conservation": "pass",
+  "manuscript_table_numbers": "pass",
+  "publication_hashes": "pass",
+  "web_figure_copies": "pass",
+  "main_figures": 5,
+  "supplementary_figures": 3,
+  "deterministic_regeneration": "pass",
+  "compared_files": 66,
+  "changed_files": [],
+  "added_files": []
+}

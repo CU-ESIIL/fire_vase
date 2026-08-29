@@ -6,7 +6,9 @@ from the repository root using the Python environment. Statistics are computed
 before figures, which are written to `figures/v2/`; the manuscript goes to
 `docs/manuscripts/fire_vase_developmental_morphology/manuscript_v2.md` and
 `output/pdf/fire_vase_v2_manuscript.pdf`. Individual numbered entry points also
-ensure the entire consistent v2 bundle exists. Add `--render-only` to avoid
+produce the consistent bundle of five main figures and three supplements. The
+full run includes `analysis/scientific_validation/` stability, null, confounding,
+VPD-specific and matching stress tests before rendering. Add `--render-only` to avoid
 recomputing existing statistics.
 
 The historical instructions below describe `--generation legacy`, which reads

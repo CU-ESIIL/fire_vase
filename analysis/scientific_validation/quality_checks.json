@@ -1,0 +1,57 @@
+{
+  "date": "2026-08-28",
+  "reference_manuscript": {
+    "source": "docs/manuscripts/fire_vase_developmental_morphology/main-16.pdf",
+    "sha256": "6d07ab1763a8e92d4584a49ea3123ab165c1f5d9c3ad8fc43e732ad2e28d1e31",
+    "pages": 27,
+    "text_review": "pass_all_pages",
+    "visual_review": "pass_pages_1_to_3",
+    "modified": false
+  },
+  "final_manuscript": {
+    "path": "output/pdf/fire_vase_v2_manuscript.pdf",
+    "pages": 16,
+    "visual_review": "pass_all_pages",
+    "layout_defects": 0
+  },
+  "figures": {
+    "main": 5,
+    "supplementary": 3,
+    "visual_review": "pass_all_figures",
+    "layout_defects": 0
+  },
+  "scientific_verification": {
+    "invariants": "pass",
+    "deterministic_regeneration": "pass",
+    "compared_files": 66,
+    "changed_files": [],
+    "added_files": []
+  },
+  "tests": {
+    "scientific_validation": {
+      "passed": 30,
+      "warnings": 1,
+      "status": "pass"
+    },
+    "remaining_suite_after_collection_exclusions": {
+      "passed": 132,
+      "skipped": 2,
+      "warnings": 125,
+      "status": "pass"
+    },
+    "full_collection": {
+      "status": "blocked_by_pre_existing_test_infrastructure",
+      "collection_errors": 2,
+      "reason": "tests/test_fire_plot_cube_first.py and tests/test_fire_plot_loader_calls.py import the absent tests.helpers.contracts module"
+    }
+  },
+  "documentation": {
+    "mkdocs_strict": "pass",
+    "note": "The build emitted the upstream Material for MkDocs future-MkDocs-2 warning."
+  },
+  "repository": {
+    "git_diff_check": "pass",
+    "baseline_commit": "18c923cb0c82bf9f66567b62a3491ac30a28c369",
+    "changes_committed": false
+  }
+}

@@ -1,0 +1,38 @@
+dimension,value,transitions,fires
+region,central,24323,10105
+region,east,17224,6575
+region,intermountain,23399,8866
+region,west,22998,6154
+year,2000,124,68
+year,2001,1715,651
+year,2002,2547,890
+year,2003,4717,1755
+year,2004,4054,1529
+year,2005,4326,1747
+year,2006,4948,1738
+year,2007,5955,1781
+year,2008,5075,1820
+year,2009,3824,1478
+year,2010,4500,1873
+year,2011,5350,1974
+year,2012,4249,1357
+year,2013,3581,1320
+year,2014,3631,1322
+year,2015,4425,1525
+year,2016,4976,1831
+year,2017,5143,1676
+year,2018,4639,1543
+year,2019,3958,1508
+year,2020,4871,1712
+year,2021,1336,602
+season,DJF,12759,5237
+season,JJA,29913,8208
+season,MAM,20363,8398
+season,SON,24909,9857
+size_class,"(0.0, 1.0]",1947,1838
+size_class,"(1.0, 10.0]",46640,23072
+size_class,"(10.0, 100.0]",31106,6160
+size_class,"(100.0, 1000.0]",7652,599
+size_class,"(1000.0, inf]",599,31
+observation_quality,consecutive_history,21677,9212
+observation_quality,history_has_gaps,66267,22488

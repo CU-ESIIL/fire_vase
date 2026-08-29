@@ -22,6 +22,16 @@ from fire_vase_v2_inputs import audit_inputs,day_t_weather,sha256
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def validate_fixed_protocol(config):
+    """Reject configuration declarations that the fixed v2 protocol cannot honor."""
+    fixed = {"primary_minimum_observations":3, "primary_requires_consecutive_dates":True,
+        "matching_area_ratio_caliper":2., "weather_vpd_exceedance_kpa":2.,
+        "weather_precipitation_exceedance_mm":.1, "state_exposure":"day_t_newly_burned_centroid"}
+    for key,value in fixed.items():
+        if config.get(key) != value:
+            raise ValueError(f"The fixed v2 protocol requires {key}={value!r}; refusing an ignored override")
+
+
 def write_csv(frame, output, name):
     if name == "event_semantic_audit":
         frame.to_csv(output/f"{name}.csv.gz",index=False,float_format="%.12g",
@@ -397,6 +407,7 @@ def main(argv=None):
     data=args.data_lake.resolve()
     if (data/"files").exists():data=data/"files"
     config=json.loads(args.config.read_text())
+    validate_fixed_protocol(config)
     output=ROOT/"analysis/v2";output.mkdir(exist_ok=True)
     if args.stage in ["all","features"]:
         print("Auditing real source inputs",flush=True)

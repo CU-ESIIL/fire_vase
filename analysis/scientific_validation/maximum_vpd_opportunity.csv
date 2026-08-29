@@ -1,0 +1,17 @@
+population,n,length,exposure,spearman
+primary,9212,duration_days,max_vpd,0.207031232128
+primary,9212,duration_days,mean_vpd_kpa,0.120260922121
+primary,9212,duration_days,q90_vpd,0.185010988315
+primary,9212,duration_days,vpd_gt_2_fraction,0.145486514243
+primary,9212,observation_count,max_vpd,0.207031232128
+primary,9212,observation_count,mean_vpd_kpa,0.120260922121
+primary,9212,observation_count,q90_vpd,0.185010988315
+primary,9212,observation_count,vpd_gt_2_fraction,0.145486514243
+all_complete,237235,duration_days,max_vpd,0.268379188375
+all_complete,237235,duration_days,mean_vpd_kpa,0.0449827430652
+all_complete,237235,duration_days,q90_vpd,0.224987308983
+all_complete,237235,duration_days,vpd_gt_2_fraction,0.107239965256
+all_complete,237235,observation_count,max_vpd,0.284570470514
+all_complete,237235,observation_count,mean_vpd_kpa,0.0631684234941
+all_complete,237235,observation_count,q90_vpd,0.24148956373
+all_complete,237235,observation_count,vpd_gt_2_fraction,0.123358779398

@@ -78,6 +78,14 @@ def test_duplicate_dates_are_excluded():
     assert d.empty
 
 
+def test_ambiguous_previous_day_is_not_an_autoregressive_state():
+    s=pd.DataFrame(dict(fire_id=["a"]*4,slice_index=range(4),
+        timestamp=["2020-01-01","2020-01-01","2020-01-02","2020-01-03"],ring_area_km2=[1,2,3,4]))
+    d,_=exact_transitions(s)
+    assert len(d)==1
+    assert d.previous_growth_km2.isna().all()
+
+
 def test_no_final_geometry_or_future_geometry_in_prospective_models():
     d=pd.DataFrame(dict(exposure_geometry=["day_t_newly_burned_centroid"],
         timestamp=["2020-01-01"],geometry_max_date=["2020-01-01"]))

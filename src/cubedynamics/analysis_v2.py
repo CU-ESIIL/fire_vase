@@ -180,6 +180,9 @@ def exact_transitions(slices):
     s["previous_growth_km2"] = g.ring_area_km2.shift().where(s.previous_gap_days.eq(1))
     duplicated = s.duplicated(["fire_id", "timestamp"], keep=False)
     s["duplicate_date"] = duplicated
+    # A unique current/next pair cannot use an ambiguous prior-day state.
+    prior_duplicate = s.groupby("fire_id").duplicate_date.shift().eq(True)
+    s.loc[prior_duplicate, "previous_growth_km2"] = np.nan
     next_duplicate = s.groupby("fire_id").duplicate_date.shift(-1).eq(True)
     s["elapsed_day"] = (s.timestamp-g.timestamp.transform("min")).dt.days
     audit = {"rows": len(s), "one_day_transitions": int(s.gap_days.eq(1).sum()),

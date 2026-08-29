@@ -185,8 +185,12 @@ def render_v2(args: argparse.Namespace):
     from fire_vase_v2 import main as analyze
     from figures.make_figures_v2 import render
     from fire_vase_v2_manuscript import build
+    from validate_fire_vase_science import main as validate
+    from finalize_fire_vase_science import build as finalize
     if not args.render_only:
         analyze(["--data-lake", str(args.data_lake)])
+        validate(["--data-lake", str(args.data_lake)])
+    finalize(REPO_ROOT)
     outputs = render(REPO_ROOT, resolve_data_root(args.data_lake))
     build(REPO_ROOT)
     return outputs

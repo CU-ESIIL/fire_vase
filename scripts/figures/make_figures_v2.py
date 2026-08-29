@@ -1,4 +1,4 @@
-"""Five corrected main figures and one supplement, drawn only from saved statistics."""
+"""Five corrected main figures and validation supplements from saved statistics."""
 from pathlib import Path
 import json
 import shutil
@@ -80,58 +80,45 @@ def figure1(d,slices):
 
 def figure2(d,slices,read):
     p=d[d.primary_eligible]
-    ev=read("pca_variance"); null=read("null_comparisons"); loading=read("pca_loadings")
-    fig=plt.figure(figsize=(11,8),layout="constrained")
-    grid=fig.add_gridspec(2,3)
+    ev=read("pca_variance");loading=read("pca_loadings")
+    fig=plt.figure(figsize=(11,7),layout="constrained")
+    grid=fig.add_gridspec(2,2)
     a=fig.add_subplot(grid[0,0]); h=a.hexbin(p.shape_PC1,p.shape_PC2,gridsize=40,mincnt=1,bins="log",cmap="Blues")
     tidy(a,f"A  Shape-only occupancy (n = {len(p):,})",f"PC1 ({ev.explained_variance.iloc[0]:.1%})",f"PC2 ({ev.explained_variance.iloc[1]:.1%})")
     fig.colorbar(h,ax=a,label="Fires per bin",shrink=.75)
     a=fig.add_subplot(grid[0,1]);t=np.arange(len(loading))/len(loading)+.5/len(loading)
-    for pc,color in [("PC1",BLUE),("PC2",TEAL),("PC3",GOLD)]:a.plot(t,loading[pc],label=pc,color=color)
+    for pc,color in [("PC1",BLUE),("PC2",TEAL)]:a.plot(t,loading[pc],label=pc,color=color)
     a.axhline(0,color=GRAY,lw=.5);tidy(a,"B  Axis interpretation","Relative calendar time","Loading on growth-allocation bin");a.legend()
-    a=fig.add_subplot(grid[0,2]);cats=["One observation","Two observations","≥3 with gaps","Primary ≥3 consecutive"]
+    a=fig.add_subplot(grid[1,0]);cats=["One observation","Two observations","≥3 with gaps","Primary ≥3 consecutive"]
     counts=[d.observation_count.eq(1).sum(),d.observation_count.eq(2).sum(),((d.observation_count>=3)&~d.consecutive).sum(),len(p)]
     a.barh(cats[::-1],counts[::-1],color=[TEAL,GRAY,GRAY,GRAY]);a.tick_params(axis="y",labelsize=8)
     a.set_xticks([0,50000,100000,150000],["0","50k","100k","150k"])
     tidy(a,"C  Observation support","Number of fires")
-    a=fig.add_subplot(grid[1,0]);a.plot(ev.axis[:10],ev.cumulative_variance[:10],"o-",color=BLUE)
-    a.set(ylim=(0,1.03),xticks=[1,3,5,7,9]);tidy(a,"D  Explained variation","Number of axes","Cumulative fraction")
-    a.text(.04,.08,f"5 axes: {ev.cumulative_variance.iloc[4]:.1%}\nNot the legacy 96.3%",transform=a.transAxes,fontsize=9)
-    a=fig.add_subplot(grid[1,1]);names=["within_fire_permutation","dirichlet_1","dirichlet_10"]
-    a.boxplot([null.loc[null.null.eq(n),"first_five"] for n in names],tick_labels=["Reorder\nobserved","Dirichlet\nα = 1","Dirichlet\nα = 10"])
-    a.axhline(null.loc[null.null.eq("observed_same_sample"),"first_five"].iloc[0],color=TEAL,label="Observed, same 4,000 fires")
-    tidy(a,"E  Duration/count-preserving nulls",ylabel="First-five-axis fraction");a.legend(fontsize=7)
-    nested=grid[1,2].subgridspec(1,3)
+    nested=grid[1,1].subgridspec(1,3)
     for i,fid in enumerate(example_ids(d)[:3]):
-        ax=fig.add_subplot(nested[0,i]);glyph(ax,slices[slices.fire_id.eq(fid)].sort_values("timestamp"),f"Fire {fid}")
+        ax=fig.add_subplot(nested[0,i]);glyph(ax,slices[slices.fire_id.eq(fid)].sort_values("timestamp"),f"{'D  ' if i==0 else ''}Fire {fid}")
     fig.suptitle("The developmental morphospace: shape first, external attributes afterward",fontsize=14)
+    fig.supxlabel(f"Five axes summarize {ev.cumulative_variance.iloc[4]:.1%}. Observation-threshold and null tests: Figure S2.",fontsize=9)
     return fig
 
 
 def figure3(d,read):
     p=d[d.primary_eligible & d.weather_complete]
-    fig,axes=plt.subplots(2,2,figsize=(11,8),layout="constrained")
-    for ax,col,title in [(axes[0,0],"mean_vpd_kpa","A  Mean VPD (kPa)"),(axes[0,1],"mean_precipitation_mm","B  Mean precipitation (mm/day)")]:
-        h=ax.hexbin(p.shape_PC1,p.shape_PC2,C=p[col],reduce_C_function=np.median,gridsize=28,mincnt=5,cmap="viridis")
-        fig.colorbar(h,ax=ax,label=title[3:],shrink=.8);tidy(ax,title,"Shape PC1","Shape PC2")
-    a=axes[1,0];assoc=read("adjusted_associations")
-    responses=["front_loaded_fraction","late_growth_fraction","normalized_entropy","pulse_count","reactivation_count"]
-    g=assoc[(assoc.predictor=="mean_precipitation_mm")&(assoc.resampling=="region")].set_index("response").reindex(responses)
-    y=np.arange(len(g));a.scatter(g.raw_spearman,y+.12,color=GRAY,label="Unadjusted")
-    a.errorbar(g.partial_rank,y-.12,xerr=[np.maximum(g.partial_rank-g.low,0),np.maximum(g.high-g.partial_rank,0)],fmt="o",color=TEAL,label="Adjusted; region resampling")
-    a.axvline(0,color=GRAY,lw=.6);a.set_yticks(y,[LABELS[r] for r in responses]);a.invert_yaxis()
-    tidy(a,"C  Precipitation association","Rank association (not causal effect)");a.legend(fontsize=7)
-    a.text(0,-.31,"Adjusted for duration, count, area, region and month.\nAll ≥3-observation complete fires; gappy histories are sensitivity data.",transform=a.transAxes,fontsize=7)
-    a=axes[1,1];ci=read("event_uncertainty")
+    fig,axes=plt.subplots(1,2,figsize=(11,4.8),layout="constrained",gridspec_kw={"width_ratios":[1,1.15]})
+    a=axes[0];h=a.hexbin(p.shape_PC1,p.shape_PC2,C=p.mean_vpd_kpa,reduce_C_function=np.median,gridsize=28,mincnt=5,cmap="viridis")
+    fig.colorbar(h,ax=a,label="Median event-mean VPD (kPa)",shrink=.8)
+    tidy(a,"A  Weather projected onto shape","Shape PC1","Shape PC2")
+    a=axes[1];ci=read("event_uncertainty")
     responses=["front_loaded_fraction","late_growth_fraction","peak_timing","normalized_entropy","pulse_count","shape_PC1_fold"]
     for i,(block,color) in enumerate(zip(BLOCKS,[BLUE,TEAL,GOLD])):
         g=ci[(ci.kind==block)&(ci.predictor_set=="core_plus_max")&(ci.resampling=="fire_id")].set_index("response").reindex(responses)
         y=np.arange(len(g))+(i-1)*.18
         a.errorbar(g.r2,y,xerr=[np.maximum(g.r2-g.r2_low,0),np.maximum(g.r2_high-g.r2,0)],fmt="o",ms=4,color=color,label=BLOCK_LABELS[block])
     a.axvline(0,color=GRAY,lw=.6);a.set_yticks(np.arange(len(responses)),[LABELS[r] for r in responses]);a.invert_yaxis()
-    tidy(a,"D  Response-specific blocked validation","Held-out R², core means + maximum VPD")
+    tidy(a,"B  Limited, response-specific predictability","Held-out R², core means + maximum VPD")
     a.legend(fontsize=7,loc="lower right")
     fig.suptitle(f"How weather maps onto morphology | primary maps and models: n = {len(p):,}",fontsize=14)
+    fig.supxlabel("Weather does not define the axes. Adjusted associations, nested controls and selection diagnostics remain supplementary.",fontsize=8)
     return fig
 
 
@@ -231,22 +218,102 @@ def supplement(read):
     return fig
 
 
+def validation_supplement(read):
+    fig,axes=plt.subplots(2,3,figsize=(13,8),layout="constrained")
+    g=read("morphospace_stability").query("comparison=='observation_threshold'")
+    a=axes[0,0]
+    for col,label,color in [("pair_distance_spearman","Distance rank",BLUE),("neighbor_overlap","15-neighbor overlap",TEAL),
+                            ("exemplar_tail_jaccard","Extreme-tail overlap",GOLD)]:
+        a.plot(g.label.astype(int),g[col],"o-",label=label,color=color)
+    a.set(ylim=(0,1.05),xticks=[2,3,5,7]);tidy(a,"S2A  Observation-count robustness","Minimum consecutive observations","Similarity to ≥3 reference")
+    a.legend(fontsize=7)
+    null=read("null_history_replicates");names=["temporal_shuffle","dirichlet_1","dirichlet_10"]
+    a=axes[0,1]
+    a.boxplot([null[null.null.eq(n)].first_five for n in names],tick_labels=["Shuffle","Dirichlet 1","Dirichlet 10"])
+    a.axhline(null[null.null.eq("observed")].first_five.iloc[0],color=TEAL,label="Observed (same 4,000 fires)")
+    tidy(a,"S2B  Compression is not uniquely biological",ylabel="First-five-axis fraction");a.legend(fontsize=7)
+    a=axes[0,2];q=read("null_history_comparison").query("null=='temporal_shuffle'")
+    metrics=["front_loaded_fraction_mean","pulse_count_mean","reactivation_count_mean"]
+    q=q.set_index("metric").loc[metrics];y=np.arange(3)
+    a.errorbar(q.null_mean,y+.1,xerr=[q.null_mean-q.null_low,q.null_high-q.null_mean],fmt="o",color=GRAY,label="Temporal shuffle, 95% range")
+    a.scatter(q.observed,y-.1,color=TEAL,label="Observed")
+    a.set_yticks(y,["Front-loading fraction","Detected pulses","Reactivations"]);a.invert_yaxis()
+    tidy(a,"S2C  Ordering changes developmental traits","Mean per event");a.legend(fontsize=7)
+    a=axes[1,0];g=read("endpoint_projections").query("minimum_observations==3 and axis<=2")
+    g=g[g.attribute.isin(["catalog_area_km2","duration_days","observation_count","peak_growth_km2_per_day"])]
+    names=["catalog_area_km2","duration_days","observation_count","peak_growth_km2_per_day"]
+    for i,color in [(1,BLUE),(2,TEAL)]:
+        sub=g[g.axis.eq(i)].set_index("attribute").loc[names];a.scatter(sub.spearman,np.arange(4)+(i-1.5)*.2,color=color,label=f"PC{i}")
+    a.axvline(0,color=GRAY,lw=.5);a.set_yticks(range(4),["Final area","Duration","Observation count","Observed daily peak"]);a.invert_yaxis()
+    tidy(a,"S2D  Exclusion does not imply independence","Spearman association with external attribute");a.legend(fontsize=7)
+    a=axes[1,1];g=read("adjusted_weather_associations").query("population=='primary' and year_adjusted==True and resampling=='region'")
+    responses=["front_loaded_fraction","late_growth_fraction","pulse_count"]
+    for i,(predictor,color,label) in enumerate([("mean_vpd_kpa",BLUE,"Mean VPD"),("mean_precipitation_mm",TEAL,"Mean precipitation")]):
+        q=g[g.predictor.eq(predictor)].set_index("response").loc[responses]
+        a.errorbar(q.partial_rank,np.arange(3)+(i-.5)*.2,xerr=[np.maximum(q.partial_rank-q.low,0),np.maximum(q.high-q.partial_rank,0)],fmt="o",color=color,label=label)
+    a.axvline(0,color=GRAY,lw=.5);a.set_yticks(range(3),[LABELS[r] for r in responses]);a.invert_yaxis()
+    tidy(a,"S2E  Associations after all coarse controls","Partial rank; conditional region intervals");a.legend(fontsize=7)
+    a=axes[1,2];g=read("matching_caliper_sensitivity").query("metric=='euclidean'")
+    for space,color in [("weather",BLUE),("morphology",TEAL)]:
+        q=g[g.space.eq(space)];a.plot(q.caliper,q.paired_fraction,"o-",color=color,label=space)
+    tidy(a,"S2F  Pairing depends on the caliper","RMS standardized match caliper","Fraction assigned unique partners");a.set_ylim(0,1);a.legend(fontsize=7)
+    fig.suptitle("Second-pass validation: stable broad gradients, qualified local and environmental claims",fontsize=14)
+    return fig
+
+
+def interaction_supplement(read):
+    fig,axes=plt.subplots(2,2,figsize=(11,8),layout="constrained")
+    density=read("vpd_joint_density")
+    for a,state,title in [(axes[0,0],"current_growth_log1p","S3A  VPD × current state support"),
+                          (axes[0,1],"previous_growth_log1p","S3B  VPD × previous state support")]:
+        q=density[density.state.eq(state)]
+        table=q.pivot(index="state_bin",columns="vpd_bin",values="n")
+        h=a.imshow(np.log10(table+1),origin="lower",aspect="auto",cmap="Blues")
+        for row in q[~q.supported].itertuples():a.scatter(row.vpd_bin,row.state_bin,marker="x",color=GOLD,s=35)
+        tidy(a,title,"VPD quantile bin (low → high)","State quantile bin (low → high)")
+        fig.colorbar(h,ax=a,label="log10(transitions + 1)",shrink=.8)
+    a=axes[1,0];q=read("vpd_interaction_coefficients").query("stratum in ['all','region']")
+    names=["all","central","east","intermountain","west"]
+    for i,(term,color,label) in enumerate([("vpd_kpa_x_current_growth_log1p",BLUE,"VPD × current"),
+                                         ("vpd_kpa_x_previous_growth_log1p",TEAL,"VPD × previous")]):
+        g=q[q.term.eq(term)].set_index("value").loc[names]
+        a.errorbar(g.estimate,np.arange(5)+(i-.5)*.18,xerr=1.96*g.cluster_se,fmt="o",color=color,label=label)
+    a.axvline(0,color=GRAY,lw=.5);a.set_yticks(range(5),["All","Central","East","Intermountain","West"]);a.invert_yaxis()
+    tidy(a,"S3C  Conditional coefficient heterogeneity","Coefficient per kPa × log1p(km²)")
+    a.set_ylim(5.2,-.5);a.legend(fontsize=7,loc="lower right")
+    a=axes[1,1];q=read("vpd_incremental_robustness").query("stratum=='all' and resampling=='fire_id'")
+    names=["random_fire","year_block","region_block","spatiotemporal"]
+    for i,(comparison,color,label) in enumerate([("VPD_above_additive",BLUE,"VPD products above additive"),
+        ("VPD_above_other_interactions",TEAL,"VPD products above other interactions")]):
+        g=q[q.comparison.eq(comparison)].set_index("kind").loc[names]
+        a.errorbar(g.delta_r2,np.arange(4)+(i-.5)*.18,xerr=[g.delta_r2-g.delta_low,g.delta_high-g.delta_r2],fmt="o",color=color,label=label)
+    a.axvline(0,color=GRAY,lw=.5);a.set_yticks(range(4),["Random diagnostic","Year block","Region block","Space + time"]);a.invert_yaxis()
+    tidy(a,"S3D  VPD-specific held-out improvement","Paired ΔR²; conditional fire-bootstrap interval")
+    a.set_ylim(4.2,-.5);a.legend(fontsize=7,loc="lower right")
+    fig.suptitle("VPD interaction: predictive support with regional and size-dependent caveats",fontsize=14)
+    fig.supxlabel("Crosses: fewer than 100 transitions or 30 fires. Quantile bins can merge at tied growth values. No extrapolated response surface is shown.",fontsize=8)
+    return fig
+
+
 def render(root:Path,data_root:Path):
     stats=root/"analysis/v2";out=root/"figures/v2"
     def read(name):
         path=stats/f"{name}.csv"
         if not path.exists():raise FileNotFoundError(f"Statistics must be written before rendering: {path}")
         return pd.read_csv(path)
+    def validation_read(name):
+        return pd.read_csv(root/"analysis/scientific_validation"/f"{name}.csv")
     d=pd.read_parquet(stats/"event_analysis.parquet")
     d.fire_id=d.fire_id.astype(str)
     s=pd.read_parquet(data_root/"scratch/fire_vase_run_full/tables/vase_slices.parquet")
     s.fire_id=s.fire_id.astype(str);s.timestamp=pd.to_datetime(s.timestamp)
     set_style();mpl.rcParams.update({"svg.hashsalt":"fire-vase-v2-20260828","font.family":"DejaVu Sans","font.size":8})
     builds=[lambda:figure1(d,s),lambda:figure2(d,s,read),lambda:figure3(d,read),
-            lambda:figure4(read),lambda:figure5(d,read),lambda:supplement(read)]
+            lambda:figure4(read),lambda:figure5(d,read),lambda:supplement(read),
+            lambda:validation_supplement(validation_read),lambda:interaction_supplement(validation_read)]
     outputs={}
     for i,build in enumerate(builds,1):
-        name=f"Figure_{i}" if i<=5 else "Supplementary_Figure_1"
+        name=f"Figure_{i}" if i<=5 else f"Supplementary_Figure_{i-5}"
         print(f"Rendering {name}",flush=True)
         fig=build();outputs[name]=save_figure(fig,name,directory=out,dpi=220,deterministic=True);plt.close(fig)
         web=root/"docs/assets/figures/v2";web.mkdir(parents=True,exist_ok=True)

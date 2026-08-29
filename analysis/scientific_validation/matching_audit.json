@@ -1,0 +1,9 @@
+{
+  "n": 9212,
+  "unique_pairs": 6855,
+  "reproduction": "exact IDs and order",
+  "singleton_strata": 257,
+  "singleton_event_fraction": 0.027898393399913155,
+  "two_by_two": "not used; two independent pairs",
+  "candidate_caveat": "Candidate fraction is within the k-neighbor search, not exhaustive existence over all possible pairs."
+}

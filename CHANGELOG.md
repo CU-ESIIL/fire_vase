@@ -2,6 +2,20 @@
 
 ## 2026-08-28
 
+- Completed a second-pass scientific validation on the corrected v2 baseline:
+  unchanged-feature geometry stability, expanded order/allocation nulls, endpoint
+  projections, year-adjusted primary weather associations, VPD-specific held-out
+  ablations and coefficient/support checks, and matching balance/caliper tests.
+- Added the requested correction audit, old/new headline table, A-M claim matrix,
+  scientific story, 26-point final report, Prism handoff and reproducibility freeze
+  under `analysis/scientific_validation/`, plus a reconstructed `PROMPT_LOG.md`.
+- Simplified main Figures 2/3, added validation supplements S2/S3, and revised
+  only evidence-dependent manuscript content. Used the user-supplied remote
+  `main-16.pdf` for title/authorship/framing guidance without modifying it.
+- Added defensive checks for unsupported fixed-protocol configuration overrides
+  and ambiguous duplicate prior-day state. Neither affects current real-data
+  estimates. Recorded the pre-existing missing-test-helper collection gap.
+
 - Reproduced the v1 event/state statistics and five figures in an isolated
   comparison archive before introducing corrected versioned results.
 - Added v2 source-to-table audits, true observed daily peaks, correctly normalized

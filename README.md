@@ -10,13 +10,20 @@ definition or a causal explanation. The corrected, versioned analysis is in
 The older 0.349 weather-model headline is withdrawn. Legacy generations and their
 reproduction remain in [`archive/comparison_v1/`](archive/comparison_v1/).
 
+The [second-pass scientific validation](analysis/scientific_validation/final_report.md)
+freezes the evidence, with a [claim matrix](analysis/scientific_validation/final_claim_matrix.md)
+and [Prism handoff](analysis/scientific_validation/PRISM_HANDOFF.md). Broad shape
+gradients and nonrandom ordering survive; event-weather prediction is weak and
+heterogeneous, and matched mismatch is compatible with the declared null.
+
 ```sh
 PYTHONPATH=src:scripts OPENBLAS_NUM_THREADS=1 MPLCONFIGDIR=/tmp/fire-vase-v2-mpl .venv/bin/python manuscript_figures/00_run_all.py --generation v2 --data-lake data_lake/fire-vase-data-lake-v0.1
 ```
 
 This is now the numbered pipeline's default. It writes statistics first, then
-five PDF/PNG/SVG figures, a supplement and manuscript PDF. Use `--render-only`
-only after statistics exist; `--generation legacy` explicitly selects the older
+five PDF/PNG/SVG main figures, three supplements and manuscript PDF. The full run
+includes the second-pass validation; use `--render-only` only after both statistics
+sets exist. `--generation legacy` explicitly selects the older
 pipeline. [V2 methods and reproduction](docs/reanalysis-v2.md) explain the source
 audits, strict cohort, day-specific spatial exposure and remaining limitations.
 
