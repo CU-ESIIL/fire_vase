@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026-08-30
+
+- Recentered the README and documentation website on the manuscript's primary
+  contribution: Fire VASE changes the response from wildfire endpoints to
+  comparable observed developmental pathways.
+- Added a manuscript narrative page and direct access to `main-16.pdf` and
+  `supplementary-2.pdf`, while marking the unresolved supplementary placeholders
+  as draft material rather than validated findings.
+- Reordered the public methods story so morphology is constructed before
+  weather is introduced, and aligned the figure, data-lake, FIRED, reproduction,
+  code-map, navigation, and v2 evidence pages with the manuscript's
+  representation-to-explanation sequence.
+- Preserved the corrected v2 analysis as the authority for numerical claims and
+  made the distinction between the manuscript framing and validated evidence
+  explicit.
+
 ## 2026-08-28
 
 - Completed a second-pass scientific validation on the corrected v2 baseline:

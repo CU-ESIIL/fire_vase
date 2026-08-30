@@ -1,26 +1,29 @@
 # Methods Notes
 
-The [v2 methods and audit](reanalysis-v2.md) and
-[current manuscript](manuscripts/fire_vase_developmental_morphology/manuscript_v2.md)
-supersede the original analysis below. Current shape-only PCA, dated transitions,
-nested same-cohort models and matched pairs are generated in `analysis/v2/`.
-Historical lakehouse tables remain read-only source inputs, not corrected traits.
+These notes follow the [manuscript's scientific argument](manuscript.md): first
+construct a common response from the ordered history of observed growth, then
+project candidate explanations onto it. The [corrected v2 methods and audit](reanalysis-v2.md)
+are authoritative for quantitative claims. Current shape-only PCA, dated
+transitions, nested same-cohort models, and matched pairs are generated in
+`analysis/v2/`. Historical lakehouse tables remain read-only source inputs, not
+corrected traits.
 
 These notes connect the manuscript methods to the scripts and data products
 needed for reproduction.
 
 ## Workflow Overview
 
-1. FIRED event and daily perimeter records define the fire population.
-2. gridMET daily climate variables are cached for the manuscript domain and
-   period.
-3. Fire time is normalized into daily event trajectories.
-4. VASE slices are built from daily fire geometry and cumulative fire growth.
-5. Climate exposures are attributed to centroid, active-area, cumulative
-   perimeter, and perimeter-extension zones.
-6. Developmental morphology tables summarize growth, timing, shape, and
-   event-stage behavior.
-7. Validation and null-model tables support the manuscript figures and claims.
+1. FIRED event and observation records define the observed fire population.
+2. Mapped area increments are ordered and their date support and gaps audited.
+3. VASEs encode normalized cumulative area through relative developmental time.
+4. Shape coordinates and traits summarize timing, concentration, persistence,
+   recurrence, and taper without using weather to define the axes.
+5. gridMET weather is attached afterward as a first external explanatory layer;
+   the corrected analysis uses day-specific exposure where required.
+6. State models and matched comparisons ask when exposure adds information and
+   where the present explanation remains insufficient.
+7. Stability, null, uncertainty, and provenance checks bound every manuscript
+   claim.
 
 ## Data Products
 
@@ -66,6 +69,14 @@ analysis/climate_revision_stats/
   [fire_vase_climate_revision.py](https://github.com/CU-ESIIL/fire_vase/blob/main/scripts/fire_vase_climate_revision.py)
 - Manuscript figure rendering:
   [manuscript_figures](https://github.com/CU-ESIIL/fire_vase/tree/main/manuscript_figures)
+
+## Interpretation Boundary
+
+The VASE is a standardized observed history, not a geographic silhouette, a
+natural fire type, or a process model. Weather associations are retrospective
+and do not establish causal control. Mismatch examples generate testable cases
+for additional layers; they do not identify the omitted mechanism or estimate
+its ecological prevalence.
 
 ## External Data
 

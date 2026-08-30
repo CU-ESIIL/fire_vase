@@ -52,7 +52,15 @@ Those modules contain the actual Matplotlib figure logic.
 
 ## Manuscript Artifacts
 
+- [main-16.pdf](manuscripts/fire_vase_developmental_morphology/main-16.pdf):
+  narrative manuscript, titled *The Developmental Morphospace of Wildfire*.
+- [supplementary-2.pdf](manuscripts/fire_vase_developmental_morphology/supplementary-2.pdf):
+  working supplementary draft; unresolved insertion markers are not validated
+  results.
+- [manuscript_v2.md](manuscripts/fire_vase_developmental_morphology/manuscript_v2.md):
+  corrected technical manuscript and numerical authority for the current v2
+  analysis.
 - [build_fire_vase_google_docs_docx.py](https://github.com/CU-ESIIL/fire_vase/blob/main/scripts/build_fire_vase_google_docs_docx.py):
   builds the Google Docs-ready manuscript file.
 - [manuscript_climate_revision_science_style.md](manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision_science_style.md):
-  current manuscript text used for the Google Docs handoff.
+  historical climate-revision text retained for traceability.

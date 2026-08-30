@@ -1,9 +1,13 @@
 # Reproduce the Figures
 
-The default pipeline now produces the [corrected v2 figures](reanalysis-v2.md)
+The default pipeline produces the [corrected v2 figures](reanalysis-v2.md)
 under `figures/v2/`, with statistics in `analysis/v2/`. The five current panels
-follow encoding, shape-only morphospace, external weather, subsequent growth,
-and rigorous matching. See the [current manuscript](manuscripts/fire_vase_developmental_morphology/manuscript_v2.md).
+follow the [manuscript argument](manuscript.md): encode the observed pathway,
+map continuous developmental gradients, add weather as an external layer, test
+weather conditional on current state, and use matched differences to generate
+hypotheses. See the
+[v2 technical manuscript](manuscripts/fire_vase_developmental_morphology/manuscript_v2.md)
+for the corrected quantitative interpretation.
 Use `manuscript_figures/00_run_all.py --generation v2`; `--render-only` requires
 existing corrected statistics. The material below is retained as a historical
 v1 gallery and reproduction reference, selected with `--generation legacy`.

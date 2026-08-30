@@ -3,7 +3,9 @@
 The Fire VASE data lake is the manuscript-scale handoff package. It contains
 the source fire and climate caches, Parquet lakehouse tables, developmental
 morphology outputs, schemas, figures, manuscripts, and release manifests needed
-to reproduce the analysis.
+to reproduce the analysis. Its scientific role is to preserve the chain from
+ordered FIRED observations to a comparable developmental response before
+weather or other explanatory layers are attached.
 
 ## Get the Shared Data Lake
 

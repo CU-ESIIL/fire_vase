@@ -1,15 +1,20 @@
 # Second-generation analysis
 
-Fire VASE represents developmental morphology before weather is considered.
-Weather is an external demonstration, not a definition or causal explanation
-of the structure. The [v2 manuscript](manuscripts/fire_vase_developmental_morphology/manuscript_v2.md)
-supersedes the climate-centered v1 generation.
+Fire VASE changes the response being explained: ordered wildfire development,
+not only final area, duration, or peak growth. The
+[manuscript narrative](manuscript.md) develops that project-level argument. This
+page documents the corrected empirical implementation: developmental morphology
+is constructed before weather is considered, and weather remains an external,
+non-causal explanatory layer. The
+[v2 technical manuscript](manuscripts/fire_vase_developmental_morphology/manuscript_v2.md)
+supersedes the climate-centered v1 generation for quantitative claims.
 
-The second-pass validation now freezes a bounded scientific story: broad shape
+The second-pass validation freezes a bounded scientific story: broad shape
 gradients and nonrandom temporal ordering are supported, but event-weather
-predictability is weak and heterogeneous. The supplied manuscript reference
-`main-16.pdf` guided the title, author block and framing; its retired numerical
-claims were not restored.
+predictability is weak and heterogeneous. The new `main-16.pdf` and
+`supplementary-2.pdf` define the narrative direction and intended robustness
+questions; validated repository outputs, rather than unresolved draft values,
+control the numbers reported here.
 
 ## What changed
 

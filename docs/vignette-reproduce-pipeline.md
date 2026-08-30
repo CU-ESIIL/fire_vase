@@ -1,6 +1,9 @@
 # Vignette: Reproduce The Fire VASE Pipeline
 
-For the current scientific analysis, follow [Corrected V2 Analysis](reanalysis-v2.md).
+The [manuscript narrative](manuscript.md) defines the scientific sequence:
+construct comparable developmental histories first, then test candidate
+explanations against them. For current quantitative results, follow
+[Corrected Evidence](reanalysis-v2.md).
 After obtaining the real v0.1 data package, the numbered pipeline defaults to v2
 and writes `analysis/v2/`, `figures/v2/` and the versioned manuscript. The original
 developmental/climate-revision stages and identity checks below are historical

@@ -1,9 +1,32 @@
 # Fire VASE
 
-## Current analysis: v2 (2026-08-28)
+Fire VASE changes the response being explained. It turns the ordered
+accumulation of observed wildfire growth into standardized morphology so fires
+can be compared by how they develop—not only by final area, duration, or peak
+growth.
 
-Fire morphology is primary; daily weather is an external demonstration, not its
-definition or a causal explanation. The corrected, versioned analysis is in
+The central scientific sequence is:
+
+1. preserve the observed growth pathway in a common developmental geometry;
+2. describe continuous gradients in timing, concentration, persistence, and
+   recurrence rather than asserting discrete fire types;
+3. project weather and later process-specific data onto that response; and
+4. use state dependence and explanatory mismatches to generate testable next
+   questions without turning associations into causal claims.
+
+Read the [manuscript narrative](docs/manuscript.md), the newly added
+[manuscript PDF](docs/manuscripts/fire_vase_developmental_morphology/main-16.pdf),
+and its [working supplementary draft](docs/manuscripts/fire_vase_developmental_morphology/supplementary-2.pdf).
+The SI still contains unresolved insertion markers, so the corrected v2 outputs
+remain the authority for quantitative results.
+
+## Current evidence: v2 (2026-08-28)
+
+The manuscript's representational argument survives the corrected analysis,
+with narrower inference. Broad developmental gradients and nonrandom temporal
+ordering are supported; exact local neighborhoods are less stable, weather
+associations are weak and heterogeneous, and mismatch remains diagnostic rather
+than mechanistic. The corrected, versioned analysis is in
 [`analysis/v2/`](analysis/v2/), with an [audit](analysis/v2/audit_report.md),
 [manuscript](docs/manuscripts/fire_vase_developmental_morphology/manuscript_v2.md),
 [PDF](output/pdf/fire_vase_v2_manuscript.pdf), and [figures](figures/v2/).

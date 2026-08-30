@@ -8,7 +8,9 @@ FIRED provides event-level and per-day fire perimeter polygons for the contermin
 The manuscript workflow uses FIRED event and daily perimeter records as the
 source fire-history product. The reproducible data-lake pipeline reads local
 FIRED GeoPackage caches, converts daily event histories into Fire VASE
-lakehouse tables, and then builds developmental morphology products.
+lakehouse tables, and then builds developmental morphology products. In the
+manuscript argument, this ordered history—not the final perimeter alone—is the
+response to be compared and ultimately explained.
 
 See the [full reproduction vignette](../vignette-reproduce-pipeline.md) for the
 end-to-end command order.

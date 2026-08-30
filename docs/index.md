@@ -1,17 +1,19 @@
 <section class="fire-home-hero">
 <img class="fire-hero-vase" src="assets/hero-vase-vpd.png" alt="Historical VPD-colored Fire VASE rendering for a 2018 fire">
 <div class="fire-home-hero__content">
-<p class="fire-kicker">Supplementary information for reproducible wildfire science</p>
+<p class="fire-kicker">Developmental wildfire morphology</p>
 
 <h1>Fire VASE</h1>
 
-<h2>Developmental morphology first. Weather as an external layer.</h2>
+<h2>Explain how fires develop—not only how they end.</h2>
 
-<p>Fire VASE turns daily fire histories into comparable shapes, then links those
-forms to meteorological exposure through an open data lake and numbered figure pipeline.</p>
+<p>Fire VASE turns observed growth histories into standardized morphology. It
+makes the timing, concentration, persistence, and recurrence of growth a common
+response for mechanistic study; weather is the first external explanatory layer.</p>
 
 <p>
-<a class="md-button md-button--primary fire-button" href="reanalysis-v2/">Corrected V2 Analysis</a>
+<a class="md-button md-button--primary fire-button" href="manuscript/">Read the Argument</a>
+<a class="md-button fire-button" href="reanalysis-v2/">Inspect the Evidence</a>
 <a class="md-button fire-button" href="https://github.com/CU-ESIIL/fire_vase/blob/main/notebooks/reproduce_fire_vase_pipeline.ipynb">Open the Notebook</a>
 </p>
 </div>
@@ -24,23 +26,23 @@ FIRED events represented as developmental histories
 </div>
 <div markdown>
 <span>10,246</span>
-consecutive multi-observation histories in the primary v2 morphospace
+consecutive histories in the corrected shape-only analysis
 </div>
 <div markdown>
-<span>1</span>
-shareable data lake for reproducing the manuscript workflow
+<span>237,235</span>
+events in the manuscript's first centroid-weather projection
 </div>
 </section>
 
 <section class="fire-home-intro" markdown>
 <p class="fire-kicker">Where to start</p>
 
-## Recreate the dataset, analysis, and figures
+## Follow the claim from representation to explanation
 
 This site is the manuscript-support hub for collaborators, reviewers, and
-readers who want to inspect the data boundary or rerun the analysis. Start from
-the shared CyVerse data lake for fast reproduction, or rebuild from source
-caches when auditing the complete pipeline.
+readers. Begin with the developmental argument, then inspect the corrected
+evidence, data boundary, and complete reproduction path. The sequence matters:
+construct the observed history first; test possible explanations second.
 </section>
 
 <section class="fire-home-pathways">
@@ -50,6 +52,20 @@ caches when auditing the complete pipeline.
 <h2>Get the research package</h2>
 <p>Download, verify, or rebuild the FIRED/gridMET caches, Parquet tables,
 developmental morphology products, schemas, and manuscript artifacts.</p>
+</a>
+
+<a class="fire-pathway fire-pathway--methods" href="manuscript/">
+<span>Narrative</span>
+<h2>Read the scientific argument</h2>
+<p>See why developmental pathways are the primary response, how weather enters
+as an external layer, and where the current inference stops.</p>
+</a>
+
+<a class="fire-pathway fire-pathway--evidence" href="reanalysis-v2/">
+<span>Evidence</span>
+<h2>Test what survives correction</h2>
+<p>Inspect the shape-only analysis, observation-depth and null tests, weak
+weather associations, state models, and explicit claim boundaries.</p>
 </a>
 
 <a class="fire-pathway fire-pathway--pipeline" href="vignette-reproduce-pipeline/">
@@ -69,8 +85,8 @@ and the validation supplement.</p>
 <a class="fire-pathway fire-pathway--methods" href="methods/">
 <span>Methods</span>
 <h2>Follow the scientific chain</h2>
-<p>Trace source fire records through VASE construction, climate attribution,
-developmental morphology, validation, and interpretation.</p>
+<p>Trace source fire records through ordered growth, VASE construction,
+developmental morphology, external attribution, and validation.</p>
 </a>
 
 </section>
@@ -96,12 +112,16 @@ developmental morphology, validation, and interpretation.</p>
 <div markdown>
 <p class="fire-kicker">Manuscript</p>
 
-## Current text
+## Source documents
 
-The current manuscript draft and transparency materials are included so the
-analysis, figures, and scientific claims can be read together.
+The manuscript and companion SI establish the narrative being developed here.
+The SI remains a working draft with unresolved insertion markers; use the
+corrected v2 page for validated numerical claims.
 
-[Current v2 manuscript](manuscripts/fire_vase_developmental_morphology/manuscript_v2.md){ .md-button .fire-button }
+[Manuscript PDF](manuscripts/fire_vase_developmental_morphology/main-16.pdf){ .md-button .md-button--primary .fire-button }
+[Supplementary draft](manuscripts/fire_vase_developmental_morphology/supplementary-2.pdf){ .md-button .fire-button }
+[Narrative guide](manuscript.md){ .md-button .fire-button }
+[Corrected v2 manuscript](manuscripts/fire_vase_developmental_morphology/manuscript_v2.md){ .md-button .fire-button }
 [AI transparency](manuscripts/fire_vase_developmental_morphology/ai_transparency_statement.md){ .md-button .fire-button }
 [Expanded AI report](manuscripts/fire_vase_developmental_morphology/ai_transparency_report.md){ .md-button .fire-button }
 </div>
