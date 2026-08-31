@@ -11,10 +11,10 @@ supersedes the climate-centered v1 generation for quantitative claims.
 
 The second-pass validation freezes a bounded scientific story: broad shape
 gradients and nonrandom temporal ordering are supported, but event-weather
-predictability is weak and heterogeneous. The new `main-16.pdf` and
-`supplementary-2.pdf` define the narrative direction and intended robustness
-questions; validated repository outputs, rather than unresolved draft values,
-control the numbers reported here.
+predictability is weak and heterogeneous. The supplied `main-22.pdf` and
+`supplementary-3.pdf` define the current narrative; the assembled submission
+PDFs and `analysis/submission_freeze/` control the figures, claim sources, and
+release-readiness checks.
 
 ## What changed
 
@@ -89,10 +89,10 @@ PYTHONPATH=src:scripts MPLBACKEND=Agg MPLCONFIGDIR=/tmp/fire-vase-v2-mpl OPENBLA
 PYTHONPATH=src:scripts MPLBACKEND=Agg MPLCONFIGDIR=/tmp/fire-vase-v2-mpl .venv/bin/python scripts/verify_fire_vase_science.py
 ```
 
-Full test collection currently fails in two pre-existing modules importing the
-missing `tests.helpers.contracts`; the remaining suite passes (132 tests, two
-skipped). Dedicated v2/validation tests are included. This is a disclosed testing
-gap, not a fully green repository test claim.
+The missing shared cube-contract helper has been restored. Full test collection
+passes: 152 tests passed and 2 were intentionally skipped; no modules are
+excluded. Dedicated v2, scientific-validation, compositional, and adversarial
+tests are included.
 The v1 comparison is deliberately separate:
 
 ```sh
@@ -108,9 +108,11 @@ PYTHONPATH=scripts/figures:scripts:src .venv/bin/python scripts/reproduce_v1_com
 | PCA, nulls, stability and every model comparison | `analysis/v2/*.csv` |
 | Source and exposure provenance | `input_audit.json`, `input_hashes.json`, `day_t_weather_manifest.json` in `analysis/v2/` |
 | Code/configuration/output hashes | `analysis/v2/run_manifest.json`, `publication_manifest.json` |
-| Five main figures and three supplements, PDF/PNG/SVG | `figures/v2/` |
+| Five main figures and four supplements, PDF/PNG/SVG | `figures/submission/` |
 | Second-pass audit, claims, stress tests, handoff and frozen hashes | `analysis/scientific_validation/` |
-| Current manuscript source and PDF | `docs/manuscripts/fire_vase_developmental_morphology/manuscript_v2.md`, `output/pdf/fire_vase_v2_manuscript.pdf` |
+| Final adversarial null/depth/boundary package | `analysis/scientific_validation/final_adversarial_pass/` |
+| Submission PDFs and assembly manifest | `output/submission/` |
+| Claim registry, consistency audit, final matrix and readiness | `analysis/submission_freeze/` |
 | Preserved references and reproduced v1 outputs | `archive/comparison_v1/` |
 
 Large regenerable Parquet tables remain local and ignored by Git. The source
@@ -136,3 +138,16 @@ number of region clusters, satellite/date uncertainty and matching assumptions.
 ![Figure S2: observation-threshold, null, endpoint, adjustment and matching-caliper tests.](assets/figures/v2/Supplementary_Figure_2.png)
 
 ![Figure S3: VPD-specific joint support, coefficient heterogeneity and held-out ablation.](assets/figures/v2/Supplementary_Figure_3.png)
+
+![Figure S4: standardized-Euclidean versus Hellinger compositional geometry.](assets/figures/v2/Supplementary_Figure_4.png)
+
+## Final adversarial pass
+
+![Null geometry, depth, and boundary-day sensitivity.](assets/figures/v2/Final_Adversarial_Pass.png)
+
+Positive, mass-conserving null histories also form compressed score spaces, so
+low dimensionality alone is not evidence of biological restriction. The
+observed early/late axis has near-zero same-fire alignment to null axes, and the
+ordering effects retain direction at minimum depths of 3, 5, and 7 observations
+and after removing both endpoint days. The >=3 cohort remains primary; >=5 and
+>=7 are stronger-support sensitivities.

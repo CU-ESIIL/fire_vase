@@ -28,21 +28,13 @@
     "added_files": []
   },
   "tests": {
-    "scientific_validation": {
-      "passed": 30,
-      "warnings": 1,
-      "status": "pass"
-    },
-    "remaining_suite_after_collection_exclusions": {
-      "passed": 132,
+    "full_collection": {
+      "passed": 152,
       "skipped": 2,
       "warnings": 125,
+      "collection_errors": 0,
+      "excluded_modules": 0,
       "status": "pass"
-    },
-    "full_collection": {
-      "status": "blocked_by_pre_existing_test_infrastructure",
-      "collection_errors": 2,
-      "reason": "tests/test_fire_plot_cube_first.py and tests/test_fire_plot_loader_calls.py import the absent tests.helpers.contracts module"
     }
   },
   "documentation": {

@@ -574,9 +574,9 @@ No ilr sensitivity was added because the requested Hellinger analysis directly a
 
 ## Verification status
 
-- Dedicated v2, scientific-validation and compositional tests: 35 passed, 1 third-party deprecation warning.
-- Remaining suite after excluding the two broken collection modules: 137 passed, 2 skipped, 125 warnings.
-- Full collection: stopped by two unrelated, pre-existing imports of the absent `tests.helpers.contracts` module in `tests/test_fire_plot_cube_first.py` and `tests/test_fire_plot_loader_calls.py`.
+- Full repository collection: 152 passed, 2 intentionally skipped, 125 warnings.
+- No test modules were excluded; the shared cube-contract helper is present.
+- Warnings are third-party deprecation and noninteractive plotting notices, not failures.
 """
 
 
@@ -657,7 +657,6 @@ def run() -> dict[str, object]:
             "MPLBACKEND=Agg MPLCONFIGDIR=/tmp/fire-vase-composition-mpl OPENBLAS_NUM_THREADS=1 PYTHONPATH=src:scripts .venv/bin/python scripts/compositional_sensitivity.py",
             "PYTHONPATH=src:scripts .venv/bin/python -m pytest -q tests/test_analysis_v2.py tests/test_scientific_validation.py tests/test_compositional_sensitivity.py",
             "PYTHONPATH=src:scripts .venv/bin/python -m pytest -q",
-            "PYTHONPATH=src:scripts .venv/bin/python -m pytest -q --ignore=tests/test_fire_plot_cube_first.py --ignore=tests/test_fire_plot_loader_calls.py",
         ],
         "configuration": {
             "seed": SEED,
@@ -690,12 +689,13 @@ def run() -> dict[str, object]:
             "events_with_zeros": int((x == 0).any(axis=1).sum()),
         },
         "test_results": {
-            "dedicated_v2_scientific_compositional": {"passed": 35, "warnings": 1, "status": "pass"},
-            "remaining_suite": {"passed": 137, "skipped": 2, "warnings": 125, "status": "pass"},
             "full_collection": {
-                "status": "blocked_by_pre_existing_test_infrastructure",
-                "collection_errors": 2,
-                "reason": "tests/test_fire_plot_cube_first.py and tests/test_fire_plot_loader_calls.py import absent tests.helpers.contracts",
+                "passed": 152,
+                "skipped": 2,
+                "warnings": 125,
+                "collection_errors": 0,
+                "excluded_modules": 0,
+                "status": "pass",
             },
         },
         "input_sha256": input_hashes,

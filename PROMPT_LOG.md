@@ -29,3 +29,17 @@ and the additive outputs under
 `analysis/scientific_validation/compositional_sensitivity/`. The manuscript is
 left unchanged; `PRISM_HANDOFF_COMPOSITIONAL.md` records exact proposed edits
 and figure consequences after the analysis.
+
+## 2026-08-31 - Final adversarial validation and submission freeze
+
+Request: combine the final ChatGPT and Prism hardening prompts; add the supplied
+current manuscript and SI; test generic null geometry, observation-depth
+ordering, PCA stability, and endpoint-day sensitivity; restore full test
+collection; assemble validated figures into final PDFs; and freeze claim sources,
+hashes, readiness, and human-only items without releasing or tagging.
+
+Scope: additive outputs under `analysis/scientific_validation/final_adversarial_pass/`,
+`analysis/submission_freeze/`, `figures/submission/`, and `output/submission/`.
+No external observational data or synthetic fallback was used. The final status
+is PASS WITH HUMAN ITEMS; the exact remaining administrative/editorial decisions
+are in `HUMAN_SUBMISSION_CHECKLIST.md`.

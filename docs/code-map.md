@@ -52,11 +52,13 @@ Those modules contain the actual Matplotlib figure logic.
 
 ## Manuscript Artifacts
 
-- [main-16.pdf](manuscripts/fire_vase_developmental_morphology/main-16.pdf):
-  narrative manuscript, titled *The Developmental Morphospace of Wildfire*.
-- [supplementary-2.pdf](manuscripts/fire_vase_developmental_morphology/supplementary-2.pdf):
-  working supplementary draft; unresolved insertion markers are not validated
-  results.
+- [main-22.pdf](manuscripts/fire_vase_developmental_morphology/main-22.pdf):
+  supplied current editorial manuscript source.
+- [supplementary-3.pdf](manuscripts/fire_vase_developmental_morphology/supplementary-3.pdf):
+  supplied current editorial SI source.
+- [submission freeze](https://github.com/CU-ESIIL/fire_vase/tree/main/analysis/submission_freeze):
+  assembled-PDF hashes, exhaustive claim registry, consistency and test reports,
+  final claim matrix, release readiness, and human checklist.
 - [manuscript_v2.md](manuscripts/fire_vase_developmental_morphology/manuscript_v2.md):
   corrected technical manuscript and numerical authority for the current v2
   analysis.

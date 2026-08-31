@@ -2,7 +2,7 @@
 
 1. Repository baseline SHA: `18c923cb0c82bf9f66567b62a3491ac30a28c369`; subsequent working-tree code and output hashes are in the freeze manifest.
 2. Previous pass reproduced: 60-file render replay; PCA, primary alpha=1 event/state models, cohorts/folds and unique pair IDs reproduced. Historical v1 event/state tables reproduced to <1e-15 in the preceding pass. No claim of rerunning every archived sensitivity.
-3. Remaining implementation errors: no known numerical error affecting these data. Two guard defects corrected (ignored fixed-protocol overrides and ambiguous duplicate prior state). Pre-existing full-test collection gap remains. Event-year/month are fire-level, not observation-level seasonal effects.
+3. Remaining implementation errors: no known numerical error affecting these data. Two guard defects corrected (ignored fixed-protocol overrides and ambiguous duplicate prior state). The former test-collection gap is resolved, and the full repository suite passes. Event-year/month are fire-level, not observation-level seasonal effects.
 4. Primary population: 10246 valid >=3 consecutive histories; 9212 complete primary weather fires. Matching uses the same 9212; state analysis is a different explicitly identified transition cohort.
 5. Observation distribution: 161073 one-slice, 47950 two-slice, 69546 >=3, 30538 >=5, 15036 >=7. Consecutive >=3/5/7 counts: 10246/2887/1171. Threshold rows overlap; do not sum them.
 6. Exact-day transitions: 196611 of 347533 adjacent pairs; 81940 two-day and 68982 longer gaps. Common AR cohort: 87944 transitions, 31700 fires. Missing/duplicate dates and observed zero increments: zero.
@@ -85,4 +85,4 @@
 
 CENTRAL REPRESENTATION ROBUST BUT ENVIRONMENTAL STORY WEAK
 
-This verdict reflects stable representation and temporal-order evidence alongside weak, selected, noncausal event-weather associations. It does not deny the modest reproducible state-weather increment. See `reproducibility.json` for exact verification scope and the full-test collection limitation.
+This verdict reflects stable representation and temporal-order evidence alongside weak, selected, noncausal event-weather associations. It does not deny the modest reproducible state-weather increment. See `reproducibility.json` and the submission-freeze test report for exact verification scope.

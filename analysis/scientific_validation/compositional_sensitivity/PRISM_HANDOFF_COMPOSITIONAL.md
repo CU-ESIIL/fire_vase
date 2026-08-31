@@ -57,6 +57,6 @@ No ilr sensitivity was added because the requested Hellinger analysis directly a
 
 ## Verification status
 
-- Dedicated v2, scientific-validation and compositional tests: 35 passed, 1 third-party deprecation warning.
-- Remaining suite after excluding the two broken collection modules: 137 passed, 2 skipped, 125 warnings.
-- Full collection: stopped by two unrelated, pre-existing imports of the absent `tests.helpers.contracts` module in `tests/test_fire_plot_cube_first.py` and `tests/test_fire_plot_loader_calls.py`.
+- Full repository collection: 152 passed, 2 intentionally skipped, 125 warnings.
+- No test modules were excluded; the shared cube-contract helper is present.
+- Warnings are third-party deprecation and noninteractive plotting notices, not failures.

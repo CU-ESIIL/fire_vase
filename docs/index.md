@@ -114,12 +114,14 @@ developmental morphology, external attribution, and validation.</p>
 
 ## Source documents
 
-The manuscript and companion SI establish the narrative being developed here.
-The SI remains a working draft with unresolved insertion markers; use the
-corrected v2 page for validated numerical claims.
+The manuscript and companion SI establish the current narrative. The assembled
+submission PDFs use validated repository figures; the source drafts remain
+preserved for provenance. Use the submission freeze for claim authority.
 
-[Manuscript PDF](manuscripts/fire_vase_developmental_morphology/main-16.pdf){ .md-button .md-button--primary .fire-button }
-[Supplementary draft](manuscripts/fire_vase_developmental_morphology/supplementary-2.pdf){ .md-button .fire-button }
+[Assembled manuscript](https://github.com/CU-ESIIL/fire_vase/blob/main/output/submission/fire_vase_manuscript_submission.pdf){ .md-button .md-button--primary .fire-button }
+[Assembled SI](https://github.com/CU-ESIIL/fire_vase/blob/main/output/submission/fire_vase_supplementary_submission.pdf){ .md-button .fire-button }
+[Source manuscript](manuscripts/fire_vase_developmental_morphology/main-22.pdf){ .md-button .fire-button }
+[Source SI](manuscripts/fire_vase_developmental_morphology/supplementary-3.pdf){ .md-button .fire-button }
 [Narrative guide](manuscript.md){ .md-button .fire-button }
 [Corrected v2 manuscript](manuscripts/fire_vase_developmental_morphology/manuscript_v2.md){ .md-button .fire-button }
 [AI transparency](manuscripts/fire_vase_developmental_morphology/ai_transparency_statement.md){ .md-button .fire-button }

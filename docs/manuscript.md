@@ -5,8 +5,8 @@ to final area, duration, or peak growth, it treats the ordered accumulation of
 burned area as an observed developmental history that can be compared across
 events.
 
-[Read the manuscript PDF](manuscripts/fire_vase_developmental_morphology/main-16.pdf){ .md-button .md-button--primary .fire-button }
-[Read the supplementary draft](manuscripts/fire_vase_developmental_morphology/supplementary-2.pdf){ .md-button .fire-button }
+[Read the assembled manuscript](https://github.com/CU-ESIIL/fire_vase/blob/main/output/submission/fire_vase_manuscript_submission.pdf){ .md-button .md-button--primary .fire-button }
+[Read the assembled SI](https://github.com/CU-ESIIL/fire_vase/blob/main/output/submission/fire_vase_supplementary_submission.pdf){ .md-button .fire-button }
 [Inspect the corrected v2 evidence](reanalysis-v2.md){ .md-button .fire-button }
 
 ## The argument
@@ -69,14 +69,12 @@ explicit null and stability tests. Its results narrow—but preserve—the centr
 contribution: broad developmental gradients are useful and reproducible, while
 weather effects are weak, heterogeneous, and non-causal.
 
-!!! warning "Supplementary document status"
+!!! note "Submission document status"
 
-    `supplementary-2.pdf` is a working supplementary draft. It contains explicit
-    insertion markers and unfilled figure/table fields. Its completed methods
-    architecture helps define the intended robustness tests, but unresolved
-    values and result statements should not be cited as findings. Validated
-    results live in `analysis/scientific_validation/` and are summarized on the
-    corrected v2 page.
+    The supplied `main-22.pdf` and `supplementary-3.pdf` are preserved editorial
+    sources. The assembled PDFs replace all figure markers with validated assets
+    and add full-size figure pages. Current claims, sources, and remaining human
+    submission items are frozen in `analysis/submission_freeze/`.
 
 ## Immediate research focus
 

@@ -1,0 +1,122 @@
+{
+  "status": "pass",
+  "source_drafts": {
+    "docs/manuscripts/fire_vase_developmental_morphology/main-22.pdf": "c3704f30ce60e948b8463f4c9f8e81e3b07e55e729305e845957b544b672a323",
+    "docs/manuscripts/fire_vase_developmental_morphology/supplementary-3.pdf": "4097371d75eda8572c38d2d5d501c5486e34074a57d5c891da5c5877349f2566"
+  },
+  "figure_assets": {
+    "figures/submission/Figure_1.pdf": {
+      "source": "figures/v2/Figure_1.pdf",
+      "sha256": "cd76b7e5b33a173b52411dc5915da5f64eed3ad3e624e8ce1cda491f3cbf9a91"
+    },
+    "figures/submission/Figure_1.png": {
+      "source": "figures/v2/Figure_1.png",
+      "sha256": "b23e3385fa8530493a6eee788272967a2a8086cecf9638ea91f3e881976b4846"
+    },
+    "figures/submission/Figure_1.svg": {
+      "source": "figures/v2/Figure_1.svg",
+      "sha256": "4645f8b5bbb841fc04e2e4b1d5c88c5510403aa0801050bc44589f05d4c5131c"
+    },
+    "figures/submission/Figure_2.pdf": {
+      "source": "figures/v2/Figure_2.pdf",
+      "sha256": "a3a2583e7075a4cc89caa4be5d4ef9a8b169b6a39ff8b6be48356bda566a7179"
+    },
+    "figures/submission/Figure_2.png": {
+      "source": "figures/v2/Figure_2.png",
+      "sha256": "4cdfa2cccfbbb1170cfe513adb4ac021072670f73c1aca105b4d40fd399d5fe6"
+    },
+    "figures/submission/Figure_2.svg": {
+      "source": "figures/v2/Figure_2.svg",
+      "sha256": "8f16c13c6fa420e2dd06f3f477528d676812e6ceab23b198114772c87c1674e7"
+    },
+    "figures/submission/Figure_3.pdf": {
+      "source": "figures/v2/Figure_3.pdf",
+      "sha256": "79a2ff40e34bcbda6459fb0c6fc3eab5addae6bf4dea08c00e27e5b866f47dbc"
+    },
+    "figures/submission/Figure_3.png": {
+      "source": "figures/v2/Figure_3.png",
+      "sha256": "403e1a8b8da402a43d24cfe26bcc168f21ca93df0ac98b2e686309e2711221d7"
+    },
+    "figures/submission/Figure_3.svg": {
+      "source": "figures/v2/Figure_3.svg",
+      "sha256": "5cd7853e260713a9438120255c4067cba1278174c66036a35033f68e193f8821"
+    },
+    "figures/submission/Figure_4.pdf": {
+      "source": "figures/v2/Figure_4.pdf",
+      "sha256": "6fa16274f0f633b4737a4b6425223ffeb4a21c132aa3b513dac1d094d59328ae"
+    },
+    "figures/submission/Figure_4.png": {
+      "source": "figures/v2/Figure_4.png",
+      "sha256": "4345a5399b4aa1d7f6b3c35f3da8707f37cc68f80687ea9f764d9be799d94bfe"
+    },
+    "figures/submission/Figure_4.svg": {
+      "source": "figures/v2/Figure_4.svg",
+      "sha256": "0cb4973692d40de52e83633a8a7b38d791b624204d5a0300266b2d101b95e702"
+    },
+    "figures/submission/Figure_5.pdf": {
+      "source": "figures/v2/Figure_5.pdf",
+      "sha256": "b9123e446251a9cba06b32e54abeec158accb90c5a9cf12c4af7fd5bbfcca4a6"
+    },
+    "figures/submission/Figure_5.png": {
+      "source": "figures/v2/Figure_5.png",
+      "sha256": "97e005069160b079992218b1d2fb0441421dd030e1b86d6e4361086dac22befa"
+    },
+    "figures/submission/Figure_5.svg": {
+      "source": "figures/v2/Figure_5.svg",
+      "sha256": "493c5028e2cbe71721027d498388646d5d0603a8bdbb8e75a5d57d0430d4b009"
+    },
+    "figures/submission/Supplementary_Figure_1.pdf": {
+      "source": "figures/v2/Supplementary_Figure_1.pdf",
+      "sha256": "9ba9f0859696cd5182be6aec857401f80925eb126013232231ef1165cc22954e"
+    },
+    "figures/submission/Supplementary_Figure_1.png": {
+      "source": "figures/v2/Supplementary_Figure_1.png",
+      "sha256": "49c581a7efdfd0e249f8af349b6a5493e85019efc3873d134ce72aca8053a796"
+    },
+    "figures/submission/Supplementary_Figure_1.svg": {
+      "source": "figures/v2/Supplementary_Figure_1.svg",
+      "sha256": "020d533e67d4e135b63d7176a9ccd119276e7528ba5145ba10c87d81c708a136"
+    },
+    "figures/submission/Supplementary_Figure_2.pdf": {
+      "source": "figures/v2/Supplementary_Figure_2.pdf",
+      "sha256": "c882be3499cd12075baaab614ff3b00de37f37c42ab450e539a8fe14cb3ab667"
+    },
+    "figures/submission/Supplementary_Figure_2.png": {
+      "source": "figures/v2/Supplementary_Figure_2.png",
+      "sha256": "daa871791a852c348600e2be29064f7a1ffc6c0e7ed85add2a1aecc9f780dcc3"
+    },
+    "figures/submission/Supplementary_Figure_2.svg": {
+      "source": "figures/v2/Supplementary_Figure_2.svg",
+      "sha256": "22bfcdc7267427b9f7df3395920724bc67ff131977d74891772c21618de0d328"
+    },
+    "figures/submission/Supplementary_Figure_3.pdf": {
+      "source": "figures/v2/Supplementary_Figure_3.pdf",
+      "sha256": "8ccd593364fa27f7107e955e33a66a1d98e9e388e44f8f0d82308ece40757fe0"
+    },
+    "figures/submission/Supplementary_Figure_3.png": {
+      "source": "figures/v2/Supplementary_Figure_3.png",
+      "sha256": "0d3bc2e1927d88c46308e4006db530a2edea6660a461043602b8eaaa69e55ba9"
+    },
+    "figures/submission/Supplementary_Figure_3.svg": {
+      "source": "figures/v2/Supplementary_Figure_3.svg",
+      "sha256": "a72d3e2f4045a8a6f9e75fd266155e47d7448163a6ea3b43bbf4ede3fa07f096"
+    },
+    "figures/submission/Supplementary_Figure_4.pdf": {
+      "source": "analysis/scientific_validation/compositional_sensitivity/compositional_sensitivity.pdf",
+      "sha256": "96de349996beaa77bab8470d59d415ceb432164a9dfa0d6dddca7a8cbb525e6c"
+    },
+    "figures/submission/Supplementary_Figure_4.png": {
+      "source": "analysis/scientific_validation/compositional_sensitivity/compositional_sensitivity.png",
+      "sha256": "75e635abf028ec7458a1c14957dad5b7471cb6f1f6f26796058ef9ccd4384fc3"
+    },
+    "figures/submission/Supplementary_Figure_4.svg": {
+      "source": "analysis/scientific_validation/compositional_sensitivity/compositional_sensitivity.pdf",
+      "sha256": "d3dff4134b3840fc4ee05923eda0a9893b52267851e2e435d6d46a25b4f85b8b"
+    }
+  },
+  "assembled_pdfs": {
+    "output/submission/fire_vase_manuscript_submission.pdf": "5e1977ad26cd58d264508519484de6713d377107186790db5e4559b1e4d02ebb",
+    "output/submission/fire_vase_supplementary_submission.pdf": "c00355153035514e6ee67eac1838be148c347235f7c0cf1f05634fde1efb1bc5"
+  },
+  "method": "vector thumbnail replaces each placeholder; a full-size landscape vector page follows for legibility"
+}

@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026-08-31
+
+- Added the supplied `main-22.pdf` and `supplementary-3.pdf` drafts and assembled
+  visually verified submission PDFs with five main and four supplementary
+  figures in PDF/PNG/SVG.
+- Restored the missing shared xarray test contracts; the full suite now reports
+  152 passed and 2 intentionally skipped with no collection exclusions.
+- Added the final adversarial null-geometry, observation-depth, and boundary-day
+  sensitivity package, including deterministic tables, a six-panel figure, and
+  exact manuscript/figure handoff.
+- Added a 1,005-row claim-source registry, manuscript/SI consistency audit,
+  extended claim matrix, test report, hash manifest, readiness decision, and
+  human-only submission checklist under `analysis/submission_freeze/`.
+- Removed visible and hidden placeholder/obsolete provenance text from the final
+  PDFs while preserving unedited text pages and full-size figures as vector PDF.
+
 ## 2026-08-30
 
 - Added the focused pre-submission compositional-geometry sensitivity without

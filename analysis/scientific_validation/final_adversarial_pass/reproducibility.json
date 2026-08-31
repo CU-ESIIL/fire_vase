@@ -1,0 +1,73 @@
+{
+  "status": "pass",
+  "analysis": "Fire VASE final adversarial validation",
+  "seed": 20260828,
+  "null_replicates": 100,
+  "null_sample_size": 4000,
+  "fixed_anchor_size": 1000,
+  "synthetic_fallback": false,
+  "configuration": {
+    "geometries": [
+      "column-standardized Euclidean PCA",
+      "mean-centered unscaled square-root/Hellinger PCA"
+    ],
+    "nulls": [
+      "within-fire temporal shuffle",
+      "symmetric Dirichlet alpha=1",
+      "symmetric Dirichlet alpha=10"
+    ],
+    "minimum_observation_thresholds": [
+      3,
+      5,
+      7
+    ],
+    "boundary_sensitivity_thresholds": [
+      5,
+      7
+    ],
+    "profile_bins": 20,
+    "neighbors": 15,
+    "distance_pairs": 20000
+  },
+  "cohorts": {
+    "3": 10246,
+    "5": 2887,
+    "7": 1171
+  },
+  "input_sha256": {
+    "analysis/v2/event_analysis.parquet": "bf533b0f723169417d14405eb688bf84e74cd0642044b245c157304e1725e105",
+    "analysis/v2/pca_variance.csv": "9717ea9d71d8616171520a51f495370af7379681998f053fc8c4c9d6a71f34a9",
+    "analysis/v2/pca_loadings.csv": "2f8f2f7e7ad6cf08c8cb9001259ebf3a6a767ebeb7bd5ad96850f132999b2b1d",
+    "analysis/scientific_validation/null_sample.csv": "04e45574a44a2d5b2a4c29159130a2aa3b07c339f46ac7e5ad8f72af871ff23f",
+    "analysis/scientific_validation/stability_anchors.csv": "3ef1282f8272fd81fd793b7640ba143d9654858df83eb13a7b15e60eba50f210",
+    "analysis/scientific_validation/final_claim_matrix.md": "4ae0dd80ac8dc493efe6443bd3d03f8829e496ac94ca73f0bb6e5f128db4ed5b",
+    "analysis/scientific_validation/compositional_sensitivity/PRISM_HANDOFF_COMPOSITIONAL.md": "03b0387afeaebacb1241af6acda5f1e0576afee9d1ed5086fbb573bc776bed69",
+    "config/analysis_v2.json": "82ffbdb1b703b5d78422f7fb7690fd0585320304be58d886de24dd60d9f66479",
+    "data_lake/fire-vase-data-lake-v0.1/files/scratch/fire_vase_run_full/tables/vase_slices.parquet": "40ccca537301e408d74b072e9079edc8fb97b47c6e27a11e579786d52406f066"
+  },
+  "output_sha256": {
+    "null_geometry_summary.csv": "44d61633c6fc8787d19c0c3da625989ccc21ff0399a9baf883fddc66a3398805",
+    "null_axis_alignment.csv": "d49c087654b8393509426255991e61f09e295c979597b3237177dddd4443cf9c",
+    "null_trait_associations.csv": "227eacea7df2ef28fbf7437a75c4de7ab1d1e6469784a3f9ddb20cc7a747549a",
+    "depth_stratified_ordering.csv": "2d061bff02329a6d78d77e16ad256de7fe9dcacaec9c06d311abc89f7ebc2801",
+    "depth_space_stability.csv": "15af6ba9a861c87ee44c1b6deed3532da7f0c384b19d89c4fdabb510eb2acef7",
+    "boundary_audit.csv": "e32e99aa10dd1c8c6de04b325835d34424ff21c7bfefda6e85d4e870706b205b",
+    "boundary_sensitivity.csv": "e3889c15a7d34cfae4b56204250e0e0e44a67b43c154bed17e6dedea4e65032b",
+    "anchor_scores.csv.gz": "cfd1b4309344b4e92ddab26e73a368142504dda117d538b1d28516d4cee97595",
+    "null_geometry_and_depth.pdf": "4bf07a26968a93c23c8b9602e54d32c1de2fdbb6d5b4ccb2dc4344083f2a8c26",
+    "null_geometry_and_depth.png": "0e72e19314ebc235538b04c8dc55344b63c695fce23e7cbfb82326be1041f04c",
+    "null_geometry_and_depth.svg": "4a777b39fc69068798688b8d4481ebfdd2846812ad01140b9be4ef1c3d7a2435",
+    "PRISM_HANDOFF_FINAL_ADVERSARIAL.md": "eaa387d90063ab11e66432c2002ed1b2cf4f988ed59121763ef755573854262c"
+  },
+  "command": "MPLBACKEND=Agg MPLCONFIGDIR=/tmp/fire-vase-final-adversarial OPENBLAS_NUM_THREADS=1 PYTHONPATH=src:scripts .venv/bin/python scripts/final_adversarial_pass.py",
+  "software_versions": {
+    "python": "3.11.11",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.1"
+  },
+  "repository_sha": "35cc223759c5c7510bec388e1ac56f56ee4cf2b9",
+  "script_sha256": "784ed3f9d2f766f84ec14408854da9313a534a783896cc5bf0f251033d711c30",
+  "canonical_payload_sha256": "6c0b7bf03e9132cdcee9cd1a898a851fb581e62ae0904ad972a37de3e0a971f9"
+}

@@ -80,7 +80,7 @@ def build(root=ROOT):
         ("Matching sensitivity","No representative prevalence design","v2 k/metric sensitivity, but no caliper variation","PARTIALLY IMPLEMENTED","analysis/scientific_validation/matching_caliper_sensitivity.csv","actual caliper/ID assertions","Second pass adds .25/.5/.75/1 sensitivity; paired fraction is design-dependent, not ecological prevalence."),
         ("Figure redesign","Legacy climate-centered panels","Five morphology-first figures","PARTIALLY IMPLEMENTED","analysis/scientific_validation/figure_claim_audit.csv","PDF/PNG visual QA","Second pass simplifies Figures 2/3, moves diagnostics to S2 and adds VPD-specific S3."),
         ("Manuscript numbers","Legacy headlines and overclaims","Versioned generated manuscript with corrected evidence","CORRECTLY IMPLEMENTED","docs/manuscripts/fire_vase_developmental_morphology/manuscript_v2.md","source/table checks and PDF QA","Second pass inserts stability/null/adjustment/interaction qualifications; archival values remain explicitly retired."),
-        ("Tests and reproducibility","Legacy numerical reproduction alone","Invariant tests, numerical replays and deterministic rendering","PARTIALLY IMPLEMENTED","analysis/scientific_validation/reproducibility.json","dedicated and repository pytest commands","Two pre-existing test modules cannot collect: missing tests.helpers.contracts. Not claimed fully green."),
+        ("Tests and reproducibility","Legacy numerical reproduction alone","Invariant tests, numerical replays and deterministic rendering","CORRECTLY IMPLEMENTED","analysis/submission_freeze/test_report.md","complete repository pytest command","Full collection passes: 152 passed, 2 intentionally skipped; no modules excluded."),
         ("Configuration integrity","Some declared thresholds silently ignored","Actual fixed defaults happen to match recorded settings","PARTIALLY IMPLEMENTED","scripts/fire_vase_v2.py","test_fixed_protocol_rejects_silent_threshold_override","Second pass rejects unsupported overrides. No current numerical value changes."),
     ]
     audit=pd.DataFrame(audit_rows,columns=["issue","previous implementation","new implementation","status","evidence file","tests","scientific consequence"])
@@ -225,7 +225,7 @@ Matching uses global matching-cohort scales, exact region/season/duration/count,
 
 ## Reproducibility and remaining implementation issues
 
-Two safe guard corrections affect no current observations: reject declared fixed-protocol configuration overrides that would otherwise be ignored, and invalidate an ambiguous duplicate prior-day state. The current inputs have no duplicate dates. Full test collection still lacks `tests.helpers.contracts` in two pre-existing modules; this unrelated package-testing gap is recorded, not silently patched or reported as covered. The final reproducibility record distinguishes byte-identical regenerated tables/publications from reused v2 source/statistics hashes. The old v2 run manifest is historical provenance; the new validation/publication freeze supersedes stale publication hashes within it without rewriting history.
+Two safe guard corrections affect no current observations: reject declared fixed-protocol configuration overrides that would otherwise be ignored, and invalidate an ambiguous duplicate prior-day state. The current inputs have no duplicate dates. The shared cube-contract helper has been restored and full test collection passes without exclusions. The final reproducibility record distinguishes byte-identical regenerated tables/publications from reused v2 source/statistics hashes. The old v2 run manifest is historical provenance; the new validation/publication freeze supersedes stale publication hashes within it without rewriting history.
 """
     (OUT/"audit_report.md").write_text(audit_text)
     selected=event.query("predictor_set=='core_plus_max'").pivot(index="response",columns="kind",values="r2").reset_index()
@@ -234,7 +234,7 @@ Two safe guard corrections affect no current observations: reject declared fixed
 
 1. Repository baseline SHA: `{sha}`; subsequent working-tree code and output hashes are in the freeze manifest.
 2. Previous pass reproduced: 60-file render replay; PCA, primary alpha=1 event/state models, cohorts/folds and unique pair IDs reproduced. Historical v1 event/state tables reproduced to <1e-15 in the preceding pass. No claim of rerunning every archived sensitivity.
-3. Remaining implementation errors: no known numerical error affecting these data. Two guard defects corrected (ignored fixed-protocol overrides and ambiguous duplicate prior state). Pre-existing full-test collection gap remains. Event-year/month are fire-level, not observation-level seasonal effects.
+3. Remaining implementation errors: no known numerical error affecting these data. Two guard defects corrected (ignored fixed-protocol overrides and ambiguous duplicate prior state). The former full-test collection gap is resolved by the restored shared cube contract. Event-year/month are fire-level, not observation-level seasonal effects.
 4. Primary population: 10246 valid >=3 consecutive histories; 9212 complete primary weather fires. Matching uses the same 9212; state analysis is a different explicitly identified transition cohort.
 5. Observation distribution: 161073 one-slice, 47950 two-slice, 69546 >=3, 30538 >=5, 15036 >=7. Consecutive >=3/5/7 counts: 10246/2887/1171. Threshold rows overlap; do not sum them.
 6. Exact-day transitions: 196611 of 347533 adjacent pairs; 81940 two-day and 68982 longer gaps. Common AR cohort: 87944 transitions, 31700 fires. Missing/duplicate dates and observed zero increments: zero.
@@ -275,7 +275,7 @@ Two safe guard corrections affect no current observations: reject declared fixed
 
 {summary['verdict']}
 
-This verdict reflects stable representation and temporal-order evidence alongside weak, selected, noncausal event-weather associations. It does not deny the modest reproducible state-weather increment. See `reproducibility.json` for exact verification scope and the full-test collection limitation.
+This verdict reflects stable representation and temporal-order evidence alongside weak, selected, noncausal event-weather associations. It does not deny the modest reproducible state-weather increment. See `analysis/submission_freeze/test_report.md` and `freeze_manifest.json` for the complete current verification scope.
 """
     (OUT/"final_report.md").write_text(final)
     handoff=f"""# Prism handoff - validated evidence, not a request to reanalyze

@@ -14,11 +14,14 @@ The central scientific sequence is:
 4. use state dependence and explanatory mismatches to generate testable next
    questions without turning associations into causal claims.
 
-Read the [manuscript narrative](docs/manuscript.md), the newly added
-[manuscript PDF](docs/manuscripts/fire_vase_developmental_morphology/main-16.pdf),
-and its [working supplementary draft](docs/manuscripts/fire_vase_developmental_morphology/supplementary-2.pdf).
-The SI still contains unresolved insertion markers, so the corrected v2 outputs
-remain the authority for quantitative results.
+Read the [manuscript narrative](docs/manuscript.md), the assembled
+[submission manuscript](output/submission/fire_vase_manuscript_submission.pdf),
+and [submission SI](output/submission/fire_vase_supplementary_submission.pdf).
+The supplied editorial sources are preserved as
+[`main-22.pdf`](docs/manuscripts/fire_vase_developmental_morphology/main-22.pdf)
+and [`supplementary-3.pdf`](docs/manuscripts/fire_vase_developmental_morphology/supplementary-3.pdf).
+The [submission freeze](analysis/submission_freeze/README.md) controls current
+claims, hashes, checks, and remaining human items.
 
 ## Current evidence: v2 (2026-08-28)
 
@@ -38,13 +41,16 @@ freezes the evidence, with a [claim matrix](analysis/scientific_validation/final
 and [Prism handoff](analysis/scientific_validation/PRISM_HANDOFF.md). Broad shape
 gradients and nonrandom ordering survive; event-weather prediction is weak and
 heterogeneous, and matched mismatch is compatible with the declared null.
+The [final adversarial pass](analysis/scientific_validation/final_adversarial_pass/PRISM_HANDOFF_FINAL_ADVERSARIAL.md)
+shows that compression alone is partly generic while ordering survives stricter
+depth and endpoint-day removal.
 
 ```sh
 PYTHONPATH=src:scripts OPENBLAS_NUM_THREADS=1 MPLCONFIGDIR=/tmp/fire-vase-v2-mpl .venv/bin/python manuscript_figures/00_run_all.py --generation v2 --data-lake data_lake/fire-vase-data-lake-v0.1
 ```
 
 This is now the numbered pipeline's default. It writes statistics first, then
-five PDF/PNG/SVG main figures, three supplements and manuscript PDF. The full run
+five PDF/PNG/SVG main figures, four supplements and manuscript PDF. The full run
 includes the second-pass validation; use `--render-only` only after both statistics
 sets exist. `--generation legacy` explicitly selects the older
 pipeline. [V2 methods and reproduction](docs/reanalysis-v2.md) explain the source
