@@ -2,6 +2,14 @@
 
 ## 2026-08-30
 
+- Added the focused pre-submission compositional-geometry sensitivity without
+  changing frozen v2 outputs: exact baseline reproduction followed by
+  mean-centered, unscaled Hellinger PCA on the same 10,246 primary fires.
+- Added aligned score, Procrustes, score-subspace, frozen-anchor distance,
+  nearest-neighbor, extreme-tail and displayed-exemplar comparisons, plus a
+  six-panel PDF/PNG, deterministic tests, hashes and manuscript/figure handoff.
+- The sensitivity supports stable broad developmental geometry while qualifying
+  local neighborhoods and extreme exemplars as representation-dependent.
 - Recentered the README and documentation website on the manuscript's primary
   contribution: Fire VASE changes the response from wildfire endpoints to
   comparable observed developmental pathways.

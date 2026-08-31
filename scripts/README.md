@@ -19,6 +19,11 @@ The developmental and climate-revision scripts listed below are historical v1
 implementations; they are not the corrected scientific pipeline. Use
 `reproduce_v1_comparison.py` to reproduce them without overwriting current work.
 
+`compositional_sensitivity.py` is the focused, additive pre-submission check of
+the frozen 20-bin primary space under Hellinger geometry. It reproduces the v2
+baseline as a hard gate, uses the existing seed and 1,000-event anchor set, and
+writes only to `analysis/scientific_validation/compositional_sensitivity/`.
+
 This folder contains the code used to build, analyze, package, and verify the
 Fire VASE manuscript data products. Most collaborators should start with the
 data-lake and figure commands rather than running every script manually.

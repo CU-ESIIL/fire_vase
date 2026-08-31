@@ -15,3 +15,17 @@ Request: resume and finish v2 verification, then audit rather than restart it. S
 Scope: new validation outputs live in `analysis/scientific_validation/`; v2 statistics remain the explicitly identified candidate baseline. Only unresolved tests are recomputed, plus targeted numerical replays. No new external data, feature search, or causal claims. The final audit, claim matrix, and reproducibility record document outcomes and remaining limitations.
 
 Additional user guidance: inspect the manuscript PDF called “main.pdf”. Located remotely as `docs/manuscripts/fire_vase_developmental_morphology/main-16.pdf`; read all 27 pages without changing the original. The corrected version uses its title, supplied authorship and representation-first framing. `analysis/scientific_validation/reference_manuscript_audit.md` records its hash and section-by-section reconciliation. Its old .349, mixed-PCA, adjacent-slice and unqualified interaction claims were not reintroduced.
+
+## 2026-08-30 - Compositional-geometry sensitivity
+
+Request: test whether the frozen 10,246-event developmental morphospace persists
+under Hellinger geometry, without broadening the analysis or overwriting v2.
+Reproduce the standardized-Euclidean baseline first; then square-root the same
+20 allocation proportions, mean-center without variance scaling, align axes,
+and report global, local, extreme-tail and manuscript-exemplar correspondence.
+
+Scope: `scripts/compositional_sensitivity.py`, its dedicated deterministic tests,
+and the additive outputs under
+`analysis/scientific_validation/compositional_sensitivity/`. The manuscript is
+left unchanged; `PRISM_HANDOFF_COMPOSITIONAL.md` records exact proposed edits
+and figure consequences after the analysis.

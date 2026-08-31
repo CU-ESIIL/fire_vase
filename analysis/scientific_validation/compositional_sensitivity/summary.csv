@@ -1,0 +1,31 @@
+section,metric,baseline,hellinger,comparison,note
+cohort,sample_size,10246,10246,,identical frozen events
+cohort,feature_count,20,20,,allocation_00 through allocation_19
+variance,PC1_explained,0.341495575686,0.337907569598,-0.00358800608818,representation-specific variance
+variance,PC1_to_PC5_cumulative,0.894435897825,0.882819004277,-0.0116168935485,representation-specific variance
+axis_alignment,PC1_score_correlation,,,0.941970306469,"Hellinger PC1, sign aligned"
+axis_alignment,PC2_score_correlation,,,0.938326053409,"Hellinger PC2, sign aligned"
+axis_alignment,PC3_score_correlation,,,0.973742115459,"Hellinger PC3, sign aligned"
+axis_alignment,PC4_score_correlation,,,0.953125970045,"Hellinger PC4, sign aligned"
+axis_alignment,PC5_score_correlation,,,0.949785300574,"Hellinger PC5, sign aligned"
+correspondence,procrustes_similarity_5d,,,0.984787646348,global configuration after rotation and one global scale
+correspondence,score_subspace_similarity_5d,,,0.960091571547,principal-angle similarity in event score space
+correspondence,anchor_pair_distance_spearman_5d,,,0.976291299063,"all pairwise distances among 1,000 frozen anchors"
+correspondence,anchor_15_neighbor_overlap_5d,,,0.7014,mean shared neighbors among frozen anchors
+correspondence,pc1_tail_jaccard_mean,,,0.57331912248,mean top/bottom 2% Jaccard
+correspondence,pc2_tail_jaccard_mean,,,0.287218045113,mean top/bottom 2% Jaccard
+correspondence,pc1_pc2_tail_jaccard_mean,,,0.430268583796,mean across PC1/PC2 top/bottom tails
+extreme_exemplars,PC1_bottom_2pct_jaccard,,,0.679012345679,204 fires per tail
+extreme_exemplars,PC1_top_2pct_jaccard,,,0.467625899281,204 fires per tail
+extreme_exemplars,PC2_bottom_2pct_jaccard,,,0.142857142857,204 fires per tail
+extreme_exemplars,PC2_top_2pct_jaccard,,,0.431578947368,204 fires per tail
+gradient,PC1_front_loaded_fraction_spearman,-0.968336980606,-0.945016482301,0.0233204983057,same external descriptive trait
+gradient,PC1_late_growth_fraction_spearman,0.834465945843,0.656364062204,-0.178101883639,same external descriptive trait
+gradient,PC1_normalized_entropy_spearman,0.324461823557,0.14831086361,-0.176150959947,same external descriptive trait
+gradient,PC1_pulse_count_spearman,0.0693916418097,-0.0504805795095,-0.119872221319,same external descriptive trait
+gradient,PC2_front_loaded_fraction_spearman,-0.0834434186206,0.196585658022,0.280029076642,same external descriptive trait
+gradient,PC2_late_growth_fraction_spearman,-0.390432049466,-0.599271151206,-0.20883910174,same external descriptive trait
+gradient,PC2_normalized_entropy_spearman,-0.17035664864,-0.262772701863,-0.092416053223,same external descriptive trait
+gradient,PC2_pulse_count_spearman,-0.173061787918,-0.18793356749,-0.0148717795717,same external descriptive trait
+displayed_exemplars,mean_15_neighbor_overlap,,,0.766666666667,8 manuscript-displayed fires
+displayed_exemplars,maximum_absolute_PC1_PC2_percentile_movement,,,0.278059730627,movement in aligned marginal rank
