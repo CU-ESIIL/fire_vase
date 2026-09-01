@@ -1,5 +1,17 @@
 # Prompt and implementation log
 
+## 2026-08-31 - Editable Google Docs manuscript
+
+Request: provide the current manuscript as an editable document formatted for
+Google Docs.
+
+Scope: `scripts/build_submission_google_docs_docx.py` reconstructs the editable
+text from `main-22.pdf`, inserts the five validated submission figures with alt
+text and captions, repairs mathematical extraction artifacts, and writes
+`output/docx/fire_vase_manuscript_google_docs.docx`. The output was sanitized
+for Google Docs import, accessibility-audited, and visually checked across all
+18 rendered pages.
+
 ## 2026-08-28 - Methodological correction (v2)
 
 Request: rebuild Fire VASE around developmental morphology, correct peak/mean and entropy semantics, audit dates, remove endpoints from the primary PCA, use common weather cohorts and grouped validation, compare weather with autoregression, and replace adversarial examples with unique caliper matching. Preserve real inputs and legacy results; regenerate figures and manuscript.

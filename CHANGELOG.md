@@ -2,6 +2,9 @@
 
 ## 2026-08-31
 
+- Added a Google Docs-ready editable DOCX of the current `main-22.pdf`
+  manuscript, with all five submission figures, accessible image descriptions,
+  editable captions and equations, and a reproducible conversion script.
 - Added the supplied `main-22.pdf` and `supplementary-3.pdf` drafts and assembled
   visually verified submission PDFs with five main and four supplementary
   figures in PDF/PNG/SVG.
