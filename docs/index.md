@@ -29,8 +29,8 @@ FIRED events represented as developmental histories
 consecutive histories in the corrected shape-only analysis
 </div>
 <div markdown>
-<span>237,235</span>
-events in the manuscript's first centroid-weather projection
+<span>87,944</span>
+exact next-calendar-day transitions in the current state analysis
 </div>
 </section>
 
@@ -77,9 +77,9 @@ regeneration, figure rendering, and final reproducibility checks.</p>
 
 <a class="fire-pathway fire-pathway--figures" href="reproduce-figures/">
 <span>Figures</span>
-<h2>Rebuild the manuscript visuals</h2>
-<p>Use the numbered scripts in <code>manuscript_figures/</code> to reproduce every main figure
-and the validation supplement.</p>
+<h2>Browse current and historical figures</h2>
+<p>Scroll through every current main and supplementary figure, the final
+adversarial check, and the preserved historical figure generation.</p>
 </a>
 
 <a class="fire-pathway fire-pathway--methods" href="methods/">
@@ -115,13 +115,15 @@ developmental morphology, external attribution, and validation.</p>
 ## Source documents
 
 The manuscript and companion SI establish the current narrative. The assembled
-submission PDFs use validated repository figures; the source drafts remain
-preserved for provenance. Use the submission freeze for claim authority.
+submission PDFs use validated repository figures; the latest editorial source
+exports remain preserved for provenance. Use the submission freeze for claim
+authority.
 
 [Assembled manuscript](https://github.com/CU-ESIIL/fire_vase/blob/main/output/submission/fire_vase_manuscript_submission.pdf){ .md-button .md-button--primary .fire-button }
 [Assembled SI](https://github.com/CU-ESIIL/fire_vase/blob/main/output/submission/fire_vase_supplementary_submission.pdf){ .md-button .fire-button }
 [Source manuscript](manuscripts/fire_vase_developmental_morphology/main-22.pdf){ .md-button .fire-button }
-[Source SI](manuscripts/fire_vase_developmental_morphology/supplementary-3.pdf){ .md-button .fire-button }
+[Source SI](manuscripts/fire_vase_developmental_morphology/supplementary-4.pdf){ .md-button .fire-button }
+[Complete figure gallery](reproduce-figures.md){ .md-button .fire-button }
 [Narrative guide](manuscript.md){ .md-button .fire-button }
 [Corrected v2 manuscript](manuscripts/fire_vase_developmental_morphology/manuscript_v2.md){ .md-button .fire-button }
 [AI transparency](manuscripts/fire_vase_developmental_morphology/ai_transparency_statement.md){ .md-button .fire-button }

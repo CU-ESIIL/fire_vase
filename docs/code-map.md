@@ -54,7 +54,7 @@ Those modules contain the actual Matplotlib figure logic.
 
 - [main-22.pdf](manuscripts/fire_vase_developmental_morphology/main-22.pdf):
   supplied current editorial manuscript source.
-- [supplementary-3.pdf](manuscripts/fire_vase_developmental_morphology/supplementary-3.pdf):
+- [supplementary-4.pdf](manuscripts/fire_vase_developmental_morphology/supplementary-4.pdf):
   supplied current editorial SI source.
 - [submission freeze](https://github.com/CU-ESIIL/fire_vase/tree/main/analysis/submission_freeze):
   assembled-PDF hashes, exhaustive claim registry, consistency and test reports,

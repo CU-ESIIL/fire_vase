@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026-09-02
+
+- Updated the website narrative to match the latest `main-22.pdf` and
+  `supplementary-4.pdf` editorial sources, with clearer boundaries around
+  developmental geometry, null compression, state predictability, weather,
+  and causal inference.
+- Rebuilt the figure page as a complete, navigable gallery containing the five
+  current main figures, four current supplementary figures, final adversarial
+  validation, and all five main plus three supplementary historical figures.
+- Preserved the prior supplementary export for provenance while promoting
+  `supplementary-4.pdf` as the current source across the website and repository
+  handoff documentation.
+
 ## 2026-08-31
 
 - Added a Google Docs-ready editable DOCX of the current `main-22.pdf`

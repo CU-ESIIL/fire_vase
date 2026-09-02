@@ -12,7 +12,7 @@ supersedes the climate-centered v1 generation for quantitative claims.
 The second-pass validation freezes a bounded scientific story: broad shape
 gradients and nonrandom temporal ordering are supported, but event-weather
 predictability is weak and heterogeneous. The supplied `main-22.pdf` and
-`supplementary-3.pdf` define the current narrative; the assembled submission
+`supplementary-4.pdf` define the current narrative; the assembled submission
 PDFs and `analysis/submission_freeze/` control the figures, claim sources, and
 release-readiness checks.
 

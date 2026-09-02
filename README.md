@@ -19,7 +19,7 @@ Read the [manuscript narrative](docs/manuscript.md), the assembled
 and [submission SI](output/submission/fire_vase_supplementary_submission.pdf).
 The supplied editorial sources are preserved as
 [`main-22.pdf`](docs/manuscripts/fire_vase_developmental_morphology/main-22.pdf)
-and [`supplementary-3.pdf`](docs/manuscripts/fire_vase_developmental_morphology/supplementary-3.pdf).
+and [`supplementary-4.pdf`](docs/manuscripts/fire_vase_developmental_morphology/supplementary-4.pdf).
 The [submission freeze](analysis/submission_freeze/README.md) controls current
 claims, hashes, checks, and remaining human items.
 
