@@ -30,6 +30,39 @@ independent pairs—not a two-by-two matching design. [Technical caption](../rep
 </div>
 </section>
 
+<details class="fire-read-figure" open>
+<summary>How to read this figure</summary>
+<div markdown>
+
+- **Panels:** A reports matching coverage; B places observed mismatch against
+  conditional-permutation references; C and D show two independent example
+  pairs.
+- **Look here:** In B, the observed dots sit inside the conditional reference
+  distributions. In D, similar measured weather accompanies visibly different
+  histories.
+- **Comparison:** The examples are representative separate pairs, not a
+  reciprocal two-by-two matching design.
+- **Supported conclusion:** Matching locates controlled study candidates. It
+  does not establish excess mismatch, prevalence, or a missing mechanism.
+
+</div>
+</details>
+
+<div class="fire-challenge" markdown><strong>Challenge this result.</strong>
+If the examples depended entirely on one caliper or on poor partner coverage,
+they would be weak study candidates. Sensitivity changes coverage, and the
+null comparison prevents an excess-mismatch claim. [See the matching-caliper test →](../validation/index.md#does-the-result-depend-on-observation-depth)
+</div>
+
+<div class="fire-evidence-trail" markdown><span>Evidence trail</span>
+<div><b>Claim</b>Useful matched contrasts, without excess mismatch</div>
+<div><b>Figure</b>Figure 5 · 3,710 weather pairs; 3,145 morphology pairs</div>
+<div><b>Analysis</b>Unique caliper-constrained pairs and conditional permutations</div>
+<div><b>Reproduce</b><a href="https://github.com/CU-ESIIL/fire_vase/blob/main/manuscript_figures/05_figure_5.py">Figure script</a> · <a href="../reproduce/notebooks/">notebooks</a></div>
+<div><b>Validate</b><a href="../validation/#does-the-result-depend-on-observation-depth">Caliper sensitivity in S2F</a></div>
+<div><b>Paper</b><a href="../manuscripts/fire_vase_developmental_morphology/manuscript_v2/#representative-convergence-and-divergence">Current claim</a></div>
+</div>
+
 <div class="fire-stat-row" markdown>
 <div><strong>80.5%</strong><span>eligible fires assigned a weather-space partner</span></div>
 <div><strong>68.3%</strong><span>eligible fires assigned a morphology-space partner</span></div>

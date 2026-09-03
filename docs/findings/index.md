@@ -8,6 +8,9 @@ archive, primary morphospace, event-weather models, transition models, and
 matching analysis do not share one universal *N*.
 </div>
 
+[Walk through all five main figures →](../figures.md){ .md-button .md-button--primary .fire-button }
+[Start with the validation challenges](../validation/index.md){ .md-button .fire-button }
+
 ## The scientific argument
 
 <section class="fire-finding-grid fire-finding-grid--single">

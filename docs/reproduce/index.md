@@ -125,6 +125,7 @@ manifests.
 
 ## Provenance and project record
 
+- [AI use and scientific accountability, in plain language](../ai-accountability.md)
 - [Current technical manuscript](../manuscripts/fire_vase_developmental_morphology/manuscript_v2.md)
 - [Correction and reanalysis history](../reanalysis-v2.md)
 - [AI transparency statement](../manuscripts/fire_vase_developmental_morphology/ai_transparency_statement.md)

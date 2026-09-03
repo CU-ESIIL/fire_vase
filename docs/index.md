@@ -147,6 +147,18 @@ qualified.
 </section>
 
 <section class="fire-home-intro" markdown>
+<p class="fire-kicker">Choose your evidence route</p>
+
+## Go from the claim to the record
+</section>
+
+<section class="fire-credibility-grid">
+<a href="figures/"><span>See the evidence</span><strong>Walk through every main figure</strong><small>Read the panels, comparisons, claim boundary, and evidence trail.</small></a>
+<a href="validation/"><span>See how we challenged it</span><strong>Start with the failure tests</strong><small>See what would have weakened each conclusion—and what happened.</small></a>
+<a href="ai-accountability/"><span>See how AI was used</span><strong>Inspect the accountability record</strong><small>Separate AI assistance, executable outputs, and human scientific responsibility.</small></a>
+</section>
+
+<section class="fire-home-intro" markdown>
 <p class="fire-kicker">Meaning</p>
 
 ## A common response for the next layer of wildfire science
@@ -178,4 +190,5 @@ corrections remain available beneath this narrative.
 
 [Reproduce this research →](reproduce/index.md){ .md-button .md-button--primary .fire-button }
 [Read the paper](manuscript.md){ .md-button .fire-button }
+[Read the AI accountability record](ai-accountability.md){ .md-button .fire-button }
 </section>

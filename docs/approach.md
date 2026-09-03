@@ -2,6 +2,22 @@
 
 <p class="fire-page-deck">Fire VASE turns dated observations of wildfire growth into a common developmental response—then asks what might explain the differences.</p>
 
+<div class="fire-stage-map" markdown>
+<div><span>01</span><strong>Observe</strong><small>Dated polygons</small></div>
+<b>→</b>
+<div><span>02</span><strong>Order</strong><small>Daily increments</small></div>
+<b>→</b>
+<div><span>03</span><strong>Standardize</strong><small>Relative time</small></div>
+<b>→</b>
+<div><span>04</span><strong>Represent</strong><small>Fire VASE</small></div>
+<b>→</b>
+<div><span>05</span><strong>Compare</strong><small>Morphospace</small></div>
+<b>→</b>
+<div><span>06</span><strong>Explain</strong><small>External layers</small></div>
+<b>→</b>
+<div><span>07</span><strong>Challenge</strong><small>Failure tests</small></div>
+</div>
+
 <div class="fire-answer" markdown>
 <span>Short answer</span>
 
@@ -11,7 +27,7 @@ without using weather or endpoints to define the primary shape space. Weather
 and recent fire state enter only afterward as candidate explanatory layers.
 </div>
 
-## From observations to evidence
+## Seven stages, with technical routes
 
 <div class="fire-method-steps" markdown>
 <div markdown><span>01 · Observe</span>
@@ -103,6 +119,22 @@ bands, and is therefore not part of the consecutive-history primary
 morphospace. [Full caption and figure provenance](reproduce-figures.md#figure-1-from-dated-growth-observations-to-developmental-morphology)
 </div>
 </section>
+
+<details class="fire-read-figure" open>
+<summary>How to read this figure</summary>
+<div markdown>
+
+- **Panels:** Each column follows one observed fire from dated increments to a
+  cumulative curve and then to its VASE.
+- **Look here:** Fire 100001 contains gray bands. Those dates are unobserved,
+  not days of confirmed zero growth.
+- **Comparison:** Compare where the cumulative line widens rapidly across the
+  four fires; the VASE retains the same ordering visually.
+- **Supported conclusion:** Fire VASE standardizes an observed developmental
+  record. It does not reconstruct spread direction or a continuous fire front.
+
+</div>
+</details>
 
 ## What was measured—and what was not
 

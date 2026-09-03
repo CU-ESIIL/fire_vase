@@ -32,6 +32,38 @@ fires. [Technical caption](../reproduce-figures.md#figure-2-the-developmental-mo
 </div>
 </section>
 
+<details class="fire-read-figure" open>
+<summary>How to read this figure</summary>
+<div markdown>
+
+- **Panels:** A is the shape space; B shows which relative-time bins define
+  its first two axes; C audits observation support; D shows real example VASEs.
+- **Axes:** Moving along PC1 shifts allocation from earlier toward later
+  development. PC2 contrasts middle-concentrated with more endpoint-weighted
+  histories.
+- **Look here:** The points occupy a continuum rather than separate islands.
+  Use the loadings and example VASEs together to interpret that continuum.
+- **Supported conclusion:** The broad gradients describe reproducible
+  developmental variation. They are not established natural fire classes.
+
+</div>
+</details>
+
+<div class="fire-challenge" markdown><strong>Challenge this result.</strong>
+If the gradients vanished under stricter observation requirements or another
+valid compositional geometry, they could be artifacts of short records or an
+analysis choice. [See what those tests found →](../validation/index.md#does-the-result-depend-on-observation-depth)
+</div>
+
+<div class="fire-evidence-trail" markdown><span>Evidence trail</span>
+<div><b>Claim</b>Broad developmental gradients, not discrete types</div>
+<div><b>Figure</b>Figure 2 · primary N = 10,246</div>
+<div><b>Analysis</b><code>analysis/v2/</code> PCA scores, loadings, variance, and sensitivity tables</div>
+<div><b>Reproduce</b><a href="https://github.com/CU-ESIIL/fire_vase/blob/main/manuscript_figures/02_figure_2.py">Figure script</a> · <a href="../reproduce/notebooks/">notebooks</a></div>
+<div><b>Validate</b><a href="../validation/#could-the-geometry-be-an-artifact">Depth and geometry challenges</a></div>
+<div><b>Paper</b><a href="../manuscripts/fire_vase_developmental_morphology/manuscript_v2/#a-shared-coordinate-system-without-a-universal-restricted-wedge-claim">Current claim</a></div>
+</div>
+
 ## What we measured
 
 Each consecutive history was transformed into 20 nonnegative relative-time

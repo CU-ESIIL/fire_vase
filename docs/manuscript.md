@@ -16,6 +16,8 @@ neighborhood labels uniquely determine those pathways.
 [Read the assembled manuscript](https://github.com/CU-ESIIL/fire_vase/blob/main/output/submission/fire_vase_manuscript_submission.pdf){ .md-button .md-button--primary .fire-button }
 [Read the assembled SI](https://github.com/CU-ESIIL/fire_vase/blob/main/output/submission/fire_vase_supplementary_submission.pdf){ .md-button .fire-button }
 [Browse every figure](reproduce-figures.md){ .md-button .fire-button }
+[Read the guided figure walkthrough](figures.md){ .md-button .fire-button }
+[See how AI was used](ai-accountability.md){ .md-button .fire-button }
 [Inspect the corrected v2 evidence](reanalysis-v2.md){ .md-button .fire-button }
 
 ## The argument

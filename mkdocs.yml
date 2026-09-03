@@ -14,6 +14,7 @@ nav:
       - Building a VASE: methods.md
   - Findings:
       - Evidence overview: findings/index.md
+      - Walk through the figures: figures.md
       - Developmental pathways: findings/developmental-pathways.md
       - Temporal ordering: findings/temporal-ordering.md
       - Weather and recent state: findings/weather-and-state.md
@@ -42,6 +43,7 @@ nav:
       - Supplement PDF: manuscripts/fire_vase_developmental_morphology/supplementary-4.pdf
   - Project Record:
       - Corrections and reanalysis: reanalysis-v2.md
+      - AI use and scientific accountability: ai-accountability.md
       - AI Transparency: manuscripts/fire_vase_developmental_morphology/ai_transparency_statement.md
       - Expanded AI Transparency Report: manuscripts/fire_vase_developmental_morphology/ai_transparency_report.md
       - Citation Audit: manuscripts/fire_vase_developmental_morphology/final_citation_check_2026-07-23.md

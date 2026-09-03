@@ -40,6 +40,39 @@ does not prove biological restriction. [Technical caption](../reproduce-figures.
 </div>
 </section>
 
+<details class="fire-read-figure" open>
+<summary>How to read this figure</summary>
+<div markdown>
+
+- **Panels:** This supplementary figure assembles six challenges. The temporal
+  ordering result is in S2C; observation depth is S2A and allocation nulls are
+  S2B.
+- **Axes:** In S2C, dots are observed trait means and intervals are the 95%
+  ranges obtained after shuffling increments within fires.
+- **Look here:** Front-loading, pulse count, and reactivation move outside or
+  away from the shuffle references, while entropy stays unchanged—as it
+  should for an order-insensitive quantity.
+- **Supported conclusion:** Sequence carries information beyond the increment
+  multiset. The comparison does not identify why that ordering arose.
+
+</div>
+</details>
+
+<div class="fire-challenge" markdown><strong>Challenge this result.</strong>
+If shuffling the same increments left every order-sensitive trait unchanged,
+Fire VASE would be encoding little beyond totals and increment distributions.
+[Inspect the temporal-order challenge →](../validation/index.md#is-temporal-ordering-actually-informative)
+</div>
+
+<div class="fire-evidence-trail" markdown><span>Evidence trail</span>
+<div><b>Claim</b>Observed ordering carries information</div>
+<div><b>Figure</b>Supplementary Figure 2C · recorded N = 4,000</div>
+<div><b>Analysis</b>100 within-fire permutation replicates with invariants</div>
+<div><b>Reproduce</b><a href="https://github.com/CU-ESIIL/fire_vase/blob/main/manuscript_figures/07_supplementary_figure_2.py">Figure script</a> · <a href="../reproduce/notebooks/">notebooks</a></div>
+<div><b>Validate</b><a href="../validation/#is-temporal-ordering-actually-informative">Threat, failure criterion, and result</a></div>
+<div><b>Paper</b><a href="../manuscripts/fire_vase_developmental_morphology/manuscript_v2/#temporal-ordering-is-informative">Current claim</a></div>
+</div>
+
 <div class="fire-stat-row" markdown>
 <div><strong>0.541</strong><span>observed mean first-half allocation</span></div>
 <div><strong>0.500</strong><span>mean after temporal shuffling</span></div>
