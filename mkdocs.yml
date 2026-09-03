@@ -7,36 +7,52 @@ repo_url: "https://github.com/CU-ESIIL/fire_vase"
 edit_uri: "edit/main/docs/"
 
 nav:
-  - Home: index.md
-  - Manuscript Narrative: manuscript.md
-  - Corrected Evidence: reanalysis-v2.md
-  - Full Reproduction Vignette: vignette-reproduce-pipeline.md
+  - Overview: index.md
+  - Approach:
+      - What Fire VASE does: approach.md
+      - Observations and data boundary: data.md
+      - Building a VASE: methods.md
+  - Findings:
+      - Evidence overview: findings/index.md
+      - Developmental pathways: findings/developmental-pathways.md
+      - Temporal ordering: findings/temporal-ordering.md
+      - Weather and recent state: findings/weather-and-state.md
+      - Mismatched fires: findings/mismatched-fires.md
   - Validation:
-      - Overview: validation/index.md
-      - Pipe And Stream: validation/pipeline.md
-      - Cube And HTML Integrity: validation/cube.md
-      - Geometry And Hull: validation/geometry.md
-      - 3-D Hull Decisions: validation/hull3d.md
-      - Climate Attribution: validation/climate.md
-      - External Sources: validation/external.md
-      - Expected-Failure Contrast: validation/contrast.md
-  - Reproduce Data Lake: reproduce-data-lake.md
-  - Reproduce Figures: reproduce-figures.md
-  - Methods Notes: methods.md
-  - Code Map: code-map.md
-  - Manuscript:
-      - Corrected V2 Technical Manuscript: manuscripts/fire_vase_developmental_morphology/manuscript_v2.md
-      - Historical Science Style Revision: manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision_science_style.md
+      - How we tried to break Fire VASE: validation/index.md
+      - Geometry: validation/geometry.md
+      - 3-D hull decisions: validation/hull3d.md
+      - Data attribution: validation/climate.md
+      - Software QA:
+          - Pipe and stream: validation/pipeline.md
+          - Cube and HTML integrity: validation/cube.md
+          - External sources: validation/external.md
+          - Expected-failure controls: validation/contrast.md
+  - Reproduce:
+      - Reproduce Fire VASE: reproduce/index.md
+      - Quick start: vignette-reproduce-pipeline.md
+      - Data and data lake: reproduce-data-lake.md
+      - Notebooks: reproduce/notebooks.md
+      - Analysis and code: code-map.md
+      - Figures: reproduce-figures.md
+  - Paper:
+      - Scientific narrative: manuscript.md
+      - Technical manuscript: manuscripts/fire_vase_developmental_morphology/manuscript_v2.md
+      - Manuscript PDF: manuscripts/fire_vase_developmental_morphology/main-22.pdf
+      - Supplement PDF: manuscripts/fire_vase_developmental_morphology/supplementary-4.pdf
+  - Project Record:
+      - Corrections and reanalysis: reanalysis-v2.md
       - AI Transparency: manuscripts/fire_vase_developmental_morphology/ai_transparency_statement.md
       - Expanded AI Transparency Report: manuscripts/fire_vase_developmental_morphology/ai_transparency_report.md
-      - Historical Climate Revision: manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision.md
       - Citation Audit: manuscripts/fire_vase_developmental_morphology/final_citation_check_2026-07-23.md
-  - Reference:
-      - Data Boundary: data.md
+      - Migration note: migration.md
+      - Historical technical records:
+          - Historical Science Style Revision: manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision_science_style.md
+          - Historical Climate Revision: manuscripts/fire_vase_developmental_morphology/manuscript_climate_revision.md
+  - Technical Reference:
       - FIRED Dataset: datasets/fired.md
       - Lakehouse Architecture: dev/fire_vase_lakehouse.md
       - Examples: examples.md
-      - Migration Note: migration.md
 
 theme:
   name: material

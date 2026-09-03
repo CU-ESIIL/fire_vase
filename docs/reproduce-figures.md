@@ -36,6 +36,7 @@ testable questions.
 
 <div class="figure-gallery" markdown>
 
+<a id="figure-1-from-dated-growth-observations-to-developmental-morphology"></a>
 <figure markdown>
 <a href="../assets/figures/v2/Figure_1.png"><img src="../assets/figures/v2/Figure_1.png" loading="lazy" alt="Figure 1. From dated growth observations to developmental morphology."></a>
 <figcaption markdown>
@@ -46,6 +47,7 @@ records normalized allocation through time rather than geographic shape.
 </figcaption>
 </figure>
 
+<a id="figure-2-the-developmental-morphospace"></a>
 <figure markdown>
 <a href="../assets/figures/v2/Figure_2.png"><img src="../assets/figures/v2/Figure_2.png" loading="lazy" alt="Figure 2. The developmental morphospace."></a>
 <figcaption markdown>
@@ -56,6 +58,7 @@ and low-dimensional compression require the supplementary qualifications.
 </figcaption>
 </figure>
 
+<a id="figure-3-external-weather-and-developmental-morphology"></a>
 <figure markdown>
 <a href="../assets/figures/v2/Figure_3.png"><img src="../assets/figures/v2/Figure_3.png" loading="lazy" alt="Figure 3. External weather maps weakly and heterogeneously onto developmental morphology."></a>
 <figcaption markdown>
@@ -66,6 +69,7 @@ fires.
 </figcaption>
 </figure>
 
+<a id="figure-4-developmental-state-and-subsequent-calendar-day-growth"></a>
 <figure markdown>
 <a href="../assets/figures/v2/Figure_4.png"><img src="../assets/figures/v2/Figure_4.png" loading="lazy" alt="Figure 4. Developmental state and exact subsequent-calendar-day growth."></a>
 <figcaption markdown>
@@ -77,6 +81,7 @@ forecast or causal estimate.
 </figcaption>
 </figure>
 
+<a id="figure-5-representative-matched-pair-diagnostics"></a>
 <figure markdown>
 <a href="../assets/figures/v2/Figure_5.png"><img src="../assets/figures/v2/Figure_5.png" loading="lazy" alt="Figure 5. Representative matched-pair diagnostics."></a>
 <figcaption markdown>
@@ -96,6 +101,7 @@ VPD interaction diagnostics, and compositional-geometry sensitivity.
 
 <div class="figure-gallery" markdown>
 
+<a id="supplementary-figure-1-complete-validation-and-sensitivity"></a>
 <figure markdown>
 <a href="../assets/figures/v2/Supplementary_Figure_1.png"><img src="../assets/figures/v2/Supplementary_Figure_1.png" loading="lazy" alt="Supplementary Figure 1. Complete validation and sensitivity diagnostics."></a>
 <figcaption markdown>
@@ -106,6 +112,7 @@ machine-readable tables available in the repository.
 </figcaption>
 </figure>
 
+<a id="supplementary-figure-2-second-pass-validation"></a>
 <figure markdown>
 <a href="../assets/figures/v2/Supplementary_Figure_2.png"><img src="../assets/figures/v2/Supplementary_Figure_2.png" loading="lazy" alt="Supplementary Figure 2. Robustness of developmental morphology and limits of external interpretation."></a>
 <figcaption markdown>
@@ -116,6 +123,7 @@ from less stable local structure and qualified external associations.
 </figcaption>
 </figure>
 
+<a id="supplementary-figure-3-vpd-state-interactions"></a>
 <figure markdown>
 <a href="../assets/figures/v2/Supplementary_Figure_3.png"><img src="../assets/figures/v2/Supplementary_Figure_3.png" loading="lazy" alt="Supplementary Figure 3. Data support and heterogeneity of VPD-state interactions."></a>
 <figcaption markdown>
@@ -126,6 +134,7 @@ universal response curve.
 </figcaption>
 </figure>
 
+<a id="supplementary-figure-4-compositional-geometry-sensitivity"></a>
 <figure markdown>
 <a href="../assets/figures/v2/Supplementary_Figure_4.png"><img src="../assets/figures/v2/Supplementary_Figure_4.png" loading="lazy" alt="Supplementary Figure 4. Compositional-geometry sensitivity of the developmental morphospace."></a>
 <figcaption markdown>

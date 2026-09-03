@@ -1,5 +1,25 @@
 # Changelog
 
+## 2026-09-03
+
+- Reorganized the public MkDocs navigation around Overview, Approach, Findings,
+  Validation, and Reproduce while preserving every existing technical page and
+  URL.
+- Rebuilt the homepage as a short scientific story from question through
+  representation, findings, confidence, meaning, and reproducibility.
+- Added a seven-stage accessible Approach page and four finding-centered pages
+  for developmental pathways, temporal ordering, weather versus recent state,
+  and matched-fire diagnostics.
+- Reframed the validation landing page around scientific threats while keeping
+  all six detailed QA modules and the expected-failure contrast subordinate and
+  directly accessible.
+- Added a user-intent reproduction landing page and a first-class inventory of
+  all four preserved Jupyter notebooks, including purpose, inputs, outputs, and
+  status.
+- Aligned the reproduction vignette with the canonical v2 runner, added
+  reusable narrative components and responsive styles, and recorded the
+  non-destructive information-architecture migration plan under `analysis/`.
+
 ## 2026-09-02
 
 - Updated the website narrative to match the latest `main-22.pdf` and

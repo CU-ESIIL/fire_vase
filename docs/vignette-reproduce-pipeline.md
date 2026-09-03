@@ -115,29 +115,37 @@ data_lake/fire-vase-data-lake-v0.1/
 For a materialized handoff, rerun the packager with `--mode hardlink` or
 `--mode copy`.
 
-## 3. Regenerate Manuscript Analysis Products
+## 3. Regenerate Current Analysis Products
 
-Run the manuscript climate-revision workflow:
-
-```bash
-uv run python scripts/fire_vase_climate_revision.py
-```
-
-This refreshes the small derived tables, summaries, figures, and manuscript
-support products used by the current draft. The main derived outputs are under:
-
-```text
-analysis/
-figures/
-outputs/
-output/
-```
-
-For claim-audit and null-model tables used by validation figures, use:
+The canonical v2 analysis and figure orchestrator is the numbered manuscript
+runner. It requires real lakehouse inputs and has no synthetic fallback:
 
 ```bash
-uv run python scripts/fire_vase_manuscript_claim_audit.py
+PYTHONPATH=src:scripts OPENBLAS_NUM_THREADS=1 \
+MPLCONFIGDIR=/tmp/fire-vase-v2-mpl \
+.venv/bin/python manuscript_figures/00_run_all.py \
+  --generation v2 \
+  --data-lake data_lake/fire-vase-data-lake-v0.1
 ```
+
+This refreshes the current `analysis/v2/` products and validated v2 figures.
+The fixed configuration is `config/analysis_v2.json` with seed `20260828`.
+
+Then regenerate and verify the bounded scientific-validation layer:
+
+```bash
+PYTHONPATH=src:scripts MPLBACKEND=Agg \
+MPLCONFIGDIR=/tmp/fire-vase-v2-mpl OPENBLAS_NUM_THREADS=1 \
+.venv/bin/python scripts/validate_fire_vase_science.py
+
+PYTHONPATH=src:scripts MPLBACKEND=Agg \
+MPLCONFIGDIR=/tmp/fire-vase-v2-mpl OPENBLAS_NUM_THREADS=1 \
+.venv/bin/python scripts/verify_fire_vase_science.py
+```
+
+The climate-revision and claim-audit scripts remain preserved historical
+workflows. Run them only when reproducing the superseded generation; they do
+not control current quantitative claims.
 
 ## 4. Regenerate Manuscript Figures
 
@@ -146,6 +154,7 @@ full figure set against the data lake:
 
 ```bash
 uv run python manuscript_figures/00_run_all.py \
+  --generation v2 \
   --data-lake data_lake/fire-vase-data-lake-v0.1
 ```
 
@@ -159,6 +168,7 @@ To regenerate one figure:
 
 ```bash
 uv run python manuscript_figures/03_figure_3.py \
+  --generation v2 \
   --data-lake data_lake/fire-vase-data-lake-v0.1
 ```
 
@@ -167,6 +177,7 @@ lake:
 
 ```bash
 uv run python manuscript_figures/00_run_all.py \
+  --generation v2 \
   --data-lake data_lake/fire-vase-data-lake-v0.1 \
   --force-validation
 ```
