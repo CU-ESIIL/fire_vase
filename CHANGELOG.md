@@ -1,5 +1,23 @@
 # Changelog
 
+## 2026-10-29
+
+- Added a reproducible exploratory plot of preserved 100-hour and 1000-hour
+  dead fuel moisture correlations, with provenance and legacy-analysis
+  limitations in `docs/fuel-moisture-associations.md`.
+
+## 2026-10-27
+
+- Simplified the poster PCA panel to one enlarged map with plain-language
+  axis descriptions, a density key, and an explanation of nearby positions.
+
+- Revised the results poster to a white background with soft cast/contact
+  shadows, dark typography, and subtle figure-panel shadows.
+
+- Added a 24 x 36 inch results poster with a print-resolution, data-derived
+  hero vase and current v2 vector figures, plus a small build script and
+  provenance/reproduction notes in `docs/results-poster.md`.
+
 ## 2026-09-03
 
 - Reorganized the public MkDocs navigation around Overview, Approach, Findings,
